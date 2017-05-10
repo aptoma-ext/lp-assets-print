@@ -2,4 +2,21 @@
 
 .alf-rev-#{$alf-revision} {
     font-family: Arial;
+    line-height: 4mm;
+
+    @include grid(5, 246mm, 46.4mm, 3.6mm);
+
+    .alf-template {
+        background: #FFF;
+    }
+
+    .body-text p {
+        text-rendering: optimizeLegibility;
+        font-kerning: none;
+        font-weight: normal;
+        font-size: 3.15mm;
+        line-height: 4mm;
+        letter-spacing: -.1mm;
+        word-spacing: -.05mm;
+    }
 }

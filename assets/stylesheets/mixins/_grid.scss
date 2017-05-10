@@ -1,0 +1,63 @@
+.alf-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+}
+
+@mixin grid($columns, $formatWidth, $columnWidth, $outerMargin) {
+    $columnSpacing: ($formatWidth - (($columnWidth * $columns) + ($outerMargin * 2))) / ($columns - 1);
+
+    [class*=alf-col-] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $columnWidth;
+    }
+
+    .alf-region.alf-col-bottom,
+    .alf-col-bottom {
+        margin-bottom: $outerMargin !important;
+    }
+
+    .alf-region.alf-col-top,
+    .alf-col-top {
+        margin-top: $outerMargin !important;
+    }
+
+    .alf-col-no-margin.alf-col-1 {
+        left: 0;
+    }
+
+    .alf-col-no-margin {
+        margin: 0 !important;
+        width: $columnWidth + $outerMargin;
+    }
+
+    @for $i from 1 through $columns {
+        $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
+        $outerWidth: $width + ($outerMargin * 2);
+
+        .alf-cols-#{$i} {
+            width: $outerWidth;
+        }
+
+        .alf-col-#{$i} {
+            left: $outerMargin + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+        }
+
+        .alf-colspan-#{$i} {
+            width: $width;
+        }
+
+        .alf-colspan-#{$i}.alf-col-no-margin {
+            @if ($i < $columns) {
+                width: $width + $outerMargin;
+            } @else {
+                width: $outerWidth;
+            }
+        }
+    }
+}
