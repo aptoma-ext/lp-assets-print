@@ -1,6 +1,19 @@
 @import "mixins/_grid";
 @import "_fontface";
 
+html, body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+
+.alf-chrome {
+    background: #FFF;
+}
+
 .alf-rev-#{$alf-revision} {
     font-family: Arial;
     line-height: 4mm;
@@ -19,19 +32,29 @@
         margin: 5mm 0 12mm 0;
     }
 
-    .body-text p,
-    .body-text span {
-        font-family: "Guardian Text Egypt";
-        text-rendering: optimizeLegibility;
-        font-kerning: none;
-        font-weight: normal;
-        font-size: 3.15mm;
-        line-height: 4mm;
-        letter-spacing: -.1mm;
-        word-spacing: -.05mm;
+    .body-text {
+        p, span {
+            font-family: "Guardian Text Egypt";
+            text-rendering: optimizeLegibility;
+            font-kerning: none;
+            font-weight: normal;
+            font-size: 3.15mm;
+            line-height: 4mm;
+            letter-spacing: -.1mm;
+            word-spacing: -.05mm;
+        }
     }
 
     .alf-region {
         overflow: hidden;
+
+        h2 {
+            font-family: "Guardian Sans";
+            font-weight: 800;
+            font-size: 4.2mm;
+            line-height: 6mm;
+            margin-bottom: 2mm;
+            text-indent: 0;
+        }
     }
 }
