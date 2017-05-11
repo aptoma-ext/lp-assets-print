@@ -56,5 +56,22 @@ body {
             margin-bottom: 2mm;
             text-indent: 0;
         }
+
+        blockquote {
+            font-family: "Guardian Sans";
+            font-size: 4.7mm;
+            line-height: 5.2mm;
+            margin: 0;
+        }
+    }
+
+    .alf-container {
+        .overlay-caption {
+            font-family: "Guardian Sans";
+            font-weight: 500;
+            font-size: 3.3mm;
+            line-height: 4mm;
+            margin-top: 1mm;
+        }
     }
 }
