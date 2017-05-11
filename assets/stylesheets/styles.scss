@@ -12,6 +12,8 @@ body {
 
 .alf-chrome {
     background: #FFF;
+    overflow: hidden;
+    line-height: 4mm;
 }
 
 .alf-rev-#{$alf-revision} {
