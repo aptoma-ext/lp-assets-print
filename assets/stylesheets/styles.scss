@@ -13,12 +13,12 @@ body {
 .alf-chrome {
     background: #FFF;
     overflow: hidden;
-    line-height: 4mm;
+    line-height: 10.4pt;
 }
 
 .alf-rev-#{$alf-revision} {
     font-family: Arial;
-    line-height: 4mm;
+    line-height: 10.4pt;
 
     @include grid(5, 280mm, 46.4mm, 17mm);
 
@@ -29,8 +29,8 @@ body {
     h1 {
         font-family: "Guardian Egypt";
         font-weight: 800;
-        font-size: 16mm;
-        line-height: 1em;
+
+        line-height: 10.4pt;
         margin: 5mm 0 8mm 0;
     }
 
@@ -40,8 +40,8 @@ body {
             text-rendering: optimizeLegibility;
             font-kerning: none;
             font-weight: normal;
-            font-size: 3.15mm;
-            line-height: 4mm;
+            font-size: 8.4pt;
+            line-height: 10.4pt;
             letter-spacing: -.1mm;
             word-spacing: -.05mm;
         }
@@ -53,9 +53,10 @@ body {
         h2 {
             font-family: "Guardian Sans";
             font-weight: 800;
-            font-size: 4.2mm;
-            line-height: 6mm;
-            margin-bottom: 2mm;
+            font-size: 12pt;
+            line-height: 13pt;
+            margin-top: 6pt;
+            margin-bottom: 1.8pt;
             text-indent: 0;
         }
 
