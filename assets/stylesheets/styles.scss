@@ -20,7 +20,7 @@ body {
     font-family: Arial;
     line-height: 10.4pt;
 
-    @include grid(5, 280mm, 46.4mm, 17mm);
+    @include grid(5, 272mm, 46mm, 10mm, 13mm);
 
     .alf-template {
         background: #FFF;
