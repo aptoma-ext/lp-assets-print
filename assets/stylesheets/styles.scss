@@ -34,7 +34,9 @@ body {
         margin: 10.4pt 0 20.8pt 0;
     }
 
-    .body-text {
+    .alf-region {
+        overflow: hidden;
+
         p, span {
             font-family: "Guardian Text Egypt";
             text-rendering: optimizeLegibility;
@@ -45,10 +47,6 @@ body {
             letter-spacing: -.1mm;
             word-spacing: -.05mm;
         }
-    }
-
-    .alf-region {
-        overflow: hidden;
 
         h2 {
             font-family: "Guardian Sans";
