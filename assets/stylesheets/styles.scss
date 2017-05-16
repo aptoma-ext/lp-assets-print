@@ -38,6 +38,31 @@ body {
     .alf-region {
         overflow: hidden;
 
+        .body-text span {
+            text-align: justify;
+
+            &.row {
+                display: block;
+                text-align: justify;
+                text-align-last: justify;
+                width: 100%;
+            }
+
+            &.row:first-of-type {
+                text-indent: 3mm;
+            }
+
+            &.row:last-of-type {
+                text-align-last: auto;
+            }
+        }
+
+        .alf-is-overflow {
+            p {
+                margin-bottom: 0 !important;
+            }
+        }
+
         .alf-block, p, span {
             font-family: "Guardian Text Egypt";
             text-rendering: optimizeLegibility;
