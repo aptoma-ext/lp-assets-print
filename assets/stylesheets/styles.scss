@@ -38,7 +38,7 @@ body {
     .alf-region {
         overflow: hidden;
 
-        p, span {
+        .alf-block, p, span {
             font-family: "Guardian Text Egypt";
             text-rendering: optimizeLegibility;
             font-kerning: none;
