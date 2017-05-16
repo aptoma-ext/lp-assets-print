@@ -59,11 +59,12 @@ body {
         }
 
         blockquote {
+            margin: 0;
+
             p, small {
                 font-family: "Guardian Sans";
                 font-size: 4.7mm;
                 line-height: 5.2mm;
-                margin: 0;
             }
         }
     }
