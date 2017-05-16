@@ -1,0 +1,24 @@
+.rel {
+    position: relative;
+}
+
+.pos--abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pos--bottom {
+    top: auto;
+    bottom: 0;
+}
+
+$shadow-width: 1px;
+
+.text--bright {
+    color: #FFF;
+    text-shadow: -$shadow-width -$shadow-width 0 #000,
+    $shadow-width -$shadow-width 0 #000,
+    -$shadow-width $shadow-width 0 #000,
+    $shadow-width $shadow-width 0 #000
+}
