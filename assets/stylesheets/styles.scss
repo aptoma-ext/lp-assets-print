@@ -2,6 +2,8 @@
 @import "_fontface";
 @import "_utils";
 
+$base-line-height: 10.4pt;
+
 html, body, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -20,12 +22,12 @@ body {
 .alf-chrome {
     background: #FFF;
     overflow: hidden;
-    line-height: 10.4pt;
+    line-height: $base-line-height;
 }
 
 .alf-rev-#{$alf-revision} {
     font-family: Arial;
-    line-height: 10.4pt;
+    line-height: $base-line-height;
 
     @include grid(5, 272mm, 46mm, 10mm, 13mm);
 
@@ -38,7 +40,7 @@ body {
         font-weight: 800;
         font-size: 52pt;
         line-height: 52pt;
-        margin: 10.4pt 0 20.8pt 0;
+        margin: $base-line-height 0 ($base-line-height * 2) 0;
     }
 
     .alf-region {
@@ -52,6 +54,7 @@ body {
                 text-align: justify;
                 text-align-last: justify;
                 width: 100%;
+                height: $base-line-height;
             }
 
             &.row:first-of-type {
@@ -75,16 +78,19 @@ body {
             font-kerning: none;
             font-weight: normal;
             font-size: 8.4pt;
-            line-height: 10.4pt;
+            line-height: $base-line-height;
             letter-spacing: -.1mm;
             word-spacing: -.05mm;
         }
 
+        // Only works for single-line titles
+        // How to handle multi-line titles in a good way?
         h2 {
             font-family: "Guardian Sans";
             font-weight: 800;
             font-size: 12pt;
             line-height: 13pt;
+            height: 13pt;
             margin-top: 6pt;
             margin-bottom: 1.8pt;
             text-indent: 0;
