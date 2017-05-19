@@ -110,6 +110,10 @@ body {
             margin-top: 6pt;
             margin-bottom: 1.8pt;
             text-indent: 0;
+
+            + .alf-block .row {
+                text-indent: 0 !important;
+            }
         }
 
         blockquote {
