@@ -22,3 +22,7 @@ $shadow-width: 1px;
     -$shadow-width $shadow-width 0 #000,
     $shadow-width $shadow-width 0 #000
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
