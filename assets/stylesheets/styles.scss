@@ -43,11 +43,6 @@ body {
         margin: $base-line-height 0 ($base-line-height * 2) 0;
     }
 
-    .alf-is-overflow {
-        // Just temporary to make it easier to spot overflow
-        background: #CECECE;
-    }
-
     .alf-region {
         overflow: hidden;
 
