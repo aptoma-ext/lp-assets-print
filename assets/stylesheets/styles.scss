@@ -50,8 +50,10 @@ body {
     }
 
     .title-small {
-        font-size: 34pt;
-        line-height: 1em;
+        h1 {
+            font-size: 34pt;
+            line-height: 1em;
+        }
     }
 
     .alf-region {
