@@ -45,8 +45,13 @@ body {
         font-family: "Guardian Egypt";
         font-weight: 800;
         font-size: 52pt;
-        line-height: 52pt;
+        line-height: 1em;
         margin: $base-line-height 0 ($base-line-height * 2) 0;
+    }
+
+    .title-small {
+        font-size: 34pt;
+        line-height: 1em;
     }
 
     .alf-region {
