@@ -35,7 +35,7 @@ body {
     font-family: Arial;
     line-height: $base-line-height;
 
-    @include grid(5, 272mm, 46mm, 10mm, 13mm);
+    @include grid(5, 246mm, 46mm, 0, 0);
 
     .alf-template {
         background: #FFF;
@@ -47,6 +47,12 @@ body {
         font-size: 52pt;
         line-height: 1em;
         margin: $base-line-height 0 ($base-line-height * 2) 0;
+    }
+
+    .headline-large {
+        h1 {
+            font-size: 72pt;
+        }
     }
 
     .title-small {
@@ -161,4 +167,22 @@ body {
             margin-top: 1mm;
         }
     }
+
+    .section {
+        font-family: "Guardian Sans";
+        font-weight: 800;
+        color: rgb(1, 102, 179);
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        text-transform: uppercase;
+        padding: 4pt 0 2pt 0;
+    }
+
+    .byline {
+        font-family: "Guardian Sans";
+        font-weight: 800;
+        padding-bottom: 12pt;
+    }
+
+    @import "_factbox";
 }
