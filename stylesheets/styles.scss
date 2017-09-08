@@ -35,7 +35,7 @@ body {
     font-family: Arial;
     line-height: $base-line-height;
 
-    @include grid(5, 246mm, 46mm, 0, 0);
+    @include grid(5, 246mm, 46mm, 0, 13mm);
 
     .alf-template {
         background: #FFF;
