@@ -49,22 +49,6 @@ body {
         margin: $base-line-height 0 ($base-line-height * 2) 0;
     }
 
-    .headline-large {
-        h1 {
-            font-size: 72pt;
-            line-height: 0.9em;
-            font-family: "Guardian Sans XCond";
-            font-weight: 800;
-        }
-    }
-
-    .text-intro {
-        font-family: "Guardian Text Egypt";
-        font-size: 11pt;
-        line-height: 1.1em;
-        font-weight: normal;
-    }
-
     .title-small {
         h1 {
             font-size: 48pt;
@@ -195,4 +179,5 @@ body {
     }
 
     @import "_factbox";
+    @import "_templates";
 }
