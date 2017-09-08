@@ -25,7 +25,9 @@
 
     .dp-fact-box-content {
         column-count: 2;
+        -webkit-column-count: 2;
         column-gap: 4mm;
+        -webkit-column-gap: 4mm;
         font-family: "Guardian Text Egypt";
         text-rendering: optimizeLegibility;
         font-kerning: none;
