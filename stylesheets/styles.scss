@@ -52,7 +52,17 @@ body {
     .headline-large {
         h1 {
             font-size: 72pt;
+            line-height: 0.9em;
+            font-family: "Guardian Sans XCond";
+            font-weight: 800;
         }
+    }
+
+    .text-intro {
+        font-family: "Guardian Text Egypt";
+        font-size: 11pt;
+        line-height: 1.1em;
+        font-weight: normal;
     }
 
     .title-small {
