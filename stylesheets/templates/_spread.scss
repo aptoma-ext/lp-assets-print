@@ -1,4 +1,4 @@
-.fullpage-1 {
+.spread {
     .headline-large {
         h1 {
             font-size: 90pt;
@@ -13,5 +13,12 @@
         font-size: 11pt;
         line-height: 1.1em;
         font-weight: normal;
+    }
+}
+
+.fact-box {
+    .dp-fact-box-content {
+        column-count: initial;
+        -webkit-column-count: initial;
     }
 }

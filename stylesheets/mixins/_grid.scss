@@ -35,7 +35,7 @@
         }
 
         .alf-col-#{$i} {
-            left: $horMargin + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+            left: ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
         }
 
         .alf-colspan-#{$i} {
@@ -43,7 +43,9 @@
         }
     }
 
-    @for $i from $columns through ($columns * 2) {
+    $start: $columns + 1;
+
+    @for $i from $start through ($columns * 2) {
         $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
         $outerWidth: $width + ($horMargin * 2);
 
@@ -52,7 +54,7 @@
         }
 
         .alf-col-#{$i} {
-            left: $horMargin + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+            left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
         }
 
         .alf-colspan-#{$i} {
