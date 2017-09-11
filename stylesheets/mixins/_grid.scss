@@ -41,6 +41,11 @@
         .alf-colspan-#{$i} {
             width: $width;
         }
+
+        .alf-overlay-colspan-#{$i} {
+            z-index: 10000;
+            width: $width;
+        }
     }
 
     $start: $columns + 1;
@@ -58,6 +63,11 @@
         }
 
         .alf-colspan-#{$i} {
+            width: $width + ($horMargin * 2);
+        }
+
+        .alf-overlay-colspan-#{$i} {
+            z-index: 10000;
             width: $width + ($horMargin * 2);
         }
     }

@@ -22,3 +22,12 @@
         -webkit-column-count: initial;
     }
 }
+
+.spread-2 {
+    .headline-large {
+        h1 {
+            background: #FFF;
+            display: inline;
+        }
+    }
+}
