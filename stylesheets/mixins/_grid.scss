@@ -58,7 +58,7 @@
         }
 
         .alf-colspan-#{$i} {
-            width: $width;
+            width: $width + ($horMargin * 2);
         }
     }
 }
