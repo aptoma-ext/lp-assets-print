@@ -15,3 +15,49 @@
         font-weight: normal;
     }
 }
+
+.fullpage-meninger {
+    background: #eae7e5;
+
+    .headline-large {
+        h1 {
+            font-family: "Guardian Egypt";
+            font-weight: 800;
+            font-size: 42pt;
+            border-top: 1px solid #CCC;
+            padding-top: 10pt;
+            padding-bottom: 15pt;
+            border-bottom: 2px solid #CCC;
+        }
+    }
+
+    .text-intro {
+        font-family: "Guardian Text Egypt";
+        font-size: 22pt;
+        line-height: 1.1em;
+        font-weight: normal;
+        padding-bottom: 18pt;
+    }
+
+    .quote-box {
+        background: #feca0a;
+        height: 400px;
+    }
+
+    .alf-block-is-first {
+        .row {
+            text-indent: 0 !important;
+        }
+
+        .row:first-child:first-letter {
+            font-family: "Courier New";
+            color: #000;
+            float: left;
+            font-size: 80pt;
+            line-height: 0.6em;
+            padding: 0;
+            margin: 2pt 2pt 0 0;
+            font-weight: lighter;
+        }
+    }
+}
