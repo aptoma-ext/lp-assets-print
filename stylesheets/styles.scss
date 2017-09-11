@@ -170,6 +170,7 @@ body {
         border-bottom: 1px solid #000;
         text-transform: uppercase;
         padding: 4pt 0 2pt 0;
+        margin-bottom: 10px;
     }
 
     .byline {
@@ -200,6 +201,10 @@ body {
             background-size: 10px 10px;
             background-position-x: 4px;
         }
+    }
+
+    .bottom-margin {
+        margin-bottom: 10pt;
     }
 
     @import "_factbox";

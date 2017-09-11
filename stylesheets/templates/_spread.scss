@@ -5,14 +5,18 @@
             line-height: 0.9em;
             font-family: "Guardian Sans XCond";
             font-weight: 800;
+            text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
+            -webkit-text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
+            margin-bottom: 12px;
         }
     }
 
     .text-intro {
         font-family: "Guardian Text Egypt";
-        font-size: 11pt;
+        font-size: 18pt;
         line-height: 1.1em;
         font-weight: normal;
+        margin-bottom: 20px;
     }
 }
 
@@ -38,9 +42,5 @@
         font-size: 18pt;
         line-height: 1.1em;
         font-weight: normal;
-    }
-
-    .bottom-margin {
-        margin-bottom: 10pt;
     }
 }
