@@ -1,25 +1,40 @@
+& {
+    height: 100%;
+}
+
 .two-fifths {
     background: #eae7e5;
-    padding: 10pt 15pt;
+    padding: 10pt 40pt 10pt 15pt;
+    height: 100%;
+
+    .alf-region {
+        p {
+            font-size: 9.3pt;
+            line-height: 1.3em;
+            text-indent: 5mm;
+        }
+
+        .alf-block-is-first {
+            text-indent: 0;
+
+            &:first-letter {
+                font-family: "Guardian Egypt";
+                font-weight: 100;
+                color: #000;
+                float: left;
+                font-size: 99pt;
+                line-height: 0.6em;
+                padding: 0;
+                margin: 10pt 2pt 0 0;
+            }
+        }
+    }
 
     .headline-large {
         h1 {
             font-family: "Guardian Egypt";
             font-weight: 400;
             font-size: 32pt;
-        }
-    }
-
-    .alf-block-is-first {
-        .row:first-child:first-letter {
-            font-family: "Guardian Egypt";
-            font-weight: 100;
-            color: #000;
-            float: left;
-            font-size: 80pt;
-            line-height: 0.6em;
-            padding: 0;
-            margin: 10pt 2pt 0 0;
         }
     }
 }
