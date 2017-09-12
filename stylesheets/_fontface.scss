@@ -16,6 +16,20 @@
 @font-face {
   font-family: 'Guardian Egypt';
   font-style: normal;
+  font-weight: 100;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp/Guardian%20Egyp-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Guardian Egypt';
+  font-style: normal;
+  font-weight: 200;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp/Guardian%20Egyp-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Guardian Egypt';
+  font-style: normal;
   font-weight: 800;
   src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianEgyp-Black.otf') format('opentype');
 }

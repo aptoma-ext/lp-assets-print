@@ -32,10 +32,10 @@
     }
 
     .text-intro {
-        font-family: "Guardian Text Egypt";
-        font-size: 22pt;
+        font-family: "Guardian Egypt";
+        font-weight: 200;
+        font-size: 25pt;
         line-height: 1.1em;
-        font-weight: normal;
         padding-bottom: 18pt;
     }
 
@@ -50,14 +50,14 @@
         }
 
         .row:first-child:first-letter {
-            font-family: "Courier New";
+            font-family: "Guardian Egypt";
+            font-weight: 100;
             color: #000;
             float: left;
             font-size: 80pt;
             line-height: 0.6em;
             padding: 0;
-            margin: 2pt 2pt 0 0;
-            font-weight: lighter;
+            margin: 10pt 2pt 0 0;
         }
     }
 
