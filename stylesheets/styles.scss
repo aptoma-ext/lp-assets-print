@@ -209,7 +209,9 @@ body {
 
     .image-side-by-side {
         display: flex;
+        display: -webkit-flex;
         flex-direction: row;
+        -webkit-flex-direction: row;
 
         .image {
             display: flex;
