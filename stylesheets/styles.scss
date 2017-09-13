@@ -213,12 +213,15 @@ body {
 
         .image {
             display: flex;
+            display: -webkit-flex;
             flex: 68;
+            -webkit-flex: 68;
         }
 
         .caption {
             display: block;
             flex: 32;
+            -webkit-flex: 32;
             background: #3e3e3f;
             color: #FFF;
             height: 100%;
