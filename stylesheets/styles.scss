@@ -207,6 +207,44 @@ body {
         margin-bottom: 10pt;
     }
 
+    .image-side-by-side {
+        display: flex;
+        flex-direction: row;
+
+        .image {
+            display: flex;
+            flex: 68;
+        }
+
+        .caption {
+            display: block;
+            flex: 32;
+            background: #3e3e3f;
+            color: #FFF;
+            height: 100%;
+
+            .overlay-caption {
+                font-size: 15pt;
+                line-height: 1.1em;
+                hyphens: auto;
+                padding: 2mm;
+
+                &:before {
+                    display: block;
+                    content: "\201D";
+                    font-family: "Arial Black";
+                    font-weight: 400;
+                    width: 40mm;
+                    height: 7mm;
+                    color: #feca0a;
+                    font-size: 95pt;
+                    margin-top: 8mm;
+                }
+            }
+
+        }
+    }
+
     @import "_factbox";
     @import "_templates";
 }
