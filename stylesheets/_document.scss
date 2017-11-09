@@ -1,0 +1,35 @@
+.alf-guides {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    table {
+        display: none;
+    }
+}
+
+.lp-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    > div {
+        background: transparent;
+        height: 10.4pt;
+    }
+}
+
+.lp-grid-document {
+    > div {
+        border-top: 1px solid red;
+    }
+}
+
+.lp-grid-baseline {
+    top: 6.675pt;
+
+    > div {
+        border-top: 1px solid blue;
+    }
+}
