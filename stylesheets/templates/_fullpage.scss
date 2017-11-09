@@ -1,19 +1,25 @@
 .fullpage {
-    .headline-large {
+    .headline {
         h1 {
-            font-size: 82.5pt;
-            line-height: 0.820em;
+            font-size: 94.2pt;
+            line-height: 83.2pt;
+            letter-spacing: -2pt;
             font-family: "Guardian Sans XCond";
             font-weight: 800;
-            margin-top: 0;
+            margin-top: -4px;
+            margin-bottom: 24.525pt;
         }
     }
 
     .text-intro {
         font-family: "Guardian Text Egypt";
-        font-size: 11pt;
-        line-height: 1.1em;
+        font-size: 13.6pt;
+        line-height: 15.6pt;
         font-weight: normal;
+    }
+
+    figure {
+        margin: 0;
     }
 }
 
