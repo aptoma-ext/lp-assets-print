@@ -23,6 +23,12 @@
     }
 }
 
+@media print {
+    .fullpage .headline h1 {
+        line-height: 0.3 !important;
+    }
+}
+
 .fullpage-meninger {
     background: #eae7e5;
 
