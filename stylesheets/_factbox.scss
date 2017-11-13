@@ -3,11 +3,13 @@
     padding-top: 3mm;
     background: rgb(233, 227, 218);
 
-    .dp-fact-box-title {
-        font-family: "Guardian Sans";
-        font-weight: bold;
-        font-size: 16pt;
+    [itemprop=headline] {
+        font-family: "Guardian Sans Cond";
+        font-weight: 900;
+        font-size: 14.9pt;
+        line-height: 15.6pt;
         padding-left: 1mm;
+        padding-bottom: 13pt;
     }
 
     [itemprop=articleBody] {
@@ -15,7 +17,7 @@
         -webkit-column-count: 2;
         column-gap: 4mm;
         -webkit-column-gap: 4mm;
-        font-family: "Guardian Text Egypt";
+        font-family: "Guardian TextSans";
         text-rendering: optimizeLegibility;
         font-kerning: none;
         font-weight: normal;
