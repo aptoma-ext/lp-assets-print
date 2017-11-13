@@ -1,3 +1,4 @@
+@import "_variables";
 @import "mixins/_grid";
 @import "_fontface";
 @import "_utils";
@@ -163,10 +164,13 @@ body {
         }
     }
 
-    .section {
-        font-family: "Guardian Sans";
+    .section, .topic {
+        font-size: 13pt;
+        line-height: 13.6pt;
+        font-family: "Guardian Sans Cond";
         font-weight: 800;
         color: rgb(1, 102, 179);
+        color: $dn-dark-blue;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
         text-transform: uppercase;
@@ -175,9 +179,17 @@ body {
     }
 
     .byline {
-        font-family: "Guardian Sans";
+        font-family: "Guardian Sans Cond";
+        font-size: 13.6pt;
+        line-height: 13.6pt;
         font-weight: 800;
-        padding-bottom: 12pt;
+    }
+
+    .location {
+        font-family: "Guardian Sans Cond";
+        font-size: 13.6pt;
+        line-height: 13.6pt;
+        font-weight: normal;
     }
 
     .the-end {

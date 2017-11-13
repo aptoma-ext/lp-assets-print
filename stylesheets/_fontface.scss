@@ -82,6 +82,27 @@
   src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianSans-Ultra-It.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Guardian TextSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20TextSans_1/Guardian%20TextSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Guardian TextSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20TextSans/Guardian%20TextSans-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Guardian TextSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20TextSans/Guardian%20TextSans-Bold.otf') format('opentype');
+}
+
 /* Guardian Sans Xcond */
 @font-face {
   font-family: 'Guardian Sans XCond';
@@ -102,6 +123,13 @@
   font-style: normal;
   font-weight: 800;
   src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20XCond_1/Guardian%20Sans%20XCond-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Guardian Sans Cond';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond_1/Guardian%20Sans%20Cond-Regular.otf') format('opentype');
 }
 
 @font-face {
