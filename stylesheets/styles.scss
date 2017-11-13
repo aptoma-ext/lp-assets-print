@@ -106,21 +106,21 @@ body {
             word-spacing: -.05mm;
         }
 
-        .alf-block-is-first {
-            .row {
-                text-indent: 0 !important;
-            }
+        // .alf-block-is-first {
+        //     .row {
+        //         text-indent: 0 !important;
+        //     }
 
-            .row:first-child:first-letter {
-                color: #000;
-                float: left;
-                font-size: 31.6pt;
-                line-height: 0.6em;
-                padding: 0;
-                margin: 8.7pt 2pt 0 0;
-                font-weight: 800;
-            }
-        }
+        //     .row:first-child:first-letter {
+        //         color: #000;
+        //         float: left;
+        //         font-size: 31.6pt;
+        //         line-height: 0.6em;
+        //         padding: 0;
+        //         margin: 8.7pt 2pt 0 0;
+        //         font-weight: 800;
+        //     }
+        // }
 
         // Only works for single-line titles
         // How to handle multi-line titles in a good way?
