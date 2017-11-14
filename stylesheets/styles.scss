@@ -1,15 +1,9 @@
 @import "_variables";
 @import "mixins/_grid";
 @import "_fontface";
-@import "_utils";
 @import "_document";
 
 $base-line-height: 10.4pt;
-
-html, body, p, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
 
 .alf-break {
     display: block;
@@ -23,10 +17,6 @@ html, body, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-body {
-    background: #000;
-}
-
 .alf-chrome {
     background: #FFF;
     overflow: hidden;
@@ -36,6 +26,13 @@ body {
 .alf-rev-#{$revision} {
     font-family: Arial;
     line-height: $base-line-height;
+
+    p, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    @import "_utils";
 
     @include grid(5, 246mm, 46mm, 0, 13mm);
 
@@ -102,7 +99,6 @@ body {
             font-weight: normal;
             font-size: 8.4pt;
             line-height: $base-line-height;
-            letter-spacing: -.1mm;
             word-spacing: -.05mm;
         }
 
