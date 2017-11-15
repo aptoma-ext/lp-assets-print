@@ -37,7 +37,8 @@
     }
 
     .lead-asset {
-        margin-bottom: 3.7pt; // 3.725?
+        // Push down content below at least one line
+        margin-bottom: $base-line-height;
     }
 }
 
