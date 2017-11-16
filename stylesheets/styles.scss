@@ -198,7 +198,8 @@
         font-weight: normal;
         font-size: 8.4pt;
         line-height: 10.4pt;
-        margin-top: $base-line-height;
+        margin-top: $document-grid-offset;
+        padding-top: $base-line-height - $document-grid-offset;
     }
 
     ul {
