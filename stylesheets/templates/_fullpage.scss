@@ -12,14 +12,18 @@
             font-weight: 800;
             margin-top: 0;
             margin-bottom: 14.125pt;
+            margin-top: -5.7pt;
         }
     }
 
     .text-intro {
-        font-family: "Guardian Text Egypt";
+        font-family: "Guardian Egypt";
         font-size: 13.6pt;
         line-height: 15.6pt;
         font-weight: normal;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
     }
 
     figure {
