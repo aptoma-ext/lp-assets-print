@@ -1,8 +1,4 @@
 .fullpage {
-    .alf-region {
-        margin-top: -0.4pt;
-    }
-
     .headline {
         h1 {
             font-size: 94.2pt;
@@ -21,9 +17,9 @@
         font-size: 13.6pt;
         line-height: 15.6pt;
         font-weight: normal;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        hyphens: auto;
+        -webkit-hyphens: manual;
+        -moz-hyphens: manual;
+        hyphens: manual;
         margin-bottom: $base-line-height;
     }
 
