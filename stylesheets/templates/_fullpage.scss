@@ -24,6 +24,7 @@
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
+        margin-bottom: $base-line-height * 2;
     }
 
     figure {
@@ -39,7 +40,7 @@
             font-family: "Guardian TextSans";
             font-weight: bold;
             font-size: 8.4pt;
-            line-height: 10.4pt;
+            line-height: $base-line-height;
             padding: 2pt;
         }
     }
