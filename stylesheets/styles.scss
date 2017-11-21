@@ -33,6 +33,15 @@
         padding: 0;
     }
 
+    // We can't have margins on the first/top element. It looks strange
+    .alf-region {
+        h1, h2, h3, h4, h5, h6, div {
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
     @import "_utils";
 
     @include grid(5, 246mm, 46mm, 0, 13mm);
