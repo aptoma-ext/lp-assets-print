@@ -22,7 +22,7 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        height: 10.4pt;
+        height: $base-line-height;
     }
 }
 
@@ -33,7 +33,7 @@
 }
 
 .lp-grid-baseline {
-    top: 6.675pt;
+    top: $document-grid-offset;
 
     > div {
         border-top: 0.01mm solid blue;
