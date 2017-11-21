@@ -77,6 +77,7 @@
                 -webkit-text-align-last: justify;
                 width: 100%;
                 height: $base-line-height;
+                overflow: hidden; // this is just to hide the current bug with text-flow
             }
 
             &.row:first-of-type {
