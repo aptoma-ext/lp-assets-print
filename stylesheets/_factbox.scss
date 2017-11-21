@@ -9,14 +9,10 @@
         font-size: 14.9pt;
         line-height: 15.6pt;
         padding-left: 1mm;
-        padding-bottom: 13pt;
+        padding-bottom: 9.1pt;
     }
 
     [itemprop=articleBody] {
-        column-count: 2;
-        -webkit-column-count: 2;
-        column-gap: 4mm;
-        -webkit-column-gap: 4mm;
         font-family: "Guardian TextSans";
         text-rendering: optimizeLegibility;
         font-kerning: none;
@@ -25,5 +21,14 @@
         line-height: 10.4pt;
         letter-spacing: -0.1mm;
         word-spacing: -0.05mm;
+    }
+
+    &.alf-colspan-2 {
+        [itemprop=articleBody] {
+            column-count: 2;
+            -webkit-column-count: 2;
+            column-gap: 4mm;
+            -webkit-column-gap: 4mm;
+        }
     }
 }

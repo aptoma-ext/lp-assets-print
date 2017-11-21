@@ -26,19 +26,19 @@
     figure {
         margin: 0;
         position: relative;
+    }
 
-        figcaption {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 136pt;
-            background: #FFF;
-            font-family: "Guardian TextSans";
-            font-weight: bold;
-            font-size: 8.4pt;
-            line-height: $base-line-height;
-            padding: 2pt;
-        }
+    figcaption, .figcaption {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 136pt;
+        background: #FFF;
+        font-family: "Guardian TextSans";
+        font-weight: bold;
+        font-size: 8.4pt;
+        line-height: $base-line-height;
+        padding: 2pt;
     }
 }
 
