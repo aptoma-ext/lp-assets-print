@@ -275,4 +275,27 @@
 
     @import "_factbox";
     @import "_templates";
+
+    figcaption, .figcaption {
+        background: #FFF;
+        font-family: "Guardian TextSans";
+        font-weight: bold;
+        font-size: 8.4pt;
+        line-height: $base-line-height;
+        padding: 2pt;
+    }
+
+    .picture {
+        position: relative;
+    }
+
+    .caption-inline {
+        figcaption, .figcaption {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 136pt;
+        }
+    }
+
 }
