@@ -59,7 +59,7 @@
         }
 
         .alf-col-#{$i} {
-            left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+            left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 2));
         }
 
         .alf-colspan-#{$i} {
