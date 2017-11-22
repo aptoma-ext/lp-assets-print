@@ -289,12 +289,19 @@
         position: relative;
     }
 
-    .caption-inline {
+    .caption-inline, .caption-inline-left {
         figcaption, .figcaption {
             position: absolute;
             bottom: 0;
             right: 0;
             width: 136pt;
+        }
+    }
+
+    .caption-inline-left {
+        figcaption, .figcaption {
+            right: auto;
+            left: 0;
         }
     }
 
