@@ -33,6 +33,20 @@
         padding: 0;
     }
 
+    .lead-asset {
+        position: relative;
+
+        > div {
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     // We can't have margins on the first/top element. It looks strange
     .alf-region {
         h1, h2, h3, h4, h5, h6, div {
@@ -289,7 +303,9 @@
         position: relative;
     }
 
-    .caption-inline, .caption-inline-left {
+    .caption-inline,
+    .caption-inline-left,
+    .caption-inline-top-left {
         figcaption, .figcaption {
             position: absolute;
             bottom: 0;
@@ -302,6 +318,15 @@
         figcaption, .figcaption {
             right: auto;
             left: 0;
+        }
+    }
+
+    .caption-inline-top-left {
+        figcaption, .figcaption {
+            right: auto;
+            left: 0;
+            top: 0;
+            bottom: auto;
         }
     }
 
