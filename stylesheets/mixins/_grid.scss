@@ -51,7 +51,7 @@
     $start: $columns + 1;
 
     @for $i from $start through ($columns * 2) {
-        $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
+        $width: ($columnWidth * $i) + ($columnSpacing * ($i - 2));
         $outerWidth: $width + ($horMargin * 2);
 
         .alf-cols-#{$i} {
