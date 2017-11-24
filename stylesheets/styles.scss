@@ -145,13 +145,14 @@
         h2, h3 {
             font-family: "Guardian Sans Cond";
             font-weight: 800;
-            font-size: 11pt;
+            font-size: align(11, pt);
             line-height: $base-line-height;
             height: $base-line-height;
-            margin-top: align(8.61, pt);
-            margin-bottom: align(1.8, pt);
+            margin-top: 8.61pt;
+            margin-bottom: 1.8pt;
             text-indent: 0;
             letter-spacing: -0.2pt;
+            padding: 0;
 
             + .alf-block .row {
                 text-indent: 0 !important;
