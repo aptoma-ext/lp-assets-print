@@ -119,9 +119,10 @@
             text-rendering: optimizeLegibility;
             font-kerning: none;
             font-weight: normal;
-            font-size: 8.4pt;
+            font-size: $base-font-size;
             line-height: $base-line-height;
-            word-spacing: -.05mm;
+            word-spacing: align(-0.09, pt);
+            letter-spacing: align(-0.09, pt);
         }
 
         .alf-block-is-first {
@@ -217,7 +218,7 @@
         border-top: 0.25pt solid #CCC;
         font-family: "Guardian TextSans";
         font-weight: normal;
-        font-size: 8.4pt;
+        font-size: $base-font-size;
         line-height: align(10.4, pt);
         margin-top: $document-grid-offset;
         padding-top: 3.025pt;
@@ -294,7 +295,7 @@
         background: #FFF;
         font-family: "Guardian TextSans";
         font-weight: bold;
-        font-size: 8.4pt;
+        font-size: $base-font-size;
         line-height: $base-line-height;
         padding: align(2, pt);
     }
