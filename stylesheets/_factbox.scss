@@ -1,15 +1,16 @@
 .fact-box {
-    border-top: 6.675pt solid $dn-blue;
+    border-top: align(6.675, pt) solid $dn-blue;
     background-color: $dn-neutral-tint;
     margin-bottom: $base-line-height;
+
     [itemprop=headline] {
         font-family: "Guardian Sans Cond";
         font-weight: 900;
         font-size: 14.9pt;
-        line-height: 15.6pt;
-        padding-left: 5.4pt;
-        padding-bottom: 1.2pt;
-        padding-top: 2.2pt;
+        line-height: align(15.6, pt);
+        padding-left: align(5.4, pt);
+        padding-bottom: align(1.2, pt);
+        padding-top: align(2.2, pt);
     }
 
     [itemprop=articleBody] {
@@ -18,8 +19,8 @@
         font-kerning: none;
         font-weight: normal;
         font-size: 8.4pt;
-        line-height: 10.4pt;
-        padding: 5.4pt;
+        line-height: $base-line-height;
+        padding: align(5.4, pt);
     }
 
 }

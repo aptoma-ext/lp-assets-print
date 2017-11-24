@@ -2,20 +2,20 @@
     .headline {
         h1 {
             font-size: 94.2pt;
-            line-height: 83.2pt;
+            line-height: align(83.2, pt);
             letter-spacing: -1.8pt;
             font-family: "Guardian Sans XCond";
             font-weight: 800;
             margin-top: 0;
-            margin-bottom: 14.125pt;
-            margin-top: -5.5pt;
+            margin-bottom: align(14.125, pt);
+            margin-top: align(-5.5, pt);
         }
     }
 
     .text-intro {
         font-family: "Guardian Egypt";
         font-size: 13.6pt;
-        line-height: 15.6pt;
+        line-height: align(15.6, pt);
         font-weight: normal;
         -webkit-hyphens: auto;
         -moz-hyphens: auto;

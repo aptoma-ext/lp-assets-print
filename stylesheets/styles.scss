@@ -145,10 +145,10 @@
             font-family: "Guardian Sans Cond";
             font-weight: 800;
             font-size: 11pt;
-            line-height: 10.4pt;
-            height: 10.4pt;
-            margin-top: 8.6pt;
-            margin-bottom: 1.8pt;
+            line-height: $base-line-height;
+            height: $base-line-height;
+            margin-top: align(8.61, pt);
+            margin-bottom: align(1.8, pt);
             text-indent: 0;
             letter-spacing: -0.2pt;
 
@@ -163,7 +163,7 @@
             p, small {
                 font-family: "Guardian Sans";
                 font-size: 13.3pt;
-                line-height: 15pt;
+                line-height: align(15, pt);
             }
 
             small {
@@ -184,31 +184,31 @@
 
     .section, .topic {
         font-size: 13pt;
-        line-height: 13.6pt;
+        line-height: $medium-line-height;
         font-family: "Guardian Sans Cond";
         font-weight: 800;
         color: $dn-dark-blue;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #000;
+        border-top: align(0.25, pt) solid #000;
+        border-bottom: align(0.25, pt) solid #000;
         text-transform: uppercase;
-        padding: 3.8pt 0 2pt 0;
+        padding: align(3.8, pt) 0 align(2, pt) 0;
         margin: 0;
     }
 
     .byline {
         font-family: "Guardian Sans Cond";
-        font-size: 13.6pt;
-        line-height: 13.6pt;
+        font-size: $medium-font-size;
+        line-height: $medium-line-height;
         font-weight: 800;
-        margin-top: 3pt;
+        margin-top: align(3, pt);
     }
 
     .location {
         font-family: "Guardian Sans Cond";
-        font-size: 13.6pt;
-        line-height: 13.6pt;
+        font-size: $medium-font-size;
+        line-height: $medium-line-height;
         font-weight: normal;
-        padding-bottom: 10pt;
+        padding-bottom: align(10, pt);
     }
 
     .the-end {
@@ -216,7 +216,7 @@
         font-family: "Guardian TextSans";
         font-weight: normal;
         font-size: 8.4pt;
-        line-height: 10.4pt;
+        line-height: align(10.4, pt);
         margin-top: $document-grid-offset;
         padding-top: 3.025pt;
     }
@@ -238,7 +238,7 @@
     }
 
     .bottom-margin {
-        margin-bottom: 10pt;
+        margin-bottom: align(10, pt);
     }
 
     .image-side-by-side {
@@ -294,7 +294,7 @@
         font-weight: bold;
         font-size: 8.4pt;
         line-height: $base-line-height;
-        padding: 2pt;
+        padding: align(2, pt);
     }
 
     .picture {
@@ -308,7 +308,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 136pt;
+            width: align(136, pt);
         }
     }
 
