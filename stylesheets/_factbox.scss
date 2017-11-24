@@ -13,7 +13,6 @@
         padding-top: align(2.2, pt);
         background: #CCC;
         outline: 1px solid #000;
-        -ro-line-snap: baseline;
     }
 
     [itemprop=articleBody] {
@@ -24,7 +23,6 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         padding: align(5.4, pt);
-        -ro-line-snap: baseline;
     }
 
 }
