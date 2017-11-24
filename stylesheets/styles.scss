@@ -93,7 +93,7 @@
             }
 
             &.row:first-of-type {
-                text-indent: 3mm;
+                text-indent: $text-indent;
             }
 
             &.row:last-of-type {
