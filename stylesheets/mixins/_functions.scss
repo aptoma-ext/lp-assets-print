@@ -1,0 +1,13 @@
+@function align($value, $unit) {
+    $mod: 1;
+
+    @if $unit == 'pt' {
+        $mod: 0.03;
+    }
+
+    @if $unit == 'mm' {
+        $mod: 0.01058332;
+    }
+
+    @return (round($value / $mod) * $mod) + $unit;
+  }
