@@ -117,6 +117,8 @@
         .alf-block, p, span {
             font-family: "Guardian Text Egypt";
             text-rendering: optimizeLegibility;
+            color: $black;
+            // none disables the internally stored kerning info, do we want this?
             font-kerning: none;
             font-weight: normal;
             font-size: $base-font-size;
