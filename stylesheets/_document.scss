@@ -28,7 +28,7 @@
 
 .lp-grid-document {
     > div {
-        border-top: 0.01mm solid red;
+        border-top: 0.04px solid red;
     }
 }
 
@@ -36,6 +36,6 @@
     top: $document-grid-offset;
 
     > div {
-        border-top: 0.01mm solid blue;
+        border-top: 0.04px solid blue;
     }
 }
