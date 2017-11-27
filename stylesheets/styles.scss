@@ -16,6 +16,29 @@
     line-height: $base-line-height;
 }
 
+.body-text span {
+    text-align: justify;
+
+    &.row {
+        display: block;
+        text-align: justify;
+        text-align-last: justify;
+        -webkit-text-align-last: justify;
+        width: 100%;
+        height: $base-line-height;
+        overflow: hidden; // this is just to hide the current bug with text-flow
+    }
+
+    &.row:first-of-type {
+        text-indent: $text-indent;
+    }
+
+    &.row:last-of-type {
+        text-align-last: auto;
+        -webkit-text-align-last: auto;
+    }
+}
+
 .alf-rev-#{$revision} {
     box-sizing: border-box;
     font-family: Arial;
@@ -78,29 +101,6 @@
     .alf-region {
         margin-top: align(-0.51, pt);
         overflow: hidden;
-
-        .body-text span {
-            text-align: justify;
-
-            &.row {
-                display: block;
-                text-align: justify;
-                text-align-last: justify;
-                -webkit-text-align-last: justify;
-                width: 100%;
-                height: $base-line-height;
-                overflow: hidden; // this is just to hide the current bug with text-flow
-            }
-
-            &.row:first-of-type {
-                text-indent: $text-indent;
-            }
-
-            &.row:last-of-type {
-                text-align-last: auto;
-                -webkit-text-align-last: auto;
-            }
-        }
 
         .body-text-bold {
             font-weight: bold;
