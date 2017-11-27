@@ -203,8 +203,11 @@
         text-transform: uppercase;
         padding: align(3.8, pt) 0 align(2, pt) 0;
         margin: 0;
-        // PDFreactor fix
-        -ro-transform: translateY(-20%);
+
+        figure {
+            // PDFreactor fix
+            -ro-transform: translateY(-20%);
+        }
     }
 
     .byline {
