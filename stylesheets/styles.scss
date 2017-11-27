@@ -145,7 +145,7 @@
         // Only works for single-line titles
         // How to handle multi-line titles in a good way?
         h2, h3 {
-            font-family: "Guardian Sans XCond";
+            font-family: "Guardian Sans Cond";
             font-weight: 800;
             font-size: align(11, pt);
             line-height: $base-line-height;
@@ -157,6 +157,8 @@
             padding: 0;
             padding-top: 0;
             padding-bottom: 0;
+            // This font has a whitespace issue in PDF reactor
+            -ro-transform: translateY(-3px);
 
             + .alf-block .row {
                 text-indent: 0 !important;
