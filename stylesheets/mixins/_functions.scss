@@ -1,13 +1,19 @@
-@function align($value, $unit) {
+@function align($value) {
     $mod: 1;
+    $number: strip-unit($value);
+    $unit: unit($value);
 
     @if $unit == 'pt' {
-        $value: $value / 0.75;
+        $number: $number / 0.75;
     }
 
     @if $unit == 'mm' {
-        $value: $value * 3.779528;
+        $number: $number * 3.779528;
     }
 
-    @return (round($value / 0.04) * 0.04) + px;
-  }
+    @return (round($number / 0.04) * 0.04) * 1px;
+}
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}

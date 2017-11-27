@@ -10,12 +10,12 @@
         font-family: "Guardian Sans Cond";
         font-weight: 900;
         font-size: 14.9pt;
-        line-height: align(15.6, pt);
-        height: align(15.6, pt);
+        line-height: align(15.6pt);
+        height: align(15.6pt);
         box-sizing: content-box;
-        padding-left: align(5.4, pt);
-        padding-bottom: align(1.2, pt);
-        padding-top: align(2.2, pt);
+        padding-left: align(5.4pt);
+        padding-bottom: align(1.2pt);
+        padding-top: align(2.2pt);
 
         p {
             // PDFreactor fix
@@ -31,7 +31,7 @@
         font-style: normal;
         font-size: $base-font-size;
         line-height: $base-line-height;
-        padding: align(4, pt) align(5.4, pt) align(5.4, pt) align(5.4, pt);
+        padding: align(4pt) align(5.4pt) align(5.4pt) align(5.4pt);
         letter-spacing: -0.06pt;
     }
 
@@ -43,15 +43,16 @@
     [itemprop=articleBody] {
         column-count: 2;
         column-gap: 4mm;
-        column-rule: 0.25pt solid #000;
-        column-rule: 0.25pt solid CMYK(0%, 0%, 0%, 0%);
+        column-rule: align(0.25pt) solid #000;
+        column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
         -webkit-column-count: 2;
         -webkit-column-gap: 4mm;
-        -webkit-column-rule: align(0.25, pt) solid CMYK(0%, 0%, 0%, 0%);
+        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
     }
 }
 
 .fact-box-fixed {
-    height: 263.72px !important;
+    height: 263.72px - (13.88px - 8.92px) !important;
+    height: document-lines(19);
 }
 
