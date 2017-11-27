@@ -4,6 +4,8 @@
     background-color: $dn-neutral-tint-cmyk;
     border-color: $dn-blue-cmyk;
     margin-bottom: $base-line-height;
+    line-height: $base-line-height;
+    -ro-line-grid: create;
     -ro-pdf-overprint-content: mode1;
 
     [itemprop=headline] {
@@ -33,6 +35,7 @@
         line-height: $base-line-height;
         padding: align(4pt) align(5.4pt) align(5.4pt) align(5.4pt);
         letter-spacing: -0.06pt;
+        -ro-line-snap: baseline;
     }
 
 }
