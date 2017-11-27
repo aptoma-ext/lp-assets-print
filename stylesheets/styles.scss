@@ -4,6 +4,10 @@
 @import "_fontface";
 @import "_document";
 
+body {
+    background: transparent;
+}
+
 .alf-break {
     display: block;
     height: 0;
@@ -11,7 +15,7 @@
 }
 
 .alf-chrome {
-    background: #FFF;
+    background: transparent;
     overflow: hidden;
     line-height: $base-line-height;
 }
@@ -81,7 +85,7 @@
     @include grid(5, 246mm, 46mm, 0, 13mm);
 
     .alf-template {
-        background: #FFF;
+        background: transparent;
     }
 
     h1 {
