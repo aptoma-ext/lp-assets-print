@@ -59,6 +59,7 @@ body {
     p, h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
+        color: CMYK(0%, 0%, 0%, 100%);
     }
 
     .lead-asset {
@@ -170,6 +171,7 @@ body {
             padding: 0;
             padding-top: 0;
             padding-bottom: 0;
+            color: CMYK(0%, 0%, 0%, 100%);
             // This font has a whitespace issue in PDF reactor
             -ro-transform: translateY(-3px);
 
