@@ -8,6 +8,8 @@
         font-weight: 900;
         font-size: 14.9pt;
         line-height: align(15.6, pt);
+        height: align(15.6, pt);
+        box-sizing: content-box;
         padding-left: align(5.4, pt);
         padding-bottom: align(1.2, pt);
         padding-top: align(2.2, pt);
@@ -46,6 +48,6 @@
 }
 
 .fact-box-fixed {
-    height: 273.2px !important;
+    height: 263.72px !important;
 }
 
