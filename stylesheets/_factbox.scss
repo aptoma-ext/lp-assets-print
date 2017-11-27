@@ -11,8 +11,11 @@
         padding-left: align(5.4, pt);
         padding-bottom: align(1.2, pt);
         padding-top: align(2.2, pt);
-        // PDFreactor fix
-        -ro-transform: translateY(-20%);
+
+        p {
+            // PDFreactor fix
+            -ro-transform: translateY(-20%);
+        }
     }
 
     [itemprop=articleBody] {
