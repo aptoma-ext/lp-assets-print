@@ -216,6 +216,7 @@ body {
         color: $dn-dark-blue;
         border-top: align(0.25, pt) solid #000;
         border-bottom: align(0.25, pt) solid #000;
+        border-color: CMYK(0%, 0%, 0%, 0%);
         text-transform: uppercase;
         padding: align(3.8, pt) 0 align(2, pt) 0;
         margin: 0;
@@ -247,7 +248,8 @@ body {
     }
 
     .the-end {
-        border-top: 0.25pt solid #CCC;
+        border-top: 0.25pt solid #000;
+        border-color: CMYK(0%, 0%, 0%, 0%);
         font-family: "Guardian TextSans Normal";
         font-weight: normal;
         font-size: $base-font-size;
