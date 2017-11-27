@@ -4,15 +4,15 @@
     margin-bottom: $base-line-height;
 
     [itemprop=headline] {
-        // font-family: "Guardian Sans Cond";
-        // Temporarily switched because of PDFreactor issues
-        font-family: "Guardian Sans XCond";
+        font-family: "Guardian Sans Cond";
         font-weight: 900;
         font-size: 14.9pt;
         line-height: align(15.6, pt);
         padding-left: align(5.4, pt);
         padding-bottom: align(1.2, pt);
         padding-top: align(2.2, pt);
+        // PDFreactor fix
+        -ro-transform: translateY(-20%);
     }
 
     [itemprop=articleBody] {
