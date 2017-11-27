@@ -43,10 +43,12 @@
 .alf-colspan-2 & {
     [itemprop=articleBody] {
         column-count: 2;
-        -webkit-column-count: 2;
         column-gap: 4mm;
+        column-rule: 0.25pt solid #000;
+        column-rule: 0.25pt solid CMYK(0%, 0%, 0%, 0%);
+        -webkit-column-count: 2;
         -webkit-column-gap: 4mm;
-        -webkit-column-rule: 0.25pt solid #000;
+        -webkit-column-rule: 0.25pt solid CMYK(0%, 0%, 0%, 0%);
     }
 }
 
