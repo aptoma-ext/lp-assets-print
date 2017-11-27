@@ -16,11 +16,11 @@
 $shadow-width: 1px;
 
 .text--bright {
-    color: #FFF;
-    text-shadow: -$shadow-width -$shadow-width 0 #000,
-    $shadow-width -$shadow-width 0 #000,
-    -$shadow-width $shadow-width 0 #000,
-    $shadow-width $shadow-width 0 #000
+    // color: #FFF;
+    // text-shadow: -$shadow-width -$shadow-width 0 #000,
+    // $shadow-width -$shadow-width 0 #000,
+    // -$shadow-width $shadow-width 0 #000,
+    // $shadow-width $shadow-width 0 #000
 }
 
 .overflow-hidden {

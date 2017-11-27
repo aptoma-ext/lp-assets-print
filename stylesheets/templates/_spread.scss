@@ -5,8 +5,8 @@
             line-height: 0.9em;
             font-family: "Guardian Sans XCond";
             font-weight: 800;
-            text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
-            -webkit-text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
+            // text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
+            // -webkit-text-shadow: 0 0 35px #FFF, 0 0 35px #FFF, 0 0 30px #FFF;
             letter-spacing: -2pt;
             margin-bottom: 13pt;
         }
@@ -33,6 +33,7 @@
         h1 {
             font-size: 125pt;
             background: #FFF;
+            background: CMYK(0%, 0%, 0%, 0%);
             display: inline;
         }
     }

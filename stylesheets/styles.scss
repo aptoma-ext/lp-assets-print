@@ -214,6 +214,7 @@ body {
         font-family: "Guardian Sans Cond";
         font-weight: 800;
         color: $dn-dark-blue;
+        color: $dn-dark-blue-cmyk;
         border-top: align(0.25, pt) solid #000;
         border-bottom: align(0.25, pt) solid #000;
         border-color: CMYK(0%, 0%, 0%, 0%);
@@ -297,6 +298,7 @@ body {
             -webkit-flex: 32;
             background: #3e3e3f;
             color: #FFF;
+            color: CMYK(0%, 0%, 0%, 0%);
             height: 100%;
 
             .overlay-caption {
@@ -313,6 +315,7 @@ body {
                     width: 40mm;
                     height: 7mm;
                     color: #feca0a;
+                    color: $dn-yellow-cmyk;
                     font-size: 95pt;
                     margin-top: 8mm;
                 }
@@ -327,6 +330,7 @@ body {
 
     figcaption, .figcaption {
         background: #FFF;
+        background-color: CMYK(0%, 0%, 0%, 0%);
         font-family: "Guardian TextSans";
         font-weight: bold;
         font-size: $base-font-size;

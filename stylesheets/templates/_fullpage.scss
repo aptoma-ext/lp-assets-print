@@ -54,6 +54,7 @@
 
     .quote-box {
         background: #feca0a;
+        background-color: $dn-yellow-cmyk;
         height: 400px;
     }
 
@@ -92,6 +93,7 @@
             background-color: #000;
             background-color: CMYK(0%, 0%, 0%, 0%);
             color: #FFF;
+            color: CMYK(0%, 0%, 0%, 0%);
         }
     }
 }
