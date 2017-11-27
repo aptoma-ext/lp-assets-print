@@ -19,6 +19,7 @@ body {
     background: transparent;
     overflow: hidden;
     line-height: $base-line-height;
+    -ro-line-grid: create;
 }
 
 .body-text span {
