@@ -216,6 +216,7 @@ body {
         font-weight: 800;
         color: $dn-dark-blue;
         color: $dn-dark-blue-cmyk;
+        border-style: solid;
         border-width: align(0.25, pt) 0 align(0.25, pt) 0;
         border-color: #000;
         border-color: CMYK(0%, 0%, 0%, 0%);
@@ -250,6 +251,7 @@ body {
     }
 
     .the-end {
+        border-style: solid;
         border-width: 0 0 align(0.25, pt) 0;
         border-color: #000;
         border-color: CMYK(0%, 0%, 0%, 0%);
