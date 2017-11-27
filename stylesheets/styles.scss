@@ -193,6 +193,8 @@
     .section, .topic {
         font-size: 13pt;
         line-height: $medium-line-height;
+        height: $medium-line-height;
+        box-sizing: content-box;
         font-family: "Guardian Sans Cond";
         font-weight: 800;
         color: $dn-dark-blue;
@@ -216,7 +218,6 @@
     }
 
     .location {
-        // Temporarily switched because of PDFreactor issues
         font-family: "Guardian Sans Cond";
         font-size: $medium-font-size;
         line-height: $medium-line-height;
