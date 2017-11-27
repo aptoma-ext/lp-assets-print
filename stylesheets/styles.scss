@@ -130,6 +130,7 @@ body {
             font-family: "Guardian Text Egypt";
             text-rendering: optimizeLegibility;
             color: $black;
+            color: CMYK(0%, 0%, 0%, 100%);
             // none disables the internally stored kerning info, do we want this?
             font-kerning: none;
             font-weight: normal;
