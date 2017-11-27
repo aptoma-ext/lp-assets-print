@@ -123,8 +123,7 @@
             font-weight: normal;
             font-size: $base-font-size;
             line-height: $base-line-height;
-            word-spacing: align(-0.09, pt);
-            letter-spacing: align(-0.09, pt);
+            letter-spacing: -0.05mm;
         }
 
         .alf-block-is-first {
