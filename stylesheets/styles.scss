@@ -26,26 +26,30 @@ body {
     -ro-line-grid: create;
 }
 
-.body-text span {
-    text-align: justify;
+.body-text {
+    letter-spacing: $letter-spacing;
 
-    &.row {
-        display: block;
+    span {
         text-align: justify;
-        text-align-last: justify;
-        -webkit-text-align-last: justify;
-        width: 100%;
-        // height: $base-line-height;
-        overflow: hidden; // this is just to hide the current bug with text-flow
-    }
 
-    &.row:first-of-type {
-        text-indent: $text-indent;
-    }
+        &.row {
+            display: block;
+            text-align: justify;
+            text-align-last: justify;
+            -webkit-text-align-last: justify;
+            width: 100%;
+            height: $base-line-height;
+            overflow: hidden; // this is just to hide the current bug with text-flow
+        }
 
-    &.row:last-of-type {
-        text-align-last: auto;
-        -webkit-text-align-last: auto;
+        &.row:first-of-type {
+            text-indent: $text-indent;
+        }
+
+        &.row:last-of-type {
+            text-align-last: auto;
+            -webkit-text-align-last: auto;
+        }
     }
 }
 
@@ -144,7 +148,6 @@ body {
             font-weight: normal;
             font-size: $base-font-size;
             line-height: $base-line-height;
-            letter-spacing: -0.08mm;
         }
 
         .alf-block-is-first {
