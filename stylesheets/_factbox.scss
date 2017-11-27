@@ -1,6 +1,7 @@
 .fact-box {
     border-top: $document-grid-offset solid $dn-blue;
     background-color: $dn-neutral-tint;
+    background-color: $dn-neutral-tint-cmyk;
     margin-bottom: $base-line-height;
 
     [itemprop=headline] {
