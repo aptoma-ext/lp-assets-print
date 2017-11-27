@@ -217,6 +217,8 @@ body {
         color: $dn-dark-blue-cmyk;
         border-top: align(0.25, pt) solid #000;
         border-bottom: align(0.25, pt) solid #000;
+        border-top: align(0.25, pt) solid CMYK(0%, 0%, 0%, 0%);
+        border-bottom: align(0.25, pt) solid CMYK(0%, 0%, 0%, 0%);
         border-color: CMYK(0%, 0%, 0%, 0%);
         text-transform: uppercase;
         padding: align(3.8, pt) 0 align(2, pt) 0;
