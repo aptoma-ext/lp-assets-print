@@ -3,6 +3,7 @@
     background-color: $dn-neutral-tint;
     background-color: $dn-neutral-tint-cmyk;
     margin-bottom: $base-line-height;
+    -ro-pdf-overprint-content: mode1;
 
     [itemprop=headline] {
         font-family: "Guardian Sans Cond";
@@ -14,6 +15,8 @@
         padding-left: align(5.4, pt);
         padding-bottom: align(1.2, pt);
         padding-top: align(2.2, pt);
+        -ro-pdf-overprint: none;
+        -ro-pdf-overprint-content: mode1;
 
         p {
             // PDFreactor fix
@@ -32,6 +35,8 @@
         padding: align(5.4, pt);
         letter-spacing: -0.03pt;
         letter-spacing: -0.06pt;
+        -ro-pdf-overprint: none;
+        -ro-pdf-overprint-content: mode1;
     }
 
 }
