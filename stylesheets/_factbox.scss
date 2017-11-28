@@ -60,10 +60,10 @@
         column-count: 3;
         column-gap: 4mm;
         column-rule: align(0.25pt) solid #000;
-        column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
+        column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
         -webkit-column-count: 3;
         -webkit-column-gap: 4mm;
-        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
+        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
     }
 }
 
