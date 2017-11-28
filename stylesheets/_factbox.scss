@@ -53,6 +53,20 @@
     }
 }
 
+.alf-colspan-3,
+&.alf-colspan-3,
+.alf-colspan-3 & {
+    [itemprop=articleBody] {
+        column-count: 3;
+        column-gap: 4mm;
+        column-rule: align(0.25pt) solid #000;
+        column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
+        -webkit-column-count: 3;
+        -webkit-column-gap: 4mm;
+        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 0%);
+    }
+}
+
 .fact-box-fixed {
     height: 263.72px - (13.88px - 8.92px) !important;
     height: document-lines(19);
