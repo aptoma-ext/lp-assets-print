@@ -58,6 +58,12 @@ body {
     font-family: Arial;
     line-height: $base-line-height;
 
+    .alf-image {
+        width: 100% !important;
+        height: 100% !important;
+        padding-bottom: 0 !important;
+    }
+
     * {
         box-sizing: border-box;
     }
