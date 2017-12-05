@@ -188,8 +188,6 @@ body {
             padding-top: 0;
             padding-bottom: 0;
             color: CMYK(0%, 0%, 0%, 100%);
-            // This font has a whitespace issue in PDF reactor
-            -ro-transform: translateY(-3px);
 
             + .alf-block .row {
                 text-indent: 0 !important;
@@ -237,11 +235,6 @@ body {
         text-transform: uppercase;
         padding: align(3.8pt) 0 align(2pt) 0;
         margin: 0;
-
-        figure {
-            // PDFreactor fix
-            -ro-transform: translateY(-20%);
-        }
     }
 
     .byline {
@@ -250,8 +243,6 @@ body {
         line-height: $medium-line-height;
         font-weight: 800;
         margin-top: align(3pt);
-        // PDFreactor fix
-        -ro-transform: translateY(-20%);
     }
 
     .location {
@@ -260,8 +251,6 @@ body {
         line-height: $medium-line-height;
         font-weight: normal;
         padding-bottom: align(10pt);
-        // PDFreactor fix
-        -ro-transform: translateY(-20%);
     }
 
     .the-end {
