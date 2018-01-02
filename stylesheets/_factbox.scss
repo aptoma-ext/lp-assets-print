@@ -8,6 +8,10 @@
     -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 
+    &.no-margin {
+        margin-bottom: 0;
+    }
+
     [itemprop=headline] {
         font-family: "Guardian Sans Cond";
         font-weight: 900;
