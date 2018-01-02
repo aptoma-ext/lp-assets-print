@@ -347,6 +347,19 @@ body {
 
     .picture {
         position: relative;
+
+        &.cover {
+            > div {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+
+                img {
+                    flex: 1;
+                    object-fit: cover;
+                }
+            }
+        }
     }
 
     .caption-inline,
