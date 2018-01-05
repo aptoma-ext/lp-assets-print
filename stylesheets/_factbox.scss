@@ -34,34 +34,9 @@
         line-height: $base-line-height;
         padding: align(3.66pt) align(5.4pt) align(5.4pt) align(5.4pt);
         letter-spacing: -0.06pt;
-    }
-
-}
-
-.alf-colspan-2,
-&.alf-colspan-2,
-.alf-colspan-2 & {
-    [itemprop=articleBody] {
-        column-count: 2;
+        column-count: var(--colspan, 1);
         column-gap: 4mm;
         column-rule: align(0.25pt) solid #000;
         column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
-        -webkit-column-count: 2;
-        -webkit-column-gap: 4mm;
-        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
-    }
-}
-
-.alf-colspan-3,
-&.alf-colspan-3,
-.alf-colspan-3 & {
-    [itemprop=articleBody] {
-        column-count: 3;
-        column-gap: 4mm;
-        column-rule: align(0.25pt) solid #000;
-        column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
-        -webkit-column-count: 3;
-        -webkit-column-gap: 4mm;
-        -webkit-column-rule: align(0.25pt) solid CMYK(0%, 0%, 0%, 100%);
     }
 }

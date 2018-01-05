@@ -32,14 +32,17 @@
 
         .alf-cols-#{$i} {
             width: $width;
+            --columns: $i;
         }
 
         .alf-col-#{$i} {
             left: ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+            --column: $i;
         }
 
         .alf-colspan-#{$i} {
             width: $width;
+            --colspan: $i;
         }
 
         .alf-overlay-colspan-#{$i} {
@@ -56,14 +59,17 @@
 
         .alf-cols-#{$i} {
             width: $outerWidth;
+            --columns: $i;
         }
 
         .alf-col-#{$i} {
             left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 2));
+            --column: $i;
         }
 
         .alf-colspan-#{$i} {
             width: $width + ($horMargin * 2);
+            --colspan: $i;
         }
 
         .alf-overlay-colspan-#{$i} {
