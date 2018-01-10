@@ -98,6 +98,18 @@ body {
         }
     }
 
+    .alf-smart-crop {
+        > div {
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: scale-down;
+        }
+    }
+
     @import "_utils";
 
     @include grid(5, 246mm, 46mm, 0, 13mm);
