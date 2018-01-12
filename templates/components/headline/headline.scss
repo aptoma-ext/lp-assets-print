@@ -16,12 +16,12 @@
         line-height: var(--headline-line-height, align(83.2pt));
         letter-spacing: var(--headline-letter-spacing, -1.8pt);
         background-color: var(--headline-background-color, transparent);
-        background-color: var(--headline-background-color-cmyk, transparent);
         font-weight: var(--headline-font-weight, 800);
         font-family: "Guardian Sans XCond";
 
         @media print {
             color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 0%)));
+            background-color: var(--headline-background-color-cmyk, transparent);
         }
     }
 }
