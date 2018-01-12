@@ -28,17 +28,17 @@
 
 // Preset "states" for the headline component
 
-.headline--sm {
+.headline--sm h1 {
     // TODO: these values are just an estimate for now
     font-size: var(--headline-font-size-sm, 80pt);
     line-height: var(--headline-line-height-sm, align(78pt));
 }
 
-.headline--lg {
+.headline--lg h1 {
     font-size: var(--headline-font-size-lg, 99pt);
     line-height: var(--headline-line-height-lg, 0.9em);
 }
 
-.headline--xl {
+.headline--xl h1 {
     font-size: var(--headline-font-size-sm, 125pt);
 }
