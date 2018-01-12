@@ -1,0 +1,56 @@
+.fact-box {
+    --fact-box-border-color: $dn-blue;
+
+    border-top: $document-grid-offset solid var(--fact-box-border-color, $dn-blue);
+    background-color: $dn-neutral-tint;
+    background-color: $dn-neutral-tint-cmyk;
+    border-color: $dn-blue-cmyk;
+    margin: 0;
+    line-height: $base-line-height;
+    -ro-pdf-overprint: mode1;
+    -ro-pdf-overprint-content: mode1;
+}
+
+.fact-box--header {
+    font-family: "Guardian Sans Cond";
+    font-weight: 900;
+    font-size: 14.9pt;
+    line-height: align(15.6pt);
+    height: align(15.6pt);
+    box-sizing: content-box;
+    padding-left: align(5.4pt);
+    padding-bottom: align(1.2pt);
+    padding-top: align(2.2pt);
+}
+
+.fact-box--body {
+    font-family: "Guardian TextSans Normal";
+    text-rendering: optimizeLegibility;
+    font-kerning: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    padding: align(3.66pt) align(5.4pt) align(5.4pt) align(5.4pt);
+    letter-spacing: -0.06pt;
+    column-count: var(--colspan, 1);
+    column-gap: 4mm;
+    column-rule: align(0.25pt) solid #000;
+    column-rule-color: CMYK(0%, 0%, 0%, 100%);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+            text-indent: 15px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='cmyk(0.95, 0.25, 0, 0)' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: align(7.5pt) align(7.5pt);
+            background-position: 0 align(1.48pt);
+        }
+    }
+}

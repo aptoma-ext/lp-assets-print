@@ -58,14 +58,20 @@ body {
     font-family: Arial;
     line-height: $base-line-height;
 
+    * {
+        box-sizing: border-box;
+    }
+
+    @import "_utils";
+    @import "_components";
+    @import "_themes";
+
+    @include grid(5, 246mm, 46mm, 0, 13mm);
+
     .alf-image {
         width: 100% !important;
         height: 100% !important;
         padding-bottom: 0 !important;
-    }
-
-    * {
-        box-sizing: border-box;
     }
 
     figure {
@@ -76,31 +82,6 @@ body {
         margin: 0;
         padding: 0;
         color: CMYK(0%, 0%, 0%, 100%);
-    }
-
-    .lead-asset {
-        position: relative;
-
-        > div {
-            height: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            -ro-image-resampling: 200;
-        }
-
-        &.bottom-margin {
-            // just to push it down enough
-            margin-bottom: $base-line-height;
-        }
-    }
-
-    .infographics img {
-        width: 100%;
-        height: auto;
     }
 
     .alf-smart-crop {
@@ -114,10 +95,6 @@ body {
             object-fit: scale-down;
         }
     }
-
-    @import "_utils";
-
-    @include grid(5, 246mm, 46mm, 0, 13mm);
 
     .alf-template {
         background: transparent;
@@ -254,22 +231,6 @@ body {
         margin: 0;
     }
 
-    .byline {
-        font-family: "Guardian Sans Cond";
-        font-size: $medium-font-size;
-        line-height: $medium-line-height;
-        font-weight: 800;
-        margin-top: align(3pt);
-    }
-
-    .location {
-        font-family: "Guardian Sans Cond";
-        font-size: $medium-font-size;
-        line-height: $medium-line-height;
-        font-weight: normal;
-        padding-bottom: align(10pt);
-    }
-
     .the-end {
         border-style: solid;
         border-width: align(0.25pt) 0 0 0;
@@ -281,22 +242,6 @@ body {
         line-height: align(10.4pt);
         margin-top: $document-grid-offset;
         padding-top: align(1.6pt);
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        margin: 0;
-        padding-left: 0;
-
-        li {
-            text-indent: 15px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='cmyk(0.95, 0.25, 0, 0)' /%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-size: align(7.5pt) align(7.5pt);
-            background-position: 0 align(1.48pt);
-        }
     }
 
     .bottom-margin {
@@ -348,7 +293,6 @@ body {
         }
     }
 
-    @import "_factbox";
     @import "_templates";
     @import "_ad";
 

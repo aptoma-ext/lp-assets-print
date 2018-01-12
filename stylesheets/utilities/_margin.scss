@@ -1,0 +1,19 @@
+.u-no-margin {
+    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+@for $i from 1 through 5 {
+    $plural: if($i > 1, 's', '');
+
+    .u-margin-top-#{$i}-line#{$plural} {
+        margin-bottom: $base-line-height;
+    }
+
+    .u-margin-bottom-#{$i}-line#{$plural} {
+        margin-bottom: $base-line-height;
+    }
+}
