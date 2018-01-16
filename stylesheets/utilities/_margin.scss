@@ -6,6 +6,10 @@
     margin-left: 0 !important;
 }
 
+.u-margin-top-document-grid {
+    margin-top: $document-grid-offset !important;
+}
+
 @for $i from 1 through 5 {
     $plural: if($i > 1, 's', '');
 
