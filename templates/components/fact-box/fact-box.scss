@@ -1,17 +1,19 @@
 .fact-box {
-    --fact-box-border-color: $dn-blue;
-
-    border-top: $document-grid-offset solid var(--fact-box-border-color, $dn-blue);
-    background-color: $dn-neutral-tint;
-    background-color: $dn-neutral-tint-cmyk;
-    border-color: $dn-blue-cmyk;
-    margin: 0;
+    border-top: $document-grid-offset solid var(--fact-box-border-color, steelblue);
+    background-color: var(--fact-box-background-color, oldlace);
     line-height: $base-line-height;
+    height: 100%;
     -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
+
+
+    @media print {
+        border-top-color: var(--fact-box-border-color-cmyk);
+        background-color: var(--fact-box-background-color-cmyk);
+    }
 }
 
-.fact-box--header {
+.fact-box-header {
     font-family: "Guardian Sans Cond";
     font-weight: 900;
     font-size: 14.9pt;
@@ -23,7 +25,7 @@
     padding-top: align(2.2pt);
 }
 
-.fact-box--body {
+.fact-box-body {
     font-family: "Guardian TextSans Normal";
     text-rendering: optimizeLegibility;
     font-kerning: none;

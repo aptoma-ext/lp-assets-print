@@ -1,77 +1,25 @@
 @import "mixins/_functions";
 @import "_variables";
 @import "mixins/_grid";
-@import "_fontface";
-@import "_document";
-
-body {
-    background: transparent;
-    color: CMYK(0%, 0%, 0%, 100%);
-}
-
-.alf-mode-preview .alf-template {
-    background-color: #FFF !important;
-}
-
-.alf-break {
-    display: block;
-    height: 0;
-    line-height: 0;
-}
-
-.alf-chrome {
-    background: transparent;
-    overflow: hidden;
-    line-height: $base-line-height;
-    -ro-line-grid: create;
-}
-
-.body-text {
-    letter-spacing: $letter-spacing;
-
-    span {
-        text-align: justify;
-
-        &.row {
-            display: block;
-            text-align: justify;
-            text-align-last: justify;
-            -webkit-text-align-last: justify;
-            width: 100%;
-            height: $base-line-height;
-            overflow: hidden; // this is just to hide the current bug with text-flow
-        }
-
-        &.row:first-of-type {
-            text-indent: $text-indent;
-        }
-
-        &.row:last-of-type {
-            text-align-last: auto;
-            -webkit-text-align-last: auto;
-        }
-    }
-}
 
 .alf-rev-#{$revision} {
+    background: transparent;
+    color: CMYK(0%, 0%, 0%, 100%);
     box-sizing: border-box;
-    font-family: Arial;
-    line-height: $base-line-height;
+    line-height: var(--line-height, $base-line-height);
 
     * {
         box-sizing: border-box;
     }
 
-    @import "_utils";
-    @import "_components";
-    @import "_themes";
+    .alf-template {
+        background: transparent;
+    }
 
-    @include grid(5, 246mm, 46mm, 0, 13mm);
-
-    .alf-image {
-        width: 100% !important;
-        height: 100% !important;
-        padding-bottom: 0 !important;
+    .alf-break {
+        display: block;
+        height: 0;
+        line-height: 0;
     }
 
     figure {
@@ -84,270 +32,10 @@ body {
         color: CMYK(0%, 0%, 0%, 100%);
     }
 
-    .alf-smart-crop {
-        > div {
-            height: auto;
-        }
+    @include grid(5, 246mm, 46mm, 0, 13mm);
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: scale-down;
-        }
-    }
-
-    .alf-template {
-        background: transparent;
-    }
-
-    h1 {
-        font-family: "Guardian Egypt";
-        font-weight: 800;
-        font-size: 52pt;
-        line-height: 1em;
-    }
-
-    .title-small {
-        h1 {
-            font-size: 48pt;
-            line-height: 1em;
-        }
-    }
-
-    .alf-region {
-        margin-top: align(-0.89pt);
-        overflow: hidden;
-
-        .body-text-bold {
-            font-weight: bold;
-
-            .word {
-                font-weight: bold;
-            }
-        }
-
-        .alf-is-overflow {
-            p {
-                margin-bottom: 0 !important;
-            }
-
-            .body-text span {
-                &.row:first-of-type {
-                    text-indent: 0 !important;
-                }
-            }
-        }
-
-        .alf-block, p, span, ul, li {
-            font-family: "Guardian Text Egypt";
-            text-rendering: optimizeLegibility;
-            color: $black;
-            color: CMYK(0%, 0%, 0%, 100%);
-            // none disables the internally stored kerning info, do we want this?
-            font-kerning: none;
-            font-weight: normal;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-        }
-
-        .alf-block-is-first {
-            .row {
-                text-indent: 0 !important;
-            }
-
-        //     .row:first-child:first-letter {
-        //         color: #000;
-        //         float: left;
-        //         font-size: 31.6pt;
-        //         line-height: 0.6em;
-        //         padding: 0;
-        //         margin: 8.7pt 2pt 0 0;
-        //         font-weight: 800;
-        //     }
-        }
-
-        // Only works for single-line titles
-        // How to handle multi-line titles in a good way?
-        h2, h3 {
-            font-family: "Guardian Sans Cond";
-            font-weight: 800;
-            font-size: align(11pt);
-            line-height: $base-line-height;
-            height: $base-line-height;
-            margin-top: 8.61pt;
-            margin-bottom: 1.8pt;
-            text-indent: 0;
-            letter-spacing: -0.1pt;
-            padding: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            color: CMYK(0%, 0%, 0%, 100%);
-
-            + .alf-block .row {
-                text-indent: 0 !important;
-            }
-        }
-
-        blockquote {
-            margin: 0;
-
-            p, small {
-                font-family: "Guardian Sans";
-                font-size: 13.3pt;
-                line-height: align(15pt);
-            }
-
-            small {
-                font-size: 10pt;
-            }
-        }
-    }
-
-    .alf-container {
-        .overlay-caption {
-            font-family: "Guardian Sans";
-            font-weight: 500;
-            font-size: 3.3mm;
-            line-height: 4mm;
-            margin-top: 1mm;
-        }
-    }
-
-    .section, .topic {
-        font-size: 13pt;
-        line-height: $medium-line-height;
-        height: $medium-line-height;
-        box-sizing: content-box;
-        font-family: "Guardian Sans Cond";
-        font-weight: 800;
-        color: $dn-dark-blue;
-        color: $dn-dark-blue-cmyk;
-        border-style: solid;
-        border-width: align(0.25pt) 0 align(0.25pt) 0;
-        border-color: #000;
-        border-color: CMYK(0%, 0%, 0%, 100%);
-        text-transform: uppercase;
-        padding: align(3.8pt) 0 align(2pt) 0;
-        margin: 0;
-    }
-
-    .the-end {
-        border-style: solid;
-        border-width: align(0.25pt) 0 0 0;
-        border-color: #000;
-        border-color: CMYK(0%, 0%, 0%, 100%);
-        font-family: "Guardian TextSans Normal";
-        font-weight: normal;
-        font-size: $base-font-size;
-        line-height: align(10.4pt);
-        margin-top: $document-grid-offset;
-        padding-top: align(1.6pt);
-    }
-
-    .bottom-margin {
-        margin-bottom: align(10pt);
-    }
-
-    .image-side-by-side {
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-
-        .image {
-            display: flex;
-            display: -webkit-flex;
-            flex: 68;
-            -webkit-flex: 68;
-        }
-
-        .caption {
-            display: block;
-            flex: 32;
-            -webkit-flex: 32;
-            background: #3e3e3f;
-            color: #FFF;
-            color: CMYK(0%, 0%, 0%, 0%);
-            height: 100%;
-
-            .overlay-caption {
-                font-size: 15pt;
-                line-height: 1.1em;
-                hyphens: auto;
-                padding: 2mm;
-
-                &:before {
-                    display: block;
-                    content: "\201D";
-                    font-family: "Arial Black";
-                    font-weight: 400;
-                    width: 40mm;
-                    height: 7mm;
-                    color: #feca0a;
-                    color: $dn-yellow-cmyk;
-                    font-size: 95pt;
-                    margin-top: 8mm;
-                }
-            }
-
-        }
-    }
-
-    @import "_templates";
-    @import "_ad";
-
-    figcaption, .figcaption {
-        background: #FFF;
-        background-color: CMYK(0%, 0%, 0%, 0%);
-        font-family: "Guardian TextSans";
-        font-weight: bold;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        padding: align(2pt);
-    }
-
-    .picture {
-        position: relative;
-
-        &.cover {
-            > div {
-                display: flex;
-                height: 100%;
-                flex-direction: column;
-
-                img {
-                    flex: 1;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-
-    .caption-inline,
-    .caption-inline-left,
-    .caption-inline-top-left {
-        figcaption, .figcaption {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 46mm;
-        }
-    }
-
-    .caption-inline-left {
-        figcaption, .figcaption {
-            right: auto;
-            left: 0;
-        }
-    }
-
-    .caption-inline-top-left {
-        figcaption, .figcaption {
-            right: auto;
-            left: 0;
-            top: 0;
-            bottom: auto;
-        }
-    }
-
+    @import "_utils";
+    @import "_layout";
+    @import "_components";
+    @import "_themes";
 }

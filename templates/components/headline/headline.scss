@@ -1,23 +1,13 @@
 .headline {
-    // Supported component parameters
-    --headline-color: #000;
-    --headline-color-cmyk: CMYK(0%, 0%, 0%, 0%);
-    --headline-font-size: 94.2pt;
-    --headline-font-weight: 800;
-    --headline-line-height: align(83.2pt);
-    --headline-letter-spacing: -1.8pt;
-    --headline-background-color: transparent;
-    --headline-background-color-cmyk: transparent;
-
     h1 {
         margin: 0;
         color: var(--headline-color, var(--color, #000));
         font-size: var(--headline-font-size, 94.2pt);
-        line-height: var(--headline-line-height, align(83.2pt));
+        line-height: var(--headline-line-height, 0.9em);
         letter-spacing: var(--headline-letter-spacing, -1.8pt);
         background-color: var(--headline-background-color, transparent);
         font-weight: var(--headline-font-weight, 800);
-        font-family: "Guardian Sans XCond";
+        font-family: var(--headline-font-family, sans-serif);
 
         @media print {
             color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 0%)));
@@ -34,11 +24,16 @@
     line-height: var(--headline-line-height-sm, align(78pt));
 }
 
+.headline--md h1 {
+    font-size: var(--headline-font-size-md, 90pt);
+    line-height: var(--headline-line-height-lg, 0.9em);
+}
+
 .headline--lg h1 {
     font-size: var(--headline-font-size-lg, 99pt);
     line-height: var(--headline-line-height-lg, 0.9em);
 }
 
 .headline--xl h1 {
-    font-size: var(--headline-font-size-sm, 125pt);
+    font-size: var(--headline-font-size-xl, 125pt);
 }

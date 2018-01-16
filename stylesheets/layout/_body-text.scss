@@ -1,0 +1,115 @@
+.body-text {
+    letter-spacing: var(--letter-spacing, $letter-spacing);
+
+    span {
+        text-align: justify;
+
+        &.row {
+            display: block;
+            text-align: justify;
+            text-align-last: justify;
+            -webkit-text-align-last: justify;
+            width: 100%;
+            height: $base-line-height;
+            overflow: hidden; // this is just to hide the current bug with text-flow
+        }
+
+        &.row:first-of-type {
+            text-indent: $text-indent;
+        }
+
+        &.row:last-of-type {
+            text-align-last: auto;
+            -webkit-text-align-last: auto;
+        }
+    }
+}
+
+.alf-region {
+    margin-top: align($base-line-height - 0.89pt);
+    overflow: hidden;
+
+    .body-text-bold {
+        font-weight: bold;
+
+        .word {
+            font-weight: bold;
+        }
+    }
+
+    .alf-is-overflow {
+        p {
+            margin-bottom: 0 !important;
+        }
+
+        .body-text span {
+            &.row:first-of-type {
+                text-indent: 0 !important;
+            }
+        }
+    }
+
+    .alf-block, p, span, ul, li {
+        font-family: "Guardian Text Egypt";
+        text-rendering: optimizeLegibility;
+        color: #000;
+        color: CMYK(0%, 0%, 0%, 100%);
+        // none disables the internally stored kerning info, do we want this?
+        font-kerning: none;
+        font-weight: normal;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
+
+    .alf-block-is-first {
+        .row {
+            text-indent: 0 !important;
+        }
+
+    //     .row:first-child:first-letter {
+    //         color: #000;
+    //         float: left;
+    //         font-size: 31.6pt;
+    //         line-height: 0.6em;
+    //         padding: 0;
+    //         margin: 8.7pt 2pt 0 0;
+    //         font-weight: 800;
+    //     }
+    }
+
+    // Only works for single-line titles
+    // How to handle multi-line titles in a good way?
+    h2, h3 {
+        font-family: "Guardian Sans Cond";
+        font-weight: 800;
+        font-size: align(11pt);
+        line-height: var(--line-height, $base-line-height);
+        height: var(--line-height, $base-line-height);
+        margin-top: 8.61pt;
+        margin-bottom: 1.8pt;
+        text-indent: 0;
+        letter-spacing: -0.1pt;
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: CMYK(0%, 0%, 0%, 100%);
+
+        + .alf-block .row {
+            text-indent: 0 !important;
+        }
+    }
+
+    blockquote {
+        margin: 0;
+
+        p, small {
+            font-family: "Guardian Sans";
+            font-size: 13.3pt;
+            line-height: align(15pt);
+        }
+
+        small {
+            font-size: 10pt;
+        }
+    }
+}

@@ -1,15 +1,41 @@
-.byline--author {
+.byline-topic {
+    font-size: 13pt;
+    line-height: $base-line-height * 2;
+    height: $base-line-height * 2;
+    box-sizing: border-box;
+    font-family: var(--topic-font-family);
+    font-weight: 800;
+    color: var(--topic-color);
+    border-style: solid;
+    border-width: align(0.25pt) 0 align(0.25pt) 0;
+    border-color: #000;
+    border-color: CMYK(0%, 0%, 0%, 100%);
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+
+    figure {
+        margin: 0;
+        padding: align(0.8pt) 0 0 0;
+        line-height: $base-line-height * 2;
+    }
+
+    @media print {
+        color: var(--topic-color-cmyk);
+    }
+}
+
+.byline-author {
+    margin-top: align(4pt);
     font-family: "Guardian Sans Cond";
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: 800;
-    margin-top: align(3pt);
 }
 
-.byline--location {
+.byline-location {
     font-family: "Guardian Sans Cond";
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: normal;
-    padding-bottom: align(10pt);
 }

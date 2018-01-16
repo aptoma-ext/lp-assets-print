@@ -1,0 +1,42 @@
+$black: #000;
+$dn-blue: rgb(19, 136, 204);
+$dn-blue-cmyk: CMYK(95%, 25%, 0%, 0%);
+$dn-dark-blue: rgb(31, 93, 166);
+$dn-dark-blue-cmyk: CMYK(100% 60% 0%, 0%);
+$dn-yellow: rgb(255, 204, 0);
+$dn-yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
+$dn-orange: rgb(255, 64, 0);
+$dn-orange-cmyk: CMYK(0%, 75%, 100%, 0%);
+$dn-neutral-tint: rgb(236, 232, 225);
+$dn-neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
+
+$medium-font-size: 13.6pt;
+$medium-line-height: align(13.6pt);
+
+@import "_fontface";
+
+:root {
+    --font-size-body: align(8.4pt);
+}
+
+.theme--dn {
+    // Body text
+    --font-size-body: align(8.4pt);
+
+    // Headlines
+    --headline-font-family: "Guardian Sans XCond";
+    --headline-font-size-sm: 80pt;
+    --headline-font-size-md: 90pt;
+    --headline-font-size-lg: 99pt;
+    --headline-font-size-xl: 125pt;
+
+    // Fact boxes
+    --fact-box-border-color: $dn-blue;
+    --fact-box-border-color-cmyk: $dn-blue-cmyk;
+    --fact-box-background-color: $dn-neutral-tint;
+    --fact-box-background-color-cmyk: $dn-neutral-tint-cmyk;
+
+    --topic-font-family: "Guardian Sans Cond";
+    --topic-color: $dn-dark-blue;
+    --topic-color-cmyk: $dn-dark-blue-cmyk;
+}

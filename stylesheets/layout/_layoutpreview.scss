@@ -1,0 +1,50 @@
+@at-root {
+    .alf-mode-preview {
+        .alf-template {
+            background-color: #FFF !important;
+        }
+
+        .alf-guides {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            table {
+                display: none;
+            }
+        }
+
+        .lp-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2147483647;
+            pointer-events: none;
+
+            > div {
+                background: transparent;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                height: $base-line-height;
+            }
+        }
+
+        .lp-grid-document {
+            > div {
+                border-top: 0.04px solid red;
+            }
+        }
+
+        .lp-grid-baseline {
+            top: $document-grid-offset;
+
+            > div {
+                border-top: 0.04px solid blue;
+            }
+        }
+    }
+}
