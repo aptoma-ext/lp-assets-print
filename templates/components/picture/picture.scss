@@ -5,6 +5,10 @@
         position: relative;
     }
 
+    .image img {
+        display: block;
+    }
+
     &.alf-smart-crop,
     .alf-smart-crop {
         > div {
