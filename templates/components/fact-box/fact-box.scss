@@ -18,7 +18,7 @@
     font-weight: 900;
     font-size: 14.9pt;
     line-height: align(15.6pt);
-    height: align(15.6pt);
+    // height: calc(align(15.6pt) * var(--fact-box-header-lines, 1));
     box-sizing: content-box;
     padding-left: align(5.4pt);
     padding-bottom: align(1.2pt);
