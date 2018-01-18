@@ -20,7 +20,16 @@
     box-sizing: content-box;
     padding-left: align(5.4pt);
     padding-bottom: align(5.6pt);
-    padding-top: align(3.2pt);
+    // Offset the padding so the tallest letter is at the top
+    padding-top: align(0.5pt);
+    // Align to the first base line (red line)
+    margin-top: $base-line-height - $document-grid-offset;
+
+    @for $i from 1 through 5 {
+        .alf-lines-#{$i} {
+            height: $base-line-height;
+        }
+    }
 }
 
 .fact-box--lg {
