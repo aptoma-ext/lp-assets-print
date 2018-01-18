@@ -2,7 +2,6 @@
     border-top: $document-grid-offset solid var(--fact-box-border-color, steelblue);
     background-color: var(--fact-box-background-color, oldlace);
     line-height: $base-line-height;
-    height: 100%;
     -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 
@@ -18,11 +17,18 @@
     font-weight: 900;
     font-size: 14.9pt;
     line-height: align(15.6pt);
-    // height: calc(align(15.6pt) * var(--fact-box-header-lines, 1));
     box-sizing: content-box;
     padding-left: align(5.4pt);
     padding-bottom: align(1.2pt);
     padding-top: align(2.2pt);
+
+    &.alf-lines-2 {
+        height: align(15.6pt) * 2;
+    }
+
+    &.alf-lines-3 {
+        height: align(15.6pt) * 3;
+    }
 }
 
 .fact-box-body {
