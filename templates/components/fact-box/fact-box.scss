@@ -14,7 +14,7 @@
 
 @for $i from 1 through 5 {
     .alf-lines-#{$i} {
-        height: $base-line-height;
+        height: $base-line-height * $i;
     }
 }
 
