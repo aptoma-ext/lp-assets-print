@@ -19,15 +19,16 @@
     line-height: align(15.6pt);
     box-sizing: content-box;
     padding-left: align(5.4pt);
-    padding-bottom: align(1.2pt);
-    padding-top: align(2.2pt);
+    padding-bottom: align(5.6pt);
+    padding-top: align(3.2pt);
+}
 
-    &.alf-lines-2 {
-        height: align(15.6pt) * 2;
-    }
-
-    &.alf-lines-3 {
-        height: align(15.6pt) * 3;
+.fact-box--lg {
+    .fact-box-header {
+        font-size: 20.1pt;
+        line-height: align(15.6pt);
+        padding-bottom: align(5.6pt);
+        padding-top: align(3.2pt);
     }
 }
 
