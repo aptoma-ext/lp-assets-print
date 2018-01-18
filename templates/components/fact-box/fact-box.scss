@@ -12,6 +12,12 @@
     }
 }
 
+@for $i from 1 through 5 {
+    .alf-lines-#{$i} {
+        height: $base-line-height;
+    }
+}
+
 .fact-box-header {
     font-family: "Guardian Sans Cond";
     font-weight: 900;
@@ -25,12 +31,6 @@
 
     // Align to the first base line (red line)
     margin-top: $base-line-height - $document-grid-offset;
-
-    @for $i from 1 through 5 {
-        .alf-lines-#{$i} {
-            height: $base-line-height;
-        }
-    }
 }
 
 .fact-box--lg {
