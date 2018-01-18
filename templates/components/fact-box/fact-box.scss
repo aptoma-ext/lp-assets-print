@@ -4,7 +4,7 @@
     line-height: $base-line-height;
     -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
-    padding: 0 align(5.4t);
+    padding: 0 align(5.4t) align(5.4t) align(5.4t);
 
     @media print {
         border-top-color: var(--fact-box-border-color-cmyk);
@@ -48,7 +48,7 @@
     font-style: normal;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    padding: align(3.66pt) align(5.4pt) align(5.4pt) align(5.4pt);
+    padding: 0;
     letter-spacing: -0.06pt;
     column-count: var(--colspan, 1);
     column-gap: 4mm;
