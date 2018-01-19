@@ -10,7 +10,7 @@
         font-family: var(--headline-font-family, sans-serif);
 
         @media print {
-            color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 0%)));
+            color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
             background-color: var(--headline-background-color-cmyk, transparent);
         }
     }
