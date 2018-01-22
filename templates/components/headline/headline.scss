@@ -16,6 +16,24 @@
     }
 }
 
+.headline--top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.headline--white {
+    h1 {
+        color: #FFF;
+    }
+
+    @media print {
+        h1 {
+            color: CMYK(0%, 0%, 0%, 0%);
+        }
+    }
+}
+
 // Preset "states" for the headline component
 
 .headline--sm h1 {
