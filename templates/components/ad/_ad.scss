@@ -43,15 +43,10 @@
     }
 
     .ad-left-line {
-        // Browsers are unable to draw 0.25pt (0.32px) width
-        width: 1px;
-        top: align(4.15pt);
+        width: 10px;
+        top: 0;
         bottom: 0;
-        left: align(4.17pt);
-
-        @media print {
-            width: align(1pt);
-        }
+        left: 5px;
     }
 }
 
