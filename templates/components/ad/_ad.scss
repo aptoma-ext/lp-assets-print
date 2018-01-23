@@ -22,9 +22,7 @@
     }
 
     .ad-top-line,
-    .ad-bottom-line {
-        display: block;
-        flex-shrink: 0;
+    .ad-left-line {
         position: absolute;
         background-color: #000;
 
@@ -44,12 +42,12 @@
         }
     }
 
-    .ad-bottom-line {
+    .ad-left-line {
         // Browsers are unable to draw 0.25pt (0.32px) width
         width: 1px;
         top: align(4.15pt);
         bottom: 0;
-        left: align(-4.17pt);
+        left: align(4.17pt);
 
         @media print {
             width: align(1pt);
