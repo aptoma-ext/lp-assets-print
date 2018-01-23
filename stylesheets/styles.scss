@@ -7,6 +7,7 @@
     color: #000;
     box-sizing: border-box;
     line-height: $base-line-height;
+    text-rendering: optimizeLegibility;
 
     @media print {
         color: CMYK(0%, 0%, 0%, 100%);
