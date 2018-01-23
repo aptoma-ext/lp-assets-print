@@ -1,10 +1,11 @@
 .ad {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
-
     .ad-placeholder {
+        width: 100%;
+    }
+
+    .ad-placeholder-content {
+        position: absolute;
+        bottom: 0;
         background: #CCC;
         width: 100%;
         display: flex;
@@ -56,32 +57,53 @@
     }
 }
 
-.ad--1b .ad-placeholder  {
-    height: 34mm;
+.ad--1b {
+    .ad-placeholder-content,
+    .ad-placeholder  {
+        height: 34mm;
+    }
 }
 
-.ad--1 .ad-placeholder {
-    height: 71mm;
+.ad--1 {
+    .ad-placeholder-content,
+    .ad-placeholder {
+        height: 71mm;
+    }
 }
 
-.ad--2b .ad-placeholder  {
-    height: 107mm;
+.ad--2b {
+    .ad-placeholder-content,
+    .ad-placeholder  {
+        height: 107mm;
+    }
 }
 
-.ad--2 .ad-placeholder {
-    height: 144mm;
+.ad--2 {
+    .ad-placeholder-content,
+    .ad-placeholder {
+        height: 144mm;
+    }
 }
 
-.ad--3b .ad-placeholder  {
-    height: 181mm;
+.ad--3b {
+    .ad-placeholder-content,
+    .ad-placeholder  {
+        height: 181mm;
+    }
 }
 
-.ad--3 .ad-placeholder {
-    height: 218mm;
+.ad--3 {
+    .ad-placeholder-content,
+    .ad-placeholder {
+        height: 218mm;
+    }
 }
 
-.ad--4 .ad-placeholder {
-    height: 291mm;
+.ad--4 {
+    .ad-placeholder-content,
+    .ad-placeholder {
+        height: 291mm;
+    }
 }
 
 .ad--5 {
