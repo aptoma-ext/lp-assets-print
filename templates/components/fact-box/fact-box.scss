@@ -12,12 +12,6 @@
     }
 }
 
-@for $i from 1 through 5 {
-    .alf-lines-#{$i} {
-        height: $base-line-height * $i;
-    }
-}
-
 .fact-box-header {
     font-family: "Guardian Sans Cond";
     font-weight: 900;
