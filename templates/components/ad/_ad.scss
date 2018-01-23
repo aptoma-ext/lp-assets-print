@@ -1,6 +1,11 @@
-.ad .ad-placeholder {
-    background: gray;
-    width: 100%;
+.ad {
+    display: flex;
+    align-items: end;
+
+    .ad-placeholder {
+        background: gray;
+        width: 100%;
+    }
 }
 
 .ad--1b .ad-placeholder  {
