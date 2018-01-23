@@ -1,6 +1,8 @@
 .ad {
     display: flex;
     align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .ad-placeholder {
         background: #CCC;
@@ -20,8 +22,8 @@
 
     .ad-top-line,
     .ad-bottom-line {
-        content: ' ';
         display: block;
+        flex-shrink: 0;
         position: absolute;
         background-color: #000;
 
