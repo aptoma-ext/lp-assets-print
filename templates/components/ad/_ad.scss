@@ -105,11 +105,14 @@
 }
 
 .ad--5 {
-    &:before {
-        display: none;
-    }
-
+    .ad-placeholder-content,
     .ad-placeholder {
         height: 365mm;
+    }
+}
+
+.ad--no-left-line {
+    .ad-left-line {
+        display: none;
     }
 }

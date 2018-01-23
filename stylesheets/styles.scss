@@ -4,9 +4,13 @@
 
 .alf-rev-#{$revision} {
     background: transparent;
-    color: CMYK(0%, 0%, 0%, 100%);
+    color: #000;
     box-sizing: border-box;
     line-height: $base-line-height;
+
+    @media print {
+        color: CMYK(0%, 0%, 0%, 100%);
+    }
 
     * {
         box-sizing: border-box;
@@ -29,7 +33,11 @@
     p, h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
-        color: CMYK(0%, 0%, 0%, 100%);
+        color: #000;
+
+        @media print {
+            color: CMYK(0%, 0%, 0%, 100%);
+        }
     }
 
     @include grid(5, align(246mm), align(46mm), 0, align(13mm));
