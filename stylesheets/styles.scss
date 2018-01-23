@@ -32,7 +32,7 @@
         color: CMYK(0%, 0%, 0%, 100%);
     }
 
-    @include grid(5, 246mm, 46mm, 0, 13mm);
+    @include grid(5, align(246mm), align(46mm), 0, align(13mm));
 
     @import "_utils";
     @import "_layout";
