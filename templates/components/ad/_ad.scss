@@ -22,10 +22,10 @@
         content: ' ';
         display: block;
         position: absolute;
-        background: #000;
+        background-color: #000;
 
         @media print {
-            background: CMYK(0%, 0%, 0%, 100%);
+            background-color: CMYK(0%, 0%, 0%, 100%);
         }
     }
 
@@ -48,7 +48,7 @@
         left: align(-4.17pt);
 
         @media print {
-            width: align(0.25pt);
+            width: align(1pt);
         }
     }
 }
