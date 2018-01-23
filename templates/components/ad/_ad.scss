@@ -42,10 +42,11 @@
         }
     }
 
+    $topOffset: align(4.15pt);
     .ad-left-line {
         width: 1px;
-        height: calc(100% - align(-4.17pt));
-        top: align(4.15pt);
+        height: calc(100% - $topOffset);
+        top: $topOffset;
         left: align(-4.17pt);
 
         @media print {
