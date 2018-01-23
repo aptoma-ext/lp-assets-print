@@ -20,8 +20,8 @@
 
     &:after {
         height: align(0.25pt);
-        top: 0;
-        left: align(5.35pt);
+        top: align(-0.12pt);
+        left: align(1.18pt);
         right: 0;
     }
 
@@ -30,7 +30,7 @@
         width: align(0.45pt);
         top: align(4.15pt);
         bottom: 0;
-        left: 0;
+        left: align(-4.17pt);
 
         @media print {
             width: align(0.25pt);
