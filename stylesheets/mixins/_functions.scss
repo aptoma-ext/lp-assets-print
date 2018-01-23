@@ -11,7 +11,7 @@
         $number: $number * 3.779528;
     }
 
-    @return (round($number / 0.01) * 0.01) * 1px;
+    @return (round($number / 0.04) * 0.04) * 1px;
 }
 
 @function strip-unit($value) {
