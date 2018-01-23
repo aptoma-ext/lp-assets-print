@@ -47,6 +47,10 @@
         height: 100px;
         top: 0;
         left: 5px;
+
+        @media print {
+            width: align(0.25pt);
+        }
     }
 }
 
