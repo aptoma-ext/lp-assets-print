@@ -3,8 +3,19 @@
     align-items: flex-end;
 
     .ad-placeholder {
-        background: transparent;
+        background: #CCC;
         width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        &:before {
+            font-family: var(--ad-font-family, Arial);
+            font-size: var(--ad-font-size, 20pt);
+            content: 'Annonse';
+            display: block;
+        }
     }
 
     &:before, &:after {
@@ -19,15 +30,19 @@
     }
 
     &:after {
-        height: align(0.25pt);
+        height: 1px;
         top: align(-0.12pt);
         left: align(1.18pt);
         right: 0;
+
+        @media print {
+            height: align(0.25pt);
+        }
     }
 
     &:before {
         // Browsers are unable to draw 0.25pt (0.32px) width
-        width: align(0.45pt);
+        width: 1px;
         top: align(4.15pt);
         bottom: 0;
         left: align(-4.17pt);
