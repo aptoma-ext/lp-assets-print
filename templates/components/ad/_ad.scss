@@ -5,17 +5,17 @@
     .ad-placeholder {
         background: #CCC;
         width: 100%;
-        // display: flex;
-        // align-items: center;
-        // flex-direction: column;
-        // justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
-        // &:before {
-        //     font-family: var(--ad-font-family, Arial);
-        //     font-size: var(--ad-font-size, 20pt);
-        //     content: 'Annonse';
-        //     display: block;
-        // }
+        &:before {
+            font-family: var(--ad-font-family, Arial);
+            font-size: var(--ad-font-size, 20pt);
+            content: 'Annonse';
+            display: block;
+        }
     }
 
     // &:before, &:after {
