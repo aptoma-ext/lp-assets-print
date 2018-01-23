@@ -1,10 +1,35 @@
 .ad {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     .ad-placeholder {
-        background: gray;
+        background: transparent;
         width: 100%;
+    }
+
+    &:before, &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background: #000;
+
+        @media print {
+            background: CMYK(0%, 0%, 0%, 100%);
+        }
+    }
+
+    &:after {
+        height: align(0.25pt);
+        top: 0;
+        left: align(5.35pt);
+        right: 0;
+    }
+
+    &:before {
+        width: align(0.25pt);
+        top: align(4.15pt);
+        bottom: 0;
+        left: 0;
     }
 }
 
@@ -36,6 +61,12 @@
     height: 291mm;
 }
 
-.ad--5 .ad-placeholder {
-    height: 365mm;
+.ad--5 {
+    &:before {
+        display: none;
+    }
+
+    .ad-placeholder {
+        height: 365mm;
+    }
 }
