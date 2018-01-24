@@ -14,30 +14,6 @@
             background-color: var(--headline-background-color-cmyk, transparent);
         }
     }
-
-    .title-quote {
-        $size: 195px;
-
-        text-indent: 100px;
-        position: relative;
-
-        &:before {
-            display: block;
-            content: '\201D';
-            font-family: 'Arial Black';
-            font-weight: 100;
-            font-size: $size;
-            height: $size;
-            position: absolute;
-            top: 17px;
-            left: -100px;
-            color: var(--headline-quotation-color, rgb(26, 140, 206));
-
-            @media print {
-                color: var(--headline-quotation-color-cmyk, CMYK(95%, 25%, 0%, 0%));
-            }
-        }
-    }
 }
 
 .headline--top-left {
