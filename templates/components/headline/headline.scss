@@ -14,6 +14,16 @@
             background-color: var(--headline-background-color-cmyk, transparent);
         }
     }
+
+    .title-quote {
+        span:first-child {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 36.1 34.92'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect width='36.1' height='34.92' style='fill:none'/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cg style='clip-path:url(%23clip-path)'%3E%3Cpath d='M36.1,0H18.8V17.94h7.47c0,4.28-3,8.12-7.9,9.51v7.47c4.91-.32,10.15-2.45,13.24-5.87,2.89-3.2,4.49-7.37,4.49-13.67ZM17.73,0H.43V17.94H7.9c0,4.28-3,8.12-7.9,9.51v7.47c4.91-.32,10.15-2.45,13.24-5.87,2.89-3.2,4.49-7.37,4.49-13.67Z' style='fill:%230091d5'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+            @media print {
+                color: var(--headline-quotation-color-cmyk, CMYK(95%, 25%, 0%, 0%));
+            }
+        }
+    }
 }
 
 .headline--top-left {
