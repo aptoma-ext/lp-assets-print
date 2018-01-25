@@ -16,11 +16,11 @@
     }
 
     .title-dash {
-        span:first-child {
+        .pencil-wrapper span:first-child {
             display: inline-block;
         }
 
-        span:first-child::first-letter,
+        .pencil-wrapper span:first-child::first-letter,
         &::first-letter {
             color: var(--headline-dash-color, cadetblue);
             font-family: 'DN Icons';
