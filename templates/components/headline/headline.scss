@@ -16,7 +16,12 @@
     }
 
     .title-dash {
-        &:first-letter {
+        span:first-child {
+            display: inline-block;
+        }
+
+        span:first-child::first-letter,
+        &::first-letter {
             color: var(--headline-dash-color, cadetblue);
             font-family: 'DN Icons';
             font-weight: normal;
