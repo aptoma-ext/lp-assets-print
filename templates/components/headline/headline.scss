@@ -15,20 +15,13 @@
         }
     }
 
-    .title-dash {
-        .pencil-wrapper span:first-child {
-            // display: inline-block;
-        }
+    .dash {
+        color: var(--headline-dash-color, cadetblue);
+        font-family: 'DN Icons';
+        font-weight: normal;
 
-        .pencil-wrapper span:first-child::first-letter,
-        &::first-letter {
-            color: var(--headline-dash-color, cadetblue);
-            font-family: 'DN Icons';
-            font-weight: normal;
-
-            @media print {
-                color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
-            }
+        @media print {
+            color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
         }
     }
 }
