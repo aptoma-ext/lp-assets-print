@@ -96,3 +96,12 @@
         bottom: auto;
     }
 }
+
+.picture--caption-inline-top-right {
+    figcaption, .figcaption {
+        right: 0;
+        left: auto;
+        top: 0;
+        bottom: auto;
+    }
+}
