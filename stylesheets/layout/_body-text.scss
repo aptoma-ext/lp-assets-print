@@ -49,7 +49,7 @@
         }
     }
 
-    .alf-block, p, span, ul, li {
+    .alf-block, p, ul, li {
         font-family: "Guardian Text Egypt";
         text-rendering: optimizeLegibility;
         color: #000;
@@ -83,10 +83,17 @@
 
     }
 
+    .body-dropcap {
+        span.row:first-of-type {
+            height: auto;
+        }
+    }
+
     .drop-cap {
-        color: #000;
+        color: var(--drop-cap-color, blue);
+        font-family: var(--drop-cap-font-family, Arial);
         float: left;
-        font-size: 31.6pt;
+        font-size: 83.44pt;
         line-height: 0.6em;
         padding: 0;
         margin: 8.7pt 2pt 0 0;
