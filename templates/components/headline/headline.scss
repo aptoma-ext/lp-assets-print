@@ -26,6 +26,25 @@
     }
 }
 
+.headline--lines {
+    .alf-header-line {
+        display: block;
+        background: #000;
+        margin-bottom: 5px;
+        box-shadow: 0 0 30px #000;
+
+        @media print {
+            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+        }
+    }
+
+    .alf-header-lines-2 {
+        .alf-header-line-1 {
+            transform: rotate(-1deg);
+        }
+    }
+}
+
 .headline--top-left {
     position: absolute;
     top: 0;
