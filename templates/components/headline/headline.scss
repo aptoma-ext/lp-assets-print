@@ -24,17 +24,20 @@
             color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
         }
     }
+
+    .alf-header-line {
+        display: block
+    }
 }
 
 .headline--lines {
     .alf-header-line {
-        display: block;
-        background: #000;
+        background: #FFF;
         margin-bottom: 5px;
         box-shadow: 0 0 30px #000;
 
         @media print {
-            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 0%);
         }
     }
 
