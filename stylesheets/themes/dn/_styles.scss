@@ -9,6 +9,10 @@ $dn-orange: rgb(255, 64, 0);
 $dn-orange-cmyk: CMYK(0%, 75%, 100%, 0%);
 $dn-neutral-tint: rgb(236, 232, 225);
 $dn-neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
+$dn-purple: rgb(135, 96, 161);
+$dn-purple-cmyk: CMYK(50%, 70%, 0%, 0%);
+$dn-deep-purple: rgb(91, 40, 105);
+$dn-deep-purple-cmyk: CMYK(70%, 100%, 20%, 10%);
 
 $medium-font-size: 13.6pt;
 $medium-line-height: align(13.6pt);
@@ -47,4 +51,17 @@ $medium-line-height: align(13.6pt);
 
     --drop-cap-color: $dn-dark-blue;
     --drop-cap-font-family: "Guardian Sans XCond";
+}
+
+.theme--purple {
+    --headline-dash-color: $dn-purple;
+    --headline-dash-color-cmyk: $dn-purple-cmyk;
+
+    --fact-box-border-color: $dn-purple;
+    --fact-box-border-color-cmyk: $dn-purple-cmyk;
+
+    --topic-color: $dn-deep-purple;
+    --topic-color-cmyk: $dn-deep-purple-cmyk;
+
+    --drop-cap-color: $dn-deep-purple;
 }
