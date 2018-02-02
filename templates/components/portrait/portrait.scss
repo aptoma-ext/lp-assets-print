@@ -1,5 +1,49 @@
 .portrait {
-    img {
+    height: align(45.35pt);
+
+    figure {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
         float: left;
+        flex: 0 0 align(47.2pt);
+        height: align(45.35pt);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    figcaption {
+        height: align(45.35pt);
+        flex: 1;
+        background-color: var(--portrait-background, #333);
+
+        p {
+            padding: align(4.2pt) align(3.5pt);
+            font-size: 7.1pt;
+            color: var(--portrait-color, #FFF);
+            font-weight: var(--portrait-font-weight, normal);
+            font-family: var(--portrait-font-family, Arial);
+        }
+
+        @media print {
+            color: var(--portrait-color-cmyk);
+            background-color: var(--portrait-background-cmyk);
+        }
+
+        b {
+            font-weight: var(--portrait-strong-font-weight, bold);
+            font-family: var(--portrait-strong-font-family, Arial);
+            color: var(--portrait-strong-color, yellow);
+
+            @media print {
+                color: var(--portrait-strong-color-cmyk);
+            }
+        }
     }
 }

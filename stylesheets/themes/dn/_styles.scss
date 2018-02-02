@@ -1,4 +1,6 @@
 $black: #000;
+$dn-dark-grey: rgb(63, 62, 62);
+$dn-dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
 $dn-blue: rgb(19, 136, 204);
 $dn-blue-cmyk: CMYK(95%, 25%, 0%, 0%);
 $dn-dark-blue: rgb(31, 93, 166);
@@ -51,6 +53,17 @@ $medium-line-height: align(13.6pt);
 
     --drop-cap-color: $dn-dark-blue;
     --drop-cap-font-family: "Guardian Sans XCond";
+
+    --portrait-font-family: "Guardian TextSans";
+    --portrait-font-weight: 500;
+    --portrait-color: #FFF;
+    --portrait-color-cmyk: CMYK(0%, 0%, 0%, 0%);
+    --portrait-background: $dn-dark-grey;
+    --portrait-background-cmyk: $dn-dark-grey-cmyk;
+    --portrait-strong-font-family: "Guardian Sans";
+    --portrait-strong-font-weight: bold;
+    --portrait-strong-color: $dn-yellow;
+    --portrait-strong-color-cmyk: $dn-yellow-cmyk;
 }
 
 .theme--purple {
