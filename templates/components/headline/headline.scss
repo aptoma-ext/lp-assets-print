@@ -28,21 +28,41 @@
     .alf-header-line {
         display: block
     }
+
+    .alf-header-line-inner {
+        // force it into a single line, so we're free to add padding and other stuff
+        white-space: nowrap;
+    }
 }
 
-.headline--lines {
+.headline-bg-lines {
     .alf-header-line {
         margin-bottom: 5px;
     }
 
     .alf-header-line-inner {
-        background: #FFF;
-        box-shadow: 0 0 30px #000;
+        background-color: #FFF;
         padding: 0 10px;
-        white-space: nowrap; // force it into a single line, since we're adding padding above
 
         @media print {
-            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 0%);
+            background-color: CMYK(0%, 0%, 0%, 0%);
+        }
+    }
+}
+
+.headline--box-shadow-lines {
+    .alf-header-line {
+        margin-bottom: 5px;
+    }
+
+    .alf-header-line-inner {
+        background-color: #FFF;
+        box-shadow: 0 0 30px #000;
+        padding: 0 10px;
+
+        @media print {
+            background-color: CMYK(0%, 0%, 0%, 0%);
+            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
         }
     }
 
