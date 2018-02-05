@@ -42,7 +42,7 @@
     }
 
     .alf-region {
-        margin-top: align($base-line-height - 0.89pt);
+        margin-top: $base-line-height;
         overflow: hidden;
 
         .body-text-bold {
