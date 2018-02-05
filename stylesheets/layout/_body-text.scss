@@ -11,6 +11,10 @@
             -webkit-text-align-last: justify;
             width: 100%;
             height: $base-line-height;
+            position: relative;
+            // align the text to the top (since line-height centers the text)
+            // this value is based on the font metrics
+            top: align(-0.89pt);
         }
 
         &.row:last-of-type {
@@ -35,7 +39,7 @@
 }
 
 .alf-region {
-    margin-top: align($base-line-height - 0.89pt);
+    margin-top: $base-line-heigh;
     overflow: hidden;
 
     .body-text-bold {
