@@ -11,10 +11,9 @@
             -webkit-text-align-last: justify;
             width: 100%;
             height: $base-line-height;
-            position: relative;
             // align the text to the top (since line-height centers the text)
             // this value is based on the font metrics
-            top: align(-0.89pt);
+            transform: translateY(align(-0.89pt));
         }
 
         &.row:last-of-type {
