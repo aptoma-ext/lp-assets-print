@@ -50,12 +50,6 @@
         p {
             margin-bottom: 0 !important;
         }
-
-        .body-text span {
-            &.row:first-of-type {
-                text-indent: 0 !important;
-            }
-        }
     }
 
     .alf-block, p, ul, li {
@@ -83,13 +77,6 @@
             background-size: align(7.5pt) align(7.5pt);
             background-position: 0 align(1.48pt);
         }
-    }
-
-    .alf-block-is-first {
-        .row {
-            text-indent: 0 !important;
-        }
-
     }
 
     .body-dropcap {
@@ -124,10 +111,6 @@
         padding-top: 0;
         padding-bottom: 0;
         color: CMYK(0%, 0%, 0%, 100%);
-
-        + .alf-block .row {
-            text-indent: 0 !important;
-        }
     }
 
     blockquote {
