@@ -13,13 +13,23 @@
             height: $base-line-height;
         }
 
-        &.row:first-of-type {
-            text-indent: $text-indent;
-        }
-
         &.row:last-of-type {
             text-align-last: auto;
             -webkit-text-align-last: auto;
+        }
+    }
+
+    .row:first-of-type {
+        text-indent: $text-indent;
+    }
+
+    .body-unindented .row {
+        text-indent: 0;
+    }
+
+    .alf-is-overflow {
+        .row, .row:first-of-type {
+            text-indent: 0;
         }
     }
 }
