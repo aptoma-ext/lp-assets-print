@@ -1,4 +1,10 @@
 .text-column {
+    .alf-block {
+        // align the text to the top (since line-height centers the text)
+        // this value is based on the font metrics
+        transform: translateY(align(-0.89pt));
+    }
+
     .body-text {
         letter-spacing: var(--letter-spacing, $letter-spacing);
 
