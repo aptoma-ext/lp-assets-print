@@ -27,10 +27,11 @@
         text-indent: 0;
     }
 
-    .alf-is-overflow {
-        .row, .row:first-of-type {
-            text-indent: 0;
-        }
+}
+
+.alf-is-overflow .body-text {
+    .row, .row:first-of-type {
+        text-indent: 0;
     }
 }
 
