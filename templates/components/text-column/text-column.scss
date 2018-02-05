@@ -100,7 +100,7 @@
         font-weight: 800;
         font-size: align(11pt);
         line-height: var(--line-height, $base-line-height);
-        margin-top: 8.61pt;
+        margin-top: align(8.61pt);
         margin-bottom: 1.8pt;
         text-indent: 0;
         letter-spacing: -0.1pt;
@@ -122,5 +122,18 @@
         small {
             font-size: 10pt;
         }
+    }
+}
+
+.text-column-inline-container {
+    margin-top: $document-grid-offset;
+    margin-bottom: $document-grid-offset;
+
+    & + h3 {
+        margin-top: align(8.61pt);
+    }
+
+    & + .alf-block {
+        margin-top: $base-line-height;
     }
 }
