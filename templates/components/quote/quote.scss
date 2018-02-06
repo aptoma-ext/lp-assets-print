@@ -1,7 +1,7 @@
 .quote blockquote,
 blockquote {
     background-color: var(--quote-background-color, steelblue);
-    padding: align(5.64pt) align(6.06pt);
+    padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
 
     @media print {
         background-color: var(--quote-background-color-cmyk);
@@ -11,7 +11,7 @@ blockquote {
         content: '–';
         display: block;
         font-family: 'DN Icons';
-        font-size: 100pt;
+        font-size: 44pt;
         line-height: 0.8em;
         color: #FFF;
 
