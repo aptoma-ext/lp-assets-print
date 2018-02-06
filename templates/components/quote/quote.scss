@@ -12,6 +12,12 @@ blockquote {
         display: block;
         font-family: 'DN Icons';
         font-size: 100pt;
+        line-height: 0.8em;
+        color: #FFF;
+
+        @media print {
+            color: CMYK(0%, 0%, 0%, 0%);
+        }
     }
 
     [itemprop=text] {
