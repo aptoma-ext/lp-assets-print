@@ -64,6 +64,9 @@ $medium-line-height: align(13.6pt);
     --portrait-strong-font-weight: bold;
     --portrait-strong-color: $dn-yellow;
     --portrait-strong-color-cmyk: $dn-yellow-cmyk;
+
+    --quote-background-color: $dn-blue;
+    --quote-background-color-cmyk: $dn-blue-cmyk;
 }
 
 .theme--purple {
@@ -77,4 +80,7 @@ $medium-line-height: align(13.6pt);
     --topic-color-cmyk: $dn-deep-purple-cmyk;
 
     --drop-cap-color: $dn-deep-purple;
+
+    --quote-background-color: $dn-purple;
+    --quote-background-color-cmyk: $dn-purple-cmyk;
 }

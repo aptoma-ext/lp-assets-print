@@ -143,6 +143,12 @@
     @font-face {
         font-family: 'Guardian Sans Cond';
         font-style: normal;
+        font-weight: 600;
+        src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Semibold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Guardian Sans Cond';
+        font-style: normal;
         font-weight: 800;
         src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Bold.otf') format('opentype');
     }
@@ -182,12 +188,6 @@
         font-style: normal;
         font-weight: normal;
         src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond_1/Guardian%20Sans%20Cond-Regular.otf') format('opentype');
-    }
-    @font-face {
-        font-family: 'Guardian Sans Cond Semibold';
-        font-style: normal;
-        font-weight: 800;
-        src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Semibold.otf') format('opentype');
     }
     @font-face {
         font-family: 'Guardian Sans Cond Bold';
