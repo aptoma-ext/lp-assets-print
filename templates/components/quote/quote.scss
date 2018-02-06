@@ -1,46 +1,47 @@
-.quote blockquote,
-blockquote {
-    background-color: var(--quote-background-color, steelblue);
-    padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
-
-    @media print {
-        background-color: var(--quote-background-color-cmyk);
-    }
-
-    &:before {
-        content: '–';
-        display: block;
-        font-family: 'DN Icons';
-        font-size: 44pt;
-        line-height: 1em;
-        color: #FFF;
-        height: $base-line-height * 2;
+.quote {
+    blockquote {
+        background-color: var(--quote-background-color, steelblue);
+        padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
 
         @media print {
-            color: CMYK(0%, 0%, 0%, 0%);
+            background-color: var(--quote-background-color-cmyk);
         }
-    }
 
-    [itemprop=text] {
-        font-family: 'Guardian Sans Cond';
-        font-weight: 600;
-        font-size: 16.2pt;
-        line-height: 1;
-        color: #FFF;
+        &:before {
+            content: '–';
+            display: block;
+            font-family: 'DN Icons';
+            font-size: 44pt;
+            line-height: 1em;
+            color: #FFF;
+            height: $base-line-height * 2;
 
-        @media print {
-            color: CMYK(0%, 0%, 0%, 0%);
+            @media print {
+                color: CMYK(0%, 0%, 0%, 0%);
+            }
         }
-    }
 
-    [itemprop=creator] {
-        font-family: 'Guardian Sans';
-        font-weight: 800;
-        font-size: 8.4pt;
-        color: #FFF;
+        [itemprop=text] {
+            font-family: 'Guardian Sans Cond';
+            font-weight: 600;
+            font-size: 16.2pt;
+            line-height: 1;
+            color: #FFF;
 
-        @media print {
-            color: CMYK(0%, 0%, 0%, 0%);
+            @media print {
+                color: CMYK(0%, 0%, 0%, 0%);
+            }
+        }
+
+        [itemprop=creator] {
+            font-family: 'Guardian Sans';
+            font-weight: 800;
+            font-size: 8.4pt;
+            color: #FFF;
+
+            @media print {
+                color: CMYK(0%, 0%, 0%, 0%);
+            }
         }
     }
 }
