@@ -6,7 +6,7 @@
     }
 
     blockquote {
-        padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
+        padding: $document-grid-offset align(6.06pt) align(6.06pt) align(6.06pt);
 
         &:before {
             content: '–';
