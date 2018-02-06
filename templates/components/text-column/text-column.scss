@@ -127,7 +127,7 @@
 
 .text-column-inline-container {
     margin-top: $document-grid-offset;
-    margin-bottom: $document-grid-offset;
+    margin-bottom: 0;
 
     & + h3 {
         margin-top: align(8.61pt);
