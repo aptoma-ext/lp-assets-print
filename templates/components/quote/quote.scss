@@ -35,10 +35,14 @@
         }
 
         [itemprop=creator] {
-            font-family: 'Guardian Sans';
-            font-weight: 800;
+            font-family: 'Guardian TextSans';
             font-size: 8.4pt;
             color: #FFF;
+
+            .author {
+                font-family: 'Guardian Sans';
+                font-weight: 800;
+            }
 
             @media print {
                 color: CMYK(0%, 0%, 0%, 0%);
