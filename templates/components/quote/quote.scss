@@ -1,11 +1,12 @@
 .quote {
-    blockquote {
-        background-color: var(--quote-background-color, steelblue);
-        padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
+    background-color: var(--quote-background-color, steelblue);
 
-        @media print {
-            background-color: var(--quote-background-color-cmyk);
-        }
+    @media print {
+        background-color: var(--quote-background-color-cmyk);
+    }
+
+    blockquote {
+        padding: $document-grid-offset align(6.06pt) $base-line-height align(6.06pt);
 
         &:before {
             content: '–';
@@ -14,7 +15,7 @@
             font-size: 44pt;
             line-height: 1em;
             color: #FFF;
-            height: $base-line-height * 2;
+            height: $base-line-height * 4;
 
             @media print {
                 color: CMYK(0%, 0%, 0%, 0%);
