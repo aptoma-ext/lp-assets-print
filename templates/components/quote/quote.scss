@@ -14,6 +14,7 @@ blockquote {
         font-size: 44pt;
         line-height: 0.8em;
         color: #FFF;
+        height: $base-line-height * 2;
 
         @media print {
             color: CMYK(0%, 0%, 0%, 0%);
