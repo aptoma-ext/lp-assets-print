@@ -2,11 +2,9 @@
 blockquote {
     background-color: var(--quote-background-color, steelblue);
     padding: align(5.64pt) align(6.06pt);
-    color: #FFF;
 
     @media print {
         background-color: var(--quote-background-color-cmyk);
-        color: CMYK(0%, 0%, 0%, 0%);
     }
 
     &:before {
@@ -21,11 +19,21 @@ blockquote {
         font-weight: 600;
         font-size: 16.2pt;
         line-height: 1;
+        color: #FFF;
+
+        @media print {
+            color: CMYK(0%, 0%, 0%, 0%);
+        }
     }
 
     [itemprop=creator] {
         font-family: 'Guardian Sans';
         font-weight: 800;
         font-size: 8.4pt;
+        color: #FFF;
+
+        @media print {
+            color: CMYK(0%, 0%, 0%, 0%);
+        }
     }
 }
