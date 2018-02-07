@@ -1,5 +1,6 @@
 .text-column {
     overflow: hidden;
+    position: relative;
 
     .alf-block {
         // align the text to the top (since line-height centers the text)
@@ -118,4 +119,10 @@
     & + .alf-block {
         margin-top: $base-line-height;
     }
+}
+
+.text-column-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
