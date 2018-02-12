@@ -1,20 +1,20 @@
 $black: #000;
-$dn-dark-grey: rgb(63, 62, 62);
-$dn-dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
-$dn-blue: rgb(19, 136, 204);
-$dn-blue-cmyk: CMYK(95%, 25%, 0%, 0%);
-$dn-dark-blue: rgb(31, 93, 166);
-$dn-dark-blue-cmyk: CMYK(100% 60% 0%, 0%);
-$dn-yellow: rgb(255, 204, 0);
-$dn-yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
-$dn-orange: rgb(255, 64, 0);
-$dn-orange-cmyk: CMYK(0%, 75%, 100%, 0%);
-$dn-neutral-tint: rgb(236, 232, 225);
-$dn-neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
-$dn-purple: rgb(135, 96, 161);
-$dn-purple-cmyk: CMYK(50%, 70%, 0%, 0%);
-$dn-deep-purple: rgb(91, 40, 105);
-$dn-deep-purple-cmyk: CMYK(70%, 100%, 20%, 10%);
+$dark-grey: rgb(63, 62, 62);
+$dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
+$blue: rgb(19, 136, 204);
+$blue-cmyk: CMYK(95%, 25%, 0%, 0%);
+$dark-blue: rgb(31, 93, 166);
+$dark-blue-cmyk: CMYK(100% 60% 0%, 0%);
+$yellow: rgb(255, 204, 0);
+$yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
+$orange: rgb(255, 64, 0);
+$orange-cmyk: CMYK(0%, 75%, 100%, 0%);
+$neutral-tint: rgb(236, 232, 225);
+$neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
+$purple: rgb(135, 96, 161);
+$purple-cmyk: CMYK(50%, 70%, 0%, 0%);
+$deep-purple: rgb(91, 40, 105);
+$deep-purple-cmyk: CMYK(70%, 100%, 20%, 10%);
 
 $medium-font-size: 13.6pt;
 $medium-line-height: align(13.6pt);
@@ -23,6 +23,10 @@ $medium-line-height: align(13.6pt);
 
 :root {
     --font-size-body: align(8.4pt);
+    --color-base: $blue;
+    --color-base-cmyk: $blue-cmyk;
+    --color-base-dark: $dark-blue;
+    --color-base-dark-cmyk: $dark-blue-cmyk;
 }
 
 .theme--dn {
@@ -35,52 +39,43 @@ $medium-line-height: align(13.6pt);
     --headline-font-size-md: 90pt;
     --headline-font-size-lg: 105pt;
     --headline-font-size-xl: 125pt;
-    --headline-dash-color: $dn-blue;
-    --headline-dash-color-cmyk: $dn-blue-cmyk;
+    --headline-dash-color: var(--color-base);
+    --headline-dash-color-cmyk: var(--color-base-cmyk);
 
     // Fact boxes
-    --fact-box-border-color: $dn-blue;
-    --fact-box-border-color-cmyk: $dn-blue-cmyk;
-    --fact-box-background-color: $dn-neutral-tint;
-    --fact-box-background-color-cmyk: $dn-neutral-tint-cmyk;
+    --fact-box-border-color: var(--color-base);
+    --fact-box-border-color-cmyk: var(--color-base-cmyk);
+    --fact-box-background-color: $neutral-tint;
+    --fact-box-background-color-cmyk: $neutral-tint-cmyk;
 
     --topic-font-family: "Guardian Sans Cond";
-    --topic-color: $dn-dark-blue;
-    --topic-color-cmyk: $dn-dark-blue-cmyk;
+    --topic-color: var(--color-base-dark);
+    --topic-color-cmyk: var(--color-base-dark-cmyk);
 
     --ad-font-family: "Guardian Sans Cond";
     --ad-font-size: 20pt;
 
-    --drop-cap-color: $dn-dark-blue;
+    --drop-cap-color: var(--color-base-dark);
     --drop-cap-font-family: "Guardian Sans XCond";
 
     --portrait-font-family: "Guardian TextSans";
     --portrait-font-weight: 500;
     --portrait-color: #FFF;
     --portrait-color-cmyk: CMYK(0%, 0%, 0%, 0%);
-    --portrait-background: $dn-dark-grey;
-    --portrait-background-cmyk: $dn-dark-grey-cmyk;
+    --portrait-background: $dark-grey;
+    --portrait-background-cmyk: $dark-grey-cmyk;
     --portrait-strong-font-family: "Guardian Sans";
     --portrait-strong-font-weight: bold;
-    --portrait-strong-color: $dn-yellow;
-    --portrait-strong-color-cmyk: $dn-yellow-cmyk;
+    --portrait-strong-color: $yellow;
+    --portrait-strong-color-cmyk: $yellow-cmyk;
 
-    --quote-background-color: $dn-blue;
-    --quote-background-color-cmyk: $dn-blue-cmyk;
+    --quote-background-color: var(--color-base);
+    --quote-background-color-cmyk: var(--color-base-cmyk);
 }
 
 .theme--purple {
-    --headline-dash-color: $dn-purple;
-    --headline-dash-color-cmyk: $dn-purple-cmyk;
-
-    --fact-box-border-color: $dn-purple;
-    --fact-box-border-color-cmyk: $dn-purple-cmyk;
-
-    --topic-color: $dn-deep-purple;
-    --topic-color-cmyk: $dn-deep-purple-cmyk;
-
-    --drop-cap-color: $dn-deep-purple;
-
-    --quote-background-color: $dn-purple;
-    --quote-background-color-cmyk: $dn-purple-cmyk;
+    --color-base: $purple;
+    --color-base-cmyk: $purple-cmyk;
+    --color-base-dark: $deep-purple;
+    --color-base-dark-cmyk: $deep-purple-cmyk;
 }
