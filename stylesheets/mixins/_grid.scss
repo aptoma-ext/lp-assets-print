@@ -7,74 +7,77 @@
     padding: 0;
 }
 
-@mixin grid($columns, $formatWidth, $columnWidth, $vertMargin, $horMargin) {
+@mixin grid($columns, $formatWidth, $columnWidth, $vertMargin, $horMargin, $scope: '') {
     $columnSpacing: ($formatWidth - (($columnWidth * $columns))) / ($columns - 1);
 
-    [class*=alf-col-] {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: $columnWidth;
+    #{$scope} {
+        & [class*=alf-col-] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $columnWidth;
+        }
+
+        & .alf-region.alf-col-bottom,
+        & .alf-col-bottom {
+            margin-bottom: $vertMargin !important;
+        }
+
+        & .alf-region.alf-col-top,
+        & .alf-col-top {
+            margin-top: $vertMargin !important;
+        }
+
+        @for $i from 1 through $columns {
+            $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
+
+            &.alf-cols-#{$i} {
+                width: $width;
+                --columns: $i;
+            }
+
+            & .alf-col-#{$i} {
+                left: ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
+                --column: $i;
+            }
+
+            & .alf-colspan-#{$i} {
+                width: $width;
+                --colspan: $i;
+            }
+
+            & .alf-overlay-colspan-#{$i} {
+                z-index: 10000;
+                width: $width;
+            }
+        }
+
+        $start: $columns + 1;
+
+        @for $i from $start through ($columns * 2) {
+            $width: ($columnWidth * $i) + ($columnSpacing * ($i - 2));
+            $outerWidth: $width + ($horMargin * 2);
+
+            &.alf-cols-#{$i} {
+                width: $outerWidth;
+                --columns: $i;
+            }
+
+            & .alf-col-#{$i} {
+                left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 2));
+                --column: $i;
+            }
+
+            & .alf-colspan-#{$i} {
+                width: $width + ($horMargin * 2);
+                --colspan: $i;
+            }
+
+            & .alf-overlay-colspan-#{$i} {
+                z-index: 10000;
+                width: $width + ($horMargin * 2);
+            }
+        }
     }
 
-    .alf-region.alf-col-bottom,
-    .alf-col-bottom {
-        margin-bottom: $vertMargin !important;
-    }
-
-    .alf-region.alf-col-top,
-    .alf-col-top {
-        margin-top: $vertMargin !important;
-    }
-
-    @for $i from 1 through $columns {
-        $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
-
-        .alf-cols-#{$i} {
-            width: $width;
-            --columns: $i;
-        }
-
-        .alf-col-#{$i} {
-            left: ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
-            --column: $i;
-        }
-
-        .alf-colspan-#{$i} {
-            width: $width;
-            --colspan: $i;
-        }
-
-        .alf-overlay-colspan-#{$i} {
-            z-index: 10000;
-            width: $width;
-        }
-    }
-
-    $start: $columns + 1;
-
-    @for $i from $start through ($columns * 2) {
-        $width: ($columnWidth * $i) + ($columnSpacing * ($i - 2));
-        $outerWidth: $width + ($horMargin * 2);
-
-        .alf-cols-#{$i} {
-            width: $outerWidth;
-            --columns: $i;
-        }
-
-        .alf-col-#{$i} {
-            left: ($horMargin * 2) + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 2));
-            --column: $i;
-        }
-
-        .alf-colspan-#{$i} {
-            width: $width + ($horMargin * 2);
-            --colspan: $i;
-        }
-
-        .alf-overlay-colspan-#{$i} {
-            z-index: 10000;
-            width: $width + ($horMargin * 2);
-        }
-    }
 }
