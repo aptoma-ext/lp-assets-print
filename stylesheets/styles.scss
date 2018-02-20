@@ -42,7 +42,7 @@
         }
     }
 
-    @include grid(5, align(246mm), align(46mm), 0, align(13mm), '.alf-grid');
+    @include grid(5, align(246mm), align(46mm), 0, align(13mm), '.alf-grid.alf-grid-5');
     @include grid(6, align(246mm), align(46mm), 0, align(13mm), '.alf-grid.alf-grid-6');
 
     @import "_utils";
