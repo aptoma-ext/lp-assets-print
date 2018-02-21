@@ -47,7 +47,7 @@
     column-rule: align(0.25pt) solid #000;
     column-rule-color: CMYK(0%, 0%, 0%, 100%);
     // Why do we need to subtract/offset more to make this font align, compared to the body text?
-    margin-top: align($base-line-height - 1.92pt);
+    margin-top: align($base-line-height - 0.66pt);
 
     ul {
         margin: 0;
