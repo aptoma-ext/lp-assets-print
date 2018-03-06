@@ -56,6 +56,11 @@
         font-kerning: none;
         font-size: $base-font-size;
         line-height: $base-line-height;
+
+        b {
+            font-family: "Guardian Sans";
+            font-weight: bold;
+        }
     }
 
     ul {
