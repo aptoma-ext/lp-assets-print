@@ -7,9 +7,10 @@
     font-weight: normal;
     font-size: $base-font-size;
     line-height: align(10.4pt);
-    padding-top: align(2.8pt);
+    padding-top: 0;
 
     p {
+        transform: translateY(align(2.1px));
         font-family: "Guardian TextSans Normal" !important;
     }
 }
