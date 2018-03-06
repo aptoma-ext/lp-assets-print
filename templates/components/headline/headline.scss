@@ -131,27 +131,34 @@
 
 
 .headline--42 h1 {
-    font-size: var(--headline-font-size-42, 42.2pt);
+    font-size: var(--headline-font-size-42, 42.2pt);   
+    letter-spacing: var(--headline-letter-spacing, -0.8pt);   
 }
 
 
 .headline--52 h1 {
     font-size: var(--headline-font-size-52, 52.6pt);
+    letter-spacing: var(--headline-letter-spacing, -1pt);   
+
 }
 
 
 .headline--63 h1 {
     font-size: var(--headline-font-size-63, 63pt);
+    letter-spacing: var(--headline-letter-spacing, -1.2pt);   
+
 }
 
 
 .headline--74 h1 {
     font-size: var(--headline-font-size-74, 94.3pt);
+    letter-spacing: var(--headline-letter-spacing, -1.4pt);     
 }
 
 
 .headline--83 h1 {
     font-size: var(--headline-font-size-83, 83.8pt);
+    letter-spacing: var(--headline-letter-spacing, -1.6pt);     
 }
 
 
@@ -162,19 +169,23 @@
 
 .headline--104 h1 {
     font-size: var(--headline-font-size-104, 104.6pt);
+    letter-spacing: var(--headline-letter-spacing, -2pt); 
 }
 
 
 .headline--115 h1 {
     font-size: var(--headline-font-size-115, 115pt);
+    letter-spacing: var(--headline-letter-spacing, -2.2pt); 
 }
 
 
 .headline--125 h1 {
     font-size: var(--headline-font-size-125, 125.4pt);
+    letter-spacing: var(--headline-letter-spacing, -2.4pt); 
 }
 
 
 .headline--135 h1 {
     font-size: var(--headline-font-size-135, 135.8pt);
+    letter-spacing: var(--headline-letter-spacing, -2.6pt); 
 }
