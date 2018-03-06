@@ -116,7 +116,7 @@
 }
 
 .text-column-inline-container {
-    margin-top: $document-grid-offset;
+    margin-top: $base-line-height;
     margin-bottom: 0;
 
     & + .alf-block {
