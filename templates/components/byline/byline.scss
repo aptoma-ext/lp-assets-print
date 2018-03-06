@@ -25,8 +25,12 @@
     }
 }
 
+.byline-location-wrapper {
+    transform: translateY(align(4px));
+}
+
 .byline-author {
-    margin-top: align(4pt);
+    margin-top: align(0.44px);
     font-family: "Guardian Sans Cond";
     font-size: $medium-font-size;
     line-height: $medium-line-height;
