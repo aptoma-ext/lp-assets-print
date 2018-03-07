@@ -14,7 +14,7 @@
     $plural: if($i > 1, 's', '');
 
     .u-margin-top-#{$i}-line#{$plural} {
-        margin-bottom: $base-line-height * $i;
+        margin-top: $base-line-height * $i;
     }
 
     .u-margin-bottom-#{$i}-line#{$plural} {
