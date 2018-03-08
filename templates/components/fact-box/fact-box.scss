@@ -36,6 +36,10 @@
     }
 }
 
+.fact-box-body-container {
+    margin-top: align($base-line-height);
+}
+
 .fact-box-body {
     font-family: "Guardian TextSans";
     text-rendering: optimizeLegibility;
@@ -50,7 +54,6 @@
     column-gap: 4mm;
     column-rule: align(0.25pt) solid #000;
     column-rule-color: CMYK(0%, 0%, 0%, 100%);
-    margin-top: align($base-line-height);
     transform: translateY(align(4px));
 
     ul {
