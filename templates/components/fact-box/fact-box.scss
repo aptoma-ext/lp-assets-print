@@ -11,6 +11,10 @@
         border-top-color: var(--fact-box-border-color-cmyk);
         background-color: var(--fact-box-background-color-cmyk);
     }
+
+    &.alf-align {
+        --grid-align-top: baseline;
+    }
 }
 
 .fact-box-header {
