@@ -1,5 +1,7 @@
 .portrait {
     height: align(45.35pt);
+    --grid-align-top: baseline;
+    --grid-align-bottom: top;
 
     figure {
         display: flex;
@@ -15,6 +17,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            --image-crop-mode: tight;
         }
     }
 
