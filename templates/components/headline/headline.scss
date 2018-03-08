@@ -4,7 +4,7 @@
         color: var(--headline-color, var(--color, #000));
         font-size: var(--headline-font-size, 94.2pt);
         line-height: var(--headline-line-height, 0.9em);
-        letter-spacing: var(--headline-letter-spacing, -1.8pt);
+        letter-spacing: var(--headline-letter-spacing, -2.0pt);
         background-color: var(--headline-background-color, transparent);
         font-weight: var(--headline-font-weight, 800);
         font-family: var(--headline-font-family, sans-serif);
@@ -164,7 +164,7 @@
 
 .headline--94 h1 {
     font-size: var(--headline-font-size-94, 94.2pt);
-    letter-spacing: var(--headline-letter-spacing, -2.2pt);
+    letter-spacing: var(--headline-letter-spacing, -2.0pt);
 }
 
 
