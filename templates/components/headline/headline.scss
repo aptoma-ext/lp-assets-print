@@ -125,6 +125,12 @@
 }
 
 
+.headline--23 h1 {
+    font-size: var(--headline-font-size-31, 23pt);
+    letter-spacing: var(--headline-letter-spacing, -0.3pt);    
+}
+
+
 .headline--31 h1 {
     font-size: var(--headline-font-size-31, 31.8pt);
     letter-spacing: var(--headline-letter-spacing, -0.3pt);    
