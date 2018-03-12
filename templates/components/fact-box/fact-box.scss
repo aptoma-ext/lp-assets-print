@@ -1,7 +1,7 @@
 .fact-box {
     widows: 1;
     orphans: 1;
-    border-top: $document-grid-offset solid var(--fact-box-border-color, steelblue);
+    border-top: $baseline-offset solid var(--fact-box-border-color, steelblue);
     background-color: var(--fact-box-background-color, oldlace);
     line-height: $base-line-height;
     -ro-pdf-overprint-content: mode1;
@@ -25,7 +25,7 @@
     box-sizing: content-box;
     margin-bottom: 0;
     // Align to the first base line (red line)
-    margin-top: $base-line-height - $document-grid-offset;
+    margin-top: $base-line-height - $baseline-offset;
     -ro-pdf-overprint-content: mode1;
 }
 
