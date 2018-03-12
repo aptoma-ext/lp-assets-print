@@ -5,12 +5,6 @@
     line-height: align(15.6pt);
 }
 
-.intro--large {
-    font-size: 21.4pt;
-    line-height: align(23.4pt);
-}
-
-
 .intro--13 {
     font-size: 13.6pt;
     line-height: align(15.6pt);
@@ -18,9 +12,9 @@
 
 
 
-.intro--21, .intro--test {
+.intro--21, .intro--large {
     font-size: 21.4pt;
-    letter-spacing: var(--headline-letter-spacing, -1.0pt); 
+    letter-spacing: var(--headline-letter-spacing, -0.6pt); 
     line-height: align(23.4pt);
 }
 
