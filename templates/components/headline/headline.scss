@@ -8,6 +8,7 @@
         background-color: var(--headline-background-color, transparent);
         font-weight: var(--headline-font-weight, 800);
         font-family: var(--headline-font-family, sans-serif);
+        --header-align: 1;
 
         @media print {
             color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
