@@ -23,6 +23,7 @@
             right: 0;
             z-index: 2147483647;
             pointer-events: none;
+            width: calc(100% * var(--lp-zoom, 1));
 
             > div {
                 background: transparent;
