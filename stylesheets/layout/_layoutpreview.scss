@@ -34,9 +34,10 @@
             }
         }
 
+        .lp-grid-top,
         .lp-grid-document {
             > div {
-                border-top: 0.04px solid red;
+                border-top: 0.04px solid rgb(186, 186, 186);
             }
         }
 
@@ -44,7 +45,7 @@
             top: calc(#{$baseline-offset} * var(--lp-zoom, 1));
 
             > div {
-                border-top: 0.04px solid blue;
+                border-top: 0.04px solid rgb(128, 128, 128);
             }
         }
     }
