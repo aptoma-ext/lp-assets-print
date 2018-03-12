@@ -29,7 +29,7 @@
                 box-sizing: border-box;
                 padding: 0;
                 margin: 0;
-                height: $base-line-height;
+                height: calc($base-line-height * var(--lp-zoom, 1));
             }
         }
 
@@ -40,7 +40,7 @@
         }
 
         .lp-grid-baseline {
-            top: $document-grid-offset;
+            top: calc($baseline-offset * var(--lp-zoom, 1));
 
             > div {
                 border-top: 0.04px solid blue;
