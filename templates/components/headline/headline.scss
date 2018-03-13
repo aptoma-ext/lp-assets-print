@@ -125,85 +125,87 @@
 }
 
 
+//Headlines defined by DN below
+
 .headline--23 h1 {
-    font-size: var(--headline-font-size-31, 23pt);
-    letter-spacing: var(--headline-letter-spacing, -0.3pt);    
-    line-height: var(--headline-line-height, 20.8pt);
+    font-size: 23pt;
+    letter-spacing: -0.3pt;    
+    line-height: 20.8pt;
 }
 
 
-.headline--31 h1 {
-    font-size: var(--headline-font-size-31, 31.8pt);
-    letter-spacing: var(--headline-letter-spacing, -0.3pt);    
-    line-height: var(--headline-line-height, 28.6pt);
+.headline--31_8 h1 {
+    font-size: 31.8pt;
+    letter-spacing: -0.3pt;    
+    line-height: 28.6pt;
 }
 
 
-.headline--42 h1 {
-    font-size: var(--headline-font-size-42, 42.2pt);   
-    letter-spacing: var(--headline-letter-spacing, -0.45pt);   
-    line-height: var(--headline-line-height, 39pt);
+.headline--42_2 h1 {
+    font-size: 42.2pt;   
+    letter-spacing: -0.45pt;   
+    line-height: 39pt;
 }
 
 
-.headline--52 h1 {
-    font-size: var(--headline-font-size-52, 52.6pt);
-    letter-spacing: var(--headline-letter-spacing, -0.8pt);   
-    line-height: var(--headline-line-height, 47.4pt);
+.headline--52_6 h1 {
+    font-size: 52.6pt;
+    letter-spacing: -0.8pt;   
+    line-height: 47.4pt;
 }
 
 
 .headline--63 h1 {
-    font-size: var(--headline-font-size-63, 63pt);
-    letter-spacing: var(--headline-letter-spacing, -1.3pt);   
-    line-height: var(--headline-line-height, 57.2pt);
+    font-size: 63pt;
+    letter-spacing: var -1.3pt;   
+    line-height: var 57.2pt;
 }
 
 
-.headline--73 h1 {
-    font-size: var(--headline-font-size-73, 73.4pt);
-    letter-spacing: var(--headline-letter-spacing, -1.5pt);     
-    line-height: var(--headline-line-height, 67.6pt);
+.headline--73_4 h1 {
+    font-size: 73.4pt;
+    letter-spacing: -1.5pt;     
+    line-height: 67.6pt;
 }
 
 
-.headline--83 h1 {
-    font-size: var(--headline-font-size-83, 83.8pt);
-    letter-spacing: var(--headline-letter-spacing, -1.7pt);     
-    line-height: var(--headline-line-height, 75.4pt);
+.headline--83_8 h1 {
+    font-size: 83.8pt;
+    letter-spacing: -1.7pt;     
+    line-height: 75.4pt;
 }
 
 
-.headline--94 h1 {
-    font-size: var(--headline-font-size-94, 94.2pt);
-    letter-spacing: var(--headline-letter-spacing, -1.9pt);
-    line-height: var(--headline-line-height, 83.2pt);
+.headline--94_2 h1 {
+    font-size: 94.2pt;
+    letter-spacing: -1.9pt;
+    line-height: 83.2pt;
 }
 
 
-.headline--104 h1 {
-    font-size: var(--headline-font-size-104, 104.6pt);
-    letter-spacing: var(--headline-letter-spacing, -2.6pt); 
-    line-height: var(--headline-line-height, 94.2pt);
+.headline--104_6 h1 {
+    font-size: 104.6pt;
+    letter-spacing: -2.6pt; 
+    line-height: 94.2pt;
 }
 
 
 .headline--115 h1 {
-    font-size: var(--headline-font-size-115, 115pt);
-    letter-spacing: var(--headline-letter-spacing, -2.8pt); 
-    line-height: var(--headline-line-height, 102pt);
+    font-size: 115pt;
+    letter-spacing: -2.8pt; 
+    line-height: 102pt;
 }
 
 
-.headline--125 h1 {
-    font-size: var(--headline-font-size-125, 125.4pt);
-    letter-spacing: var(--headline-letter-spacing, -3.2pt); 
-    line-height: var(--headline-line-height, 111.8pt);
+.headline--125_4 h1 {
+    font-size: 125.4pt;
+    letter-spacing: -3.2pt; 
+    line-height: 111.8pt;
 }
 
 
-.headline--135 h1 {
-    font-size: var(--headline-font-size-135, 135.8pt);
-    letter-spacing: var(--headline-letter-spacing, -3.4pt); 
-    line-height: var(--headline-line-height, 122.2pt);
+.headline--135_8 h1 {
+    font-size: 135.8pt;
+    letter-spacing: -3.4pt; 
+    line-height: 122.2pt;
 }
