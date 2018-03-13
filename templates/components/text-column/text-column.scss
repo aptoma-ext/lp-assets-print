@@ -1,6 +1,7 @@
 .text-column {
-    letter-spacing: var(--letter-spacing, $letter-spacing);
-    --min-letter-spacing: var(--min-letter-spacing, $min-letter-spacing);
+    letter-spacing: $letter-spacing;
+    --letter-spacing: $letter-spacing;
+    --min-letter-spacing: $min-letter-spacing;
 
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
