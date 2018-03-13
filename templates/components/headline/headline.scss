@@ -125,11 +125,6 @@
 }
 
 
-//Headlines for Meninger - not working
-.headline--meninger h1 {    
-   font-family: "Guardian Egypt";
-}
-
 //Headlines defined by DN below
 .headline--23 h1 {
     font-size: 23pt;
@@ -212,4 +207,14 @@
     font-size: 135.8pt;
     letter-spacing: -3.4pt; 
     line-height: 122.2pt;
+}
+
+
+//Headlines for Meninger - 
+
+.headline--meninger--52_6 h1 {
+    font-family: "Guardian Egypt";
+    font-size: 52.6pt;
+    letter-spacing: -0.8pt;   
+    line-height: 47.4pt;
 }
