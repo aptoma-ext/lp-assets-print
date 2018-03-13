@@ -106,8 +106,9 @@
         font-weight: 800;
         font-size: align(11pt);
         line-height: var(--line-height, $base-line-height);
-        margin-top: 11.48px;
-        margin-bottom: 2.4px;
+        margin-top: 13.88px;
+        margin-bottom: 0;
+        transform: translateY(align(2px));
         text-indent: 0;
         letter-spacing: -0.1pt;
         padding: 0;
