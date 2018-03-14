@@ -1,5 +1,6 @@
 .text-column {
     letter-spacing: $letter-spacing;
+    padding: 0 align(0.16px);
     --letter-spacing: $letter-spacing;
     --min-letter-spacing: $min-letter-spacing;
     --hyphens: 1;
