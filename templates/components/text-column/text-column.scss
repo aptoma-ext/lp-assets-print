@@ -56,7 +56,7 @@
         color: #000;
         color: CMYK(0%, 0%, 0%, 100%);
         // none disables the internally stored kerning info, do we want this?
-        font-kerning: none;
+        font-kerning: normal;
         font-size: $base-font-size;
         line-height: $base-line-height;
 
