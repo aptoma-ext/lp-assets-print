@@ -1,6 +1,6 @@
 .text-column {
     letter-spacing: $letter-spacing;
-    word-spacing: 0.2mm;
+    word-spacing: $word-spacing;
     padding: 0 align(0.24px);
     --letter-spacing: $letter-spacing;
     --min-letter-spacing: $min-letter-spacing;
