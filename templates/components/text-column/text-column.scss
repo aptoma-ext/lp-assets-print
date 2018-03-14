@@ -2,7 +2,7 @@
     letter-spacing: $letter-spacing;
     --letter-spacing: $letter-spacing;
     --min-letter-spacing: $min-letter-spacing;
-    --hyphens: 1;
+    --hyphens: 0;
 
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
