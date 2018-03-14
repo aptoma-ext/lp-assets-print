@@ -29,6 +29,10 @@
                 text-align-last: auto;
                 -webkit-text-align-last: auto;
             }
+
+            &.row-fixed:last-of-type {
+                word-spacing: 0;
+            }
         }
 
         .row:first-of-type {
