@@ -1,10 +1,13 @@
 .text-column {
-    letter-spacing: $letter-spacing;
-    word-spacing: $word-spacing;
     padding: 0 align(0.24px);
     --letter-spacing: $letter-spacing;
     --min-letter-spacing: $min-letter-spacing;
     --hyphens: $hyphens;
+
+    p {
+        letter-spacing: $letter-spacing;
+        word-spacing: $word-spacing;
+    }
 
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
