@@ -4,11 +4,6 @@
     --min-letter-spacing: $min-letter-spacing;
     --hyphens: $hyphens;
 
-    p {
-        letter-spacing: $letter-spacing;
-        word-spacing: $word-spacing;
-    }
-
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
         // this value is based on the font metrics
@@ -16,6 +11,9 @@
     }
 
     .body-text {
+        letter-spacing: $letter-spacing;
+        word-spacing: $word-spacing;
+
         span {
             text-align: justify;
 
