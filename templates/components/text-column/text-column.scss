@@ -18,6 +18,8 @@
             text-align: justify;
 
             &.row {
+                -ro-transform-origin: 0 0;
+                transform-origin: 0 0;
                 display: block;
                 text-align: justify;
                 text-align-last: justify;
