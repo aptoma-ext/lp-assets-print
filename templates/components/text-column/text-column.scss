@@ -104,6 +104,12 @@
         font-weight: 800;
     }
 
+    .row-scaled {
+        .drop-cap {
+            transform: scaleX(calc(1 / var(--glyph-scale, 1)))
+        }
+    }
+
     // Only works for single-line titles
     // How to handle multi-line titles in a good way?
     h2, h3 {
