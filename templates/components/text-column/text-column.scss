@@ -13,6 +13,11 @@
         transform: translateY(align(3.7px));
     }
 
+    .the-end {
+        height: 0;
+        display: block;
+    }
+
     .body-text {
         span {
             text-align: justify;
