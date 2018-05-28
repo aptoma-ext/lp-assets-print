@@ -23,10 +23,10 @@ $medium-line-height: align(13.6pt);
 
 & {
     --font-size-body: align(8.4pt);
-    --color-base: $blue;
-    --color-base-cmyk: $blue-cmyk;
-    --color-base-dark: $dark-blue;
-    --color-base-dark-cmyk: $dark-blue-cmyk;
+    --color-base: #{$blue};
+    --color-base-cmyk: #{$blue-cmyk};
+    --color-base-dark: #{$dark-blue};
+    --color-base-dark-cmyk: #{$dark-blue-cmyk};
 }
 
 .theme--dn {
@@ -45,8 +45,8 @@ $medium-line-height: align(13.6pt);
     // Fact boxes
     --fact-box-border-color: var(--color-base);
     --fact-box-border-color-cmyk: var(--color-base-cmyk);
-    --fact-box-background-color: $neutral-tint;
-    --fact-box-background-color-cmyk: $neutral-tint-cmyk;
+    --fact-box-background-color: #{$neutral-tint};
+    --fact-box-background-color-cmyk: #{$neutral-tint-cmyk};
 
     --topic-font-family: "Guardian Sans Cond";
     --topic-color: var(--color-base-dark);
@@ -62,12 +62,12 @@ $medium-line-height: align(13.6pt);
     --portrait-font-weight: 500;
     --portrait-color: #FFF;
     --portrait-color-cmyk: CMYK(0%, 0%, 0%, 0%);
-    --portrait-background: $dark-grey;
-    --portrait-background-cmyk: $dark-grey-cmyk;
+    --portrait-background: #{$dark-grey};
+    --portrait-background-cmyk: #{$dark-grey-cmyk};
     --portrait-strong-font-family: "Guardian Sans";
     --portrait-strong-font-weight: bold;
-    --portrait-strong-color: $yellow;
-    --portrait-strong-color-cmyk: $yellow-cmyk;
+    --portrait-strong-color: #{$yellow};
+    --portrait-strong-color-cmyk: #{$yellow-cmyk};
 
     --quote-background-color: var(--color-base);
     --quote-background-color-cmyk: var(--color-base-cmyk);
@@ -75,7 +75,7 @@ $medium-line-height: align(13.6pt);
 
 .theme--purple {
     --color-base: #{$purple};
-    --color-base-cmyk: $purple-cmyk;
-    --color-base-dark: $deep-purple;
-    --color-base-dark-cmyk: $deep-purple-cmyk;
+    --color-base-cmyk: #{$purple-cmyk};
+    --color-base-dark: #{$deep-purple};
+    --color-base-dark-cmyk: #{$deep-purple-cmyk};
 }
