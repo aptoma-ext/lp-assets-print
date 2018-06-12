@@ -7,10 +7,10 @@
     -ro-pdf-overprint-content: mode1;
     padding: 0 align(6pt) align(6pt) align(6pt);
 
-    @media print {
-        border-top-color: var(--fact-box-border-color-cmyk);
-        background-color: var(--fact-box-background-color-cmyk);
-    }
+    // @media print {
+    //     border-top-color: var(--fact-box-border-color-cmyk);
+    //     background-color: var(--fact-box-background-color-cmyk);
+    // }
 
     .alf-align {
         --grid-align-top: baseline;
@@ -53,7 +53,7 @@
     column-count: var(--colspan, 1);
     column-gap: 4mm;
     column-rule: align(0.25pt) solid #000;
-    column-rule-color: CMYK(0%, 0%, 0%, 100%);
+    // column-rule-color: CMYK(0%, 0%, 0%, 100%);
     transform: translateY(align(2.75px));
 
     ul {
@@ -65,7 +65,7 @@
 
         li {
             text-indent: 15px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='cmyk(0.95, 0.25, 0, 0)' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-size: align(7.5pt) align(7.5pt);
             background-position: 0 align(1.48pt);

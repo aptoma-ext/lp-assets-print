@@ -1,9 +1,9 @@
 .quote {
     background-color: var(--quote-background-color, steelblue);
 
-    @media print {
-        background-color: var(--quote-background-color-cmyk);
-    }
+    // @media print {
+    //     background-color: var(--quote-background-color-cmyk);
+    // }
 
     blockquote {
         padding: $baseline-offset align(6.06pt) align(6.06pt) align(6.06pt);
@@ -17,9 +17,9 @@
             color: #FFF;
             height: $base-line-height * 4;
 
-            @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
-            }
+            // @media print {
+            //     color: CMYK(0%, 0%, 0%, 0%);
+            // }
         }
 
         [itemprop=text] {
@@ -29,9 +29,9 @@
             line-height: 1;
             color: #FFF;
 
-            @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
-            }
+            // @media print {
+            //     color: CMYK(0%, 0%, 0%, 0%);
+            // }
         }
 
         [itemprop=creator] {
@@ -44,9 +44,9 @@
                 font-weight: 800;
             }
 
-            @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
-            }
+            // @media print {
+            //     color: CMYK(0%, 0%, 0%, 0%);
+            // }
         }
     }
 }

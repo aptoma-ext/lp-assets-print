@@ -26,9 +26,9 @@
         position: absolute;
         background-color: #000;
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 100%);
-        }
+        // @media print {
+        //     background-color: CMYK(0%, 0%, 0%, 100%);
+        // }
     }
 
     .ad-top-line {

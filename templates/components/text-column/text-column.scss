@@ -63,7 +63,7 @@
         font-family: "Guardian Text Egypt";
         text-rendering: optimizeLegibility;
         color: #000;
-        color: CMYK(0%, 0%, 0%, 100%);
+        // color: CMYK(0%, 0%, 0%, 100%);
         font-kerning: normal;
         font-size: $base-font-size;
         line-height: $base-line-height;
@@ -83,7 +83,7 @@
 
         li {
             text-indent: 15px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='cmyk(0.95, 0.25, 0, 0)' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-size: align(7.5pt) align(7.5pt);
             background-position: 0 align(1.48pt);
@@ -129,7 +129,7 @@
         padding: 0;
         padding-top: 0;
         padding-bottom: 0;
-        color: CMYK(0%, 0%, 0%, 100%);
+        // color: CMYK(0%, 0%, 0%, 100%);
     }
 }
 

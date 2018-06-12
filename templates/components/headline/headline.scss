@@ -10,10 +10,10 @@
         font-family: var(--headline-font-family, sans-serif);
         --header-align: 1;
 
-        @media print {
-            color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
-            background-color: var(--headline-background-color-cmyk, transparent);
-        }
+        // @media print {
+        //     color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
+        //     background-color: var(--headline-background-color-cmyk, transparent);
+        // }
     }
 
     .dash {
@@ -21,9 +21,9 @@
         font-family: 'DN Icons';
         font-weight: normal;
 
-        @media print {
-            color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
-        }
+        // @media print {
+        //     color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
+        // }
     }
 
     .alf-header-line {
@@ -45,9 +45,9 @@
         background-color: #FFF;
         padding: 0 10px 0 0;
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 0%);
-        }
+        // @media print {
+        //     background-color: CMYK(0%, 0%, 0%, 0%);
+        // }
     }
 }
 
@@ -61,10 +61,10 @@
         box-shadow: 0 0 30px #000;
         padding: 0 10px;
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 0%);
-            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
-        }
+        // @media print {
+        //     background-color: CMYK(0%, 0%, 0%, 0%);
+        //     box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+        // }
     }
 
     .alf-header-lines-2 {
@@ -95,10 +95,10 @@
         color: #FFF;
     }
 
-    @media print {
-        h1 {
-            color: CMYK(0%, 0%, 0%, 0%);
-        }
+    // @media print {
+    //     h1 {
+    //         color: CMYK(0%, 0%, 0%, 0%);
+    //     }
     }
 }
 
@@ -128,49 +128,49 @@
 //Headlines defined by DN below
 .headline--23 h1 {
     font-size: 23pt;
-    letter-spacing: -0.3pt;    
+    letter-spacing: -0.3pt;
     line-height: 20.8pt;
 }
 
 
 .headline--31_8 h1 {
     font-size: 31.8pt;
-    letter-spacing: -0.3pt;    
+    letter-spacing: -0.3pt;
     line-height: 28.6pt;
 }
 
 
 .headline--42_2 h1 {
-    font-size: 42.2pt;   
-    letter-spacing: -0.45pt;   
+    font-size: 42.2pt;
+    letter-spacing: -0.45pt;
     line-height: 39pt;
 }
 
 
 .headline--52_6 h1 {
     font-size: 52.6pt;
-    letter-spacing: -0.8pt;   
+    letter-spacing: -0.8pt;
     line-height: 47.4pt;
 }
 
 
 .headline--63 h1 {
     font-size: 63pt;
-    letter-spacing: var -1.3pt;   
+    letter-spacing: var -1.3pt;
     line-height: var 57.2pt;
 }
 
 
 .headline--73_4 h1 {
     font-size: 73.4pt;
-    letter-spacing: -1.5pt;     
+    letter-spacing: -1.5pt;
     line-height: 67.6pt;
 }
 
 
 .headline--83_8 h1 {
     font-size: 83.8pt;
-    letter-spacing: -1.7pt;     
+    letter-spacing: -1.7pt;
     line-height: 75.4pt;
 }
 
@@ -184,33 +184,33 @@
 
 .headline--104_6 h1 {
     font-size: 104.6pt;
-    letter-spacing: -2.6pt; 
+    letter-spacing: -2.6pt;
     line-height: 94.2pt;
 }
 
 
 .headline--115 h1 {
     font-size: 115pt;
-    letter-spacing: -2.8pt; 
+    letter-spacing: -2.8pt;
     line-height: 102pt;
 }
 
 
 .headline--125_4 h1 {
     font-size: 125.4pt;
-    letter-spacing: -3.2pt; 
+    letter-spacing: -3.2pt;
     line-height: 111.8pt;
 }
 
 
 .headline--135_8 h1 {
     font-size: 135.8pt;
-    letter-spacing: -3.4pt; 
+    letter-spacing: -3.4pt;
     line-height: 122.2pt;
 }
 
 
-//Headlines for Meninger - 
+//Headlines for Meninger -
 
 .headline--meninger--52_6 h1 {
     font-family: "Guardian Egypt";
