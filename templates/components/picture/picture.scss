@@ -98,9 +98,11 @@
 
 .picture--caption-inline-top-right {
     figcaption, .figcaption {
-        right: 0;
+        right: -0.3px;
         left: auto;
         top: 0;
         bottom: auto;
+        padding: 0 0 3pt 5pt;
+        width: calc(46mm + 5pt);
     }
 }
