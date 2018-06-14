@@ -1,6 +1,5 @@
-$precision: 0.01;
-
 @function align($value) {
+    $precision: 0.01;
     $mod: 1;
     $number: strip-unit($value);
     $unit: unit($value);
