@@ -37,6 +37,11 @@
         line-height: $base-line-height;
         padding: 0;
         transform: translateY(align(4px));
+
+        .description,
+        .credit {
+            transform: translateY(align(-1px));
+        }
     }
 
 }
@@ -102,7 +107,7 @@
         left: auto;
         top: 0;
         bottom: auto;
-        padding: 0 0 3pt 5pt;
-        width: calc(46mm + 5pt);
+        padding: 0 0 3px 7.6px;
+        width: calc(46mm + 7.6px);
     }
 }
