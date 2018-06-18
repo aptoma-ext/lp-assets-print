@@ -73,7 +73,8 @@ $medium-line-height: align(13.6pt);
     --quote-background-color-cmyk: var(--color-base-cmyk);
 }
 
-.theme--purple {
+.theme--purple,
+.section--etterbørs {
     --color-base: #{$purple};
     --color-base-cmyk: #{$purple-cmyk};
     --color-base-dark: #{$deep-purple};
