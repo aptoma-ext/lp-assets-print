@@ -6,16 +6,17 @@
     // }
 
     blockquote {
-        padding: $baseline-offset align(6.06pt) align(6.06pt) align(6.06pt);
+        padding: $baseline-offset align(7.46px) align(5.621pt) align(5.621pt);
 
         &:before {
             content: '–';
             display: block;
             font-family: 'DN Icons';
             font-size: 44pt;
-            line-height: 1em;
+            line-height: 0.93em;
             color: #FFF;
-            height: $base-line-height * 4;
+            height: 52.667px;
+            text-indent: -1.3px;
 
             // @media print {
             //     color: CMYK(0%, 0%, 0%, 0%);
