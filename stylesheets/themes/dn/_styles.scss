@@ -73,10 +73,18 @@ $medium-line-height: align(13.6pt);
     --quote-background-color-cmyk: var(--color-base-cmyk);
 }
 
-.theme--purple,
-.section--etterbørs {
+.theme--purple {
     --color-base: #{$purple};
     --color-base-cmyk: #{$purple-cmyk};
     --color-base-dark: #{$deep-purple};
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
+}
+
+.section--etterbørs {
+    .theme--dn {
+        --color-base: #{$purple};
+        --color-base-cmyk: #{$purple-cmyk};
+        --color-base-dark: #{$deep-purple};
+        --color-base-dark-cmyk: #{$deep-purple-cmyk};
+    }
 }
