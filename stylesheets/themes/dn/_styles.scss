@@ -80,7 +80,7 @@ $medium-line-height: align(13.6pt);
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
 }
 
-.section--etterbørs {
+&.section--etterbørs {
     .theme--dn {
         --color-base: #{$purple};
         --color-base-cmyk: #{$purple-cmyk};
