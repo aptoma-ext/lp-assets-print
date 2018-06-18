@@ -23,7 +23,7 @@
             // }
         }
 
-        [itemprop=text] {
+        .quote-text {
             font-family: 'Guardian Sans Cond';
             font-weight: 600;
             font-size: 16.2pt;
@@ -35,7 +35,7 @@
             // }
         }
 
-        [itemprop=creator] {
+        .quote-creator {
             font-family: 'Guardian TextSans';
             font-size: 8.4pt;
             color: #FFF;
