@@ -8,6 +8,7 @@
     box-sizing: border-box;
     line-height: $base-line-height;
     text-rendering: optimizeLegibility;
+    -ro-glyph-layout-mode: quality;
 
     // @media print {
     //     color: CMYK(0%, 0%, 0%, 100%);
