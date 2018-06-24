@@ -26,7 +26,7 @@
         flex: 1;
         background-color: var(--portrait-background, #333);
 
-        @media screen {
+        @media print {
             background-color: var(--portrait-background-cmyk, CMYK(0%, 0%, 0%, 90%));
         }
 
