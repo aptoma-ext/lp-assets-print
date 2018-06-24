@@ -14,7 +14,7 @@ $neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
 $purple: rgb(135, 96, 161);
 $purple-cmyk: -ro-separation('BASE', 1, CMYK(50%, 70%, 0%, 0%));
 $deep-purple: rgb(91, 40, 105);
-$deep-purple-cmyk: -ro-separation('BASE', 1, CMYK(70%, 100%, 20%, 10%));
+$deep-purple-cmyk: -ro-separation('BASE dark', 1, CMYK(70%, 100%, 20%, 10%));
 
 $medium-font-size: 13.6pt;
 $medium-line-height: align(13.6pt);

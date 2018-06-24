@@ -53,7 +53,7 @@
     column-count: var(--colspan, 1);
     column-gap: 4mm;
     column-rule: align(0.25pt) solid #000;
-    // column-rule-color: CMYK(0%, 0%, 0%, 100%);
+    column-rule-color: CMYK(0%, 0%, 0%, 100%);
     transform: translateY(align(2.75px));
 
     ul {
