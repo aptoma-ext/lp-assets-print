@@ -26,6 +26,10 @@
         flex: 1;
         background-color: var(--portrait-background, #333);
 
+        @media screen {
+            background-color: var(--portrait-background-cmyk, CMYK(0%, 0%, 0%, 90%));
+        }
+
         p {
             padding: align(4.1px) align(3.5pt);
             font-size: 7.1pt;
@@ -35,7 +39,6 @@
 
             @media print {
                 color: var(--portrait-color-cmyk);
-                background-color: var(--portrait-background-cmyk);
             }
         }
 
