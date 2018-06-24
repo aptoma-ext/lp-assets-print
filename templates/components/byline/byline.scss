@@ -20,9 +20,9 @@
         line-height: $base-line-height * 2;
     }
 
-    // @media print {
-    //     color: var(--topic-color-cmyk);
-    // }
+    @media print {
+        color: var(--topic-color-cmyk);
+    }
 }
 
 .byline-location-wrapper {

@@ -7,10 +7,10 @@
     -ro-pdf-overprint-content: mode1;
     padding: 0 align(6pt) align(6pt) align(6pt);
 
-    // @media print {
-    //     border-top-color: var(--fact-box-border-color-cmyk);
-    //     background-color: var(--fact-box-background-color-cmyk);
-    // }
+    @media print {
+        border-top-color: var(--fact-box-border-color-cmyk);
+        background-color: var(--fact-box-background-color-cmyk);
+    }
 
     .alf-align {
         --grid-align-top: baseline;

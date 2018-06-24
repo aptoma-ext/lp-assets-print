@@ -10,10 +10,10 @@
         font-family: var(--headline-font-family, sans-serif);
         --header-align: 1;
 
-        // @media print {
-        //     color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
-        //     background-color: var(--headline-background-color-cmyk, transparent);
-        // }
+        @media print {
+            color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
+            background-color: var(--headline-background-color-cmyk, transparent);
+        }
     }
 
     .dash {
@@ -21,9 +21,9 @@
         font-family: 'DN Icons';
         font-weight: normal;
 
-        // @media print {
-        //     color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
-        // }
+        @media print {
+            color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
+        }
     }
 
     .alf-header-line {
@@ -45,9 +45,9 @@
         background-color: #FFF;
         padding: 0 10px 0 0;
 
-        // @media print {
-        //     background-color: CMYK(0%, 0%, 0%, 0%);
-        // }
+        @media print {
+            background-color: CMYK(0%, 0%, 0%, 0%);
+        }
     }
 }
 
@@ -61,10 +61,10 @@
         box-shadow: 0 0 30px #000;
         padding: 0 10px;
 
-        // @media print {
-        //     background-color: CMYK(0%, 0%, 0%, 0%);
-        //     box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
-        // }
+        @media print {
+            background-color: CMYK(0%, 0%, 0%, 0%);
+            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+        }
     }
 
     .alf-header-lines-2 {
@@ -95,11 +95,11 @@
         color: #FFF;
     }
 
-    // @media print {
-    //     h1 {
-    //         color: CMYK(0%, 0%, 0%, 0%);
-    //     }
-    // }
+    @media print {
+        h1 {
+            color: CMYK(0%, 0%, 0%, 0%);
+        }
+    }
 }
 
 // Preset "states" for the headline component

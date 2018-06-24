@@ -10,9 +10,9 @@
     text-rendering: optimizeLegibility;
     -ro-glyph-layout-mode: quality;
 
-    // @media print {
-    //     color: CMYK(0%, 0%, 0%, 100%);
-    // }
+    @media print {
+        color: CMYK(0%, 0%, 0%, 100%);
+    }
 
     * {
         box-sizing: border-box;
@@ -38,9 +38,9 @@
         color: #000;
         font-kerning: normal;
 
-        // @media print {
-        //     color: CMYK(0%, 0%, 0%, 100%);
-        // }
+        @media print {
+            color: CMYK(0%, 0%, 0%, 100%);
+        }
     }
 
     @include grid(5, align(246mm), align(46mm), 0, align(13mm), '.alf-grid.alf-grid-5');

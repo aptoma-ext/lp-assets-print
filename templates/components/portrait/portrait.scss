@@ -34,19 +34,19 @@
             font-family: var(--portrait-font-family, Arial);
         }
 
-        // @media print {
-        //     color: var(--portrait-color-cmyk);
-        //     background-color: var(--portrait-background-cmyk);
-        // }
+        @media print {
+            color: var(--portrait-color-cmyk);
+            background-color: var(--portrait-background-cmyk);
+        }
 
         b {
             font-weight: var(--portrait-strong-font-weight, bold);
             font-family: var(--portrait-strong-font-family, Arial);
             color: var(--portrait-strong-color, yellow);
 
-            // @media print {
-            //     color: var(--portrait-strong-color-cmyk);
-            // }
+            @media print {
+                color: var(--portrait-strong-color-cmyk);
+            }
         }
     }
 }
