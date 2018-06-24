@@ -32,11 +32,11 @@
             color: var(--portrait-color, #FFF);
             font-weight: var(--portrait-font-weight, normal);
             font-family: var(--portrait-font-family, Arial);
-        }
 
-        @media print {
-            color: var(--portrait-color-cmyk);
-            background-color: var(--portrait-background-cmyk);
+            @media print {
+                color: var(--portrait-color-cmyk);
+                background-color: var(--portrait-background-cmyk);
+            }
         }
 
         b {
