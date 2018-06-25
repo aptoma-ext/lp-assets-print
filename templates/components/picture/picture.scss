@@ -36,7 +36,6 @@
         line-height: $base-line-height;
         padding: 0;
         transform: translateY(align(4px));
-        -ro-pdf-overprint: mode1;
 
         @media print {
             background-color: CMYK(0%, 0%, 0%, 0%);
