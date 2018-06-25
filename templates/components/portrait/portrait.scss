@@ -26,6 +26,10 @@
         flex: 1;
         background-color: var(--portrait-background, #333);
 
+        * {
+            -ro-pdf-overprint-content: mode0;
+        }
+
         @media print {
             background-color: var(--portrait-background-cmyk, CMYK(0%, 0%, 0%, 90%));
         }

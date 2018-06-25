@@ -1,4 +1,8 @@
 .headline {
+    * {
+        -ro-pdf-overprint-content: mode0;
+    }
+
     h1 {
         margin: 0 17px 0 0;
         color: var(--headline-color, var(--color, #000));

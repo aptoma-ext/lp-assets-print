@@ -32,7 +32,7 @@
                 height: $base-line-height;
                 -ro-pdf-overprint-content: mode0;
 
-                .word {
+                * {
                     -ro-pdf-overprint-content: mode0;
                 }
             }
