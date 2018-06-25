@@ -4,7 +4,7 @@ $dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
 $blue: rgb(19, 136, 204);
 $blue-cmyk: -ro-separation('BASE', 1, CMYK(95%, 25%, 0%, 0%));
 $dark-blue: rgb(31, 93, 166);
-$dark-blue-cmyk: -ro-separation('BASE', 1, CMYK(100% 60% 0%, 0%));
+$dark-blue-cmyk: -ro-separation('BASE dark', 1, CMYK(100% 60% 0%, 0%));
 $yellow: rgb(255, 204, 0);
 $yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
 $orange: rgb(255, 64, 0);

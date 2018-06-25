@@ -5,6 +5,7 @@
     --glyph-scaling-min: #{$glyph-scaling-min};
     --glyph-scaling-max: #{$glyph-scaling-max};
     --hyphens: #{$hyphens};
+    -ro-pdf-overprint-content: mode1;
 
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
