@@ -1,4 +1,5 @@
 .portrait {
+    -ro-pdf-overprint-content: mode1;
     height: align(45.35pt);
     --grid-align-top: baseline;
     --grid-align-bottom: top;
@@ -27,7 +28,7 @@
         background-color: var(--portrait-background, #333);
 
         * {
-            -ro-pdf-overprint-content: mode0;
+            -ro-pdf-overprint-content: mode1;
         }
 
         @media print {

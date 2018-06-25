@@ -5,6 +5,7 @@
     --glyph-scaling-min: #{$glyph-scaling-min};
     --glyph-scaling-max: #{$glyph-scaling-max};
     --hyphens: #{$hyphens};
+    -ro-pdf-overprint-content: mode1;
 
     .alf-block {
         // align the text to the baseline (since line-height centers the text)
@@ -30,10 +31,10 @@
                 -webkit-text-align-last: justify;
                 width: 100%;
                 height: $base-line-height;
-                -ro-pdf-overprint-content: mode0;
+                -ro-pdf-overprint-content: mode1;
 
                 * {
-                    -ro-pdf-overprint-content: mode0;
+                    -ro-pdf-overprint-content: mode1;
                 }
             }
 
