@@ -3,9 +3,11 @@
     font-weight: normal;
     font-size: 13.6pt;
     line-height: align(15.6pt);
+    -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 
     * {
+        -ro-pdf-overprint: mode1;
         -ro-pdf-overprint-content: mode1;
     }
 }
