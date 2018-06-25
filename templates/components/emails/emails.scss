@@ -8,9 +8,11 @@
     font-size: $base-font-size;
     line-height: align(10.4pt);
     padding-top: 0;
+    -ro-pdf-overprint: mode1;
 
     p {
         transform: translateY(align(2.1px));
         font-family: "Guardian TextSans" !important;
+        -ro-pdf-overprint-content: mode1;
     }
 }
