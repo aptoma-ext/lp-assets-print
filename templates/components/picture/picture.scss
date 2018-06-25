@@ -46,6 +46,8 @@
         .description,
         .credit {
             transform: translateY(align(-1.52px));
+            -ro-pdf-overprint: mode1;
+            -ro-pdf-overprint-content: mode1;
         }
     }
 
