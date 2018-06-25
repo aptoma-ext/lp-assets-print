@@ -29,14 +29,17 @@
     }
 
     figcaption, .figcaption {
-        background: #FFF;
-        background-color: CMYK(0%, 0%, 0%, 0%);
+        background-color: #FFF;
         font-family: "Guardian TextSans";
         font-weight: bold;
         font-size: $base-font-size;
         line-height: $base-line-height;
         padding: 0;
         transform: translateY(align(4px));
+
+        @media print {
+            background-color: CMYK(0%, 0%, 0%, 0%);
+        }
 
         * {
             -ro-pdf-overprint: mode1;
@@ -48,6 +51,11 @@
             transform: translateY(align(-1.52px));
             -ro-pdf-overprint: mode1;
             -ro-pdf-overprint-content: mode1;
+
+            * {
+                -ro-pdf-overprint: mode1;
+                -ro-pdf-overprint-content: mode1;
+            }
         }
     }
 
