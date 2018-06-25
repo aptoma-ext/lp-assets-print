@@ -19,6 +19,7 @@
     text-transform: uppercase;
     margin: 0;
     display: flex;
+    -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 
     figure {
@@ -42,6 +43,7 @@
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: 800;
+    -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 }
 
@@ -50,9 +52,11 @@
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: normal;
+    -ro-pdf-overprint: mode1;
     -ro-pdf-overprint-content: mode1;
 
     * {
+        -ro-pdf-overprint: mode1;
         -ro-pdf-overprint-content: mode1;
     }
 }
