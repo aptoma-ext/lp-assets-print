@@ -31,10 +31,6 @@
                 width: 100%;
                 height: $base-line-height;
                 -ro-pdf-overprint-content: mode0;
-
-                .word {
-                    -ro-pdf-overprint-content: mode0;
-                }
             }
 
             &.row:last-of-type {
