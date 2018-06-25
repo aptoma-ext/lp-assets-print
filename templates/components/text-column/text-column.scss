@@ -30,7 +30,11 @@
                 -webkit-text-align-last: justify;
                 width: 100%;
                 height: $base-line-height;
-                -ro-pdf-overprint-content: mode1;
+                -ro-pdf-overprint-content: mode0;
+
+                .word {
+                    -ro-pdf-overprint-content: mode0;
+                }
             }
 
             &.row:last-of-type {
