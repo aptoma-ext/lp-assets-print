@@ -31,6 +31,7 @@
     figcaption, .figcaption {
         background: #FFF;
         background-color: CMYK(0%, 0%, 0%, 0%);
+        -ro-pdf-overprint: mode0;
         font-family: "Guardian TextSans";
         font-weight: bold;
         font-size: $base-font-size;
