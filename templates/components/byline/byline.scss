@@ -1,3 +1,9 @@
+.byline {
+    * {
+        -ro-pdf-overprint-content: mode1;
+    }
+}
+
 .byline-topic {
     font-size: 13pt;
     line-height: $base-line-height * 2;
