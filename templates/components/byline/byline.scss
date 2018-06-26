@@ -10,7 +10,7 @@
     height: $base-line-height * 2;
     box-sizing: border-box;
     font-family: var(--topic-font-family);
-    font-weight: 800;
+    font-weight: var(--topic-font-weight, 800);
     color: var(--topic-color);
     border-style: solid;
     border-width: align(0.25pt) 0 align(0.25pt) 0;
@@ -40,17 +40,17 @@
 .byline-author {
     margin-top: align(0.44px);
     font-family: "GuardianSansCond-Bold";
+    font-weight: normal;
     font-size: $medium-font-size;
     line-height: $medium-line-height;
-    font-weight: 800;
     -ro-pdf-overprint-content: mode1;
 }
 
 .byline-location {
-    font-family: "Guardian Sans Cond";
+    font-family: "GuardianSansCond-Bold";
+    font-weight: normal;
     font-size: $medium-font-size;
     line-height: $medium-line-height;
-    font-weight: normal;
     -ro-pdf-overprint-content: mode1;
 
     * {

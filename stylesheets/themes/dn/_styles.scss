@@ -49,7 +49,8 @@ $medium-line-height: align(13.6pt);
     --fact-box-background-color: #{$neutral-tint};
     --fact-box-background-color-cmyk: #{$neutral-tint-cmyk};
 
-    --topic-font-family: "Guardian Sans Cond";
+    --topic-font-family: "GuardianSansCond-Bold";
+    --topic-font-weight: normal;
     --topic-color: var(--color-base-dark);
     --topic-color-cmyk: var(--color-base-dark-cmyk);
 
