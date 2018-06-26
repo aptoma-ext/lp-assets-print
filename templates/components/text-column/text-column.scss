@@ -1,161 +1,165 @@
 .text-column {
-    --word-spacing-min: #{$word-spacing-min};
-    --word-spacing-desired: #{$word-spacing-desired};
-    --word-spacing-max: #{$word-spacing-max};
-    --glyph-scaling-min: #{$glyph-scaling-min};
-    --glyph-scaling-max: #{$glyph-scaling-max};
-    --hyphens: #{$hyphens};
-    -ro-pdf-overprint-content: mode1;
+	--word-spacing-min: #{$word-spacing-min};
+	--word-spacing-desired: #{$word-spacing-desired};
+	--word-spacing-max: #{$word-spacing-max};
+	--glyph-scaling-min: #{$glyph-scaling-min};
+	--glyph-scaling-max: #{$glyph-scaling-max};
+	--hyphens: #{$hyphens};
+	-ro-pdf-overprint-content: mode1;
 
-    .alf-block {
-        // align the text to the baseline (since line-height centers the text)
-        // this value is based on the font metrics
-        transform: translateY(align(3.44px));
-    }
+	.alf-block {
+		// align the text to the baseline (since line-height centers the text)
+		// this value is based on the font metrics
+		transform: translateY(align(3.44px));
+	}
 
-    .the-end {
-        height: 0;
-        display: block;
-    }
+	.the-end {
+		height: 0;
+		display: block;
+	}
 
-    .body-text {
-        * {
-            -ro-pdf-overprint-content: mode1;
-        }
+	.body-text {
+		* {
+			-ro-pdf-overprint-content: mode1;
+		}
 
-        span {
-            text-align: justify;
+		span {
+			text-align: justify;
 
-            &.row {
-                -ro-transform-origin: 0 0;
-                transform-origin: 0 0;
-                display: block;
-                text-align: justify;
-                text-align-last: justify;
-                -webkit-text-align-last: justify;
-                width: 100%;
-                height: $base-line-height;
-            }
+			&.row {
+				-ro-transform-origin: 0 0;
+				transform-origin: 0 0;
+				display: block;
+				text-align: justify;
+				text-align-last: justify;
+				-webkit-text-align-last: justify;
+				width: 100%;
+				height: $base-line-height;
+			}
 
-            &.row:last-of-type {
-                text-align-last: auto;
-                -webkit-text-align-last: auto;
-            }
-        }
+			&.row:last-of-type {
+				text-align-last: auto;
+				-webkit-text-align-last: auto;
+			}
+		}
 
-        .row:first-of-type {
-            text-indent: $text-indent;
-        }
+		.row:first-of-type {
+			text-indent: $text-indent;
+		}
 
-        .body-unindented .row {
-            text-indent: 0;
-        }
-    }
+		.body-unindented .row {
+			text-indent: 0;
+		}
+	}
 
-    .alf-is-overflow .body-text {
-        .row, .row:first-of-type {
-            text-indent: 0;
-        }
-    }
+	.alf-is-overflow .body-text {
+		.row, .row:first-of-type {
+			text-indent: 0;
+		}
+	}
 
-    .alf-is-overflow {
-        p {
-            margin-bottom: 0 !important;
-        }
-    }
+	.alf-is-overflow {
+		p {
+			margin-bottom: 0 !important;
+		}
+	}
 
-    .alf-block, p, ul, li {
-        font-family: "GuardianTextEgypt-Regular";
-        font-weight: normal;
-        text-rendering: geometricPrecision;
-        color: #000;
-        color: CMYK(0%, 0%, 0%, 100%);
-        font-kerning: normal;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        letter-spacing: 0.02pt;
+	.alf-block, p, ul, li {
+		font-family: "GuardianTextEgypt-Regular";
+		font-weight: normal;
+		text-rendering: geometricPrecision;
+		color: #000;
+		color: CMYK(0%, 0%, 0%, 100%);
+		font-kerning: normal;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		letter-spacing: 0.02pt;
 
-        b {
-            font-family: "GuardianSans-Bold";
-            font-weight: normal;
-        }
-    }
+		b {
+			font-family: "GuardianSans-Bold";
+			font-weight: normal;
+		}
+	}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        margin: 0;
-        padding-left: 0;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		margin: 0;
+		padding-left: 0;
 
-        li {
-            text-indent: 15px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-size: align(7.5pt) align(7.5pt);
-            background-position: 0 align(1.48pt);
-        }
-    }
+		li {
+			text-indent: 15px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-size: align(7.5pt) align(7.5pt);
+			background-position: 0 align(1.48pt);
+		}
+	}
 
-    .body-dropcap {
-        span.row:first-of-type {
-            height: auto;
-            text-indent: 0 !important;
-        }
-    }
+	.body-dropcap {
+		span.row:first-of-type {
+			height: auto;
+			text-indent: 0 !important;
+		}
+	}
 
-    .drop-cap {
-        color: var(--drop-cap-color, blue);
-        font-family: var(--drop-cap-font-family, Arial);
-        font-weight: normal;
-        float: left;
-        font-size: 83.44pt;
-        line-height: 0.5em;
-        padding: 0;
-        margin: align(21.4px) align(-1pt) 0 0;
-    }
+	.drop-cap {
+		color: var(--drop-cap-color, blue);
+		font-family: var(--drop-cap-font-family, Arial);
+		font-weight: normal;
+		float: left;
+		font-size: 83.44pt;
+		line-height: 0.5em;
+		padding: 0;
+		margin: align(21.4px) align(-1pt) 0 0;
+	}
 
-    .row-scaled {
-        .drop-cap {
-            transform: scaleX(calc(1 / var(--glyph-scale, 1)))
-        }
-    }
+	.row-scaled {
+		.drop-cap {
+			transform: scaleX(calc(1 / var(--glyph-scale, 1)))
+		}
+	}
 
-    // Only works for single-line titles
-    // How to handle multi-line titles in a good way?
-    h2, h3 {
-        font-family: "GuardianSansCond-Bold";
-        font-size: 11pt;
-        line-height: var(--line-height, $base-line-height);
-        margin-top: 13.88px;
-        margin-bottom: 0;
-        transform: translateY(align(1.6px));
-        text-indent: 0;
-        letter-spacing: 0.07pt;
-        padding: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        font-weight: normal;
-        -ro-pdf-overprint: mode1;
-        -ro-pdf-overprint-content: mode1;
+	// Only works for single-line titles
+	// How to handle multi-line titles in a good way?
+	h2, h3 {
+		font-family: "GuardianSansCond-Bold";
+		font-size: 11pt;
+		line-height: var(--line-height, $base-line-height);
+		margin-top: 13.88px;
+		margin-bottom: 0;
+		transform: translateY(align(1.6px));
+		text-indent: 0;
+		letter-spacing: 0.07pt;
+		padding: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-weight: normal;
 
-        @media print {
-            color: CMYK(0%, 0%, 0%, 100%);
-        }
-    }
+		span {
+			display: inline;
+			-ro-pdf-overprint: mode1;
+			-ro-pdf-overprint-content: mode1;
+		}
+
+		@media print {
+			color: CMYK(0%, 0%, 0%, 100%);
+		}
+	}
 }
 
 .text-column-inline-container {
-    margin-top: $base-line-height;
-    margin-bottom: 0;
+	margin-top: $base-line-height;
+	margin-bottom: 0;
 
-    & + .alf-block {
-        margin-top: $base-line-height;
-    }
+	& + .alf-block {
+		margin-top: $base-line-height;
+	}
 }
 
 .text-column-bottom {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
