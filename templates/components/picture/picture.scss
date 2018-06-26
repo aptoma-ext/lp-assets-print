@@ -42,16 +42,16 @@
         }
 
         * {
-            -ro-pdf-overprint-content: mode1;
+            -ro-pdf-overprint: mode1;
         }
 
         .description,
         .credit {
             transform: translateY(align(-1.52px));
-            -ro-pdf-overprint-content: mode1;
+            -ro-pdf-overprint: mode1;
 
             * {
-                -ro-pdf-overprint-content: mode1;
+                -ro-pdf-overprint: mode1;
             }
         }
     }
