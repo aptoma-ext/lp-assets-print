@@ -1,13 +1,15 @@
-@font-face {
-    font-family: 'GuardianTextEgypt-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianTextEgyp-Regular.otf') format('opentype');
-}
+@at-root {
+	@font-face {
+		font-family: 'GuardianTextEgypt-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianTextEgyp-Regular.otf') format('opentype');
+	}
 
-@font-face {
-    font-family: 'GuardianTextEgypt-Black';
-    font-style: normal;
-    font-weight: normal;
-    src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianTextEgyp-Black.otf') format('opentype');
+	@font-face {
+		font-family: 'GuardianTextEgypt-Black';
+		font-style: normal;
+		font-weight: normal;
+		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianTextEgyp-Black.otf') format('opentype');
+	}
 }
