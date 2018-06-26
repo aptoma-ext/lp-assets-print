@@ -129,13 +129,14 @@
         line-height: var(--line-height, $base-line-height);
         margin-top: 13.88px;
         margin-bottom: 0;
-        // transform: translateY(align(1.6px));
+        transform: translateY(align(1.6px));
         text-indent: 0;
         letter-spacing: 0.07pt;
         padding: 0;
         padding-top: 0;
         padding-bottom: 0;
         font-weight: normal;
+        -ro-pdf-overprint: mode1;
         -ro-pdf-overprint-content: mode1;
 
         @media print {
