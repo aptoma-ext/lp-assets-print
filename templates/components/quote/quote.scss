@@ -24,8 +24,8 @@
         }
 
         .quote-text {
-            font-family: 'Guardian Sans Cond';
-            font-weight: 600;
+            font-family: 'GuardianSansCond-Semibold';
+            font-weight: normal;
             font-size: 16.2pt;
             line-height: 1;
             color: #FFF;
@@ -36,14 +36,14 @@
         }
 
         .quote-creator {
-            font-family: 'Guardian TextSans';
+            font-family: 'GuardianTextSans-Regular';
             font-size: 8.4pt;
             color: #FFF;
             transform: translateY(align(-1.8px));
 
             .author {
-                font-family: 'Guardian Sans';
-                font-weight: 800;
+                font-family: 'GuardianSans-Bold';
+                font-weight: normal;
             }
 
             @media print {

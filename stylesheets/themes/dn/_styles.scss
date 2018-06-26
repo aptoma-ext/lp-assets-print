@@ -35,7 +35,6 @@ $medium-line-height: align(13.6pt);
 
     // Headlines
     --headline-font-family: "GuardianSansXCond-Bold";
-    --headline-font-weight: normal;
     --headline-font-size-sm: 80pt;
     --headline-font-size-md: 90pt;
     --headline-font-size-lg: 105pt;
@@ -50,24 +49,21 @@ $medium-line-height: align(13.6pt);
     --fact-box-background-color-cmyk: #{$neutral-tint-cmyk};
 
     --topic-font-family: "GuardianSansCond-Bold";
-    --topic-font-weight: normal;
     --topic-color: var(--color-base-dark);
     --topic-color-cmyk: var(--color-base-dark-cmyk);
 
-    --ad-font-family: "Guardian Sans Cond";
+    --ad-font-family: "GuardianSansCond-Regular";
     --ad-font-size: 20pt;
 
     --drop-cap-color: var(--color-base-dark);
-    --drop-cap-font-family: "Guardian Sans XCond";
+    --drop-cap-font-family: "GuardianSansXCond-Bold";
 
-    --portrait-font-family: "Guardian TextSans";
-    --portrait-font-weight: 500;
+    --portrait-font-family: "GuardianTextSans-Medium";
     --portrait-color: #FFF;
     --portrait-color-cmyk: CMYK(0%, 0%, 0%, 0%);
     --portrait-background: #{$dark-grey};
     --portrait-background-cmyk: #{$dark-grey-cmyk};
-    --portrait-strong-font-family: "Guardian Sans";
-    --portrait-strong-font-weight: bold;
+    --portrait-strong-font-family: "GuardianSans-Bold";
     --portrait-strong-color: #{$yellow};
     --portrait-strong-color-cmyk: #{$yellow-cmyk};
 

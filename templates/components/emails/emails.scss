@@ -3,7 +3,7 @@
     border-width: align(0.25pt) 0 0 0;
     border-color: #000;
     border-color: CMYK(0%, 0%, 0%, 100%);
-    font-family: "Guardian TextSans" !important;
+    font-family: "GuardianTextSans-Regular" !important;
     font-weight: normal;
     font-size: $base-font-size;
     line-height: align(10.4pt);
@@ -12,7 +12,7 @@
 
     p {
         transform: translateY(align(2.1px));
-        font-family: "Guardian TextSans" !important;
+        font-family: "GuardianTextSans-Regular" !important;
         -ro-pdf-overprint-content: mode1;
     }
 }

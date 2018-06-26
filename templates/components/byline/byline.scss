@@ -1,59 +1,59 @@
 .byline {
-    * {
-        -ro-pdf-overprint-content: mode1;
-    }
+	* {
+		-ro-pdf-overprint-content: mode1;
+	}
 }
 
 .byline-topic {
-    font-size: 13pt;
-    line-height: $base-line-height * 2;
-    height: $base-line-height * 2;
-    box-sizing: border-box;
-    font-family: var(--topic-font-family);
-    font-weight: var(--topic-font-weight, 800);
-    color: var(--topic-color);
-    border-style: solid;
-    border-width: align(0.25pt) 0 align(0.25pt) 0;
-    border-color: #000;
-    border-color: CMYK(0%, 0%, 0%, 100%);
-    text-transform: uppercase;
-    margin: 0;
-    display: flex;
-    -ro-pdf-overprint: mode1;
-    -ro-pdf-overprint-content: mode1;
+	font-size: 13pt;
+	line-height: $base-line-height * 2;
+	height: $base-line-height * 2;
+	box-sizing: border-box;
+	font-family: var(--topic-font-family);
+	font-weight: normal;
+	color: var(--topic-color);
+	border-style: solid;
+	border-width: align(0.25pt) 0 align(0.25pt) 0;
+	border-color: #000;
+	border-color: CMYK(0%, 0%, 0%, 100%);
+	text-transform: uppercase;
+	margin: 0;
+	display: flex;
+	-ro-pdf-overprint: mode1;
+	-ro-pdf-overprint-content: mode1;
 
-    figure {
-        margin: 0;
-        padding: align(0.8pt) 0 0 0;
-        line-height: $base-line-height * 2;
-    }
+	figure {
+		margin: 0;
+		padding: align(0.8pt) 0 0 0;
+		line-height: $base-line-height * 2;
+	}
 
-    @media print {
-        color: var(--topic-color-cmyk);
-    }
+	@media print {
+		color: var(--topic-color-cmyk);
+	}
 }
 
 .byline-location-wrapper {
-    transform: translateY(align(4px));
+	transform: translateY(align(4px));
 }
 
 .byline-author {
-    margin-top: align(0.44px);
-    font-family: "GuardianSansCond-Bold";
-    font-weight: normal;
-    font-size: $medium-font-size;
-    line-height: $medium-line-height;
-    -ro-pdf-overprint-content: mode1;
+	margin-top: align(0.44px);
+	font-family: "GuardianSansCond-Bold";
+	font-weight: normal;
+	font-size: $medium-font-size;
+	line-height: $medium-line-height;
+	-ro-pdf-overprint-content: mode1;
 }
 
 .byline-location {
-    font-family: "GuardianSansCond-Bold";
-    font-weight: normal;
-    font-size: $medium-font-size;
-    line-height: $medium-line-height;
-    -ro-pdf-overprint-content: mode1;
+	font-family: "GuardianSansCond-Regular";
+	font-weight: normal;
+	font-size: $medium-font-size;
+	line-height: $medium-line-height;
+	-ro-pdf-overprint-content: mode1;
 
-    * {
-        -ro-pdf-overprint-content: mode1;
-    }
+	* {
+		-ro-pdf-overprint-content: mode1;
+	}
 }

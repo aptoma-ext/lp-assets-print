@@ -31,11 +31,11 @@
         }
 
         p {
+            font-family: var(--portrait-font-family, Arial);
+            font-weight: normal;
             padding: align(4.1px) align(3.5pt);
             font-size: 7.1pt;
             color: var(--portrait-color, #FFF);
-            font-weight: var(--portrait-font-weight, normal);
-            font-family: var(--portrait-font-family, Arial);
 
             @media print {
                 color: var(--portrait-color-cmyk);
@@ -43,7 +43,7 @@
         }
 
         b {
-            font-weight: var(--portrait-strong-font-weight, bold);
+            font-weight: normal;
             font-family: var(--portrait-strong-font-family, Arial);
             color: var(--portrait-strong-color, yellow);
 

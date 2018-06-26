@@ -1,228 +1,227 @@
 .headline {
-    * {
-        -ro-pdf-overprint-content: mode1;
-    }
+	* {
+		-ro-pdf-overprint-content: mode1;
+	}
 
-    h1 {
-        margin: 0 17px 0 0;
-        color: var(--headline-color, var(--color, #000));
-        font-size: var(--headline-font-size, 94.2pt);
-        line-height: var(--headline-line-height, 0.93em);
-        letter-spacing: var(--headline-letter-spacing, -1.9pt);
-        background-color: var(--headline-background-color, transparent);
-        font-weight: var(--headline-font-weight, 800);
-        font-family: var(--headline-font-family, sans-serif);
-        --header-align: 1;
+	h1 {
+		margin: 0 17px 0 0;
+		color: var(--headline-color, var(--color, #000));
+		font-size: var(--headline-font-size, 94.2pt);
+		line-height: var(--headline-line-height, 0.93em);
+		letter-spacing: var(--headline-letter-spacing, -1.9pt);
+		background-color: var(--headline-background-color, transparent);
+		font-family: var(--headline-font-family, sans-serif);
+		font-weight: normal;
+		--header-align: 1;
 
-        @media print {
-            color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
-            background-color: var(--headline-background-color-cmyk, transparent);
-        }
-    }
+		@media print {
+			color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
+			background-color: var(--headline-background-color-cmyk, transparent);
+		}
+	}
 
-    .dash {
-        color: var(--headline-dash-color, cadetblue);
-        font-family: 'DN Icons';
-        font-weight: normal;
+	.dash {
+		color: var(--headline-dash-color, cadetblue);
+		font-family: 'DN Icons';
+		font-weight: normal;
 
-        @media print {
-            color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
-        }
-    }
+		@media print {
+			color: var(--headline-dash-color-cmyk, CMYK(95%, 25%, 0%, 0%));
+		}
+	}
 
-    .alf-header-line {
-        display: block
-    }
+	.alf-header-line {
+		display: block
+	}
 
-    .alf-header-line-inner {
-        // force it into a single line, so we're free to add padding and other stuff
-        white-space: nowrap;
-    }
+	.alf-header-line-inner {
+		// force it into a single line, so we're free to add padding and other stuff
+		white-space: nowrap;
+	}
 }
 
 .headline--bg-lines {
-    .alf-header-line {
-        padding: 0 align(10px) align(3px) 0;
-    }
+	.alf-header-line {
+		padding: 0 align(10px) align(3px) 0;
+	}
 
-    .alf-header-line-inner {
-        background-color: #FFF;
-        padding: 0 10px 0 0;
+	.alf-header-line-inner {
+		background-color: #FFF;
+		padding: 0 10px 0 0;
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 0%);
-        }
-    }
+		@media print {
+			background-color: CMYK(0%, 0%, 0%, 0%);
+		}
+	}
 }
 
 .headline--box-shadow-lines {
-    .alf-header-line {
-        margin-bottom: 5px;
-    }
+	.alf-header-line {
+		margin-bottom: 5px;
+	}
 
-    .alf-header-line-inner {
-        background-color: #FFF;
-        box-shadow: 0 0 30px #000;
-        padding: 0 10px;
+	.alf-header-line-inner {
+		background-color: #FFF;
+		box-shadow: 0 0 30px #000;
+		padding: 0 10px;
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 0%);
-            box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
-        }
-    }
+		@media print {
+			background-color: CMYK(0%, 0%, 0%, 0%);
+			box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+		}
+	}
 
-    .alf-header-lines-2 {
-        .alf-header-line-1 {
-            transform: rotate(-1deg);
-        }
-    }
+	.alf-header-lines-2 {
+		.alf-header-line-1 {
+			transform: rotate(-1deg);
+		}
+	}
 
-    .alf-header-lines-3 {
-        .alf-header-line-1 {
-            transform: rotate(-2deg);
-        }
+	.alf-header-lines-3 {
+		.alf-header-line-1 {
+			transform: rotate(-2deg);
+		}
 
-        .alf-header-line-2 {
-            transform: rotate(-1deg);
-        }
-    }
+		.alf-header-line-2 {
+			transform: rotate(-1deg);
+		}
+	}
 }
 
 .headline--top-left {
-    position: absolute;
-    top: 0;
-    left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .headline--white {
-    h1 {
-        color: #FFF;
-    }
+	h1 {
+		color: #FFF;
+	}
 
-    @media print {
-        h1 {
-            color: CMYK(0%, 0%, 0%, 0%);
-        }
-    }
+	@media print {
+		h1 {
+			color: CMYK(0%, 0%, 0%, 0%);
+		}
+	}
 }
 
 // Preset "states" for the headline component
 
 .headline--sm h1 {
-    // TODO: these values are just an estimate for now
-    font-size: var(--headline-font-size-sm, 80pt);
-    line-height: var(--headline-line-height-sm, align(78pt));
+	// TODO: these values are just an estimate for now
+	font-size: var(--headline-font-size-sm, 80pt);
+	line-height: var(--headline-line-height-sm, align(78pt));
 }
 
 .headline--md h1 {
-    font-size: var(--headline-font-size-md, 90pt);
-    line-height: var(--headline-line-height-lg, 0.9em);
+	font-size: var(--headline-font-size-md, 90pt);
+	line-height: var(--headline-line-height-lg, 0.9em);
 }
 
 .headline--lg h1 {
-    font-size: var(--headline-font-size-lg, 105pt);
-    line-height: var(--headline-line-height-lg, 0.9em);
+	font-size: var(--headline-font-size-lg, 105pt);
+	line-height: var(--headline-line-height-lg, 0.9em);
 }
 
 .headline--xl h1 {
-    font-size: var(--headline-font-size-xl, 125pt);
+	font-size: var(--headline-font-size-xl, 125pt);
 }
 
 
 //Headlines defined by DN below
 .headline--23 h1 {
-    font-size: 23pt;
-    letter-spacing: -0.3pt;
-    line-height: 20.8pt;
+	font-size: 23pt;
+	letter-spacing: -0.3pt;
+	line-height: 20.8pt;
 }
 
 
 .headline--31_8 h1 {
-    font-size: 31.8pt;
-    letter-spacing: -0.3pt;
-    line-height: 28.6pt;
+	font-size: 31.8pt;
+	letter-spacing: -0.3pt;
+	line-height: 28.6pt;
 }
 
 
 .headline--42_2 h1 {
-    font-size: 42.2pt;
-    letter-spacing: -0.45pt;
-    line-height: 39pt;
+	font-size: 42.2pt;
+	letter-spacing: -0.45pt;
+	line-height: 39pt;
 }
 
 
 .headline--52_6 h1 {
-    font-size: 52.6pt;
-    letter-spacing: -0.8pt;
-    line-height: 47.4pt;
+	font-size: 52.6pt;
+	letter-spacing: -0.8pt;
+	line-height: 47.4pt;
 }
 
 
 .headline--63 h1 {
-    font-size: 63pt;
-    letter-spacing: var -1.3pt;
-    line-height: var 57.2pt;
+	font-size: 63pt;
+	letter-spacing: var -1.3pt;
+	line-height: var 57.2pt;
 }
 
 
 .headline--73_4 h1 {
-    font-size: 73.4pt;
-    letter-spacing: -1.5pt;
-    line-height: 67.6pt;
+	font-size: 73.4pt;
+	letter-spacing: -1.5pt;
+	line-height: 67.6pt;
 }
 
 
 .headline--83_8 h1 {
-    font-size: 83.8pt;
-    letter-spacing: -1.7pt;
-    line-height: 75.4pt;
+	font-size: 83.8pt;
+	letter-spacing: -1.7pt;
+	line-height: 75.4pt;
 }
 
 
 .headline--94_2 h1 {
-    font-size: 94.2pt;
-    letter-spacing: -1.9pt;
-    line-height: 83.2pt;
+	font-size: 94.2pt;
+	letter-spacing: -1.9pt;
+	line-height: 83.2pt;
 }
 
 
 .headline--104_6 h1 {
-    font-size: 104.6pt;
-    letter-spacing: -2.6pt;
-    line-height: 94.2pt;
+	font-size: 104.6pt;
+	letter-spacing: -2.6pt;
+	line-height: 94.2pt;
 }
 
 
 .headline--115 h1 {
-    font-size: 115pt;
-    letter-spacing: -2.8pt;
-    line-height: 102pt;
+	font-size: 115pt;
+	letter-spacing: -2.8pt;
+	line-height: 102pt;
 }
 
 
 .headline--125_4 h1 {
-    font-size: 125.4pt;
-    letter-spacing: -3.2pt;
-    line-height: 111.8pt;
+	font-size: 125.4pt;
+	letter-spacing: -3.2pt;
+	line-height: 111.8pt;
 }
 
 
 .headline--135_8 h1 {
-    font-size: 135.8pt;
-    letter-spacing: -3.4pt;
-    line-height: 122.2pt;
+	font-size: 135.8pt;
+	letter-spacing: -3.4pt;
+	line-height: 122.2pt;
 }
 
 
 //Headlines for Meninger -
 
 .headline--meninger--52_6 h1 {
-    font-family: "Guardian Egypt";
+	font-family: 'GuardianEgypt-Bold';
+	font-weight: normal;
 	font-size: 52.6pt;
 	letter-spacing: -0.8pt;
 	line-height: 47.4pt;
-	font-weight: 700;
-    border-bottom: solid 0.25pt;
+	border-bottom: solid 0.25pt;
 	padding-bottom: 27.5pt;
-
 }

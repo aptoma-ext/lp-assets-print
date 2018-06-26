@@ -21,8 +21,8 @@
     }
 
     .overlay-caption {
-        font-family: "Guardian Sans";
-        font-weight: 500;
+        font-family: "GuardianSans-Medium";
+        font-weight: normal;
         font-size: 3.3mm;
         line-height: 4mm;
         margin-top: 1mm;
@@ -30,8 +30,8 @@
 
     figcaption, .figcaption {
         background-color: #FFF;
-        font-family: "Guardian TextSans";
-        font-weight: bold;
+        font-family: "GuardianTextSans-Bold";
+        font-weight: normal;
         font-size: $base-font-size;
         line-height: $base-line-height;
         padding: 0;
