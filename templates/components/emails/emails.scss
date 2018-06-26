@@ -10,9 +10,13 @@
     padding-top: 0;
     -ro-pdf-overprint: mode1;
 
+	div {
+		transform: translateY(align(2.1px));
+	}
+
     p {
-        transform: translateY(align(2.1px));
         font-family: "GuardianTextSans-Regular" !important;
-        -ro-pdf-overprint-content: mode1;
+		-ro-pdf-overprint-content: mode1;
+		display: inline;
     }
 }
