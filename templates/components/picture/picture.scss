@@ -49,11 +49,16 @@
         .credit {
             transform: translateY(align(-1.52px));
             -ro-pdf-overprint: mode1;
+		}
 
-            * {
-                -ro-pdf-overprint: mode1;
-            }
-        }
+		.description .word {
+			-ro-pdf-overprint: mode1;
+		}
+
+		.credit div {
+			display: inline;
+			-ro-pdf-overprint: mode1;
+		}
     }
 
 }
