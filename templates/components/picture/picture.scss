@@ -1,53 +1,53 @@
 .picture {
-    .alf-container {
-        position: relative;
-    }
+	.alf-container {
+		position: relative;
+	}
 
-    .image img {
-        display: block;
-    }
+	.image img {
+		display: block;
+	}
 
-    &.alf-smart-crop,
-    .alf-smart-crop {
-        > div {
-            height: auto;
-        }
+	&.alf-smart-crop,
+	.alf-smart-crop {
+		> div {
+			height: auto;
+		}
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-    }
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
 
-    .overlay-caption {
-        font-family: "GuardianSans-Medium";
-        font-weight: normal;
-        font-size: 3.3mm;
-        line-height: 4mm;
-        margin-top: 1mm;
-    }
+	.overlay-caption {
+		font-family: "GuardianSans-Medium";
+		font-weight: normal;
+		font-size: 3.3mm;
+		line-height: 4mm;
+		margin-top: 1mm;
+	}
 
-    figcaption, .figcaption {
-        background-color: #FFF;
-        font-family: "GuardianTextSans-Bold";
-        font-weight: normal;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        padding: 0;
-        transform: translateY(align(4px));
+	figcaption, .figcaption {
+		background-color: #FFF;
+		font-family: "GuardianTextSans-Bold";
+		font-weight: normal;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		padding: 0;
+		transform: translateY(align(4px));
 
-        @media print {
-            background-color: CMYK(0%, 0%, 0%, 0%);
-        }
+		@media print {
+			background-color: CMYK(0%, 0%, 0%, 0%);
+		}
 
-        * {
-            -ro-pdf-overprint: mode1;
-        }
+		* {
+			-ro-pdf-overprint: mode1;
+		}
 
-        .description,
-        .credit {
-            transform: translateY(align(-1.52px));
+		.description,
+		.credit {
+			transform: translateY(align(-1.52px));
 		}
 
 		.description .word {
@@ -60,72 +60,73 @@
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
 		}
-    }
+	}
 
 }
 
 .picture--fill {
-    > div {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
+	> div {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
 
-        img {
-            flex: 1;
-            object-fit: cover;
-        }
-    }
+		img {
+			flex: 1;
+			object-fit: cover;
+		}
+	}
 }
 
 .picture--main {
-    > div {
-        height: 100%;
-    }
+	> div {
+		height: 100%;
+	}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        -ro-image-resampling: 200;
-    }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		--image-ppi: 250;
+		-ro-image-resampling: 250;
+	}
 }
 
 .picture--caption-inline,
 .picture--caption-inline-left,
 .picture--caption-inline-top-left,
 .picture--caption-inline-top-right {
-    figcaption, .figcaption {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 46mm;
-        transform: translateY(0);
-    }
+	figcaption, .figcaption {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 46mm;
+		transform: translateY(0);
+	}
 }
 
 .picture--caption-inline-left {
-    figcaption, .figcaption {
-        right: auto;
-        left: 0;
-    }
+	figcaption, .figcaption {
+		right: auto;
+		left: 0;
+	}
 }
 
 .picture--caption-inline-top-left {
-    figcaption, .figcaption {
-        right: auto;
-        left: 0;
-        top: 0;
-        bottom: auto;
-    }
+	figcaption, .figcaption {
+		right: auto;
+		left: 0;
+		top: 0;
+		bottom: auto;
+	}
 }
 
 .picture--caption-inline-top-right {
-    figcaption, .figcaption {
-        right: -0.3px;
-        left: auto;
-        top: 0;
-        bottom: auto;
-        padding: 0 0 3px 7.86px;
-        width: calc(46mm + 7.86px);
-    }
+	figcaption, .figcaption {
+		right: -0.3px;
+		left: auto;
+		top: 0;
+		bottom: auto;
+		padding: 0 0 3px 7.86px;
+		width: calc(46mm + 7.86px);
+	}
 }
