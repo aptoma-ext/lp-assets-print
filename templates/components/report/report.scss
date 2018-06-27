@@ -18,7 +18,7 @@
 		font-size: 14.9pt;
 		font-family: 'GuardianSansCond-Black';
 		font-weight: normal;
-		line-height: 1em;
+		line-height: 1.05em;
 		margin-top: $base-line-height - $baseline-offset;
 		margin-bottom: 0;
 	}
@@ -27,9 +27,9 @@
 		font-size: 8.4pt;
 		font-family: 'GuardianSansXCond-Bold';
 		font-weight: normal;
-		line-height: 1em;
+		line-height: 1.05em;
 		margin-top: $base-line-height - $baseline-offset;
-		margin-bottom: 0;
+		margin-bottom: 1px;
 	}
 
 	table {
