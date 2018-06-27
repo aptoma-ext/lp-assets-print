@@ -37,11 +37,14 @@
 		font-weight: normal;
 		font-size: 7.1pt;
 		width: 100%;
+		border-collapse: collapse;
 
 		tr {
 			td {
 				text-align: right;
 				border-bottom: 0.25pt solid #000;
+				margin: 0;
+				padding: 0;
 
 				@media print {
 					border-color: CMYK(0%, 0%, 0%, 100%);
