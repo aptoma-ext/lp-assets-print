@@ -64,16 +64,16 @@
 		padding-left: 0;
 
 		li {
-			text-indent: 9.7pt;
+			text-indent: 9pt;
 			position: relative;
 
 			&:before {
 				content: '\0025CF';
 				display: inline-block;
 				margin-right: 4px;
-				font-size: 22px;
+				font-size: 24px;
 				position: absolute;
-				left: -9.7pt;
+				left: -9pt;
 				top: -1px;
 				color: var(--color-base);
 
