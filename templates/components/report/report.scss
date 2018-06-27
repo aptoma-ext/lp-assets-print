@@ -18,9 +18,9 @@
 		font-size: 14.9pt;
 		font-family: 'GuardianSansCond-Black';
 		font-weight: normal;
-		line-height: 1.05em;
+		line-height: 1.03em;
 		margin-top: $base-line-height - $baseline-offset;
-		margin-bottom: 0;
+		margin-bottom: 1px;
 	}
 
 	h4 {
@@ -45,7 +45,7 @@
 				border-bottom: 0.25pt solid #000;
 				margin: 0;
 				padding: 0;
-				line-height: 1.4em;
+				line-height: 1.38em;
 
 				@media print {
 					border-color: CMYK(0%, 0%, 0%, 100%);
