@@ -1,0 +1,37 @@
+.report {
+    border-top: $baseline-offset solid var(--fact-box-border-color, steelblue);
+    background-color: var(--fact-box-background-color, oldlace);
+    line-height: $base-line-height;
+    -ro-pdf-overprint-content: mode1;
+    padding: 0 align(6pt) align(6pt) align(6pt);
+
+    @media print {
+        border-top-color: var(--fact-box-border-color-cmyk);
+        background-color: var(--fact-box-background-color-cmyk);
+    }
+
+    .alf-align {
+        --grid-align-top: baseline;
+	}
+
+	h3 {
+		font-size: 14.9pt;
+		font-family: 'GuardianSansCond-Black';
+		font-weight: normal;
+		line-height: 0.93em;
+	}
+
+	h4 {
+		font-size: 8.4pt;
+		font-family: 'GuardianSansXCond-Bold';
+		font-weight: normal;
+		line-height: 0.93em;
+	}
+
+	table {
+		font-family: 'GuardianSansXCond-Regular';
+		font-weight: normal;
+		font-size: 7.1pt;
+	}
+}
+

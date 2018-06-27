@@ -3,52 +3,54 @@
 @import "mixins/_grid";
 
 .alf-rev-#{$revision} {
-    background: transparent;
-    color: #000;
-    box-sizing: border-box;
-    line-height: $base-line-height;
-    text-rendering: geometricPrecision;
-    -ro-glyph-layout-mode: quality;
+	background: transparent;
+	color: #000;
+	box-sizing: border-box;
+	line-height: $base-line-height;
+	text-rendering: geometricPrecision;
+	-ro-glyph-layout-mode: quality;
+	widows: 1;
+	orphans: 1;
 
-    @media print {
-        color: CMYK(0%, 0%, 0%, 100%);
-    }
+	@media print {
+		color: CMYK(0%, 0%, 0%, 100%);
+	}
 
-    * {
-        box-sizing: border-box;
-    }
+	* {
+		box-sizing: border-box;
+	}
 
-    .alf-template {
-        background: transparent;
-    }
+	.alf-template {
+		background: transparent;
+	}
 
-    .alf-break {
-        display: block;
-        height: 0;
-        line-height: 0;
-    }
+	.alf-break {
+		display: block;
+		height: 0;
+		line-height: 0;
+	}
 
-    figure {
-        margin: 0;
-    }
+	figure {
+		margin: 0;
+	}
 
-    p, h1, h2, h3, h4, h5, h6, blockquote {
-        margin: 0;
-        padding: 0;
-        color: #000;
-        font-kerning: normal;
+	p, h1, h2, h3, h4, h5, h6, blockquote {
+		margin: 0;
+		padding: 0;
+		color: #000;
+		font-kerning: normal;
 
-        @media print {
-            color: CMYK(0%, 0%, 0%, 100%);
-            -ro-pdf-overprint-content: mode1;
-        }
-    }
+		@media print {
+			color: CMYK(0%, 0%, 0%, 100%);
+			-ro-pdf-overprint-content: mode1;
+		}
+	}
 
-    @include grid(5, align(246mm), align(46mm), 0, align(13mm), '.alf-grid.alf-grid-5');
-    @include grid(6, align(246mm), align(38mm), 0, align(13mm), '.alf-grid.alf-grid-6');
+	@include grid(5, align(246mm), align(46mm), 0, align(13mm), '.alf-grid.alf-grid-5');
+	@include grid(6, align(246mm), align(38mm), 0, align(13mm), '.alf-grid.alf-grid-6');
 
-    @import "_utils";
-    @import "_layout";
-    @import "_components";
-    @import "_themes";
+	@import "_utils";
+	@import "_layout";
+	@import "_components";
+	@import "_themes";
 }
