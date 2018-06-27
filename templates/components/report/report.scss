@@ -19,6 +19,8 @@
 		font-family: 'GuardianSansCond-Black';
 		font-weight: normal;
 		line-height: 0.93em;
+		margin-top: $base-line-height - $baseline-offset;
+		margin-bottom: 0;
 	}
 
 	h4 {
@@ -26,12 +28,31 @@
 		font-family: 'GuardianSansXCond-Bold';
 		font-weight: normal;
 		line-height: 0.93em;
+		margin-top: $base-line-height - $baseline-offset;
+		margin-bottom: 0;
 	}
 
 	table {
 		font-family: 'GuardianSansXCond-Regular';
 		font-weight: normal;
 		font-size: 7.1pt;
+		width: 100%;
+
+		tr {
+			td {
+				text-align: right;
+				border-bottom: 0.25pt solid #000;
+
+				@media print {
+					border-color: CMYK(0%, 0%, 0%, 100%);
+				}
+			}
+
+			td:first-child {
+				text-align: left;
+			}
+		}
+
 	}
 }
 
