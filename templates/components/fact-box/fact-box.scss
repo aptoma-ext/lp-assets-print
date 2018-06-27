@@ -75,10 +75,10 @@
 				position: absolute;
 				left: -9.7pt;
 				top: -1px;
-				color: $blue;
+				color: var(--color-base);
 
 				@media print {
-					color: $blue-cmyk;
+					color: var(--color-base-cmyk);
 				}
 			}
 		}
