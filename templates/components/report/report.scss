@@ -3,7 +3,7 @@
     background-color: var(--fact-box-background-color, oldlace);
     line-height: $base-line-height;
     -ro-pdf-overprint-content: mode1;
-    padding: 0 align(6pt) align(4pt);
+    padding: 0 align(6pt) align(3.5pt);
 
     @media print {
         border-top-color: var(--fact-box-border-color-cmyk);
@@ -45,6 +45,7 @@
 				border-bottom: 0.25pt solid #000;
 				margin: 0;
 				padding: 0;
+				line-height: 1.4em;
 
 				@media print {
 					border-color: CMYK(0%, 0%, 0%, 100%);
