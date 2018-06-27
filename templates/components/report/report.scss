@@ -56,6 +56,12 @@
 			}
 		}
 
+		tr:last-child {
+			td {
+				border-width: 0;
+			}
+		}
+
 	}
 }
 
