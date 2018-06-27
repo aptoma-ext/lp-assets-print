@@ -39,17 +39,22 @@
 		width: 100%;
 		border-collapse: collapse;
 
-		tr {
+		tbody {
 			td {
-				text-align: right;
-				border-bottom: 0.25pt solid #000;
-				margin: 0;
-				padding: 0;
-				line-height: 1.37em;
+				border-top: 0.25pt solid #000;
 
 				@media print {
 					border-color: CMYK(0%, 0%, 0%, 100%);
 				}
+			}
+		}
+
+		tr {
+			td {
+				text-align: right;
+				margin: 0;
+				padding: 0;
+				line-height: 1.37em;
 			}
 
 			td:first-child {
