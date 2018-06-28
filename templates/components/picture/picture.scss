@@ -1,5 +1,6 @@
 .picture {
-	--image-ppi: 230;
+	// this will in practice use the original size of the image
+	--image-ppi: 9999;
 
 	.alf-container {
 		position: relative;
