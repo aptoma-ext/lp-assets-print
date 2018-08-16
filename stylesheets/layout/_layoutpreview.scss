@@ -15,38 +15,5 @@
                 display: none;
             }
         }
-
-        .lp-grid {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 2147483647;
-            pointer-events: none;
-            width: calc(100% * var(--lp-zoom, 1));
-
-            > div {
-                background: transparent;
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-                height: calc(#{$base-line-height} * var(--lp-zoom, 1));
-            }
-        }
-
-        .lp-grid-top,
-        .lp-grid-document {
-            > div {
-                border-top: 0.04px solid rgb(186, 186, 186);
-            }
-        }
-
-        .lp-grid-baseline {
-            top: calc(#{$baseline-offset} * var(--lp-zoom, 1));
-
-            > div {
-                border-top: 0.04px solid rgb(128, 128, 128);
-            }
-        }
-    }
+	}
 }
