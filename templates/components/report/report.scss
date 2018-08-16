@@ -1,5 +1,5 @@
 .report {
-    border-top: $baseline-offset solid var(--fact-box-border-color, steelblue);
+    border-top: $grid-line-offset solid var(--fact-box-border-color, steelblue);
     background-color: var(--fact-box-background-color, oldlace);
     line-height: $base-line-height;
     -ro-pdf-overprint-content: mode1;
@@ -19,7 +19,7 @@
 		font-family: 'GuardianSansCond-Black';
 		font-weight: normal;
 		line-height: 1.02em;
-		margin-top: $base-line-height - $baseline-offset;
+		margin-top: $base-line-height - $grid-line-offset;
 		margin-bottom: 5.4pt;
 	}
 
@@ -28,7 +28,7 @@
 		font-family: 'GuardianSansXCond-Bold';
 		font-weight: normal;
 		line-height: 1.05em;
-		margin-top: $base-line-height - $baseline-offset;
+		margin-top: $base-line-height - $grid-line-offset;
 		margin-bottom: 1px;
 	}
 
