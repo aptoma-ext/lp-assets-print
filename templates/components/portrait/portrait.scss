@@ -1,5 +1,5 @@
 .portrait {
-    height: align(45.35pt);
+    height: 45.35pt;
     --grid-align-top: baseline;
     --grid-align-bottom: top;
 
@@ -10,8 +10,8 @@
 
     .image {
         float: left;
-        flex: 0 0 align(47.2pt);
-        height: align(45.35pt);
+        flex: 0 0 47.2pt;
+        height: 45.35pt;
 
         img {
             width: 100%;
@@ -22,7 +22,7 @@
     }
 
     figcaption {
-        height: align(45.35pt);
+        height: 45.35pt;
         flex: 1;
         background-color: var(--portrait-background, #333);
 
@@ -33,7 +33,7 @@
         p {
             font-family: var(--portrait-font-family, Arial);
             font-weight: normal;
-            padding: align(4.1px) align(3.5pt);
+            padding: 4.1px 3.5pt;
             font-size: 7.1pt;
             color: var(--portrait-color, #FFF);
 

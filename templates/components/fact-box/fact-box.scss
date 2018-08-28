@@ -5,7 +5,7 @@
 	background-color: var(--fact-box-background-color, oldlace);
 	line-height: $base-line-height;
 	-ro-pdf-overprint-content: mode1;
-	padding: 0 align(6pt) align(6pt) align(6pt);
+	padding: 0 6pt 6pt 6pt;
 
 	@media print {
 		border-top-color: var(--fact-box-border-color-cmyk);
@@ -21,7 +21,7 @@
 	font-family: "GuardianSansCond-Black";
 	font-weight: normal;
 	font-size: 14.9pt;
-	line-height: align(15.6pt);
+	line-height: 15.6pt;
 	box-sizing: content-box;
 	margin-bottom: 0;
 	// Align to the first base line (red line)
@@ -32,12 +32,12 @@
 .fact-box--lg {
 	.fact-box-header {
 		font-size: 20.1pt;
-		line-height: align(15.6pt);
+		line-height: 15.6pt;
 	}
 }
 
 .fact-box-body-container {
-	margin-top: align($base-line-height / 2);
+	margin-top: $base-line-height / 2;
 }
 
 .fact-box-body {
@@ -52,9 +52,9 @@
 	letter-spacing: -0.06pt;
 	column-count: var(--colspan, 1);
 	column-gap: 4mm;
-	column-rule: align(0.25pt) solid #000;
+	column-rule: 0.25pt solid #000;
 	column-rule-color: CMYK(0%, 0%, 0%, 100%);
-	transform: translateY(align(2.75px));
+	transform: translateY(2.75px);
 
 	ul {
 		margin: 0;

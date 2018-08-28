@@ -33,24 +33,24 @@
 
     .ad-top-line {
         height: 1px;
-        top: align(-0.12pt);
-        left: align(1.18pt);
+        top: -0.12pt;
+        left: 1.18pt;
         right: 0;
 
         @media print {
-            height: align(0.25pt);
+            height: 0.25pt;
         }
     }
 
-    $topOffset: align(4.15pt);
+    $topOffset: 4.15pt;
     .ad-left-line {
         width: 1px;
         height: calc(100% - #{$topOffset});
         bottom: 0;
-        left: align(-4.17pt);
+        left: -4.17pt;
 
         @media print {
-            width: align(0.25pt);
+            width: 0.25pt;
         }
     }
 }

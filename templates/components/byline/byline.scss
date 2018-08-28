@@ -13,7 +13,7 @@
 	font-weight: normal;
 	color: var(--topic-color);
 	border-style: solid;
-	border-width: align(0.25pt) 0 align(0.25pt) 0;
+	border-width: 0.25pt 0 0.25pt 0;
 	border-color: #000;
 	border-color: CMYK(0%, 0%, 0%, 100%);
 	text-transform: uppercase;
@@ -24,7 +24,7 @@
 
 	figure {
 		margin: 0;
-		padding: align(0.8pt) 0 0 0;
+		padding: 0.8pt 0 0 0;
 		line-height: $base-line-height * 2;
 	}
 
@@ -34,11 +34,11 @@
 }
 
 .byline-location-wrapper {
-	transform: translateY(align(4px));
+	transform: translateY(4px);
 }
 
 .byline-author {
-	margin-top: align(0.44px);
+	margin-top: 0.44px;
 	font-family: "GuardianSansCond-Bold";
 	font-weight: normal;
 	font-size: $medium-font-size;

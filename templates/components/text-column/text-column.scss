@@ -92,8 +92,8 @@
 			text-indent: 15px;
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
 			background-repeat: no-repeat;
-			background-size: align(7.5pt) align(7.5pt);
-			background-position: 0 align(1.48pt);
+			background-size: 7.5pt 7.5pt;
+			background-position: 0 1.48pt;
 		}
 	}
 
@@ -112,7 +112,7 @@
 		font-size: 83.44pt;
 		line-height: 0.5em;
 		padding: 0;
-		margin: align(21.4px) align(-1pt) 0 0;
+		margin: 21.4px -1pt 0 0;
 	}
 
 	.row-scaled {
@@ -129,7 +129,7 @@
 		line-height: var(--line-height, $base-line-height);
 		margin-top: 13.88px;
 		margin-bottom: 0;
-		transform: translateY(align(1.6px));
+		transform: translateY(1.6px);
 		text-indent: 0;
 		letter-spacing: 0.07pt;
 		padding: 0;

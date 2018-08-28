@@ -6,7 +6,7 @@
     }
 
     blockquote {
-        padding: align(5.45pt) align(5.621pt) align(5.45pt) align(5.621pt);
+        padding: 5.45pt 5.621pt 5.45pt 5.621pt;
 
         &:before {
             content: '–';
@@ -39,7 +39,7 @@
             font-family: 'GuardianTextSans-Regular';
             font-size: 8.4pt;
             color: #FFF;
-            transform: translateY(align(-1.8px));
+            transform: translateY(-1.8px);
 
             .author {
                 font-family: 'GuardianSans-Bold';

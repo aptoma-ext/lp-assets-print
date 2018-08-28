@@ -17,12 +17,12 @@ $deep-purple: rgb(91, 40, 105);
 $deep-purple-cmyk: -ro-separation('BASE dark', 1, CMYK(70%, 100%, 20%, 10%));
 
 $medium-font-size: 13.6pt;
-$medium-line-height: align(13.6pt);
+$medium-line-height: 13.6pt;
 
 @import "_fontface";
 
 & {
-    --font-size-body: align(8.4pt);
+    --font-size-body: 8.4pt;
     --color-base: #{$blue};
     --color-base-cmyk: #{$blue-cmyk};
     --color-base-dark: #{$dark-blue};
@@ -31,7 +31,7 @@ $medium-line-height: align(13.6pt);
 
 .theme--dn {
     // Body text
-    --font-size-body: align(8.4pt);
+    --font-size-body: 8.4pt;
 
     // Headlines
     --headline-font-family: "GuardianSansXCond-Bold";

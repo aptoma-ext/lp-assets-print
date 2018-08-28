@@ -1,6 +1,6 @@
 .emails {
     border-style: solid;
-    border-width: align(0.25pt) 0 0 0;
+    border-width: 0.25pt 0 0 0;
     border-color: #000;
     border-color: CMYK(0%, 0%, 0%, 100%);
     font-family: "GuardianTextSans-Regular" !important;
@@ -11,7 +11,7 @@
     -ro-pdf-overprint: mode1;
 
 	div {
-		transform: translateY(align(2.1px));
+		transform: translateY(2.1px);
 	}
 
     p {

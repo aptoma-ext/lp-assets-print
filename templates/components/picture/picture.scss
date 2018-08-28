@@ -35,7 +35,7 @@
 		font-size: $base-font-size;
 		line-height: $base-line-height;
 		padding: 0;
-		transform: translateY(align(4px));
+		transform: translateY(4px);
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
@@ -47,7 +47,7 @@
 
 		.description,
 		.credit {
-			transform: translateY(align(-1.52px));
+			transform: translateY(-1.52px);
 		}
 
 		.description .word {

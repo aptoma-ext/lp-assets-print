@@ -42,7 +42,7 @@
 
 .headline--bg-lines {
 	.alf-header-line {
-		padding: 0 align(10px) align(3px) 0;
+		padding: 0 10px 3px 0;
 	}
 
 	.alf-header-line-inner {
@@ -111,7 +111,7 @@
 .headline--sm h1 {
 	// TODO: these values are just an estimate for now
 	font-size: var(--headline-font-size-sm, 80pt);
-	line-height: var(--headline-line-height-sm, align(78pt));
+	line-height: var(--headline-line-height-sm, 78pt);
 }
 
 .headline--md h1 {
