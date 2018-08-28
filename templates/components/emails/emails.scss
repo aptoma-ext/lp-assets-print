@@ -1,8 +1,5 @@
 .emails {
-    border-style: solid;
-    border-width: 0.25pt 0 0 0;
-    border-color: #000;
-    border-color: CMYK(0%, 0%, 0%, 100%);
+    position: relative;
     font-family: "GuardianTextSans-Regular" !important;
     font-weight: normal;
     font-size: $base-font-size;
@@ -10,7 +7,18 @@
     padding-top: 0;
     -ro-pdf-overprint: mode1;
 
-	div {
+    .emails-border {
+        position: absolute;
+        top: -0.1px;
+        height: 0;
+        width: 100%;
+        border-width: 0.25pt 0 0 0;
+        border-color: #000;
+        border-color: CMYK(0%, 0%, 0%, 100%);
+        border-style: solid;
+    }
+
+	.emails-wrapper {
 		transform: translateY(2.1px);
 	}
 
