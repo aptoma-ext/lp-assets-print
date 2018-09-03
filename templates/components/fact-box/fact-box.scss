@@ -68,7 +68,8 @@
 			position: relative;
 
 			&:before {
-				content: '\0025CF';
+				content: 'n';
+				font-family: ZapfDingbats;
 				display: inline-block;
 				margin-right: 4px;
 				font-size: 24px;
