@@ -34,7 +34,7 @@ $medium-line-height: 13.6pt;
     --font-size-body: 8.4pt;
 
     // Headlines
-    --headline-font-family: 'GuardianSansXCond-Bold';
+    --headline-font-family: "GuardianSansXCond-Bold";
     --headline-font-size-sm: 80pt;
     --headline-font-size-md: 90pt;
     --headline-font-size-lg: 105pt;
@@ -48,22 +48,22 @@ $medium-line-height: 13.6pt;
     --fact-box-background-color: #{$neutral-tint};
     --fact-box-background-color-cmyk: #{$neutral-tint-cmyk};
 
-    --topic-font-family: 'GuardianSansCond-Bold';
+    --topic-font-family: "GuardianSansCond-Bold";
     --topic-color: var(--color-base-dark);
     --topic-color-cmyk: var(--color-base-dark-cmyk);
 
-    --ad-font-family: 'GuardianSansCond-Regular';
+    --ad-font-family: "GuardianSansCond-Regular";
     --ad-font-size: 20pt;
 
     --drop-cap-color: var(--color-base-dark);
-    --drop-cap-font-family: 'GuardianSansXCond-Bold';
+    --drop-cap-font-family: "GuardianSansXCond-Bold";
 
-    --portrait-font-family: 'GuardianTextSans-Medium';
+    --portrait-font-family: "GuardianTextSans-Medium";
     --portrait-color: #FFF;
     --portrait-color-cmyk: CMYK(0%, 0%, 0%, 0%);
     --portrait-background: #{$dark-grey};
     --portrait-background-cmyk: #{$dark-grey-cmyk};
-    --portrait-strong-font-family: 'GuardianSans-Bold';
+    --portrait-strong-font-family: "GuardianSans-Bold";
     --portrait-strong-color: #{$yellow};
     --portrait-strong-color-cmyk: #{$yellow-cmyk};
 

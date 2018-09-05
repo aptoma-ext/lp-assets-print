@@ -11,7 +11,7 @@
         &:before {
             content: '–';
             display: block;
-            font-family: 'DN Icons';
+            font-family: "DN Icons";
             font-size: 47pt;
             line-height: 0.93em;
             color: #FFF;
@@ -24,7 +24,7 @@
         }
 
         .quote-text {
-            font-family: 'GuardianSansCond-Semibold';
+            font-family: "GuardianSansCond-Semibold";
             font-weight: normal;
             font-size: 16.2pt;
             line-height: 1;
@@ -36,13 +36,13 @@
         }
 
         .quote-creator {
-            font-family: 'Guardian TextSans';
+            font-family: "Guardian TextSans";
             font-size: 8.4pt;
             color: #FFF;
             transform: translateY(-1.8px);
 
             .author {
-                font-family: 'GuardianSans-Bold';
+                font-family: "GuardianSans-Bold";
                 font-weight: normal;
             }
 

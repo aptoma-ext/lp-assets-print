@@ -18,7 +18,7 @@
 }
 
 .fact-box-header {
-	font-family: 'GuardianSansCond-Black';
+	font-family: "GuardianSansCond-Black";
 	font-weight: normal;
 	font-size: 14.9pt;
 	line-height: 15.6pt;
@@ -42,7 +42,7 @@
 
 .fact-box-body {
 	text-rendering: geometricPrecision;
-	font-family: 'Guardian TextSans';
+	font-family: "Guardian TextSans";
 	font-kerning: normal;
 	font-weight: normal;
 	font-style: normal;
@@ -69,7 +69,7 @@
 
 			&:before {
 				content: '\0025CF';
-				font-family: 'Guardian TextSans';
+				font-family: "Guardian TextSans";
 				display: inline-block;
 				margin-right: 4px;
 				font-size: 24px;
