@@ -65,7 +65,7 @@
 	}
 
 	.alf-block, p, ul, li {
-		font-family: "GuardianTextEgypt-Regular";
+		font-family: 'GuardianTextEgypt-Regular';
 		font-weight: normal;
 		text-rendering: geometricPrecision;
 		color: #000;
@@ -76,7 +76,7 @@
 		letter-spacing: 0.02pt;
 
 		b {
-			font-family: "GuardianSans-Bold";
+			font-family: 'GuardianSans-Bold';
 			font-weight: normal;
 		}
 	}
@@ -124,7 +124,7 @@
 	// Only works for single-line titles
 	// How to handle multi-line titles in a good way?
 	h2, h3 {
-		font-family: "GuardianSansCond-Bold";
+		font-family: 'GuardianSansCond-Bold';
 		font-size: 11pt;
 		line-height: var(--line-height, $base-line-height);
 		margin-top: 13.88px;
