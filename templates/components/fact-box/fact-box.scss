@@ -68,18 +68,15 @@
 			position: relative;
 
 			&:before {
-				content: 'l';
-				font-family: 'ZapfDingbats';
-				font-weight: normal;
-				font-style: normal;
+				content: '\0025CF';
+				font-family: 'GuardianTextSans-Regular';
 				display: inline-block;
 				margin-right: 4px;
-				font-size: 8.4pt;
+				font-size: 24px;
 				position: absolute;
-				left: -9.6pt;
-				top: -1.9px;
+				left: -10.8pt;
+				top: -1.6px;
 				color: var(--color-base);
-				-ro-pdf-overprint: none;
 
 				@media print {
 					color: var(--color-base-cmyk);
