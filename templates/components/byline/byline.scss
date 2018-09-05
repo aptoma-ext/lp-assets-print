@@ -19,13 +19,13 @@
 	text-transform: uppercase;
 	margin: 0;
 	display: flex;
-	-ro-pdf-overprint: none;
-	-ro-pdf-overprint-content: none;
 
 	figure {
 		margin: 0;
 		padding: 0.8pt 0 0 0;
 		line-height: $base-line-height * 2;
+		-ro-pdf-overprint: none;
+		-ro-pdf-overprint-content: none;
 	}
 
 	@media print {
