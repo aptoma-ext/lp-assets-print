@@ -79,6 +79,7 @@
 				left: -9.6pt;
 				top: -1.9px;
 				color: var(--color-base);
+				-ro-pdf-overprint: none;
 
 				@media print {
 					color: var(--color-base-cmyk);
