@@ -3,6 +3,7 @@
 @import "mixins/_grid";
 
 .alf-rev-#{$revision} {
+	-ro-author: 'LayoutPreview by Aptoma AS';
 	background: transparent;
 	color: #000;
 	box-sizing: border-box;
