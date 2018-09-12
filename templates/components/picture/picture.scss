@@ -1,10 +1,18 @@
 .picture {
+	-ro-pdf-overprint: none;
+	-ro-pdf-overprint-content: none;
+
 	.alf-container {
 		position: relative;
 	}
 
-	.image img {
-		display: block;
+	.image {
+		-ro-pdf-overprint: none;
+		-ro-pdf-overprint-content: none;
+
+		img {
+			display: block;
+		}
 	}
 
 	&.alf-smart-crop,
@@ -29,6 +37,7 @@
 	}
 
 	figcaption, .figcaption {
+		-ro-pdf-overprint: none;
 		background-color: #FFF;
 		font-family: "Guardian TextSans";
 		font-weight: 800;
@@ -155,6 +164,8 @@
 		left: $base-line-height;
 
 		h1 {
+			-ro-pdf-overprint: none;
+			-ro-pdf-overprint-content: none;
 			line-height: 0.93em;
 			text-shadow: 0px 0px 12px #000, 0px 0px 12px #000;
 
