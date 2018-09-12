@@ -145,3 +145,30 @@
 		width: calc(46mm + 7.86px);
 	}
 }
+
+.picture--headline-overlay {
+	.headline {
+		-ro-pdf-overprint: none;
+		-ro-pdf-overprint-content: none;
+		color: #FFF;
+		position: absolute;
+		top: 0;
+		left: $base-line-height;
+
+		@media print {
+			color: CMYK(0%, 0%, 0%, 0%);
+		}
+
+		h1 {
+			line-height: 0.93pt;
+		}
+
+		.dash {
+			color: #FFF;
+
+			@media print {
+				color: CMYK(0%, 0%, 0%, 0%);
+			}
+		}
+	}
+}
