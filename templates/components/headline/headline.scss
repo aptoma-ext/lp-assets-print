@@ -88,6 +88,14 @@
 	}
 }
 
+.headline--white {
+	color: #FFF;
+
+	@media print {
+		color: CMYK(0%, 0%, 0%, 0%);
+	}
+}
+
 .headline--top-left {
 	position: absolute;
 	top: 0;

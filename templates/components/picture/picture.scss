@@ -92,7 +92,8 @@
 .picture--caption-inline,
 .picture--caption-inline-left,
 .picture--caption-inline-top-left,
-.picture--caption-inline-top-right {
+.picture--caption-inline-top-right,
+.picture--caption-inline-bottom-right {
 	figcaption, .figcaption {
 		position: absolute;
 		bottom: 0;
@@ -124,6 +125,17 @@
 		left: auto;
 		top: 0;
 		bottom: auto;
+		padding: 0 0 3px 7.86px;
+		width: calc(46mm + 7.86px);
+	}
+}
+
+.picture--caption-inline-bottom-right {
+	figcaption, .figcaption {
+		right: -0.3px;
+		left: auto;
+		top: auto;
+		bottom: 0;
 		padding: 0 0 3px 7.86px;
 		width: calc(46mm + 7.86px);
 	}
