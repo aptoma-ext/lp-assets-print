@@ -151,11 +151,16 @@
 		-ro-pdf-overprint: none;
 		-ro-pdf-overprint-content: none;
 		position: absolute;
-		top: 0;
+		top: $base-line-height;
 		left: $base-line-height;
 
 		h1 {
 			line-height: 0.93em;
+			text-shadow: 0px 0px 12px #000, 0px 0px 12px #000;
+
+			@media print {
+				text-shadow: 0px 0px 12px CMYK(0%, 0%, 0%, 100%), 0px 0px 12px CMYK(0%, 0%, 0%, 100%);
+			}
 		}
 
 		h1, .dash {
