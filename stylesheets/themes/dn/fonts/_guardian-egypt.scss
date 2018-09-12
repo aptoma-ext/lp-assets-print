@@ -4,6 +4,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp/Guardian%20Egyp-Thin.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -11,6 +12,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp/Guardian%20Egyp-Light.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -18,6 +20,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp_1/Guardian%20Egyp-Regular.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -25,6 +28,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Egyp/Guardian%20Egyp-Bold.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -32,5 +36,6 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianEgyp-Black.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 }

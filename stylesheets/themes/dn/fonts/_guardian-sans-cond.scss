@@ -4,6 +4,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond_1/Guardian%20Sans%20Cond-Regular.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -11,6 +12,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Semibold.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -18,6 +20,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Bold.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -25,5 +28,6 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond/Guardian%20Sans%20Cond-Black.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 }

@@ -4,6 +4,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianSans-Regular.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -11,6 +12,7 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/GuardianSans-Medium.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 
 	@font-face {
@@ -18,5 +20,6 @@
 		font-style: normal;
 		font-weight: normal;
 		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans/Guardian%20Sans-Bold.otf') format('opentype');
+		-ro-font-embedding-type: all;
 	}
 }
