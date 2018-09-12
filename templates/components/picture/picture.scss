@@ -150,20 +150,15 @@
 	.headline {
 		-ro-pdf-overprint: none;
 		-ro-pdf-overprint-content: none;
-		color: #FFF;
 		position: absolute;
 		top: 0;
 		left: $base-line-height;
 
-		@media print {
-			color: CMYK(0%, 0%, 0%, 0%);
-		}
-
 		h1 {
-			line-height: 0.93pt;
+			line-height: 0.93em;
 		}
 
-		.dash {
+		h1, .dash {
 			color: #FFF;
 
 			@media print {
