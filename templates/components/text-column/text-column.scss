@@ -153,6 +153,16 @@
 	}
 }
 
+.text-column--portrait {
+	.text-column--portrait--above {
+		--move-headers: 0;
+	}
+
+	.text-column--portrait--below {
+		--move-headers: 1;
+	}
+}
+
 .text-column-inline-container {
 	margin-top: $base-line-height;
 	margin-bottom: 0;
