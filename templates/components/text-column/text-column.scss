@@ -7,6 +7,10 @@
 	--hyphens: #{$hyphens};
 	-ro-pdf-overprint-content: mode1;
 
+	&.alf-region {
+		--move-headers: 1;
+	}
+
 	.alf-block {
 		// align the text to the baseline (since line-height centers the text)
 		// this value is based on the font metrics
