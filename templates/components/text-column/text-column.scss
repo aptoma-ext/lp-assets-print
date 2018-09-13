@@ -155,11 +155,13 @@
 
 .text-column--portrait {
 	.text-column--portrait--above {
-		--move-headers: 0;
+		--header-allow-top: 0;
+		--header-allow-bottom: 1;
 	}
 
 	.text-column--portrait--below {
-		--move-headers: 1;
+		--header-allow-top: 1;
+		--header-allow-bottom: 0;
 	}
 }
 
