@@ -101,8 +101,7 @@
 .picture--caption-inline,
 .picture--caption-inline-left,
 .picture--caption-inline-top-left,
-.picture--caption-inline-top-right,
-.picture--caption-inline-bottom-right {
+.picture--caption-inline-top-right {
 	figcaption, .figcaption {
 		position: absolute;
 		bottom: 0;
@@ -110,12 +109,9 @@
 		width: calc(46mm + 7.86px);
 		padding: 0 0 0 7.86px;
 		transform: translateY(0);
-
-		.credit, .description {
-			transform: translateY(3.48px);
-		}
 	}
 }
+
 
 .picture--caption-inline-left {
 	figcaption, .figcaption {
@@ -152,6 +148,10 @@
 		bottom: 0;
 		padding: 0 0 3px 7.86px;
 		width: calc(46mm + 7.86px);
+
+		.credit, .description {
+			transform: translateY(3.48px);
+		}
 	}
 }
 
