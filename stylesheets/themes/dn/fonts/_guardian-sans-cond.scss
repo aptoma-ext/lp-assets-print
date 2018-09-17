@@ -1,5 +1,13 @@
 @at-root {
 	@font-face {
+		font-family: "GuardianSansCond-Light";
+		font-style: normal;
+		font-weight: normal;
+		src: url('https://smooth-storage-dev.aptoma.no/users/dev/files/dredition-layout/fonts/Guardian%20Sans%20Cond_1/Guardian%20Sans%20Cond-Light.otf') format('opentype');
+		-ro-font-embedding-type: all;
+	}
+
+	@font-face {
 		font-family: "GuardianSansCond-Regular";
 		font-style: normal;
 		font-weight: normal;
