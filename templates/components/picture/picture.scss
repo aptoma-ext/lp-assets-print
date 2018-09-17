@@ -58,9 +58,13 @@
 			transform: translateY(-1.52px);
 		}
 
-		.description .word {
+		.description {
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
+
+			p {
+				display: inline;
+			}
 		}
 
 		.credit div {
