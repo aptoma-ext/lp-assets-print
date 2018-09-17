@@ -23,7 +23,7 @@
 	font-size: 14.9pt;
 	line-height: 15.6pt;
 	box-sizing: content-box;
-	margin-bottom: 0;
+	margin-bottom: 3pt;
 	// Align to the first base line (red line)
 	margin-top: 4.3px;
 	-ro-pdf-overprint-content: mode1;
@@ -37,7 +37,7 @@
 }
 
 .fact-box-body-container {
-	margin-top: $base-line-height / 2;
+	margin-top: 0;
 }
 
 .fact-box-body {
