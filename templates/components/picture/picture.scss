@@ -54,8 +54,7 @@
 			-ro-pdf-overprint: mode1;
 		}
 
-		.description,
-		.credit {
+		.ficaption-inner {
 			transform: translateY(-1.52px);
 		}
 
@@ -65,7 +64,6 @@
 		}
 
 		.credit div {
-			display: inline;
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
 		}
