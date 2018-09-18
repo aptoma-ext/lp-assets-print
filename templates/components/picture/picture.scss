@@ -44,7 +44,6 @@
 		font-size: $base-font-size;
 		line-height: $base-line-height;
 		padding: 0;
-		transform: translateY(4px);
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
@@ -52,10 +51,6 @@
 
 		* {
 			-ro-pdf-overprint: mode1;
-		}
-
-		.ficaption-inner {
-			transform: translateY(-1.52px);
 		}
 
 		.description {
@@ -100,6 +95,12 @@
 	}
 }
 
+.picture--caption-below {
+	figcaption, .figcaption {
+		transform: translateY(3.5px);
+	}
+}
+
 .picture--caption-inline,
 .picture--caption-inline-left,
 .picture--caption-inline-top-left,
@@ -110,7 +111,7 @@
 		right: 0;
 		width: calc(46mm + 7.86px);
 		padding: 0 0 0 7.86px;
-		transform: translateY(0);
+		transform: translateY(-1.3px);
 	}
 }
 
