@@ -36,6 +36,8 @@
             padding: 4.1px 3.5pt;
             font-size: 7.1pt;
             color: var(--portrait-color, #FFF);
+            -ro-pdf-overprint: none;
+            -ro-pdf-overprint-content: none;
 
             @media print {
                 color: var(--portrait-color-cmyk);
@@ -46,6 +48,8 @@
             font-weight: normal;
             font-family: var(--portrait-strong-font-family, Arial);
             color: var(--portrait-strong-color, yellow);
+            -ro-pdf-overprint: none;
+            -ro-pdf-overprint-content: none;
 
             @media print {
                 color: var(--portrait-strong-color-cmyk);
