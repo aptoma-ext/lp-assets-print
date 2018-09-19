@@ -25,16 +25,16 @@
         height: 45.35pt;
         flex: 1;
         background-color: var(--portrait-background, #333);
+        -ro-pdf-overprint: none;
+        -ro-pdf-overprint-content: none;
+
+        * {
+            -ro-pdf-overprint: none;
+            -ro-pdf-overprint-content: none;
+        }
 
         @media print {
             background-color: var(--portrait-background-cmyk, CMYK(0%, 0%, 0%, 90%));
-            -ro-pdf-overprint: none;
-            -ro-pdf-overprint-content: none;
-
-            * {
-                -ro-pdf-overprint: none;
-                -ro-pdf-overprint-content: none;
-            }
         }
 
         p {
