@@ -48,10 +48,10 @@
 		padding: 0;
 		color: #000;
 		font-kerning: normal;
+		-ro-pdf-overprint-content: mode1;
 
 		@media print {
 			color: CMYK(0%, 0%, 0%, 100%);
-			-ro-pdf-overprint-content: mode1;
 		}
 	}
 
