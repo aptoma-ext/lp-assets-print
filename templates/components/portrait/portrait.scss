@@ -28,6 +28,13 @@
 
         @media print {
             background-color: var(--portrait-background-cmyk, CMYK(0%, 0%, 0%, 90%));
+            -ro-pdf-overprint: none;
+            -ro-pdf-overprint-content: none;
+
+            * {
+                -ro-pdf-overprint: none;
+                -ro-pdf-overprint-content: none;
+            }
         }
 
         p {
@@ -39,8 +46,6 @@
 
             @media print {
                 color: var(--portrait-color-cmyk);
-                -ro-pdf-overprint: none;
-                -ro-pdf-overprint-content: none;
             }
         }
 
@@ -51,8 +56,6 @@
 
             @media print {
                 color: var(--portrait-strong-color-cmyk);
-                -ro-pdf-overprint: none;
-                -ro-pdf-overprint-content: none;
             }
         }
     }
