@@ -10,6 +10,10 @@
         -ro-pdf-overprint: mode1;
         -ro-pdf-overprint-content: mode1;
     }
+
+    p {
+        transform: translateY(-2px);
+    }
 }
 
 .intro--13_6 {
