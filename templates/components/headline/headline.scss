@@ -1,4 +1,10 @@
 .headline {
+	&.alf-text-auto-size {
+		--tas-respect-line-breaks: 1;
+		--tas-min-size: 10pt;
+		--tas-max-size: 200pt;
+	}
+
 	* {
 		-ro-pdf-overprint-content: mode1;
 	}
