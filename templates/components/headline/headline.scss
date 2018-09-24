@@ -1,8 +1,12 @@
 .headline {
 	&.alf-text-auto-size {
 		--tas-respect-line-breaks: 1;
+
+		// The properties below are just ideas. They're not implemented yet.
 		--tas-min-size: 10pt;
 		--tas-max-size: 200pt;
+		--tas-max-lines: 5;
+		--tas-lines: 5;
 		--tas-wiggle-room: 20%;
 	}
 
