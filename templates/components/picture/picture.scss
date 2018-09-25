@@ -9,6 +9,7 @@
 	.image {
 		-ro-pdf-overprint: none;
 		-ro-pdf-overprint-content: none;
+		-ro-image-resampling: 200dpi;
 
 		img {
 			display: block;
