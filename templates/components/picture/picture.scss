@@ -49,6 +49,22 @@
 			background-color: CMYK(0%, 0%, 0%, 0%);
 		}
 
+		&.figcaption--transparent {
+			background-color: transparent;
+
+			@media print {
+				background-color: transparent;
+			}
+
+			p {
+				color: #FFF;
+
+				@media print {
+					color: CMYK(0%, 0%, 0%, 0%);
+				}
+			}
+		}
+
 		* {
 			-ro-pdf-overprint: mode1;
 		}
@@ -67,7 +83,6 @@
 			-ro-pdf-overprint-content: mode1;
 		}
 	}
-
 }
 
 .picture--fill {
