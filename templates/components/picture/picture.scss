@@ -124,7 +124,7 @@ $caption-side-padding: 7.86px;
 		position: absolute;
 		top: 0;
 		padding: 0 0 3px 0;
-		width: calc(46mm + $caption-side-padding);
+		width: calc(46mm + #{$caption-side-padding});
 		transform: translateY(-1.3px);
 	}
 }
@@ -149,7 +149,7 @@ $caption-side-padding: 7.86px;
 		position: absolute;
 		bottom: 0;
 		padding: 6pt 0 0 0;
-		width: calc(46mm + $caption-side-padding);
+		width: calc(46mm + #{$caption-side-padding});
 		transform: translateY(3px);
 	}
 }
