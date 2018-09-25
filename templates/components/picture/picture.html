@@ -10,6 +10,7 @@
         {
             "name": "Caption position",
             "value": [
+                {"name": "Below", "value": "picture--caption-below"},
                 {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
                 {"name": "Top right", "value": "picture--caption-inline-top-right"}
             ]
@@ -40,7 +41,7 @@
         {
             "name": "Caption position",
             "value": [
-                {"name": "Bottom left", "value": "picture--caption-inline-bottom-left"},
+                {"name": "Below", "value": "picture--caption-below"},
                 {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
                 {"name": "Top left", "value": "picture--caption-inline-top-left"},
                 {"name": "Top right", "value": "picture--caption-inline-top-right"}
@@ -67,23 +68,10 @@
 <div
     data-name="picture--main-with-title"
     data-color="#24dc1c"
-    class="alf-component u-overflow-hidden picture--headline-overlay"
-    data-class-options='[
-        {
-            "name": "Auto size to fit body text",
-            "value": "alf-is-auto-adjustable"
-        },
-        {
-            "name": "Caption position",
-            "value": [
-                {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
-                {"name": "Top right", "value": "picture--caption-inline-top-right"}
-            ]
-        }
-    ]'
+    class="alf-component picture picture--main picture--caption-inline-bottom-right picture--headline-overlay"
 >
     <div
-        class="alf-container picture picture--main alf-smart-crop"
+        class="alf-container alf-smart-crop u-overflow-hidden"
         data-map="lead-asset picture-0 picture-1"
         data-type="image"
         data-ref="picture-main">
@@ -91,7 +79,7 @@
             <div class="image" data-select="img"></div>
         </figure>
     </div>
-    <div class="picture picture--caption-inline picture--caption-inline-bottom-right">
+    <div class="picture">
         <figcaption class="figcaption alf-container" data-ref="picture-main">
             <div class="alf-hyphenate description" data-select=".figcaption [itemprop='description']"></div>
             <div class="credit" data-select=".figcaption [data-element-type='credit']"></div>
