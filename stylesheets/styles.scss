@@ -13,7 +13,7 @@
 	widows: 1;
 	orphans: 1;
 	// this will in practice use the original size of the image
-	--image-ppi: 9999;
+	--image-ppi: 210;
 
 	@media print {
 		color: CMYK(0%, 0%, 0%, 100%);
