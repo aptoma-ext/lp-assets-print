@@ -4,6 +4,10 @@
     class="alf-component alf-container picture picture--caption-below alf-smart-crop"
     data-class-options='[
         {
+            "name": "Auto size to fit body text",
+            "value": "alf-is-auto-adjustable"
+        },
+        {
             "name": "Caption position",
             "value": [
                 {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
@@ -26,8 +30,29 @@
 <div
     data-name="picture--main"
     data-color="#24dc1c"
-    class="alf-component alf-container picture picture--main picture--caption-inline-bottom-left alf-smart-crop"
-    data-map="lead-asset picture-0 picture-1">
+    class="alf-component alf-container picture picture--main alf-smart-crop"
+    data-map="lead-asset picture-0 picture-1"
+    data-class-options='[
+        {
+            "name": "Auto size to fit body text",
+            "value": "alf-is-auto-adjustable"
+        },
+        {
+            "name": "Caption position",
+            "value": [
+                {"name": "Bottom left", "value": "picture--caption-inline-bottom-left"},
+                {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
+                {"name": "Top left", "value": "picture--caption-inline-top-left"},
+                {"name": "Top right", "value": "picture--caption-inline-top-right"}
+            ]
+        },
+        {
+            "name": "Style",
+            "value": [
+                {"name": "Transparent/white", "value": "picture--caption-transparent"},
+            ]
+        },
+    ]'>
     <figure>
         <div class="image" data-select="img"></div>
         <figcaption class="figcaption figcaption--transparent">
@@ -42,7 +67,21 @@
 <div
     data-name="picture--main-with-title"
     data-color="#24dc1c"
-    class="alf-component u-overflow-hidden picture--headline-overlay">
+    class="alf-component u-overflow-hidden picture--headline-overlay"
+    data-class-options='[
+        {
+            "name": "Auto size to fit body text",
+            "value": "alf-is-auto-adjustable"
+        },
+        {
+            "name": "Caption position",
+            "value": [
+                {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
+                {"name": "Top right", "value": "picture--caption-inline-top-right"}
+            ]
+        }
+    ]'
+>
     <div
         class="alf-container picture picture--main alf-smart-crop"
         data-map="lead-asset picture-0 picture-1"
