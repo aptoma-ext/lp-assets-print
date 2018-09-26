@@ -46,7 +46,6 @@ $caption-side-padding: 7.86px;
 		font-size: $base-font-size;
 		line-height: $base-line-height;
 		padding: 0;
-		transform: translateY(3.7px);
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
@@ -98,71 +97,63 @@ $caption-side-padding: 7.86px;
 	}
 }
 
-.picture--caption-inline-top-left,
-.picture--caption-inline-top-right {
+[class*=picture--caption-inline-] {
+	position: absolute;
+
 	figcaption, .figcaption {
-		position: absolute;
-		top: 0;
-		padding: 0 0 3px 0;
-		width: calc(46mm + #{$caption-side-padding});
-		transform: translateY(-1.3px);
+		width: 46mm;
+		box-sizing: content-box;
+		position: relative;
+		padding: 6pt;
+
+		// This is to remove the space above and below the text
+		// Ascenders will be drawn outside/below the inner box
+		.ficaption-inner {
+			position: relative;
+			top: -1.3px;
+			margin-bottom: -5px;
+		}
 	}
 }
-
 .picture--caption-inline-top-left {
 	figcaption, .figcaption {
+		top: 0;
 		left: 0;
-		padding-right: $caption-side-padding;
+		padding-top: 0;
+		padding-left: 0;
 	}
 }
 
 .picture--caption-inline-top-right {
 	figcaption, .figcaption {
+		top: 0;
 		right: 0;
-		padding-left: $caption-side-padding;
-	}
-}
-
-.picture--caption-inline-bottom-left,
-.picture--caption-inline-bottom-right {
-	figcaption, .figcaption {
-		position: absolute;
-		bottom: 0;
-		padding: 6pt 0 0 0;
-		width: calc(46mm + #{$caption-side-padding});
-		transform: translateY(3px);
+		padding-top: 0;
+		padding-right: 0;
 	}
 }
 
 .picture--caption-inline-bottom-right {
 	figcaption, .figcaption {
-		right: 0;
-		padding-left: $caption-side-padding;
-	}
-}
-
-.picture--caption-inline-bottom-left {
-	figcaption, .figcaption {
-		left: 0;
-		padding-right: $caption-side-padding;
-	}
-}
-
-.picture--caption-inline-bottom-left {
-	figcaption, .figcaption {
-		position: absolute;
-		right: auto;
-		left: 0;
-		top: auto;
 		bottom: 0;
-		padding: 0 0 6.2px 6pt;
-		width: calc(46mm + 7.86px);
-		transform: none;
+		right: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+}
+
+.picture--caption-inline-bottom-left {
+	figcaption, .figcaption {
+		bottom: 0;
+		left: 0;
+		padding-bottom: 0;
+		padding-left: 0;
 	}
 }
 
 .picture--caption-transparent {
 	figcaption, .figcaption {
+		padding: 6pt;
 		background-color: transparent;
 
 		@media print {
