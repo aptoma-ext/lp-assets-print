@@ -98,7 +98,6 @@ $caption-side-padding: 7.86px;
 }
 
 [class*=picture--caption-inline-] {
-
 	figcaption, .figcaption {
 		position: absolute;
 		width: 46mm;
@@ -153,6 +152,8 @@ $caption-side-padding: 7.86px;
 .picture--caption-transparent {
 	figcaption, .figcaption {
 		padding: 6pt;
+		padding-bottom: 10.4pt;
+		width: calc(46mm - 6pt);
 		background-color: transparent;
 
 		@media print {
