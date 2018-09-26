@@ -170,6 +170,13 @@ $caption-side-padding: 7.86px;
 	}
 }
 
+.picture--caption-inline-top-left.picture--caption-transparent,
+.picture--caption-inline-top-right.picture--caption-transparent {
+	figcaption, .figcaption {
+		padding-top: 10.4pt;
+	}
+}
+
 .picture--headline-overlay {
 	.headline {
 		-ro-pdf-overprint: none;
