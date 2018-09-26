@@ -98,12 +98,11 @@ $caption-side-padding: 7.86px;
 }
 
 [class*=picture--caption-inline-] {
-	position: absolute;
 
 	figcaption, .figcaption {
+		position: absolute;
 		width: 46mm;
 		box-sizing: content-box;
-		position: relative;
 		padding: 6pt;
 
 		// This is to remove the space above and below the text
