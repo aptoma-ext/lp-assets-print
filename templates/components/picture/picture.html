@@ -1,7 +1,7 @@
 <div
     data-name="picture"
     data-color="#48bb43"
-    class="alf-component alf-container picture picture--caption-below alf-smart-crop"
+    class="alf-component alf-container picture alf-smart-crop"
     data-class-options='[
         {
             "name": "Auto size to fit body text",
@@ -12,7 +12,14 @@
             "value": [
                 {"name": "Below", "value": "picture--caption-below"},
                 {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
+                {"name": "Top left", "value": "picture--caption-inline-top-left"},
                 {"name": "Top right", "value": "picture--caption-inline-top-right"}
+            ]
+        },
+        {
+            "name": "Style",
+            "value": [
+                {"name": "Transparent/white", "value": "picture--caption-transparent"},
             ]
         }
     ]'
@@ -52,11 +59,11 @@
             "value": [
                 {"name": "Transparent/white", "value": "picture--caption-transparent"},
             ]
-        },
+        }
     ]'>
     <figure>
         <div class="image" data-select="img"></div>
-        <figcaption class="figcaption figcaption--transparent">
+        <figcaption class="figcaption">
             <div class="ficaption-inner">
                 <span class="alf-hyphenate description" data-select-inner=".figcaption [itemprop='description']"></span>
                 <span class="credit" data-select-inner=".figcaption [data-element-type='credit']"></span>

@@ -1,3 +1,5 @@
+$caption-side-padding: 7.86px;
+
 .picture {
 	-ro-pdf-overprint: none;
 	-ro-pdf-overprint-content: none;
@@ -44,26 +46,12 @@
 		font-size: $base-font-size;
 		line-height: $base-line-height;
 		padding: 0;
+		transform: translateY(3.7px);
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
 		}
 
-		&.figcaption--transparent {
-			background-color: transparent;
-
-			@media print {
-				background-color: transparent;
-			}
-
-			p, .credit {
-				color: #FFF;
-
-				@media print {
-					color: CMYK(0%, 0%, 0%, 0%);
-				}
-			}
-		}
 
 		* {
 			-ro-pdf-overprint: mode1;
@@ -109,14 +97,6 @@
 		object-fit: cover;
 	}
 }
-
-.picture--caption-below {
-	figcaption, .figcaption {
-		transform: translateY(3.7px);
-	}
-}
-
-$caption-side-padding: 7.86px;
 
 .picture--caption-inline-top-left,
 .picture--caption-inline-top-right {
@@ -178,6 +158,24 @@ $caption-side-padding: 7.86px;
 		padding: 0 0 6.2px 6pt;
 		width: calc(46mm + 7.86px);
 		transform: none;
+	}
+}
+
+.picture--figcaption-transparent {
+	figcaption, .figcaption {
+		background-color: transparent;
+
+		@media print {
+			background-color: transparent;
+		}
+
+		p, .credit {
+			color: #FFF;
+
+			@media print {
+				color: CMYK(0%, 0%, 0%, 0%);
+			}
+		}
 	}
 }
 
