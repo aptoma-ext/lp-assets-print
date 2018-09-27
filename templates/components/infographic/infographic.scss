@@ -1,4 +1,6 @@
 .infographic--image-container img {
     width: 100%;
     height: auto;
+    -ro-replacedelement: image;
+    -ro-source: -ro-attr(data-file-url)
 }
