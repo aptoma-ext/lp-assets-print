@@ -1,8 +1,12 @@
-.infographic--image-container img {
-    width: 100%;
-    height: auto;
+.infographic--image-container {
     // the image is "too tall" since ascenders are inside the image, so we shave off a bit at the bottom
     margin-bottom: -3.7px;
-    -ro-replacedelement: image;
-    -ro-source: -ro-attr(data-file-url)
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        -ro-replacedelement: image;
+        -ro-source: -ro-attr(data-file-url)
+    }
 }
