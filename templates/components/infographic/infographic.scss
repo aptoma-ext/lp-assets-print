@@ -6,7 +6,9 @@
         width: 100%;
         height: auto;
         display: block;
+
+        // Use the data-file-url attribute as src when generating PDF
         -ro-replacedelement: image;
-        -ro-source: -ro-attr(data-file-url)
+        -ro-source: -ro-attr(data-file-url);
     }
 }
