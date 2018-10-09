@@ -1,76 +1,120 @@
-<div id="lp-config">
+<script type="application/json" id="lp-config">
 {
-    "alf": {
-        "pxPrecision": 0.01,
-        "grid": {
-            "units": "pt",
-            "lineHeight": 10.4,
+	"alf": {
+		"pxPrecision": 0.01,
+		"grid": {
+			"units": "pt",
+			"lineHeight": 10.4,
 			"gridLineOffset": 6.675,
 			"anchor": "bottom"
-        },
-        "fonts": [
-            {
-                "family": "GuardianSansCond-Regular",
-                "style": "normal",
-                "weight": 400,
-                "metrics": {
-                    "letterHeight": 734,
-                    "ascent": 881,
-                    "descent": 229,
-                    "lineGap": 0
-                }
-            },
-            {
-                "family": "GuardianSansCond-Black",
-                "style": "normal",
-                "weight": 400,
-                "metrics": {
-                    "letterHeight": 735,
-                    "ascent": 856,
-                    "descent": 320,
-                    "lineGap": 0
-                }
-            },
-            {
-                "family": "GuardianSansXCond-Bold",
-                "style": "normal",
-                "weight": 400,
-                "metrics": {
-                    "letterHeight": 731,
-                    "ascent": 865,
-                    "typoDescender": 187,
-                    "descent": 320,
-                    "lineGap": 0
-                }
-            }
-        ],
-        "hyphenation": {
-            "nb-no": {
-                "afterFirst": 3,
-                "beforeLast": 3,
-                "exceptions": [
-                    "kvalifi-sering",
-                    "Sol-berg",
-                    "hjem-me",
-                    "eta-ble-rte",
-                    "Guillaume",
-                    "dia-mant-rekke"
-                ]
-            }
-        }
-    },
-    "classOptions": {
-        "auto-size-text": {
-            "title": "Auto size to fit body text",
-            "value": "alf-is-auto-adjustable"
-        },
-        "caption-position": {
-            "name": "Caption position",
-            "value": [
-                {"name": "Bottom right", "value": "picture--caption-inline-bottom-right"},
-                {"name": "Top right", "value": "picture--caption-inline-top-right"}
-            ]
-        }
-    }
+		},
+		"fonts": [
+			{
+				"family": "GuardianSansCond-Regular",
+				"style": "normal",
+				"weight": 400,
+				"metrics": {
+					"letterHeight": 734,
+					"ascent": 881,
+					"descent": 229,
+					"lineGap": 0
+				}
+			},
+			{
+				"family": "GuardianSansCond-Black",
+				"style": "normal",
+				"weight": 400,
+				"metrics": {
+					"letterHeight": 735,
+					"ascent": 856,
+					"descent": 320,
+					"lineGap": 0
+				}
+			},
+			{
+				"family": "GuardianSansXCond-Bold",
+				"style": "normal",
+				"weight": 400,
+				"metrics": {
+					"letterHeight": 731,
+					"ascent": 865,
+					"typoDescender": 187,
+					"descent": 320,
+					"lineGap": 0
+				}
+			}
+		],
+		"hyphenation": {
+			"nb-no": {
+				"afterFirst": 3,
+				"beforeLast": 3,
+				"exceptions": [
+					"kvalifi-sering",
+					"Sol-berg",
+					"hjem-me",
+					"eta-ble-rte",
+					"Guillaume",
+					"dia-mant-rekke"
+				]
+			}
+		}
+	},
+	"componentOptions": {
+		".alf-is-auto-adjustable": {
+			"title": "Auto size to fit body text",
+			"type": "boolean"
+		},
+		"auto-size-text": {
+			"title": "Auto size text",
+			"type": "object",
+			"properties": {
+				".alf-text-auto-size": {
+					"title": "Enabled",
+					"type": "boolean"
+				},
+				".headline--respect-line-breaks": {
+					"title": "Respect line breaks",
+					"type": "boolean"
+				}
+			}
+		},
+		"caption": {
+			"title": "Caption",
+			"type": "object",
+			"properties": {
+				".picture--caption-transparent": {
+					"title": "Transparent/white",
+					"type": "boolean"
+				},
+				".picture--caption-{caption-position}": {
+					"title": "Position",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Bottom right",
+							"enum": ["inline-bottom-right"]
+						},
+						{
+							"type": "string",
+							"title": "Bottom left",
+							"enum": ["inline-bottom-left"]
+						},
+						{
+							"type": "string",
+							"title": "Top right",
+							"enum": ["inline-top-right"]
+						},
+						{
+							"type": "string",
+							"title": "Top left",
+							"enum": ["inline-top-left"]
+						}
+					]
+				}
+			}
+		}
+	}
 }
-</div>
+</script>
