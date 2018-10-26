@@ -1,14 +1,14 @@
 .text-column {
-	--word-spacing-min: #{$word-spacing-min};
-	--word-spacing-desired: #{$word-spacing-desired};
-	--word-spacing-max: #{$word-spacing-max};
-	--glyph-scaling-min: #{$glyph-scaling-min};
-	--glyph-scaling-max: #{$glyph-scaling-max};
-	--hyphens: #{$hyphens};
+	--alf-word-spacing-min: #{$word-spacing-min};
+	--alf-word-spacing-desired: #{$word-spacing-desired};
+	--alf-word-spacing-max: #{$word-spacing-max};
+	--alf-glyph-scaling-min: #{$glyph-scaling-min};
+	--alf-glyph-scaling-max: #{$glyph-scaling-max};
+	--alf-hyphens: #{$hyphens};
 	-ro-pdf-overprint-content: mode1;
 
 	&.alf-region {
-		--move-headers: 1;
+		--alf-move-headers: 1; // this isn't actually implemented yet
 	}
 
 	.alf-block {
@@ -155,13 +155,13 @@
 
 .text-column--portrait {
 	.text-column--portrait--above {
-		--header-allow-top: 0;
-		--header-allow-bottom: 1;
+		--alf-header-allow-top: 0;
+		--alf-header-allow-bottom: 1;
 	}
 
 	.text-column--portrait--below {
-		--header-allow-top: 1;
-		--header-allow-bottom: 0;
+		--alf-header-allow-top: 1;
+		--alf-header-allow-bottom: 0;
 	}
 }
 

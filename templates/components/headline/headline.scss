@@ -1,17 +1,14 @@
 .headline {
 	&.alf-text-auto-size {
-		--tas-respect-line-breaks: 0;
-
-		// The properties below are just ideas. They're not implemented yet.
-		--tas-min-size: 10pt;
-		--tas-max-size: 200pt;
-		--tas-max-lines: 5;
-		--tas-lines: 5;
-		--tas-wiggle-room: 20%;
+		--alf-text-respect-line-breaks: 0;
+		--alf-text-size-units: pt;
+		--alf-text-size-min: 10;
+		--alf-text-size-max: 250;
+		--alf-text-lines: 0;
 	}
 
 	&.headline--respect-line-breaks {
-		--tas-respect-line-breaks: 1;
+		--alf-text-respect-line-breaks: 1;
 	}
 
 	* {
@@ -27,7 +24,7 @@
 		background-color: var(--headline-background-color, transparent);
 		font-family: var(--headline-font-family, sans-serif);
 		font-weight: normal;
-		--header-align: 1;
+		--alf-header-align: 1;
 
 		@media print {
 			color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
