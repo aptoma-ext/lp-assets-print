@@ -11,6 +11,8 @@
     $columnSpacing: ($formatWidth - (($columnWidth * $columns))) / ($columns - 1);
 
     #{$scope} {
+        --alf-grid-calc: 0;
+
         & [class*=alf-col-] {
             position: absolute;
             top: 0;

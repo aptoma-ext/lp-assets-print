@@ -55,8 +55,31 @@
 		}
 	}
 
+	.alf-grid {
+		--alf-grid-line-height: 10.4pt;
+		--alf-grid-top-line-offset: 6.675pt;
+		--alf-grid-margin-inner: 13mm;
+		--alf-grid-margin-outer: 0;
+		--alf-grid-column-gap: 4mm;
+		--alf-grid-anchor: bottom;
+
+		&.alf-grid--5 {
+			--alf-grid-columns: 5;
+			--alf-grid-column-width: 46mm;
+		}
+
+		&.alf-grid--6 {
+			--alf-grid-columns: 6;
+			--alf-grid-column-width: 38mm;
+		}
+
+		&.alf-grid--20 {
+			--alf-grid-columns: 20;
+			--alf-grid-column-width: 8.5mm;
+		}
+	}
+
 	@include grid(5, 246mm, 46mm, 0, 13mm, '.alf-grid.alf-grid-5');
-	@include grid(6, 246mm, 38mm, 0, 13mm, '.alf-grid.alf-grid-6');
 
 	@import "_utils";
 	@import "_layout";
