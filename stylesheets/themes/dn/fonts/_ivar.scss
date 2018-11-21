@@ -1,0 +1,264 @@
+@at-root {
+	@font-face {
+		font-family: IvarText-Regular;
+		font-style: normal;
+		font-weight: normal;
+		src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Regular.otf) format('opentype');
+		-ro-font-embedding-type: all;
+	}
+
+    @font-face {
+        font-family: IvarDisplay-Medium;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Medium.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-Italic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Italic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-BoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-BoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-SemiBoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-SemiBoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-Bold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Bold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-Regular;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Regular.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgi-Large;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Large.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-MediumItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-MediumItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-Medium;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Medium.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarDisplay-SemiBold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-SemiBold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-SemiBoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-SemiBoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-Bold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Bold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgi-Stencil;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Stencil.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgi-Small;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Small.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-BoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-BoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-Italic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Italic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-MediumItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-MediumItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-SemiBold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-SemiBold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-Regular;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Regular.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-Bold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Bold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-SemiBold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-SemiBold.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-Regular;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Regular.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgi-Medium;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Medium.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-Medium;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Medium.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-SemiBoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-SemiBoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarHeadline-MediumItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-MediumItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-BoldItalic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-BoldItalic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarText-Italic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Italic.otf);
+        -ro-font-embedding-type: all;
+    }
+
+}
+
+
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Medium.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Italic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-BoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-SemiBoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Bold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-Regular.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Large.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-MediumItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Medium.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarDisplay-SemiBold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-SemiBoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Bold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Stencil.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Small.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-BoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Italic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-MediumItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-SemiBold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Regular.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Bold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-SemiBold.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-Regular.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarNostalgi-Medium.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Medium.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-SemiBoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarHeadline-MediumItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-BoldItalic.otf
+// https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Ivar/IvarText-Italic.otf
