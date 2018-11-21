@@ -128,10 +128,10 @@
 	// Only works for single-line titles
 	// How to handle multi-line titles in a good way?
 	h2, h3 {
-		font-family: "GuardianSansCond-Bold";
-		font-size: 11pt;
+		font-family: IvarText-Bold;
+		font-size: 8.9pt;
 		line-height: var(--line-height, $base-line-height);
-		margin-top: 13.88px;
+		margin-top: 10.65pt;
 		margin-bottom: 0;
 		transform: translateY(1.6px);
 		text-indent: 0;
