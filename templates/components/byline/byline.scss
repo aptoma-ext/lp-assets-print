@@ -4,6 +4,16 @@
 	}
 }
 
+.byline--multi {
+	.contributor:not(:last-child)::after {
+		content: ', ';
+	}
+
+	.contributor:nth-last-child(2)::after {
+		content: ' og ';
+	}
+}
+
 .byline-topic {
 	font-size: 13pt;
 	line-height: $base-line-height * 2;
