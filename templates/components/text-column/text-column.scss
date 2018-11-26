@@ -108,23 +108,6 @@
 		}
 	}
 
-	.drop-cap {
-		color: var(--drop-cap-color, blue);
-		font-family: var(--drop-cap-font-family, Arial);
-		font-weight: normal;
-		float: left;
-		font-size: 83.44pt;
-		line-height: 0.5em;
-		padding: 0;
-		margin: 21.4px -1pt 0 0;
-	}
-
-	.row-scaled {
-		.drop-cap {
-			transform: scaleX(calc(1 / var(--glyph-scale, 1)))
-		}
-	}
-
 	// Only works for single-line titles
 	// How to handle multi-line titles in a good way?
 	h2, h3 {
