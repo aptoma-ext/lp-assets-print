@@ -23,7 +23,7 @@
 	}
 
 	.alf-block-is-first {
-		.row.row-first {
+		.row.row-first::before {
 			content: '\25cf';
 			display: inline-block;
 			font-family: Arial;
