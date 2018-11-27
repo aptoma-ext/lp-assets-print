@@ -22,24 +22,6 @@
 		display: block;
 	}
 
-	.alf-block-is-first {
-		.row.row-first::before {
-			content: '\25cf';
-			display: inline-block;
-			font-family: Arial;
-			font-size: 16pt;
-			line-height: 0;
-			position: relative;
-			top: 1.6px;
-			margin-left: -1px;
-			color: var(--color-base);
-
-			@media print {
-				color: var(--color-base-cmyk);
-			}
-		}
-	}
-
 	.body-text {
 		* {
 			-ro-pdf-overprint-content: mode1;
@@ -70,6 +52,28 @@
 		}
 
 		.body-unindented .row {
+			text-indent: 0;
+		}
+	}
+
+	.alf-block-is-first {
+		.row.row-first::before {
+			content: '\25cf';
+			display: inline-block;
+			font-family: Arial;
+			font-size: 16pt;
+			line-height: 0;
+			position: relative;
+			top: 1.6px;
+			margin-left: -1px;
+			color: var(--color-base);
+
+			@media print {
+				color: var(--color-base-cmyk);
+			}
+		}
+
+		.row:first-of-type {
 			text-indent: 0;
 		}
 	}
