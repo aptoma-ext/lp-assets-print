@@ -14,7 +14,11 @@
 		display: block;
 		width: 8.5mm;
 		height: 2.505mm;
-		background-color: var(--fact-box-border-color-cmyk);
+		background-color: var(--fact-box-border-color);
+
+		@media print {
+			background-color: var(--fact-box-border-color-cmyk);
+		}
 	}
 }
 
