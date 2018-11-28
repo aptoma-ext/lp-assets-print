@@ -213,3 +213,9 @@ $caption-side-padding: 7.86px;
 		display: none;
 	}
 }
+
+.picture--caption-standalone {
+	figcaption, .figcaption {
+		transform: translateY(-3px);
+	}
+}
