@@ -207,3 +207,9 @@ $caption-side-padding: 7.86px;
 		}
 	}
 }
+
+.picture--caption-hide {
+	figcaption, .figcaption {
+		display: none;
+	}
+}
