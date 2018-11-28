@@ -57,7 +57,7 @@
 	}
 
 	.alf-block-is-first {
-		.row.row-first::before {
+		.row:first-of-type {
 			content: '\25cf';
 			display: inline-block;
 			font-family: Arial;
@@ -67,14 +67,11 @@
 			top: 1.6px;
 			margin-left: -1px;
 			color: var(--color-base);
+			text-indent: 0;
 
 			@media print {
 				color: var(--color-base-cmyk);
 			}
-		}
-
-		.row:first-of-type {
-			text-indent: 0;
 		}
 	}
 
