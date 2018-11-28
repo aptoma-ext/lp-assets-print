@@ -1,53 +1,42 @@
 .quote {
-    background-color: var(--quote-background-color, steelblue);
-
-    @media print {
-        background-color: var(--quote-background-color-cmyk);
-    }
+    background-color: transparent;
 
     blockquote {
-        padding: 5.45pt 5.621pt 5.45pt 5.621pt;
+        padding: 0;
 
-        &:before {
-            content: '–';
+        &::before {
             display: block;
-            font-family: "DN Icons";
-            font-size: 47pt;
-            line-height: 0.93em;
-            color: #FFF;
-            height: 51.667px;
-            text-indent: -1.3px;
+            width: 8.5mm;
+            height: 2.505mm;
+            background-color: var(--color-base);
 
             @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
+                background-color: var(--color-base-cmyk);
             }
         }
 
         .quote-text {
-            font-family: "GuardianSansCond-Semibold";
+            font-family: SharpGroteskLight20;
             font-weight: normal;
-            font-size: 16.2pt;
-            line-height: 1;
-            color: #FFF;
+            font-size: 11.5pt;
+            line-height: 15.5pt;
+            color: #000;
 
             @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
+                color: CMYK(100%, 100%, 100%, 100%);
             }
         }
 
         .quote-creator {
-            font-family: "Guardian TextSans";
-            font-size: 8.4pt;
-            color: #FFF;
+            font-family: DNSharpGroteskBook-18;
+            font-weight: normal;
+            font-size: 7.4pt;
+            line-height: 9.7pt;
+            color: #000;
             transform: translateY(-1.8px);
 
-            .author {
-                font-family: "GuardianSans-Bold";
-                font-weight: normal;
-            }
-
             @media print {
-                color: CMYK(0%, 0%, 0%, 0%);
+                color: CMYK(100%, 100%, 100%, 100%);
             }
         }
     }
