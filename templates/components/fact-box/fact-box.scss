@@ -11,6 +11,7 @@
 	}
 
 	&::before {
+		content: '';
 		display: block;
 		width: 8.5mm;
 		height: 2.505mm;
