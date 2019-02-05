@@ -56,6 +56,12 @@
 	}
 
 	.alf-grid {
+		[class*="col-"] {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
 		--alf-grid-line-height: 10.65pt;
 		--alf-grid-top-line-offset: 7.1pt;
 		--alf-grid-margin-inner: 13mm;
