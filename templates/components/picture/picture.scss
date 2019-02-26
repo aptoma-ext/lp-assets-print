@@ -121,7 +121,7 @@ $caption-side-padding: 7.86px;
 	}
 
 	.image {
-		padding-bottom: $base-line-height;
+		padding-bottom: $base-line-height - 0.25pt;
 		border-width: 0 0 0.25pt 0;
 		border-style: solid;
 		border-color: #000;
