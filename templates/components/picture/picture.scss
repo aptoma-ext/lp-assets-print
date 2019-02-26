@@ -119,6 +119,17 @@ $caption-side-padding: 7.86px;
 			margin-bottom: -5px;
 		}
 	}
+
+	.image {
+		padding-bottom: $base-line-height;
+		border-width: 025pt;
+		border-style: solid;
+		border-color: #000;
+
+		@media print {
+			border-color: CMYK(0%, 0%, 0%, 100%);
+		}
+	}
 }
 .picture--caption-inline-top-left {
 	figcaption, .figcaption {
