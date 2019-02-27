@@ -10,6 +10,17 @@
 		},
 		"fonts": [
 			{
+				"family": "IvarNostalgi-Large-DISABLED",
+				"style": "normal",
+				"weight": 400,
+				"metrics": {
+					"letterHeight": 750,
+					"ascent": 950,
+					"descent": 250,
+					"lineGap": 0
+				}
+			},
+			{
 				"family": "GuardianSansCond-Regular",
 				"style": "normal",
 				"weight": 400,
@@ -85,6 +96,24 @@
 		".alf-is-auto-adjustable": {
 			"title": "Auto size to fit body text",
 			"type": "boolean"
+		},
+		"headline": {
+			"title": "Headline",
+			"type": "object",
+			"properties": {
+				".headline--{type}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Head B - 55",
+							"enum": ["b-55"]
+						}
+					]
+				}
+			}
 		},
 		"auto-size-text": {
 			"title": "Auto size text",
