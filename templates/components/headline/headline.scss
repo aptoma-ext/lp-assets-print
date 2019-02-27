@@ -1,4 +1,12 @@
 .headline {
+	border-width: 0 0 0.25pt 0;
+	border-style: solid;
+	border-color: #000;
+
+	@media print {
+		border-color: CMYK(0%, 0%, 0%, 100%);
+	}
+
 	&.alf-text-auto-size {
 		--alf-text-respect-line-breaks: 0;
 		--alf-text-size-units: pt;
@@ -16,7 +24,7 @@
 	}
 
 	h1 {
-		margin: 0 17px 0 0;
+		margin: 0 17px $base-line-height * 2 0;
 		color: var(--headline-color, var(--color, #000));
 		font-size: var(--headline-font-size, 94.2pt);
 		line-height: var(--headline-line-height, 0.93em);
