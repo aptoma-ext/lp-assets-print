@@ -10,6 +10,10 @@
     margin-top: $grid-line-offset !important;
 }
 
+.u-margin-bottom-grid-line-offset {
+    margin-top: $grid-line-offset !important;
+}
+
 @for $i from 1 through 5 {
     $plural: if($i > 1, 's', '');
 
