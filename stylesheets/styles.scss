@@ -85,8 +85,6 @@
 		}
 	}
 
-	@include grid(5, 246mm, 46mm, 0, 13mm, '.alf-grid.alf-grid-5');
-
 	@import "_utils";
 	@import "_layout";
 	@import "_components";
