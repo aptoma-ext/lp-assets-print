@@ -6,9 +6,11 @@
 	border-width: 0 0 0.25pt 0;
 	border-style: solid;
 	border-color: #000;
-	--alf-grid-align-bottom: top;
 	-ro-pdf-overprint: mode1;
 	-ro-pdf-overprint-content: mode1;
+
+	--alf-grid-align-bottom: top;
+	margin-bottom: $grid-line-offset;
 
 	@media print {
 		border-color: CMYK(0%, 0%, 0%, 100%);
