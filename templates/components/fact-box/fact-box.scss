@@ -78,20 +78,14 @@
 			position: relative;
 
 			&:before {
-				content: '\0025CF';
-				font-family: "Guardian TextSans";
+				content: '→';
+				font-family: SharpGroteskBook18;
 				display: inline-block;
 				margin-right: 4px;
-				font-size: 24px;
+				font-size: 7.4pt;
 				position: absolute;
 				left: -10.8pt;
 				top: -1.6px;
-				color: var(--color-base);
-				-ro-pdf-overprint: none;
-
-				@media print {
-					color: var(--color-base-cmyk);
-				}
 			}
 		}
 	}
@@ -142,5 +136,37 @@
 .alf-colspan-18 {
 	.fact-box-body {
 		column-count: 6;
+	}
+}
+
+.alf-colspan-19,
+.alf-colspan-20,
+.alf-colspan-21 {
+	.fact-box-body {
+		column-count: 7;
+	}
+}
+
+.alf-colspan-22,
+.alf-colspan-23,
+.alf-colspan-24 {
+	.fact-box-body {
+		column-count: 8;
+	}
+}
+
+.alf-colspan-25,
+.alf-colspan-26,
+.alf-colspan-27 {
+	.fact-box-body {
+		column-count: 9;
+	}
+}
+
+.alf-colspan-28,
+.alf-colspan-29,
+.alf-colspan-30 {
+	.fact-box-body {
+		column-count: 10;
 	}
 }
