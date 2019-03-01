@@ -93,79 +93,81 @@
 
 .alf-colspan-1,
 .alf-colspan-2,
-.alf-colspan-3 {
+.alf-colspan-3,
+.alf-colspan-4,
+.alf-colspan-5
 	.fact-box-body {
 		column-count: 1;
 	}
 }
 
-.alf-colspan-4,
-.alf-colspan-5,
-.alf-colspan-6 {
+.alf-colspan-6,
+.alf-colspan-7,
+.alf-colspan-8
 	.fact-box-body {
 		column-count: 2;
 	}
 }
 
-.alf-colspan-7,
-.alf-colspan-8,
-.alf-colspan-9 {
+.alf-colspan-9
+.alf-colspan-10,
+.alf-colspan-11
 	.fact-box-body {
 		column-count: 3;
 	}
 }
 
-.alf-colspan-10,
-.alf-colspan-11,
-.alf-colspan-12 {
+.alf-colspan-12,
+.alf-colspan-13,
+.alf-colspan-14 {
 	.fact-box-body {
 		column-count: 4;
 	}
 }
 
-.alf-colspan-13,
-.alf-colspan-14,
-.alf-colspan-15 {
+.alf-colspan-15,
+.alf-colspan-16,
+.alf-colspan-17 {
 	.fact-box-body {
 		column-count: 5;
 	}
 }
 
-.alf-colspan-16,
-.alf-colspan-17,
-.alf-colspan-18 {
+.alf-colspan-18,
+.alf-colspan-19,
+.alf-colspan-20 {
 	.fact-box-body {
 		column-count: 6;
 	}
 }
 
-.alf-colspan-19,
-.alf-colspan-20,
-.alf-colspan-21 {
+.alf-colspan-21,
+.alf-colspan-22,
+.alf-colspan-23 {
 	.fact-box-body {
 		column-count: 7;
 	}
 }
 
-.alf-colspan-22,
-.alf-colspan-23,
-.alf-colspan-24 {
+.alf-colspan-24,
+.alf-colspan-25,
+.alf-colspan-26 {
 	.fact-box-body {
 		column-count: 8;
 	}
 }
 
-.alf-colspan-25,
-.alf-colspan-26,
-.alf-colspan-27 {
+.alf-colspan-27,
+.alf-colspan-28,
+.alf-colspan-29 {
 	.fact-box-body {
 		column-count: 9;
 	}
 }
 
-.alf-colspan-28,
-.alf-colspan-29,
-.alf-colspan-30 {
+.alf-colspan-30,
+.alf-colspan-31,
+.alf-colspan-32 {
 	.fact-box-body {
 		column-count: 10;
 	}
