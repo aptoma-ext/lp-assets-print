@@ -52,7 +52,7 @@ $caption-side-padding: 7.86px;
 			background-color: CMYK(0%, 0%, 0%, 0%);
 		}
 
-		.ficaption-inner:before {
+		.figcaption-inner:before {
 			content: '↑';
 			display: inline-block;
 			font-size: 7.4pt;
@@ -113,22 +113,25 @@ $caption-side-padding: 7.86px;
 	figcaption, .figcaption {
 		position: absolute;
 		width: 46mm;
-		box-sizing: content-box;
-		padding: 6pt;
+		box-sizing: border-box;
+		padding: 4mm;
 		transform: translateY(0);
+		background-color: transparent;
+		color: #FFF;
 
-		// This is to remove the space above and below the text
-		// Ascenders will be drawn outside/below the inner box
-		.ficaption-inner {
-			position: relative;
-			top: -1.3px;
-			margin-bottom: -5px;
+		@media print {
+			background-color: transparent;
+			color: CMYK(0%, 0%, 0%, 0%);
+		}
+
+		.figcaption-inner:before {
+			content: '';
+			display: none;
 		}
 	}
 
 	.image {
 		padding-bottom: $base-line-height - 0.25pt;
-		margin-bottom: -5pt; // compensate for browser height calculation errors
 		border-width: 0 0 0.25pt 0;
 		border-style: solid;
 		border-color: #000;
@@ -151,8 +154,6 @@ $caption-side-padding: 7.86px;
 	figcaption, .figcaption {
 		top: 0;
 		right: 0;
-		padding-top: 0;
-		padding-right: 0;
 	}
 }
 
@@ -160,8 +161,6 @@ $caption-side-padding: 7.86px;
 	figcaption, .figcaption {
 		bottom: 0;
 		right: 0;
-		padding-right: 0;
-		padding-bottom: 0;
 	}
 }
 
@@ -169,36 +168,6 @@ $caption-side-padding: 7.86px;
 	figcaption, .figcaption {
 		bottom: 0;
 		left: 0;
-		padding-bottom: 0;
-		padding-left: 0;
-	}
-}
-
-.picture--caption-transparent {
-	figcaption, .figcaption {
-		padding: 6pt;
-		padding-bottom: 10.4pt;
-		width: calc(46mm - 6pt);
-		background-color: transparent;
-
-		@media print {
-			background-color: transparent;
-		}
-
-		p, .credit {
-			color: #FFF;
-
-			@media print {
-				color: CMYK(0%, 0%, 0%, 0%);
-			}
-		}
-	}
-}
-
-.picture--caption-inline-top-left.picture--caption-transparent,
-.picture--caption-inline-top-right.picture--caption-transparent {
-	figcaption, .figcaption {
-		padding-top: 10.4pt;
 	}
 }
 
