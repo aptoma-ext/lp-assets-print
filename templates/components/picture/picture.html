@@ -1,5 +1,5 @@
 <div
-    data-name="picture-caption"
+    data-name="picture"
     data-color="#48bb43"
     class="alf-component picture alf-smart-crop"
     data-options=".alf-is-auto-adjustable caption"
@@ -25,19 +25,14 @@
 <div
     data-name="picture--main"
     data-color="#24dc1c"
-    class="alf-component alf-container picture picture--main alf-smart-crop"
+    class="alf-component picture picture--main alf-smart-crop"
     data-ref="picture--main"
     data-map="lead-asset picture-0 picture-1"
     data-options=".alf-is-auto-adjustable caption"
 >
     <figure>
-        <div class="image" data-select="img"></div>
-        <figcaption class="figcaption">
-            <div class="figcaption-inner">
-                <span class="alf-hyphenate description" data-select-inner=".figcaption [itemprop='description']"></span>
-                <span class="credit" data-select-inner=".figcaption [data-element-type='credit']"></span>
-            </div>
-        </figcaption>
+        <div class="alf-container image" data-map="picture" data-select="img"></div>
+        <div data-component="caption"></div>
     </figure>
 </div>
 
