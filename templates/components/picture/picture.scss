@@ -112,7 +112,7 @@ $caption-side-padding: 7.86px;
 $image-bottom-padding: $base-line-height - 0.25pt;
 
 [class*=picture--caption-inline-] {
-	figcaption, .figcaption {
+	.caption {
 		position: absolute;
 		width: 46mm;
 		box-sizing: border-box;
