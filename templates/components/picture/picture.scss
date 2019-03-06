@@ -29,15 +29,40 @@ $caption-side-padding: 7.86px;
 			object-fit: cover;
 		}
 	}
+}
 
-	.overlay-caption {
-		font-family: DNSharpGroteskMedium-18;
-		font-weight: normal;
-		font-size: 3.3mm;
-		line-height: 4mm;
-		margin-top: 1mm;
+.picture--fill {
+	> div {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+
+		img {
+			flex: 1;
+			object-fit: cover;
+		}
+	}
+}
+
+.picture--main {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
+	> div {
+		height: 100%;
 	}
 
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: baseline;
+		color: #48bb43;
+	}
+}
+
+.caption {
 	figcaption, .figcaption {
 		-ro-pdf-overprint: none;
 		background-color: #FFF;
@@ -76,36 +101,6 @@ $caption-side-padding: 7.86px;
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
 		}
-	}
-}
-
-.picture--fill {
-	> div {
-		display: flex;
-		height: 100%;
-		flex-direction: column;
-
-		img {
-			flex: 1;
-			object-fit: cover;
-		}
-	}
-}
-
-.picture--main {
-	--alf-grid-align-top: baseline;
-	--alf-grid-align-bottom: baseline;
-
-	> div {
-		height: 100%;
-	}
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		--alf-grid-align-top: baseline;
-		--alf-grid-align-bottom: baseline;
 	}
 }
 
