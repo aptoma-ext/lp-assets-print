@@ -114,28 +114,31 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 [class*=picture--caption-inline-] {
 	.caption {
 		position: absolute;
-		width: 46mm;
-		box-sizing: border-box;
-		padding: 4mm;
-		transform: translateY(0);
-		background-color: transparent;
-		color: #FFF;
 
-		@media print {
+		figcaption, .figcaption {
+			width: 46mm;
+			box-sizing: border-box;
+			padding: 4mm;
+			transform: translateY(0);
 			background-color: transparent;
-			color: CMYK(0%, 0%, 0%, 0%);
-		}
-
-		.figcaption-inner:before {
-			content: '';
-			display: none;
-		}
-
-		p, .credit {
 			color: #FFF;
 
 			@media print {
+				background-color: transparent;
 				color: CMYK(0%, 0%, 0%, 0%);
+			}
+
+			.figcaption-inner:before {
+				content: '';
+				display: none;
+			}
+
+			p, .credit {
+				color: #FFF;
+
+				@media print {
+					color: CMYK(0%, 0%, 0%, 0%);
+				}
 			}
 		}
 	}
