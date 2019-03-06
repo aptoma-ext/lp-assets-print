@@ -152,7 +152,7 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 	}
 }
 .picture--caption-inline-top-left {
-	figcaption, .figcaption {
+	.caption {
 		top: 0;
 		left: 0;
 		padding-top: 0;
@@ -161,21 +161,21 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 }
 
 .picture--caption-inline-top-right {
-	figcaption, .figcaption {
+	.caption {
 		top: 0;
 		right: 0;
 	}
 }
 
 .picture--caption-inline-bottom-right {
-	figcaption, .figcaption {
+	.caption {
 		bottom: $image-bottom-padding;
 		right: 0;
 	}
 }
 
 .picture--caption-inline-bottom-left {
-	figcaption, .figcaption {
+	.caption {
 		bottom: $image-bottom-padding;
 		left: 0;
 	}
@@ -211,13 +211,13 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 }
 
 .picture--caption-hide {
-	figcaption, .figcaption {
+	.caption {
 		display: none;
 	}
 }
 
 .picture--caption-standalone {
-	figcaption, .figcaption {
+	.caption {
 		transform: translateY(-3px);
 	}
 }
