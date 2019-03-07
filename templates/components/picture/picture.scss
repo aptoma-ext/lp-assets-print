@@ -102,6 +102,15 @@ $caption-side-padding: 7.86px;
 			-ro-pdf-overprint-content: mode1;
 		}
 	}
+
+	&[grid-inside] {
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: baseline;
+
+		figcaption, .figcaption {
+			transform: translateY(0);
+		}
+	}
 }
 
 $image-bottom-padding: $base-line-height - 0.25pt;
