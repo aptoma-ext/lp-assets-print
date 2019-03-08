@@ -38,7 +38,6 @@
 	&[grid-inside] {
 		--alf-grid-align-top: baseline;
 		--alf-grid-align-bottom: baseline;
-
 		margin: 0;
 
 		figcaption, .figcaption {
@@ -64,5 +63,10 @@
 				}
 			}
 		}
+	}
+
+	&[grid-inside=bottom] {
+		display: flex;
+		align-items: end;
 	}
 }
