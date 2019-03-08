@@ -39,22 +39,24 @@
 		--alf-grid-align-top: baseline;
 		--alf-grid-align-bottom: baseline;
 
+		margin: 0;
+
 		figcaption, .figcaption {
-            box-sizing: border-box;
-            transform: translateY(0);
-            padding: 4mm;
+			box-sizing: border-box;
+			transform: translateY(0);
+			padding: 4mm;
 			color: #FFF;
 
 			@media print {
 				color: CMYK(0%, 0%, 0%, 0%);
-            }
+			}
 
 			.figcaption-inner:before {
 				content: '';
 				display: none;
-            }
+			}
 
-            p, .credit {
+			p, .credit {
 				color: #FFF;
 
 				@media print {
