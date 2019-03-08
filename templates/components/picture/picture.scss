@@ -62,7 +62,7 @@
 
 $image-bottom-padding: $base-line-height - 0.25pt;
 
-[class*=picture--caption-inline-] {
+.picture--border {
 	.image {
 		padding-bottom: $image-bottom-padding;
 		border-width: 0 0 0.25pt 0;

@@ -175,38 +175,51 @@
 				}
 			}
 		},
+		"picture": {
+			"title": "Picture",
+			"type": "object",
+			"properties": {
+				".picture--border": {
+					"title": "Border below",
+					"type": "boolean"
+				}
+			}
+		},
 		"caption": {
 			"title": "Caption",
 			"type": "object",
 			"properties": {
-				".picture--caption-hide": {
-					"title": "Hide",
-					"type": "boolean"
-				},
-				".picture--caption-{caption-position}": {
+				".caption--align-{alignment}": {
 					"title": "Position",
 					"type": "string",
 					"uniqueItems": true,
 					"anyOf": [
 						{
 							"type": "string",
-							"title": "Bottom right",
-							"enum": ["inline-bottom-right"]
+							"title": "Left",
+							"enum": ["left"]
 						},
 						{
 							"type": "string",
-							"title": "Bottom left",
-							"enum": ["inline-bottom-left"]
+							"title": "Right",
+							"enum": ["right"]
+						}
+					]
+				},
+				".caption--color-{color}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
 						},
 						{
 							"type": "string",
-							"title": "Top right",
-							"enum": ["inline-top-right"]
-						},
-						{
-							"type": "string",
-							"title": "Top left",
-							"enum": ["inline-top-left"]
+							"title": "Black",
+							"enum": ["black"]
 						}
 					]
 				}

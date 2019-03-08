@@ -44,23 +44,26 @@
 			box-sizing: border-box;
 			transform: translateY(0);
 			padding: 4mm;
-			color: #FFF;
-
-			@media print {
-				color: CMYK(0%, 0%, 0%, 0%);
-			}
 
 			.figcaption-inner:before {
 				content: '';
 				display: none;
 			}
+		}
+	}
 
-			p, .credit {
-				color: #FFF;
+	&.caption--color-white {
+		color: #FFF;
 
-				@media print {
-					color: CMYK(0%, 0%, 0%, 0%);
-				}
+		@media print {
+			color: CMYK(0%, 0%, 0%, 0%);
+		}
+
+		p, .credit {
+			color: #FFF;
+
+			@media print {
+				color: CMYK(0%, 0%, 0%, 0%);
 			}
 		}
 	}
@@ -68,5 +71,13 @@
 	&[grid-inside=bottom] {
 		display: flex;
 		align-items: end;
+	}
+
+	&.caption--align-left {
+		text-align: left;
+	}
+
+	&.caption--align-right {
+		text-align: right;
 	}
 }
