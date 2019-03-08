@@ -1,5 +1,3 @@
-$caption-side-padding: 7.86px;
-
 .picture {
 	-ro-pdf-overprint: none;
 	-ro-pdf-overprint-content: none;
@@ -62,91 +60,9 @@ $caption-side-padding: 7.86px;
 	}
 }
 
-.caption {
-	figcaption, .figcaption {
-		-ro-pdf-overprint: none;
-		background-color: #FFF;
-		font-family: DNSharpGroteskMedium-18;
-		font-weight: normal;
-		font-size: 7.4pt;
-		line-height: $base-line-height;
-		padding: 0;
-		transform: translateY(4px);
-
-		@media print {
-			background-color: CMYK(0%, 0%, 0%, 0%);
-		}
-
-		.figcaption-inner:before {
-			content: '↑';
-			display: inline-block;
-			font-size: 7.4pt;
-			font-family: SharpGroteskBook17;
-		}
-
-		* {
-			-ro-pdf-overprint: mode1;
-		}
-
-		.description {
-			-ro-pdf-overprint: mode1;
-			-ro-pdf-overprint-content: mode1;
-
-			p {
-				display: inline;
-			}
-		}
-
-		.credit div {
-			-ro-pdf-overprint: mode1;
-			-ro-pdf-overprint-content: mode1;
-		}
-	}
-
-	&[grid-inside] {
-		--alf-grid-align-top: baseline;
-		--alf-grid-align-bottom: baseline;
-
-		figcaption, .figcaption {
-			transform: translateY(0);
-		}
-	}
-}
-
 $image-bottom-padding: $base-line-height - 0.25pt;
 
 [class*=picture--caption-inline-] {
-	.caption {
-		position: absolute;
-
-		figcaption, .figcaption {
-			width: 46mm;
-			box-sizing: border-box;
-			padding: 4mm;
-			transform: translateY(0);
-			background-color: transparent;
-			color: #FFF;
-
-			@media print {
-				background-color: transparent;
-				color: CMYK(0%, 0%, 0%, 0%);
-			}
-
-			.figcaption-inner:before {
-				content: '';
-				display: none;
-			}
-
-			p, .credit {
-				color: #FFF;
-
-				@media print {
-					color: CMYK(0%, 0%, 0%, 0%);
-				}
-			}
-		}
-	}
-
 	.image {
 		padding-bottom: $image-bottom-padding;
 		border-width: 0 0 0.25pt 0;
@@ -158,37 +74,9 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 		}
 	}
 }
-.picture--caption-inline-top-left {
-	.caption {
-		top: 0;
-		left: 0;
-		padding-top: 0;
-		padding-left: 0;
-	}
-}
 
-.picture--caption-inline-top-right {
-	.caption {
-		top: 0;
-		right: 0;
-	}
-}
 
-.picture--caption-inline-bottom-right {
-	.caption {
-		bottom: $image-bottom-padding;
-		right: 0;
-	}
-}
-
-.picture--caption-inline-bottom-left {
-	.caption {
-		bottom: $image-bottom-padding;
-		left: 0;
-	}
-}
-
-.picture--headline-overlay {
+.headline--overlay {
 	.headline {
 		-ro-pdf-overprint: none;
 		-ro-pdf-overprint-content: none;
@@ -214,17 +102,5 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 				color: CMYK(0%, 0%, 0%, 0%);
 			}
 		}
-	}
-}
-
-.picture--caption-hide {
-	.caption {
-		display: none;
-	}
-}
-
-.picture--caption-standalone {
-	.caption {
-		transform: translateY(-3px);
 	}
 }
