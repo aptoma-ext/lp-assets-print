@@ -118,13 +118,21 @@
 		list-style-type: none;
 		margin: 0;
 		padding-left: 0;
+		transform: translateY(2.94px);
 
 		li {
-			text-indent: 15px;
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='none' stroke-width='0' fill='rgb(19, 136, 204)' /%3E%3C/svg%3E");
-			background-repeat: no-repeat;
-			background-size: 7.5pt 7.5pt;
-			background-position: 0 1.48pt;
+			text-indent: 11pt;
+			position: relative;
+
+			&:before {
+				content: '→';
+				font-family: SharpGroteskBook18;
+				display: inline-block;
+				font-size: 7.4pt;
+				position: absolute;
+				left: -8.2pt;
+				top: 0.55pt;
+			}
 		}
 	}
 
