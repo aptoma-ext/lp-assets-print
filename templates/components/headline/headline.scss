@@ -1,14 +1,6 @@
 .headline {
-	border-width: 0 0 0.25pt 0;
-	border-style: solid;
-	border-color: #000;
-
 	--alf-grid-align-bottom: top;
 	margin-bottom: $grid-line-offset;
-
-	@media print {
-		border-color: CMYK(0%, 0%, 0%, 100%);
-	}
 
 	&.alf-text-auto-size {
 		--alf-text-respect-line-breaks: 0;
@@ -24,6 +16,16 @@
 
 	* {
 		-ro-pdf-overprint-content: mode1;
+	}
+
+	&.headline--border {
+		border-width: 0 0 0.25pt 0;
+		border-style: solid;
+		border-color: #000;
+
+		@media print {
+			border-color: CMYK(0%, 0%, 0%, 100%);
+		}
 	}
 
 	h1 {
@@ -111,18 +113,12 @@
 	}
 }
 
-.headline--white {
-	color: #FFF;
+.headline--black {
+	color: #000;
 
 	@media print {
-		color: CMYK(0%, 0%, 0%, 0%);
+		color: CMYK(100%, 100%, 100%, 100%);
 	}
-}
-
-.headline--top-left {
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 .headline--white {
@@ -137,29 +133,6 @@
 	}
 }
 
-// Preset "states" for the headline component
-
-.headline--sm h1 {
-	// TODO: these values are just an estimate for now
-	font-size: var(--headline-font-size-sm, 80pt);
-	line-height: var(--headline-line-height-sm, 78pt);
-}
-
-.headline--md h1 {
-	font-size: var(--headline-font-size-md, 90pt);
-	line-height: var(--headline-line-height-lg, 0.9em);
-}
-
-.headline--lg h1 {
-	font-size: var(--headline-font-size-lg, 105pt);
-	line-height: var(--headline-line-height-lg, 0.9em);
-}
-
-.headline--xl h1 {
-	font-size: var(--headline-font-size-xl, 125pt);
-}
-
-
 // Headlines defined by DN below
 
 .headline--a-89 h1 {
@@ -170,10 +143,26 @@
 	word-spacing: -20%;
 }
 
+.headline--a-grotesk-85 h1 {
+	margin-top: -5pt;
+	font-size: 84.7pt;
+	line-height: 0.99413em;
+	letter-spacing: -0.01em;
+	word-spacing: -20%;
+}
+
 .headline--a-80 h1 {
 	margin-top: -5pt;
 	font-size: 80pt;
 	line-height: 0.932em;
+	letter-spacing: -0.01em;
+	word-spacing: -20%;
+}
+
+.headline--a-grotesk-77 h1 {
+	margin-top: -5pt;
+	font-size: 77pt;
+	line-height: 0.9682em;
 	letter-spacing: -0.01em;
 	word-spacing: -20%;
 }

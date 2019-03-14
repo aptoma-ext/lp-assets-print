@@ -101,6 +101,27 @@
 			"title": "Headline",
 			"type": "object",
 			"properties": {
+				".picture--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".headline--{style}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						}
+					]
+				},
 				".headline--{type}": {
 					"title": "Style",
 					"type": "string",
@@ -113,8 +134,18 @@
 						},
 						{
 							"type": "string",
+							"title": "Head A - Grotesk 85",
+							"enum": ["a-grotesk-85"]
+						},
+						{
+							"type": "string",
 							"title": "Head A - 80",
 							"enum": ["a-80"]
+						},
+						{
+							"type": "string",
+							"title": "Head A - Grotesk 77",
+							"enum": ["a-grotesk-77"]
 						},
 						{
 							"type": "string",
