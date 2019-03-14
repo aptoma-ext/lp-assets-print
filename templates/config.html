@@ -220,6 +220,28 @@
 			"title": "Caption",
 			"type": "object",
 			"properties": {
+				".caption--arrow-{direction}": {
+					"title": "Arrow direction",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Left",
+							"enum": ["left"]
+						},
+						{
+							"type": "string",
+							"title": "Right",
+							"enum": ["right"]
+						},
+						{
+							"type": "string",
+							"title": "Up",
+							"enum": ["up"]
+						}
+					]
+				},
 				".caption--align-{alignment}": {
 					"title": "Align",
 					"type": "string",

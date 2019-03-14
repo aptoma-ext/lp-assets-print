@@ -29,9 +29,31 @@
 			}
 		}
 
-		.credit div {
-			-ro-pdf-overprint: mode1;
-			-ro-pdf-overprint-content: mode1;
+		.credit {
+			display: block;
+
+			div {
+				-ro-pdf-overprint: mode1;
+				-ro-pdf-overprint-content: mode1;
+			}
+		}
+	}
+
+	&.caption--arrow-right {
+		.figcaption-inner:before {
+			content: '→';
+		}
+	}
+
+	&.caption--arrow-left {
+		.figcaption-inner:before {
+			content: '←';
+		}
+	}
+
+	&.caption--arrow-up {
+		.figcaption-inner:before {
+			content: '↑';
 		}
 	}
 
