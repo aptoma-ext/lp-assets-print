@@ -5,18 +5,10 @@
 	line-height: 15.975pt;
 	word-spacing: -10%;
 	letter-spacing: 0.003em;
-	border-width: 0 0 0.25pt 0;
-	border-style: solid;
-	border-color: #000;
 	-ro-pdf-overprint: mode1;
 	-ro-pdf-overprint-content: mode1;
-
 	--alf-grid-align-bottom: top;
 	margin-bottom: $grid-line-offset;
-
-	@media print {
-		border-color: CMYK(0%, 0%, 0%, 100%);
-	}
 
 	* {
 		-ro-pdf-overprint: mode1;
@@ -25,6 +17,36 @@
 
 	p {
 		transform: translateY(-2px);
+	}
+}
+
+.intro--border {
+	border-width: 0 0 0.25pt 0;
+	border-style: solid;
+	border-color: #000;
+
+	@media print {
+		border-color: CMYK(0%, 0%, 0%, 100%);
+	}
+}
+
+.intro--white {
+	p {
+		color: #FFF;
+
+		@media print {
+			color: CMYK(0%, 0%, 0%, 0%);
+		}
+	}
+}
+
+.intro--black {
+	p {
+		color: #000;
+
+		@media print {
+			color: CMYK(0%, 0%, 0%, 100%);
+		}
 	}
 }
 
@@ -40,22 +62,17 @@
 	font-weight: normal;
 }
 
-
-
 .intro--21_4, .intro--large {
 	font-size: 21.4pt;
 	letter-spacing: -0.35pt;
 	line-height: 23.4pt;
 }
 
-
 .intro--26_6 {
 	font-size: 26.6pt;
 	letter-spacing: -0.4pt;
 	line-height: 26.6pt;
 }
-
-
 
 .intro--29_2 {
 	font-size: 29.2pt;

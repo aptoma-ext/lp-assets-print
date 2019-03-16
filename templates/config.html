@@ -97,6 +97,33 @@
 			"title": "Auto size to fit body text",
 			"type": "boolean"
 		},
+		"intro": {
+			"title": "Intro",
+			"type": "object",
+			"properties": {
+				".intro--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".intro--{style}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						}
+					]
+				}
+			}
+		},
 		"headline": {
 			"title": "Headline",
 			"type": "object",
