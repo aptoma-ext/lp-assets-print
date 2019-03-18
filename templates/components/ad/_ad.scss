@@ -1,4 +1,8 @@
 .ad {
+    @media print {
+        visibility: hidden;
+    }
+
     .ad-placeholder {
         width: 100%;
     }
@@ -62,7 +66,7 @@
     }
 }
 
-.ad--1, {
+.ad--1 {
     .ad-placeholder-content,
     .ad-placeholder {
         height: 71mm;

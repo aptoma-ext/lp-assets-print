@@ -316,6 +316,59 @@
 					]
 				}
 			}
+		},
+		"ad": {
+			"title": "Ad",
+			"type": "object",
+			"properties": {
+				".ad--{type}": {
+					"title": "Type",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "1B",
+							"enum": ["1b"]
+						},
+						{
+							"type": "string",
+							"title": "1",
+							"enum": ["1"]
+						},
+						{
+							"type": "string",
+							"title": "2B",
+							"enum": ["2b"]
+						},
+						{
+							"type": "string",
+							"title": "2",
+							"enum": ["2"]
+						},
+						{
+							"type": "string",
+							"title": "3B",
+							"enum": ["3b"]
+						},
+						{
+							"type": "string",
+							"title": "3",
+							"enum": ["3"]
+						},
+						{
+							"type": "string",
+							"title": "4",
+							"enum": ["4"]
+						},
+						{
+							"type": "string",
+							"title": "5",
+							"enum": ["5"]
+						}
+					]
+				}
+			}
 		}
 	}
 }
