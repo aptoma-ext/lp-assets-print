@@ -1,0 +1,7 @@
+.color--bg-base-bright-tinted {
+    background-color: var(--color-base-bright-tinted);
+
+    @media print {
+        background-color: var(--color-base-bright-tinted-cmyk);
+    }
+}
