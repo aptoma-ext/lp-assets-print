@@ -2,7 +2,7 @@
     // the image is "too tall" since ascenders are inside the image, so we shave off a bit at the bottom
     margin-bottom: -3.7px;
 
-    img {
+    img, canvas {
         width: 100%;
         height: auto;
         display: block;

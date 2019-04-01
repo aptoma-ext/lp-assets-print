@@ -3,7 +3,7 @@
     --alf-grid-align-bottom: top;
 
     .image {
-        img {
+        img, canvas {
             width: 17mm;
             height: 15mm;
             object-fit: cover;
