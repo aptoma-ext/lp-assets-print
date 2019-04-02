@@ -147,6 +147,22 @@
 
 // Headlines defined by DN below
 
+.headline--kommentar-a {
+	h1, .contributor {
+		font-family: IvarNostalgi-Medium;
+		font-size: 44pt;
+		line-height: 0.9682em;
+	}
+}
+
+.headline--kommentar-b {
+	h1, .contributor {
+		font-family: IvarNostalgi-Medium;
+		font-size: 35.6pt;
+		line-height: 0.8975em;
+	}
+}
+
 .headline--a-89 h1 {
 	margin-top: -5pt;
 	font-size: 89pt;
