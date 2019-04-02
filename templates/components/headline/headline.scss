@@ -133,6 +133,18 @@
 	}
 }
 
+.headline--author {
+	h1, .contributor {
+		font-family: IvarNostalgi-Medium;
+		font-size: 35.6pt;
+		line-height: 34pt;
+	}
+
+	.byline {
+		color: var(--color-base);
+	}
+}
+
 // Headlines defined by DN below
 
 .headline--a-89 h1 {
