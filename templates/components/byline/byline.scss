@@ -83,6 +83,7 @@
 }
 
 .byline--profile {
+	--alf-grid-align-bottom: top;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -103,6 +104,10 @@
 		word-spacing: -10%;
 		line-height: $base-line-height;
 		width: 33.5mm;
+	}
+
+	.byline--profile-wrapper {
+		margin-top: -10mm;
 	}
 
 	.byline--profile-photo {
