@@ -76,3 +76,23 @@
 		-ro-pdf-overprint: mode1;
 	}
 }
+
+.byline--profile {
+	img {
+		width: 33.592mm;
+		height: auto;
+		float: left;
+	}
+
+	figcaption {
+		position: relative;
+		top: 22.3mm;
+		left: 4mm;
+	}
+
+	.byline--profile-topic {
+		position: absolute;
+		top: 15mm;
+		left: 37.5mm;
+	}
+}
