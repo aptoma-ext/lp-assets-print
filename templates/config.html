@@ -97,6 +97,29 @@
 			"title": "Auto size to fit body text",
 			"type": "boolean"
 		},
+		"separator": {
+			"title": "Line/border",
+			"type": "object",
+			"properties": {
+				".separator--border-{location}": {
+					"title": "Border location",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Bottom",
+							"enum": ["bottom"]
+						}
+					]
+				}
+			}
+		},
 		"intro": {
 			"title": "Intro",
 			"type": "object",
