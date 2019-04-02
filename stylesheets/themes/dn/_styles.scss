@@ -9,6 +9,7 @@ $blue-cmyk: CMYK(97%, 18%, 0%, 0%);
 $bright-blue: rgb(213, 230, 246);
 $bright-blue-cmyk: CMYK(16%, 3%, 0%, 0%);
 $bright-blue-tinted: mix(white, $bright-blue, 70%);
+$bright-blue-tinted-cmyk: -ro-spot('Base Bright', #{$bright-blue-cmyk}, 0.7);
 
 $dark-blue: rgb(59, 105, 166);
 $dark-blue-cmyk: CMYK(95%, 45%, 0%, 10%);
@@ -49,9 +50,11 @@ $medium-line-height: 13.6pt;
     --color-base-bright: #{$bright-blue};
     --color-base-bright-cmyk: #{$bright-blue-cmyk};
     --color-base-bright-tinted: #{$bright-blue-tinted};
-    --color-base-bright-tinted-cmyk: -ro-spot('Base Bright', #{$bright-blue-cmyk}, 0.7);
+    --color-base-bright-tinted-cmyk: #{$bright-blue-tinted-cmyk};
     --color-base-dark: #{$dark-blue};
     --color-base-dark-cmyk: #{$dark-blue-cmyk};
+    --background-color: transparent;
+    --background-color-cmyk: transparent;
 }
 
 .theme--dn {
@@ -104,6 +107,15 @@ $medium-line-height: 13.6pt;
 }
 
 .theme--deep-purple {
+    --color-base: #{$purple};
+    --color-base-cmyk: #{$purple-cmyk};
+    --color-base-dark: #{$deep-purple};
+    --color-base-dark-cmyk: #{$deep-purple-cmyk};
+}
+
+.theme--kommentar {
+    --background-color: #{$bright-blue-tinted-cmyk};
+    --background-color-cmyk: #{$bright-blue-tinted-cmyk};
     --color-base: #{$purple};
     --color-base-cmyk: #{$purple-cmyk};
     --color-base-dark: #{$deep-purple};

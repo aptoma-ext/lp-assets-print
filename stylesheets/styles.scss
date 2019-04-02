@@ -30,7 +30,11 @@
 	}
 
 	.alf-template {
-		background: transparent;
+		background: var(--background-color);
+
+		@media print {
+			background: var(--background-color-cmyk);
+		}
 	}
 
 	.alf-break {
