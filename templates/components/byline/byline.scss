@@ -78,10 +78,11 @@
 }
 
 .byline--profile {
+	margin: 0;
+
 	img, canvas {
 		width: 33.592mm;
 		height: auto;
-		float: left;
 	}
 
 	figcaption {
