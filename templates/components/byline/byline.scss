@@ -92,17 +92,18 @@
 		font-size: 7.4pt;
 		word-spacing: -10%;
 		line-height: $base-line-height;
+		width: 33.5mm;
 	}
 
 	.byline--profile-topic {
 		font-family: SharpGroteskMedium22;
-		color: $deep-purple;
+		color: --color-base;
 		position: absolute;
 		top: 15mm;
 		left: 37.5mm;
 
 		@media print {
-			color: $deep-purple-cmyk;
+			color: --color-base-cmyk;
 		}
 	}
 }

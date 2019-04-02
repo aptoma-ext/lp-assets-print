@@ -103,6 +103,13 @@ $medium-line-height: 13.6pt;
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
 }
 
+.theme--deep-purple {
+    --color-base: #{$purple};
+    --color-base-cmyk: #{$purple-cmyk};
+    --color-base-dark: #{$deep-purple};
+    --color-base-dark-cmyk: #{$deep-purple-cmyk};
+}
+
 &.section--etterbørs {
     .theme--dn {
         --color-base: #{$purple};
