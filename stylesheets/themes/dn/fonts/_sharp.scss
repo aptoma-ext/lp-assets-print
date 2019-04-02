@@ -135,13 +135,13 @@
 		-ro-font-embedding-type: all;
 	}
 
-	@font-face {
-		font-family: SharpGroteskMedium22;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Sharp/SharpGroteskMedium22.otf) format('opentype');
-		-ro-font-embedding-type: all;
-	}
+@font-face {
+	font-family: SharpGroteskMedium22;
+	font-style: normal;
+	font-weight: normal;
+	src: url(https://smooth-storage-dev.aptoma.no/users/dn/files/print/fonts/Sharp/SharpGroteskMedium22.otf) format('opentype');
+	-ro-font-embedding-type: all;
+}
 
 	@font-face {
 		font-family: SharpGroteskMedium23;

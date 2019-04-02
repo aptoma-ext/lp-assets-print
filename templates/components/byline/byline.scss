@@ -88,11 +88,21 @@
 		position: relative;
 		top: 22.3mm;
 		left: 4mm;
+		font-family: DNSharpGroteskBook-18;
+		font-size: 7.4pt;
+		word-spacing: -10%;
+		line-height: $base-line-height;
 	}
 
 	.byline--profile-topic {
+		font-family: SharpGroteskMedium22;
+		color: $deep-purple;
 		position: absolute;
 		top: 15mm;
 		left: 37.5mm;
+
+		@media print {
+			color: $deep-purple-cmyk;
+		}
 	}
 }
