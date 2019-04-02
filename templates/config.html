@@ -141,6 +141,33 @@
 				}
 			}
 		},
+		"headline--author": {
+			"title": "Headline w/ author",
+			"type": "object",
+			"properties": {
+				".headline--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".headline--{type}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Head - Kommentar A",
+							"enum": ["head-kommentar-a"]
+						},
+						{
+							"type": "string",
+							"title": "Head - Kommentar B",
+							"enum": ["head-kommentar-b"]
+						}
+					]
+				}
+			}
+		},
 		"headline": {
 			"title": "Headline",
 			"type": "object",
