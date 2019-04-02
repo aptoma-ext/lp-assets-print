@@ -83,6 +83,10 @@
 }
 
 .byline--profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	margin: 0;
 
 	img, canvas {
@@ -99,6 +103,11 @@
 		word-spacing: -10%;
 		line-height: $base-line-height;
 		width: 33.5mm;
+	}
+
+	.byline--profile-photo {
+		line-height: 0;
+		align-self: flex-end;
 	}
 
 	.byline--profile-topic {
