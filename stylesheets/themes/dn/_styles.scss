@@ -3,6 +3,9 @@ $black: #000;
 $dark-grey: rgb(63, 62, 62);
 $dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
 
+$warm-grey: #55524b;
+$warm-grey-cmyk: CMYK(56.078%, 50.196%, 55.294%, 48.235%);
+
 $blue: rgb(57, 149, 210);
 $blue-cmyk: CMYK(97%, 18%, 0%, 0%);
 
@@ -55,6 +58,8 @@ $medium-line-height: 13.6pt;
     --color-base-dark-cmyk: #{$dark-blue-cmyk};
     --background-color: transparent;
     --background-color-cmyk: transparent;
+    --color-warm-grey: #{$warm-grey};
+    --color-warm-grey-cmyk: #{$warm-grey-cmyk};
 }
 
 .theme--dn {
