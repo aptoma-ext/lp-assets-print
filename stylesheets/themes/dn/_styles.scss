@@ -120,7 +120,7 @@ $medium-line-height: 13.6pt;
 
 .theme--kommentar {
     --background-color: #{$bright-blue-tinted};
-    --background-color-cmyk: #{$bright-blue-tinted-cmyk};
+    --background-color-cmyk: transparent;
     --color-base: #{$deep-purple};
     --color-base-cmyk: #{$deep-purple-cmyk};
     --color-base-dark: #{$deep-purple};
