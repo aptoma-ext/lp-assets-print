@@ -137,7 +137,7 @@
 	h1, .contributor {
 		font-family: IvarNostalgi-Medium;
 		font-size: 35.6pt;
-		line-height: 34pt;
+		line-height: 0.95506em;
 		letter-spacing: 0;
 		color: var(--color-warm-grey);
 
@@ -148,6 +148,7 @@
 
 	.contributor {
 		color: var(--color-base-dark);
+		line-height: 0.85em;
 
 		@media print {
 			color: var(--color-base-dark-cmyk);
@@ -155,7 +156,7 @@
 	}
 
 	.headline--author-wrapper {
-		transform: translateY(-1.7pt);
+		transform: translateY(0.2pt);
 	}
 }
 
