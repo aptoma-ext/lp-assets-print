@@ -17,11 +17,11 @@
 @for $i from 0 through 5 {
     $plural: if($i == 1, '', 's');
 
-    .u-margin-top-#{$i}-line#{$plural} {
+    .u-margin-top--#{$i}-line#{$plural} {
         margin-top: $base-line-height * $i;
     }
 
-    .u-margin-bottom-#{$i}-line#{$plural} {
+    .u-margin-bottom--#{$i}-line#{$plural} {
         margin-bottom: $base-line-height * $i;
     }
 }
