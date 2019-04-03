@@ -78,15 +78,11 @@
 }
 
 .byline--profile {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	margin: 0;
 
 	img, canvas {
-		width: 33.592mm;
-		height: auto;
+		height: 134.9pt;
+		width: auto;
 	}
 
 	figcaption {
@@ -101,14 +97,12 @@
 	}
 
 	.byline--profile-wrapper {
-		margin-top: $base-line-height * -4;
+		// margin-top: $base-line-height * -4;
 		line-height: 0;
-		align-self: flex-end;
 	}
 
 	.byline--profile-photo {
 		line-height: 0;
-		align-self: flex-end;
 	}
 
 	.byline--profile-topic {
