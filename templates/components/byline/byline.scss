@@ -70,11 +70,6 @@
 	font-size: 7.4pt;
 	line-height: 9.7pt;
 	letter-spacing: 0.01em;
-	color: var(--color-warm-grey);
-
-	@media print {
-		color: var(--color-warm-grey-cmyk);
-	}
 
 	div {
 		display: inline;
@@ -119,13 +114,13 @@
 
 	.byline--profile-topic {
 		font-family: SharpGroteskMedium22;
-		color: var(--color-base);
+		color: var(--color-base-dark);
 		position: absolute;
 		top: 11mm;
 		left: 37.5mm;
 
 		@media print {
-			color: var(--color-base-cmyk);
+			color: var(--color-base-dark-cmyk);
 		}
 	}
 }

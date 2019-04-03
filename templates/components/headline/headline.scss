@@ -139,10 +139,15 @@
 		font-size: 35.6pt;
 		line-height: 34pt;
 		letter-spacing: 0;
+		color: var(--color-warm-grey);
+
+		@media print {
+			color: var(--color-warm-grey-cmyk);
+		}
 	}
 
 	.byline {
-		color: var(--color-base);
+		color: var(--color-base-dark);
 	}
 }
 
