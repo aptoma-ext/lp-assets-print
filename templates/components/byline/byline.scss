@@ -78,7 +78,6 @@
 }
 
 .byline--profile {
-	--alf-grid-align-bottom: top;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -102,7 +101,7 @@
 	}
 
 	.byline--profile-wrapper {
-		margin-top: $base-line-height * -4;
+		margin-top: $base-line-height * -3;
 		line-height: 0;
 		align-self: flex-end;
 	}
