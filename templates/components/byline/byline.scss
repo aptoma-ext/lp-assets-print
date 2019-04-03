@@ -102,7 +102,7 @@
 	}
 
 	.byline--profile-wrapper {
-		margin-top: -10mm;
+		margin-top: $base-line-height * -4;
 		line-height: 0;
 		align-self: flex-end;
 	}
