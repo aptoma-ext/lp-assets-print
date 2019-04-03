@@ -93,6 +93,39 @@
 			"title": "No space/margin",
 			"type": "boolean"
 		},
+		"margins": {
+			"title": "Margins",
+			"type": "object",
+			"properties": {
+				".u-margin--bottom-{margin}": {
+					"title": "Margin below",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						}
+					]
+				}
+			}
+		},
 		".alf-is-auto-adjustable": {
 			"title": "Auto size to fit body text",
 			"type": "boolean"
