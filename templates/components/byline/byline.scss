@@ -83,6 +83,7 @@
 	img, canvas {
 		height: 134.9pt;
 		width: auto;
+		align-self: flex-end;
 	}
 
 	figcaption {
@@ -103,6 +104,10 @@
 
 	.byline--profile-photo {
 		line-height: 0;
+
+		> div {
+			display: flex;
+		}
 	}
 
 	.byline--profile-topic {
