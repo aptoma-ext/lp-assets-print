@@ -134,6 +134,8 @@
 }
 
 .headline--author {
+	--alf-grid-align-bottom: baseline;
+
 	h1, .contributor {
 		font-family: IvarNostalgi-Medium;
 		font-size: 35.6pt;
