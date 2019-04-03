@@ -11,7 +11,7 @@ $blue-cmyk: CMYK(97%, 18%, 0%, 0%);
 
 $bright-blue: rgb(213, 230, 246);
 $bright-blue-cmyk: CMYK(16%, 3%, 0%, 0%);
-$bright-blue-tinted: mix(white, $bright-blue, 70%);
+$bright-blue-tinted: mix(white, $bright-blue, 30%);
 $bright-blue-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$bright-blue-cmyk});
 
 $dark-blue: rgb(59, 105, 166);

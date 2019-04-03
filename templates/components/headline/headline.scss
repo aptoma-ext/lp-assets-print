@@ -148,6 +148,10 @@
 
 	.contributor {
 		color: var(--color-base-dark);
+
+		@media print {
+			color: var(--color-base-dark-cmyk);
+		}
 	}
 }
 
