@@ -78,6 +78,8 @@
 }
 
 .byline--profile {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
 	margin: 0;
 
 	img, canvas {
@@ -98,7 +100,7 @@
 	}
 
 	.byline--profile-wrapper {
-		// margin-top: $base-line-height * -4;
+		margin-top: $base-line-height * -4;
 		line-height: 0;
 	}
 
