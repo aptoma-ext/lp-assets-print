@@ -14,6 +14,7 @@
 	orphans: 1;
 	// this will in practice use the original size of the image
 	--alf-image-ppi: 210;
+	-ro-image-resampling: 250;
 
 	@media print {
 		color: CMYK(0%, 0%, 0%, 100%);
