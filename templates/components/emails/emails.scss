@@ -4,12 +4,10 @@
     font-weight: normal;
     font-size: 8.9pt;
     line-height: 10.65pt;
-    padding-top: 0;
+    padding-top: 4.2pt;
     -ro-pdf-overprint: mode1;
 
     .emails-border {
-        position: absolute;
-        top: -0.1px;
         height: 0;
         width: 100%;
         border-width: 0.25pt 0 0 0;
@@ -19,7 +17,7 @@
     }
 
 	.emails-wrapper {
-		transform: translateY(2.76pt);
+		transform: translateY(3.55pt);
 	}
 
     p {
