@@ -1,4 +1,7 @@
 .caption {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
 	figcaption, .figcaption {
 		-ro-pdf-overprint: none;
 		background-color: transparent;
@@ -8,8 +11,6 @@
 		line-height: $base-line-height;
 		padding: 0;
 		transform: translateY(2.7pt);
-		--alf-grid-align-top: baseline;
-		--alf-grid-align-bottom: baseline;
 
 		.figcaption-inner:before {
 			content: '↑';
