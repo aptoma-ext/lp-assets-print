@@ -7,7 +7,9 @@
 		font-size: 7.4pt;
 		line-height: $base-line-height;
 		padding: 0;
-		transform: translateY(4px);
+		transform: translateY(2.7pt);
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: baseline;
 
 		.figcaption-inner:before {
 			content: '↑';
@@ -30,8 +32,6 @@
 		}
 
 		.credit {
-			display: block;
-
 			div {
 				-ro-pdf-overprint: mode1;
 				-ro-pdf-overprint-content: mode1;
