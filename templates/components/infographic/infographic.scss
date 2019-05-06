@@ -1,10 +1,9 @@
 .infographic--image-container {
+    display: inline-block;
     // the image is "too tall" since ascenders are inside the image, so we shave off a bit at the bottom
     margin-bottom: -3.7px;
 
     img, canvas {
-        display: block;
-
         // Use the data-file-url attribute as src when generating PDF
         -ro-replacedelement: image;
         -ro-source: -ro-attr(data-file-url);
