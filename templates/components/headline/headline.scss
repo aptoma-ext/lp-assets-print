@@ -38,6 +38,7 @@
 		font-family: var(--headline-font-family, sans-serif);
 		font-weight: normal;
 		font-feature-settings: “ss02”;
+		-moz-font-feature-settings: “ss02”;
 		--alf-header-align: 1;
 
 		@media print {
