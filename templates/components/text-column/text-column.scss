@@ -125,20 +125,20 @@
 
 			.body-text .row-first {
 				text-indent: 10.65pt;
-			}
 
-			&:before {
-				content: '•';
-				font-family: SharpGroteskBook18;
-				display: inline-block;
-				font-size: 14.4pt;
-				position: absolute;
-				left: 5.5pt;
-				top: 0.55pt;
-				color: var(--color-black);
+				&:before {
+					content: '•';
+					font-family: SharpGroteskBook18;
+					display: inline-block;
+					font-size: 14.4pt;
+					position: absolute;
+					left: 5.5pt;
+					top: 0.55pt;
+					color: var(--color-black);
 
-				@media print {
-					color: var(--color-black-cmyk);
+					@media print {
+						color: var(--color-black-cmyk);
+					}
 				}
 			}
 		}
