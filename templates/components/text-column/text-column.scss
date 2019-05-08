@@ -47,7 +47,7 @@
 			}
 		}
 
-		.row:first-of-type {
+		.row-first {
 			text-indent: $text-indent;
 		}
 
@@ -57,7 +57,7 @@
 	}
 
 	.alf-block-is-first {
-		.row:first-of-type {
+		.row-first {
 			text-indent: 0;
 
 			&::before {
@@ -80,12 +80,6 @@
 			.word:nth-child(3) {
 				font-family: IvarText-SemiBold;
 			}
-		}
-	}
-
-	.alf-is-overflow .body-text {
-		.row, .row:first-of-type {
-			text-indent: 0;
 		}
 	}
 
@@ -151,7 +145,7 @@
 	}
 
 	.body-dropcap {
-		span.row:first-of-type {
+		span.row-first {
 			height: auto;
 			text-indent: 0 !important;
 		}
