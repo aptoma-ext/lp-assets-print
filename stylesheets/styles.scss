@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	line-height: $base-line-height;
 	text-rendering: geometricPrecision;
+	-ro-glyph-layout-mode: quality;
 	widows: 1;
 	orphans: 1;
 	--alf-image-ppi: 240;
