@@ -57,6 +57,7 @@
 	font-size: 7.4pt;
 	line-height: 9.7pt;
 	letter-spacing: 0.01em;
+	display: inline-block;
 
 	div {
 		display: inline;
@@ -70,6 +71,7 @@
 	font-size: 7.4pt;
 	line-height: 9.7pt;
 	letter-spacing: 0.01em;
+	display: inline-block;
 
 	div {
 		display: inline;
@@ -122,5 +124,11 @@
 		@media print {
 			color: var(--color-base-dark-cmyk);
 		}
+	}
+}
+
+.alf-colspan-1, .alf-colspan-2 {
+	.byline-author, .byline-location {
+		display: block;
 	}
 }
