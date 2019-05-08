@@ -126,21 +126,21 @@
 		transform: translateY(2.94px);
 
 		li {
-			text-indent: 11pt;
+			text-indent: 0;
 			position: relative;
 
 			&:before {
-				content: '→';
+				content: '•';
 				font-family: SharpGroteskBook18;
 				display: inline-block;
 				font-size: 7.4pt;
 				position: absolute;
 				left: -8.2pt;
 				top: 0.55pt;
-				color: var(--color-base);
+				color: var(--color-black);
 
 				@media print {
-					color: var(--color-base-cmyk);
+					color: var(--color-black-cmyk);
 				}
 			}
 		}
