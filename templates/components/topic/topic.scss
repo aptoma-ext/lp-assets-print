@@ -1,5 +1,4 @@
 .topic {
-
     h1 {
         font-family: SharpGroteskMedium22;
         font-weight: normal;
@@ -13,4 +12,8 @@
         transform-origin: right 0;
         white-space: nowrap;
     }
+}
+
+.alf-col-1 .topic h1 {
+    right: 50.95pt;
 }
