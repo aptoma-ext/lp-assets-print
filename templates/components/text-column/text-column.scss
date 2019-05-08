@@ -129,7 +129,7 @@
 			text-indent: 0;
 			position: relative;
 
-			.row-first {
+			.body-text .row-first {
 				text-indent: 10.65pt;
 			}
 
@@ -139,7 +139,7 @@
 				display: inline-block;
 				font-size: 14.4pt;
 				position: absolute;
-				left: 2pt;
+				left: 4pt;
 				top: 0.55pt;
 				color: var(--color-black);
 
