@@ -48,14 +48,6 @@
     }
 
     @font-face {
-        font-family: IvarNostalgi-Large;
-        font-style: normal;
-        font-weight: normal;
-        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Large.otf);
-        -ro-font-embedding-type: all;
-    }
-
-    @font-face {
         font-family: IvarDisplay-MediumItalic;
         font-style: normal;
         font-weight: normal;
@@ -96,18 +88,34 @@
     }
 
     @font-face {
-        font-family: IvarNostalgi-Stencil;
+        font-family: IvarNostalgiDN-Stencil;
         font-style: normal;
         font-weight: normal;
-        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Stencil.otf);
+        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Stencil.otf);
         -ro-font-embedding-type: all;
     }
 
     @font-face {
-        font-family: IvarNostalgi-Small;
+        font-family: IvarNostalgiDN-Small;
         font-style: normal;
         font-weight: normal;
-        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Small.otf);
+        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Small.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgiDN-Medium;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Medium.otf);
+        -ro-font-embedding-type: all;
+    }
+
+    @font-face {
+        font-family: IvarNostalgiDN-Large;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Large.otf);
         -ro-font-embedding-type: all;
     }
 
@@ -176,14 +184,6 @@
     }
 
     @font-face {
-        font-family: IvarNostalgi-Medium;
-        font-style: normal;
-        font-weight: normal;
-        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Medium.otf);
-        -ro-font-embedding-type: all;
-    }
-
-    @font-face {
         font-family: IvarText-Medium;
         font-style: normal;
         font-weight: normal;
@@ -225,22 +225,28 @@
 
 }
 
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarHeadline-Medium.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-SemiBold.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Small.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Medium.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Large.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgiDN-Stencil.otf
+
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Small.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Medium.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Large.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Stencil.otf
+
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Regular.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-SemiBold.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Medium.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Italic.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-BoldItalic.otf
+// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarHeadline-Medium.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarHeadline-SemiBold.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarHeadline-BoldItalic.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Medium.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-BoldItalic.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarHeadline-Italic.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Stencil.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Medium.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Bold.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-MediumItalic.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarText-SemiBold.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Small.otf
-// https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarNostalgi-Large.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarText-MediumItalic.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarText-Italic.otf
 // https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarText-Medium.otf
