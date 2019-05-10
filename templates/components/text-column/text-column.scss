@@ -50,10 +50,6 @@
 		.row-first {
 			text-indent: $text-indent;
 		}
-
-		.body-unindented .row {
-			text-indent: 0;
-		}
 	}
 
 	h3 + .alf-block .row {
