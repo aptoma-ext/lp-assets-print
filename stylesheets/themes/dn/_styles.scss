@@ -122,19 +122,30 @@ $medium-line-height: 13.6pt;
 }
 
 .theme--kommentar {
-    --background-color: #{$bright-blue-tinted};
-    --background-color-cmyk: $bright-blue-tinted-cmyk;
     --color-base: #{$deep-purple};
     --color-base-cmyk: #{$deep-purple-cmyk};
     --color-base-dark: #{$deep-purple};
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
 
-    &.format-fullpage {
-        border-bottom: 1.884pt solid $bright-blue-tinted;
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 21mm;
+        background-color: $bright-blue-tinted;
 
         @media print {
-            border-bottom-color: $bright-blue-tinted-cmyk;
+            background-color: $bright-blue-tinted-cmyk;
         }
+    }
+}
+
+.format-fullpage {
+    &.theme--kommentar::before {
+        bottom: -1.88pt;
     }
 }
 
