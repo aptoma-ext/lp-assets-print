@@ -141,6 +141,11 @@ $medium-line-height: 13.6pt;
             background-color: $bright-blue-tinted-cmyk;
         }
     }
+
+    &[data-side="right"]::before {
+        left: 0;
+        right: 21mm;
+    }
 }
 
 .alf-format-fullpage {
