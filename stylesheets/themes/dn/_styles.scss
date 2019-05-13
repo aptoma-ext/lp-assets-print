@@ -131,7 +131,7 @@ $medium-line-height: 13.6pt;
         content: ' ';
         display: block;
         position: absolute;
-        top: -10.59pt;
+        top: $base-line-height - 0.3pt;
         bottom: 0;
         right: 0;
         left: 21mm;
