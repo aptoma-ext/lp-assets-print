@@ -93,6 +93,46 @@
 			"title": "No space/margin",
 			"type": "boolean"
 		},
+		"grid": {
+			"title": "Grid",
+			"type": "object",
+			"properties": {
+				"--alf-grid-align-top": {
+					"title": "Top alignment",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Ascender/top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Baseline",
+							"enum": ["baseline"]
+						}
+					]
+				},
+				"--alf-grid-align-bottom": {
+					"title": "Bottom alignment",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Ascender/top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Baseline",
+							"enum": ["baseline"]
+						}
+					]
+				}
+			}
+		},
 		"margins": {
 			"title": "Margins",
 			"type": "object",
