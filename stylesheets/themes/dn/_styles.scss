@@ -148,7 +148,7 @@ $medium-line-height: 13.6pt;
     }
 }
 
-.alf-format-fullpage {
+&.alf-format-fullpage {
     .theme--kommentar::before {
         bottom: -1.88pt;
     }
