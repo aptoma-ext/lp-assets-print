@@ -131,10 +131,10 @@ $medium-line-height: 13.6pt;
         content: ' ';
         display: block;
         position: absolute;
-        top: 0;
+        top: -10.65pt;
         bottom: 0;
         right: 0;
-        left: 21mm;
+        left: calc(21mm - 0.3pt);
         background-color: $bright-blue-tinted;
 
         @media print {
