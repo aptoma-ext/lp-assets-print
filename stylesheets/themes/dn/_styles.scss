@@ -147,9 +147,17 @@ $medium-line-height: 13.6pt;
         }
     }
 
-    &[data-side="right"]::before {
-        left: 0;
-        right: 21mm;
+    &[data-side="right"] {
+        &::before {
+            left: 0;
+            right: 21mm;
+        }
+
+        &::after {
+            right: 0;
+            left: auto;
+            border-width: 0 0.3pt 0 0;
+        }
     }
 }
 
@@ -171,10 +179,13 @@ $medium-line-height: 13.6pt;
             bottom: 0;
             left: 0;
             width: 21mm;
+            border-width: 0 0 0 0.3pt;
+            border-color: $black;
             background-color: $deep-financial-pink;
 
             @media print {
                 background-color: $deep-financial-pink-cmyk;
+                border-color: $black-cmyk
             }
         }
     }
