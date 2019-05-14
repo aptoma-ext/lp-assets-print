@@ -181,6 +181,7 @@ $medium-line-height: 13.6pt;
             width: 21mm;
             border-width: 0 0 0 0.3pt;
             border-color: $black;
+            border-style: solid;
             background-color: $deep-financial-pink;
 
             @media print {
