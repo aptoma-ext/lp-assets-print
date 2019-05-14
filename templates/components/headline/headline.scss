@@ -25,7 +25,7 @@
 		border-color: #000;
 
 		@media print {
-			border-color: CMYK(0%, 0%, 0%, 100%);
+			border-color: $black-cmyk;
 		}
 	}
 
@@ -43,7 +43,7 @@
 		--alf-header-align: 1;
 
 		@media print {
-			color: var(--headline-color-cmyk, var(--color-cmyk, CMYK(0%, 0%, 0%, 100%)));
+			color: var(--headline-color-cmyk, var(--color-cmyk, $black-cmyk));
 			background-color: var(--headline-background-color-cmyk, transparent);
 		}
 	}
@@ -110,7 +110,7 @@
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
-			box-shadow: 0 0 30px CMYK(0%, 0%, 0%, 100%);
+			box-shadow: 0 0 30px $black-cmyk;
 		}
 	}
 
@@ -132,10 +132,10 @@
 }
 
 .headline--black {
-	color: #000;
+	color: $black;
 
 	@media print {
-		color: CMYK(100%, 100%, 100%, 100%);
+		color: $black-cmyk;
 	}
 }
 

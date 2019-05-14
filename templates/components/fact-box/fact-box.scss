@@ -60,7 +60,7 @@
 	column-count: var(--colspan, 1);
 	column-gap: 4mm;
 	column-rule: 0;
-	column-rule-color: CMYK(0%, 0%, 0%, 100%);
+	column-rule-color: $black-cmyk;
 	transform: translateY(2.675pt);
 
 	b {

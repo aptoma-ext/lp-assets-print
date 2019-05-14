@@ -70,7 +70,7 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 		border-color: #000;
 
 		@media print {
-			border-color: CMYK(0%, 0%, 0%, 100%);
+			border-color: $black-cmyk;
 		}
 	}
 }
@@ -91,7 +91,7 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 			text-shadow: 0px 0px 12px #000, 0px 0px 12px #000;
 
 			@media print {
-				text-shadow: 0px 0px 12px CMYK(0%, 0%, 0%, 100%), 0px 0px 12px CMYK(0%, 0%, 0%, 100%);
+				text-shadow: 0px 0px 12px $black-cmyk, 0px 0px 12px $black-cmyk;
 			}
 		}
 

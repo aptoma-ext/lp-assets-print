@@ -26,7 +26,7 @@
 	border-color: #000;
 
 	@media print {
-		border-color: CMYK(0%, 0%, 0%, 100%);
+		border-color: $black-cmyk;
 	}
 }
 
@@ -45,7 +45,7 @@
 		color: #000;
 
 		@media print {
-			color: CMYK(0%, 0%, 0%, 100%);
+			color: $black-cmyk;
 		}
 	}
 }

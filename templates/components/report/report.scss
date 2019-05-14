@@ -1,50 +1,62 @@
 .report {
-    border-top: $grid-line-offset solid var(--fact-box-border-color, steelblue);
-    background-color: var(--fact-box-background-color, oldlace);
+    background-color: transparent;
     line-height: $base-line-height;
     -ro-pdf-overprint-content: mode1;
-    padding: 0 6pt 3.5pt;
+    padding: 0;
 
-    @media print {
-        border-top-color: var(--fact-box-border-color-cmyk);
-        background-color: var(--fact-box-background-color-cmyk);
-    }
+	&::before {
+		content: '';
+		display: block;
+		width: 8.5mm;
+		height: 2.505mm;
+		background-color: var(--fact-box-border-color);
+
+		@media print {
+			background-color: var(--fact-box-border-color-cmyk);
+		}
+	}
 
     .alf-align {
         --alf-grid-align-top: baseline;
 	}
 
 	h3 {
-		font-size: 14.9pt;
-		font-family: "GuardianSansCond-Black";
+		font-family: SharpGroteskSmBold20;
 		font-weight: normal;
-		line-height: 1.02em;
-		margin-top: $base-line-height - $grid-line-offset;
-		margin-bottom: 5.4pt;
+		font-size: 8.9pt;
+		line-height: 10.5pt;
+		box-sizing: content-box;
+		margin-bottom: 3pt;
+		margin-top: 2.725pt;
+		letter-spacing: 0.01em;
+		-ro-pdf-overprint-content: mode1;
 	}
 
 	h4 {
-		font-size: 8.4pt;
-		font-family: "GuardianSansXCond-Bold";
+		font-family: DNSharpGroteskBook-18;
+		font-kerning: normal;
 		font-weight: normal;
-		line-height: 1.05em;
+		font-style: normal;
+		font-size: 7.9pt;
+		line-height: $base-line-height;
 		margin-top: $base-line-height - $grid-line-offset;
 		margin-bottom: 1px;
+		border-bottom: 0.25pt solid $black;
 	}
 
 	table {
-		font-family: "GuardianSansXCond-Regular";
+		font-family: DNSharpGroteskBook-16;
 		font-weight: normal;
-		font-size: 7.1pt;
+		font-size: 7.9pt;
 		width: 100%;
 		border-collapse: collapse;
 
 		tbody {
 			td {
-				border-top: 0.25pt solid #000;
+				border-top: 0.25pt solid $black;
 
 				@media print {
-					border-color: CMYK(0%, 0%, 0%, 100%);
+					border-color: $black-cmyk;
 				}
 			}
 
