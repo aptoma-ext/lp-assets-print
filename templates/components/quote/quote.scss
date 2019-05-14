@@ -21,10 +21,10 @@
             font-weight: normal;
             font-size: 11.5pt;
             line-height: 15.5pt;
-            color: $black;
+            color: var(--color-black);
 
             @media print {
-                color: $black-cmyk;
+                color: var(--color-black-cmyk);
             }
         }
 
@@ -37,7 +37,7 @@
             transform: translateY(-1.8px);
 
             @media print {
-                color: $black-cmyk;
+                color: var(--color-black-cmyk);
             }
         }
     }

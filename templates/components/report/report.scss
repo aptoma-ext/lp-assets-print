@@ -41,7 +41,7 @@
 		line-height: $base-line-height;
 		margin-top: $base-line-height - $grid-line-offset;
 		margin-bottom: 1px;
-		border-bottom: 0.25pt solid $black;
+		border-bottom: 0.25pt solid var(--color-black);
 	}
 
 	table {
@@ -53,10 +53,10 @@
 
 		tbody {
 			td {
-				border-top: 0.25pt solid $black;
+				border-top: 0.25pt solid var(--color-black);
 
 				@media print {
-					border-color: $black-cmyk;
+					border-color: var(--color-black-cmyk);
 				}
 			}
 

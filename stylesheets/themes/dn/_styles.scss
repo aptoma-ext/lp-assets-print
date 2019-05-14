@@ -75,6 +75,8 @@ $medium-line-height: 13.6pt;
     --font-size-body: 8.4pt;
 
     // Headlines
+    --headline-color: var(--color-black);
+    --headline-color-cmyk: var(--color-black-cmyk);
     --headline-font-family: IvarNostalgiDN-Large;
     --headline-font-size-sm: 60pt;
     --headline-font-size-md: 66pt;
@@ -155,13 +157,13 @@ $medium-line-height: 13.6pt;
         left: 0;
         width: 21mm;
         border-width: 0 0 0 0.3pt;
-        border-color: $black;
+        border-color: var(--color-black);
         border-style: solid;
         background-color: $bright-blue;
 
         @media print {
             background-color: $bright-blue-cmyk;
-            border-color: $black-cmyk
+            border-color: var(--color-black-cmyk)
         }
     }
 

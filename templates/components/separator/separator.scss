@@ -8,7 +8,7 @@
 	border-color: #000;
 
 	@media print {
-		border-color: $black-cmyk;
+		border-color: var(--color-black-cmyk);
 	}
 
 	&.separator--border-top {

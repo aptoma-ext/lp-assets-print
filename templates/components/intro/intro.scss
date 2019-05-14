@@ -26,7 +26,7 @@
 	border-color: #000;
 
 	@media print {
-		border-color: $black-cmyk;
+		border-color: var(--color-black-cmyk);
 	}
 }
 
@@ -45,7 +45,7 @@
 		color: #000;
 
 		@media print {
-			color: $black-cmyk;
+			color: var(--color-black-cmyk);
 		}
 	}
 }

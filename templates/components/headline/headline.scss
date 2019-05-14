@@ -25,13 +25,13 @@
 		border-color: #000;
 
 		@media print {
-			border-color: $black-cmyk;
+			border-color: var(--color-black-cmyk);
 		}
 	}
 
 	h1 {
 		margin: 0 17px $base-line-height * 2 0;
-		color: var(--headline-color, var(--color, #000));
+		color: var(--headline-color, #000);
 		font-size: var(--headline-font-size, 94.2pt);
 		line-height: var(--headline-line-height, 0.93em);
 		letter-spacing: var(--headline-letter-spacing, -1.9pt);
@@ -43,7 +43,7 @@
 		--alf-header-align: 1;
 
 		@media print {
-			color: var(--headline-color-cmyk, var(--color-cmyk, $black-cmyk));
+			color: var(--headline-color-cmyk);
 			background-color: var(--headline-background-color-cmyk, transparent);
 		}
 	}
@@ -110,7 +110,7 @@
 
 		@media print {
 			background-color: CMYK(0%, 0%, 0%, 0%);
-			box-shadow: 0 0 30px $black-cmyk;
+			box-shadow: 0 0 30px var(--color-black-cmyk);
 		}
 	}
 
@@ -132,10 +132,10 @@
 }
 
 .headline--black {
-	color: $black;
+	color: var(--color-black);
 
 	@media print {
-		color: $black-cmyk;
+		color: var(--color-black-cmyk);
 	}
 }
 

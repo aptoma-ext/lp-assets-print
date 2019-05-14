@@ -16,7 +16,7 @@
 	-ro-image-resampling: 240;
 
 	@media print {
-		color: $black-cmyk;
+		color: var(--color-black-cmyk);
 	}
 
 	* {
@@ -26,7 +26,7 @@
 	a {
 		text-decoration: none;
 		color: #000;
-		color: $black-cmyk;
+		color: var(--color-black-cmyk);
 	}
 
 	.alf-template {
@@ -55,7 +55,7 @@
 		-ro-pdf-overprint-content: mode1;
 
 		@media print {
-			color: $black-cmyk;
+			color: var(--color-black-cmyk);
 		}
 	}
 

@@ -94,7 +94,7 @@
 		font-weight: normal;
 		text-rendering: geometricPrecision;
 		color: #000;
-		color: $black-cmyk;
+		color: var(--color-black-cmyk);
 		font-kerning: normal;
 		font-size: $base-font-size;
 		line-height: $base-line-height;
@@ -172,7 +172,7 @@
 		}
 
 		@media print {
-			color: $black-cmyk;
+			color: var(--color-black-cmyk);
 		}
 	}
 }
