@@ -153,18 +153,37 @@ $medium-line-height: 13.6pt;
     }
 }
 
-&.alf-format-fullpage {
-    .theme--kommentar::before {
-        bottom: -1.88pt;
+&.print-day-saturday {
+    .theme--kommentar {
+        &::before {
+            background-color: $deep-financial-pink-tinted;
+
+            @media print {
+                background-color: $deep-financial-pink-tinted-cmyk;
+            }
+        }
+
+        &::after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: ($base-line-height - 0.3pt) * -1;
+            bottom: 0;
+            left: 0;
+            width: 21mm;
+            background-color: $deep-financial-pink;
+
+            @media print {
+                background-color: $deep-financial-pink-cmyk;
+            }
+        }
     }
 }
 
-&.print-day-saturday {
-    .theme--kommentar::before {
-        background-color: $deep-financial-pink-tinted;
-
-        @media print {
-            background-color: $deep-financial-pink-tinted-cmyk;
+&.alf-format-fullpage {
+    .theme--kommentar {
+        &::before, &::after {
+            bottom: -1.88pt;
         }
     }
 }
