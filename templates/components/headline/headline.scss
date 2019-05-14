@@ -1,5 +1,6 @@
 .headline {
-	--alf-grid-align-bottom: top;
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
 	margin-bottom: $grid-line-offset;
 
 	&.alf-text-auto-size {
@@ -252,13 +253,17 @@
 	word-spacing: -20%;
 }
 
-.headline--c-3col-45 h1 {
-	margin-top: -5pt;
-	margin-bottom: 10pt;
-	font-size: 45pt;
-	line-height: 0.94667em;
-	letter-spacing: -0.005em;
-	word-spacing: -20%;
+.headline--c-3col-45 {
+	--alf-grid-align-bottom: baseline;
+
+	h1 {
+		margin-top: -9pt;
+		margin-bottom: 10pt;
+		font-size: 45pt;
+		line-height: 0.95em;
+		letter-spacing: -0.005em;
+		word-spacing: -20%;
+	}
 }
 
 .headline--c-2col-36 h1 {
