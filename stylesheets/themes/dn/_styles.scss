@@ -154,6 +154,10 @@ $medium-line-height: 13.6pt;
     }
 }
 
+.theme--kommentar.theme--kommentar-no-bg::before {
+    display: none;
+}
+
 &.section--etterbørs {
     .theme--dn {
         --color-base: #{$purple};
