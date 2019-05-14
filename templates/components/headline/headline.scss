@@ -67,7 +67,7 @@
 	}
 }
 
-[grid-inside] .headline {
+.headline[grid-inside] {
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
 
@@ -76,7 +76,7 @@
 	}
 }
 
-[grid-inside=top] .headline {
+.headline[grid-inside=top] {
 	h1 {
 		margin: 8pt 17px 10.3pt 16.4pt;
 	}
