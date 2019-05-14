@@ -132,18 +132,36 @@ $medium-line-height: 13.6pt;
     --color-base-dark: #{$deep-purple};
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
 
-    &::before {
+    &::before, &::after {
         content: ' ';
         display: block;
         position: absolute;
         top: ($base-line-height - 0.3pt) * -1;
         bottom: 0;
+        box-sizing: border-box;
+    }
+
+    &::before {
         right: 0;
         left: 21mm;
         background-color: $bright-blue-tinted;
 
         @media print {
             background-color: $bright-blue-tinted-cmyk;
+        }
+    }
+
+    &::after {
+        left: 0;
+        width: 21mm;
+        border-width: 0 0 0 0.3pt;
+        border-color: $black;
+        border-style: solid;
+        background-color: $bright-blue;
+
+        @media print {
+            background-color: $bright-blue-cmyk;
+            border-color: $black-cmyk
         }
     }
 
@@ -172,21 +190,10 @@ $medium-line-height: 13.6pt;
         }
 
         &::after {
-            content: ' ';
-            display: block;
-            position: absolute;
-            top: ($base-line-height - 0.3pt) * -1;
-            bottom: 0;
-            left: 0;
-            width: 21mm;
-            border-width: 0 0 0 0.3pt;
-            border-color: $black;
-            border-style: solid;
             background-color: $deep-financial-pink;
 
             @media print {
                 background-color: $deep-financial-pink-cmyk;
-                border-color: $black-cmyk
             }
         }
     }
