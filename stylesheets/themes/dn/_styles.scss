@@ -207,8 +207,10 @@ $medium-line-height: 13.6pt;
     }
 }
 
-.theme--kommentar.theme--kommentar-no-bg::before {
-    display: none;
+.theme--kommentar.theme--kommentar-no-bg {
+    &::before, &::after {
+        display: none;
+    }
 }
 
 &.section--etterbørs {
