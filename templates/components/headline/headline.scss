@@ -67,6 +67,21 @@
 	}
 }
 
+[grid-inside] .headline {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
+	h1 {
+		margin: 0 17px 10.3pt 16.4pt;
+	}
+}
+
+[grid-inside=top] .headline {
+	h1 {
+		margin: 8pt 17px 10.3pt 16.4pt;
+	}
+}
+
 .headline--bg-lines {
 	.alf-header-line {
 		padding: 0 10px 3px 0;
