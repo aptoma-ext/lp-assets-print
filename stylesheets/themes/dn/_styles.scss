@@ -30,8 +30,13 @@ $deep-purple-cmyk: CMYK(0%, 100%, 0%, 40%);
 $pink: rgb(222, 133, 128);
 $pink-cmyk: CMYK(0%, 52%, 37%, 0%);
 
+$financial-pink: RGB(243, 229, 214);
+$financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
+
 $deep-financial-pink: rgb(241, 202, 180);
 $deep-financial-pink-cmyk: CMYK(0%, 19%, 22%, 0%);
+$deep-financial-tinted: mix($deep-financial, white, 70%);
+$deep-financial-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-cmyk});
 
 $yellow: rgb(255, 204, 0);
 $yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
@@ -151,6 +156,14 @@ $medium-line-height: 13.6pt;
 &.alf-format-fullpage {
     .theme--kommentar::before {
         bottom: -1.88pt;
+    }
+}
+
+.print-day-saturday .theme-kommentar::before {
+    background-color: $deep-financial-tinted;
+
+    @media print {
+        background-color: $deep-financial-tinted-cmyk;
     }
 }
 
