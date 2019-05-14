@@ -159,11 +159,13 @@ $medium-line-height: 13.6pt;
     }
 }
 
-&.print-day-saturday .theme-kommentar::before {
-    background-color: $deep-financial-pink-tinted;
+&.print-day-saturday {
+    .theme--kommentar::before {
+        background-color: $deep-financial-pink-tinted;
 
-    @media print {
-        background-color: $deep-financial-pink-tinted-cmyk;
+        @media print {
+            background-color: $deep-financial-pink-tinted-cmyk;
+        }
     }
 }
 
