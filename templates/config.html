@@ -133,6 +133,46 @@
 				}
 			}
 		},
+		"grid-gap": {
+			"title": "Grid gaps",
+			"type": "object",
+			"properties": {
+				"--alf-grid-cell-gap-left": {
+					"title": "Left gap",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Normal",
+							"enum": ["normal"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				},
+				"--alf-grid-cell-gap-right": {
+					"title": "Right gap",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Normal",
+							"enum": ["normal"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				}
+			}
+		},
 		"margins": {
 			"title": "Margins",
 			"type": "object",
