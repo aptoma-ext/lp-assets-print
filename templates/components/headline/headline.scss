@@ -176,7 +176,6 @@
 .headline--head-kommentar-a {
 	h1, .contributor {
 		font-family: IvarNostalgiDN-Medium;
-		font-feature-settings: “ss02”;
 		font-size: 44pt;
 		line-height: 0.9682em;
 	}
@@ -185,9 +184,16 @@
 .headline--head-kommentar-b {
 	h1, .contributor {
 		font-family: IvarNostalgiDN-Medium;
-		font-feature-settings: “ss02”;
 		font-size: 35.6pt;
 		line-height: 0.8975em;
+	}
+}
+
+.headline--head-kommentar-c {
+	h1, .contributor {
+		font-family: IvarNostalgiDN-Small;
+		font-size: 26.7t;
+		line-height: 0.9972em;
 	}
 }
 
