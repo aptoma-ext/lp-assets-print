@@ -146,7 +146,6 @@
 
 	h1, .contributor {
 		font-family: IvarNostalgiDN-Medium;
-		font-feature-settings: “ss02”;
 		font-size: 35.6pt;
 		line-height: 0.95506em;
 		letter-spacing: 0;
@@ -182,6 +181,10 @@
 }
 
 .headline--author.headline--head-kommentar-b {
+	.headline--author-wrapper {
+		transform: translateY(3.2pt);
+	}
+
 	h1, .contributor {
 		font-family: IvarNostalgiDN-Medium;
 		font-size: 35.6pt;
