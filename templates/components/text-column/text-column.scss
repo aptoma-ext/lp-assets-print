@@ -77,7 +77,8 @@
 			}
 
 			.word:first-child,
-			.word:nth-child(3) {
+			.word:nth-child(3),
+			.word:nth-child(4) {
 				font-family: IvarText-SemiBold;
 			}
 		}
@@ -154,6 +155,8 @@
 	// How to handle multi-line titles in a good way?
 	h2, h3 {
 		font-family: IvarText-Bold;
+		font-style: normal;
+		font-weight: normal;
 		font-size: 8.9pt;
 		line-height: var(--line-height, $base-line-height);
 		margin-top: 10.65pt;
@@ -163,7 +166,6 @@
 		padding: 0;
 		padding-top: 0;
 		padding-bottom: 0;
-		font-weight: normal;
 
 		span {
 			display: inline;
