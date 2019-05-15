@@ -77,7 +77,8 @@
 			}
 
 			.word:first-child,
-			.word:first-child ~ .word {
+			.word:nth-child(3),
+			.word:nth-child(4) {
 				font-family: IvarText-SemiBold;
 			}
 		}
