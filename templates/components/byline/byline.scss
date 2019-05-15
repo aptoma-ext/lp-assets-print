@@ -16,36 +16,6 @@
 	}
 }
 
-.byline-topic {
-	font-size: 13pt;
-	line-height: $base-line-height * 2;
-	height: $base-line-height * 2;
-	box-sizing: border-box;
-	font-family: var(--topic-font-family);
-	font-weight: normal;
-	color: var(--topic-color);
-	border-style: solid;
-	border-width: 0.25pt 0 0.25pt 0;
-	border-color: #000;
-	border-color: var(--color-black-cmyk);
-	text-transform: uppercase;
-	margin: 0;
-	display: flex;
-	-ro-pdf-overprint: mode1;
-
-	figure {
-		margin: 0;
-		padding: 0.8pt 0 0 0;
-		line-height: $base-line-height * 2;
-		-ro-pdf-overprint: none;
-		-ro-pdf-overprint-content: none;
-	}
-
-	@media print {
-		color: var(--topic-color-cmyk);
-	}
-}
-
 .byline-location-wrapper {
 	transform: translateY(-0.5pt);
 }
