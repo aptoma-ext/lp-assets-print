@@ -113,6 +113,13 @@
 		}
 	}
 
+	&.text-column--lg {
+		.alf-block, p, ul, li {
+			font-size: 10.2pt;
+			line-height: 12.75pt;
+		}
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
