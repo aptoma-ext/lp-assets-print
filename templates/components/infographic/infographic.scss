@@ -1,3 +1,8 @@
+.infographic {
+    --alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+}
+
 .infographic--image-container {
     display: inline-block;
     // the image is "too tall" since ascenders are inside the image, so we shave off a bit at the bottom
