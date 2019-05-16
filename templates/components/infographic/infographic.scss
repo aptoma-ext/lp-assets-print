@@ -12,5 +12,6 @@
         // Use the data-file-url attribute as src when generating PDF
         -ro-replacedelement: image;
         -ro-source: -ro-attr(data-file-url);
+        display: block;
     }
 }
