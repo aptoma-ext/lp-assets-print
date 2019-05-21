@@ -196,15 +196,6 @@ $medium-line-height: 13.6pt;
     }
 }
 
-&.section--etterbørs {
-    .theme--dn {
-        --color-base: #{$purple};
-        --color-base-cmyk: #{$purple-cmyk};
-        --color-base-dark: #{$deep-purple};
-        --color-base-dark-cmyk: #{$deep-purple-cmyk};
-    }
-}
-
 .theme--leder {
     line-height: 12.75pt;
 }
