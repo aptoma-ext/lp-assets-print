@@ -93,7 +93,7 @@
 
 	&[grid-inside=bottom] {
 		display: flex;
-		align-items: end;
+		align-items: flex-end;
 	}
 
 	&.caption--align-left {
