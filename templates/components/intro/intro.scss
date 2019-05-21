@@ -18,6 +18,15 @@
 	p {
 		transform: translateY(-2px);
 	}
+
+	&[grid-inside] {
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: baseline;
+
+		h1 {
+			margin: 0 17px 10.3pt 16.4pt;
+		}
+	}
 }
 
 .intro--border {
