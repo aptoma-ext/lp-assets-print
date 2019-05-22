@@ -30,15 +30,11 @@
 }
 
 .picture--fill {
-	> div {
-		display: flex;
-		height: 100%;
-		flex-direction: column;
+	--alf-grid-cell-gap-left: none;
+	--alf-grid-cell-gap-right: none;
 
-		img, canvas {
-			flex: 1;
-			object-fit: cover;
-		}
+	.image {
+		margin-top: $base-line-height * -1;
 	}
 }
 
