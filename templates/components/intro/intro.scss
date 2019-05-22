@@ -26,7 +26,11 @@
 	}
 }
 
-.intro--border {
+.intro--border::after {
+	content: '';
+	display: block;
+	height: 3mm;
+
 	border-width: 0 0 0.25pt 0;
 	border-style: solid;
 	border-color: #000;
