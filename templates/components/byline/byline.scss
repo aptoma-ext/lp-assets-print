@@ -4,6 +4,10 @@
 	* {
 		-ro-pdf-overprint-content: mode1;
 	}
+
+	.byline-topic {
+		display: none;
+	}
 }
 
 .byline--multi {
@@ -101,5 +105,41 @@
 .alf-colspan-1, .alf-colspan-2 {
 	.byline-author, .byline-location {
 		display: block;
+	}
+}
+
+.byline-type--innlegg {
+	.byline-topic {
+		display: inline-block;
+		font-family: SharpGroteskMedium22;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 11.5pt;
+		line-height: 16pt;
+		letter-spacing: 0.025em;
+		color: var(--color-base-dark);
+
+		@media print {
+			color: var(--color-base-dark-cmyk);
+		}
+	}
+
+	.byline-author {
+		display: inline-block;
+		font-family: SharpGroteskBook22;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 11.5pt;
+		line-height: 16pt;
+		letter-spacing: 0.025em;
+		color: var(--color-black);
+
+		@media print {
+			color: var(--color-black-cmyk);
+		}
+	}
+
+	.byline-location {
+		display: none;
 	}
 }
