@@ -4,10 +4,6 @@
 	* {
 		-ro-pdf-overprint-content: mode1;
 	}
-
-	.byline-topic {
-		display: none;
-	}
 }
 
 .byline--multi {
@@ -20,7 +16,7 @@
 	}
 }
 
-.byline-location-wrapper {
+.byline-wrapper {
 	transform: translateY(-0.5pt);
 }
 
@@ -109,8 +105,8 @@
 }
 
 .byline-type--innlegg {
-	.byline-location-wrapper {
-		transform: translateY(-1.1pt);
+	.byline-wrapper {
+		transform: translateY(-1pt);
 	}
 
 	.byline-topic {
@@ -121,7 +117,7 @@
 		font-size: 11.5pt;
 		line-height: 16pt;
 		letter-spacing: 0.025em;
-		margin-right: 3.5pt;
+		margin-right: 3.4pt;
 		color: var(--color-base-dark);
 
 		@media print {
@@ -142,9 +138,5 @@
 		@media print {
 			color: var(--color-black-cmyk);
 		}
-	}
-
-	.byline-location {
-		display: none;
 	}
 }
