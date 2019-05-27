@@ -7,7 +7,7 @@
 	letter-spacing: 0.003em;
 	-ro-pdf-overprint: mode1;
 	-ro-pdf-overprint-content: mode1;
-	--alf-grid-align-top: baseline;
+	--alf-grid-align-top: top;
 	--alf-grid-align-bottom: baseline;
 	margin-bottom: $grid-line-offset;
 
@@ -21,6 +21,7 @@
 	}
 
 	&[grid-inside] {
+		--alf-grid-align-top: baseline;
 		margin: 0 16.4pt 16.4pt;
 	}
 }
