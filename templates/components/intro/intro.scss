@@ -83,3 +83,19 @@
 	word-spacing: 0;
 	letter-spacing: 0;
 }
+
+.intro-shadow--dark-weak {
+    text-shadow: 0px 0px 10px #000;
+}
+
+.intro-shadow--dark-strong {
+    text-shadow: 0px 0px 25px #000;
+}
+
+.intro-shadow--light-weak {
+    text-shadow: 0px 0px 10px #FFF;
+}
+
+.intro-shadow--light-strong {
+    text-shadow: 0px 0px 25px #FFF;
+}

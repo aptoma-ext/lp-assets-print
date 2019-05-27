@@ -82,39 +82,6 @@
 				}
 			}
 		},
-		"text-shadow": {
-			"title": "Text shadow",
-			"type": "object",
-			"properties": {
-				".shadow--{type}": {
-					"title": "Color/strength",
-					"type": "string",
-					"uniqueItems": true,
-					"anyOf": [
-						{
-							"type": "string",
-							"title": "Dark/weak",
-							"enum": ["dark-weak"]
-						},
-						{
-							"type": "string",
-							"title": "Dark/strong",
-							"enum": ["dark-strong"]
-						},
-						{
-							"type": "string",
-							"title": "Light/weak",
-							"enum": ["light-weak"]
-						},
-						{
-							"type": "string",
-							"title": "Light/strong",
-							"enum": ["light-strong"]
-						}
-					]
-				}
-			}
-		},
 		".text-column--lg": {
 			"title": "Larger text",
 			"type": "boolean"
@@ -361,6 +328,33 @@
 							"enum": ["meninger"]
 						}
 					]
+				},
+				".intro-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
 				}
 			}
 		},
@@ -490,6 +484,33 @@
 							"enum": ["leder-hverdag"]
 						}
 					]
+				},
+				".headline-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
 				}
 			}
 		},
@@ -594,6 +615,33 @@
 							"type": "string",
 							"title": "Black",
 							"enum": ["black"]
+						}
+					]
+				},
+				".caption-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
 						}
 					]
 				}
