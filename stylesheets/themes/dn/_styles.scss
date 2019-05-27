@@ -162,6 +162,13 @@ $medium-line-height: 13.6pt;
     }
 }
 
+.theme--leder {
+    --color-base: #{$deep-purple};
+    --color-base-cmyk: #{$deep-purple-cmyk};
+    --color-base-dark: #{$deep-purple};
+    --color-base-dark-cmyk: #{$deep-purple-cmyk};
+}
+
 &.print-day-saturday {
     .theme--kommentar {
         &::before {
