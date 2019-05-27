@@ -167,6 +167,10 @@ $medium-line-height: 13.6pt;
     --color-base-cmyk: #{$deep-purple-cmyk};
     --color-base-dark: #{$deep-purple};
     --color-base-dark-cmyk: #{$deep-purple-cmyk};
+
+    --text-column-circle-font-family: SharpGroteskBook19;
+    --text-column-circle-font-size: 11.3pt;
+    --text-column-circle-top: 0.2pt;
 }
 
 &.print-day-saturday {

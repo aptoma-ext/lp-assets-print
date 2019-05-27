@@ -63,11 +63,11 @@
 			&::before {
 				content: '\25cf';
 				display: inline-block;
-				font-family: Arial;
-				font-size: 16pt;
+				font-family: var(--text-column-circle-font-family, Arial);
+				font-size: var(--text-column-circle-font-size, 16pt);
 				line-height: 0;
 				position: relative;
-				top: 1.4pt;
+				top: var(--text-column-circle-top, 1.4pt);
 				margin-left: -1px;
 				color: var(--color-base);
 
