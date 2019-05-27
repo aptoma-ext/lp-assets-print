@@ -54,7 +54,34 @@
 			}
 		}
 	},
+
 	"componentOptions": {
+		"heights": {
+			"title": "Height",
+			"type": "object",
+			"properties": {
+				".u-height--{type}": {
+					"title": "Preset height",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "63mm",
+							"enum": ["63mm"]
+						}
+					]
+				},
+				".u-height--custom-mm": {
+					"title": "Custom height enabled",
+					"type": "boolean"
+				},
+				"--height": {
+					"title": "Custom height value (mm)",
+					"type": "number"
+				}
+			}
+		},
 		"text-shadow": {
 			"title": "Text shadow",
 			"type": "object",

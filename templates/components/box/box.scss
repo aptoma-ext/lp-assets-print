@@ -1,3 +1,7 @@
 .box {
     background: #CCC;
+
+    @media print {
+        background: transparent;
+    }
 }
