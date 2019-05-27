@@ -699,6 +699,39 @@
 					]
 				}
 			}
+		},
+		"text-shadow": {
+			"title": "Text shadow",
+			"type": "object",
+			"properties": {
+				".shadow--{type}": {
+					"title": "Color/strength",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
+				}
+			}
 		}
 	}
 }
