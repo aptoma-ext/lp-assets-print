@@ -1,15 +1,16 @@
 .portrait {
-    --alf-grid-align-top: top;
-    --alf-grid-align-bottom: baseline;
+	--alf-grid-align-top: top;
+	--alf-grid-align-bottom: baseline;
 
-    .image {
-        img, canvas {
-            width: 17mm;
-            height: 15mm;
-            object-fit: cover;
-            --alf-image-crop-mode: tight;
-        }
-    }
+	.image {
+		img, canvas {
+			width: 17mm;
+			height: 15mm;
+			object-fit: cover;
+			display: block;
+			--alf-image-crop-mode: tight;
+		}
+	}
 
 	figcaption, .figcaption {
 		-ro-pdf-overprint: none;
@@ -19,7 +20,7 @@
 		font-size: 7.9pt;
 		line-height: $base-line-height;
 		padding: 0;
-		transform: translateY(4px);
+		transform: translateY(2.3pt);
 
 		.figcaption-inner:before {
 			content: '↑';
