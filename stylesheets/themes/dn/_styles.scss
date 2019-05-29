@@ -102,7 +102,7 @@ $medium-line-height: 13.6pt;
     --color-deep-financial-pink-tinted-cmyk: #{$deep-financial-pink-tinted-cmyk};
     --color-deep-financial-pink-tinted-weekend-cmyk: #{$deep-financial-pink-tinted-weekend-cmyk};
 
-    --color-base: --color-blue;
+    --color-base: var(--color-blue);
     --color-base-cmyk: #{$blue-cmyk};
     --color-base-bright: #{$bright-blue};
     --color-base-bright-cmyk: #{$bright-blue-cmyk};
@@ -117,17 +117,17 @@ $medium-line-height: 13.6pt;
 }
 
 &.print-day-saturday {
-    --color-blue-cmyk: --color-blue-weekend-cmyk;
-    --color-bright-blue-cmyk: --color-bright-blue-weekend-cmyk;
-    --color-bright-blue-tinted-cmyk: --color-bright-blue-tinted-weekend-cmyk;
-    --color-deep-blue-cmyk: --color-deep-blue-weekend-cmyk;
-    --color-purple-cmyk: --color-purple-weekend-cmyk;
-    --color-bright-purple-cmyk: --color-bright-purple-weekend-cmyk;
-    --color-deep-purple-cmyk: --color-deep-purple-weekend-cmyk;
-    --color-pink-cmyk: --color-pink-weekend-cmyk;
-    --color-financial-pink-cmyk: --color-financial-pink-weekend-cmyk;
-    --color-deep-financial-pink-cmyk: --color-deep-financial-pink-weekend-cmyk;
-    --color-deep-financial-pink-tinted-cmyk: --color-deep-financial-pink-tinted-weekend-cmyk;
+    --color-blue-cmyk: var(--color-blue-weekend-cmyk);
+    --color-bright-blue-cmyk: var(--color-bright-blue-weekend-cmyk);
+    --color-bright-blue-tinted-cmyk: var(--color-bright-blue-tinted-weekend-cmyk);
+    --color-deep-blue-cmyk: var(--color-deep-blue-weekend-cmyk);
+    --color-purple-cmyk: var(--color-purple-weekend-cmyk);
+    --color-bright-purple-cmyk: var(--color-bright-purple-weekend-cmyk);
+    --color-deep-purple-cmyk: var(--color-deep-purple-weekend-cmyk);
+    --color-pink-cmyk: var(--color-pink-weekend-cmyk);
+    --color-financial-pink-cmyk: var(--color-financial-pink-weekend-cmyk);
+    --color-deep-financial-pink-cmyk: var(--color-deep-financial-pink-weekend-cmyk);
+    --color-deep-financial-pink-tinted-cmyk: var(--color-deep-financial-pink-tinted-weekend-cmyk);
 }
 
 .theme--dn {
