@@ -9,34 +9,45 @@ $warm-grey-cmyk: CMYK(21%, 16%, 20%, 65%);
 
 $blue: rgb(57, 149, 210);
 $blue-cmyk: CMYK(97%, 18%, 0%, 0%);
+$blue-weekend-cmyk: CMYK(93%, 20%, 0%, 0%);
 
 $bright-blue: rgb(213, 230, 246);
 $bright-blue-cmyk: CMYK(16%, 3%, 0%, 0%);
+$bright-blue-weekend-cmyk: CMYK(15%,4%, 0%, 0%);
 $bright-blue-tinted: mix($bright-blue, white, 70%);
 $bright-blue-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$bright-blue-cmyk});
+$bright-blue-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$bright-blue-weekend-cmyk});
 
-$dark-blue: rgb(59, 105, 166);
-$dark-blue-cmyk: CMYK(95%, 45%, 0%, 10%);
+$deep-blue: rgb(59, 105, 166);
+$deep-blue-cmyk: CMYK(95%, 45%, 0%, 10%);
+$deep-blue-weekend-cmyk: CMYK(100%, 60%, 0%, 23%);
 
 $purple: rgb(188, 97, 147);
 $purple-cmyk: CMYK(0, 68%, 0%, 13%);
+$purple-weekend-cmyk: CMYK(0, 80%, 0%, 15%);
 
 $bright-purple: rgb(246, 224, 231);
 $bright-purple-cmyk: CMYK(0, 12%, 3%, 0%);
+$bright-purple-weekend-cmyk: CMYK(0, 14%, 0%, 2%);
 
 $deep-purple: rgb(130, 27, 86);
 $deep-purple-cmyk: CMYK(0%, 100%, 0%, 40%);
+$deep-purple-weekend-cmyk: CMYK(0%, 100%, 0%, 50%);
 
 $pink: rgb(222, 133, 128);
 $pink-cmyk: CMYK(0%, 52%, 37%, 0%);
+$pink-weekend-cmyk: CMYK(0%, 65%, 50%, 0%);
 
 $financial-pink: rgb(243, 229, 214);
 $financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
+$financial-pink-weekend-cmyk: CMYK(0%, 11%, 15%, 0%);
 
 $deep-financial-pink: rgb(241, 202, 180);
 $deep-financial-pink-cmyk: CMYK(0%, 19%, 22%, 0%);
+$deep-financial-pink-weekend-cmyk: CMYK(0%, 29%, 32%, 0%);
 $deep-financial-pink-tinted: mix($deep-financial-pink, white, 70%);
 $deep-financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-pink-cmyk});
+$deep-financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-pink-weekend-cmyk});
 
 $yellow: rgb(255, 204, 0);
 $yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
@@ -54,20 +65,69 @@ $medium-line-height: 13.6pt;
 
 & {
     --font-size-body: 8.4pt;
+
     --color-black: #{$black};
     --color-black-cmyk: #{$black-cmyk};
-    --color-base: #{$blue};
+    --color-blue: #{$blue};
+    --color-blue-cmyk: #{$blue-cmyk};
+    --color-blue-weekend-cmyk: #{$blue-weekend-cmyk};
+    --color-bright-blue: #{$bright-blue};
+    --color-bright-blue-cmyk: #{$bright-blue-cmyk};
+    --color-bright-blue-weekend-cmyk: #{$bright-blue-weekend-cmyk};
+    --color-bright-blue-tinted: #{$bright-blue-tinted};
+    --color-bright-blue-tinted-cmyk: #{$bright-blue-tinted-cmyk};
+    --color-bright-blue-tinted-weekend-cmyk: #{$bright-blue-tinted-weekend-cmyk};
+    --color-deep-blue: #{$deep-blue};
+    --color-deep-blue-cmyk: #{$deep-blue-cmyk};
+    --color-deep-blue-weekend-cmyk: #{$deep-blue-weekend-cmyk};
+    --color-purple: #{$purple};
+    --color-purple-cmyk: #{$purple-cmyk};
+    --color-purple-weekend-cmyk: #{$purple-weekend-cmyk};
+    --color-bright-purple: #{$bright-purple};
+    --color-bright-purple-cmyk: #{$bright-purple-cmyk};
+    --color-bright-purple-weekend-cmyk: #{$bright-purple-weekend-cmyk};
+    --color-deep-purple: #{$deep-purple};
+    --color-deep-purple-cmyk: #{$deep-purple-cmyk};
+    --color-deep-purple-weekend-cmyk: #{$deep-purple-weekend-cmyk};
+    --color-pink: #{$pink};
+    --color-pink-cmyk: #{$pink-cmyk};
+    --color-pink-weekend-cmyk: #{$pink-weekend-cmyk};
+    --color-financial-pink: #{$financial-pink};
+    --color-financial-pink-cmyk: #{$financial-pink-cmyk};
+    --color-financial-pink-weekend-cmyk: #{$financial-pink-weekend-cmyk};
+    --color-deep-financial-pink: #{$deep-financial-pink};
+    --color-deep-financial-pink-cmyk: #{$deep-financial-pink-cmyk};
+    --color-deep-financial-pink-weekend-cmyk: #{$deep-financial-pink-weekend-cmyk};
+    --color-deep-financial-pink-tinted: #{$deep-financial-pink-tinted};
+    --color-deep-financial-pink-tinted-cmyk: #{$deep-financial-pink-tinted-cmyk};
+    --color-deep-financial-pink-tinted-weekend-cmyk: #{$deep-financial-pink-tinted-weekend-cmyk};
+
+    --color-base: --color-blue;
     --color-base-cmyk: #{$blue-cmyk};
     --color-base-bright: #{$bright-blue};
     --color-base-bright-cmyk: #{$bright-blue-cmyk};
     --color-base-bright-tinted: #{$bright-blue-tinted};
     --color-base-bright-tinted-cmyk: #{$bright-blue-tinted-cmyk};
-    --color-base-dark: #{$dark-blue};
-    --color-base-dark-cmyk: #{$dark-blue-cmyk};
+    --color-base-dark: #{$deep-blue};
+    --color-base-dark-cmyk: #{$deep-blue-cmyk};
     --background-color: #FFF;
     --background-color-cmyk: transparent;
     --color-warm-grey: #{$warm-grey};
     --color-warm-grey-cmyk: #{$warm-grey-cmyk};
+}
+
+&.print-day-saturday {
+    --color-blue-cmyk: --color-blue-weekend-cmyk;
+    --color-bright-blue-cmyk: --color-bright-blue-weekend-cmyk;
+    --color-bright-blue-tinted-cmyk: --color-bright-blue-tinted-weekend-cmyk;
+    --color-deep-blue-cmyk: --color-deep-blue-weekend-cmyk;
+    --color-purple-cmyk: --color-purple-weekend-cmyk;
+    --color-bright-purple-cmyk: --color-bright-purple-weekend-cmyk;
+    --color-deep-purple-cmyk: --color-deep-purple-weekend-cmyk;
+    --color-pink-cmyk: --color-pink-weekend-cmyk;
+    --color-financial-pink-cmyk: --color-financial-pink-weekend-cmyk;
+    --color-deep-financial-pink-cmyk: --color-deep-financial-pink-weekend-cmyk;
+    --color-deep-financial-pink-tinted-cmyk: --color-deep-financial-pink-tinted-weekend-cmyk;
 }
 
 .theme--dn {
@@ -127,10 +187,10 @@ $medium-line-height: 13.6pt;
     &::before {
         right: 0;
         left: 21mm;
-        background-color: $bright-blue-tinted;
+        background-color: var(--color-bright-blue-tinted);
 
         @media print {
-            background-color: $bright-blue-tinted-cmyk;
+            background-color: var(--color-bright-blue-tinted-cmyk);
         }
     }
 
@@ -140,10 +200,10 @@ $medium-line-height: 13.6pt;
         border-width: 0 0 0 0.3pt;
         border-color: var(--color-black);
         border-style: solid;
-        background-color: $bright-blue;
+        background-color: var(--color-bright-blue);
 
         @media print {
-            background-color: $bright-blue-cmyk;
+            background-color: var(--color-bright-blue-cmyk);
             border-color: var(--color-black-cmyk)
         }
     }
@@ -176,18 +236,18 @@ $medium-line-height: 13.6pt;
 &.print-day-saturday {
     .theme--kommentar {
         &::before {
-            background-color: $deep-financial-pink-tinted;
+            background-color: var(--color-deep-financial-pink-tinted);
 
             @media print {
-                background-color: $deep-financial-pink-tinted-cmyk;
+                background-color: var(--color-deep-financial-pink-tinted-cmyk);
             }
         }
 
         &::after {
-            background-color: $deep-financial-pink;
+            background-color: var(--color-deep-financial-pink);
 
             @media print {
-                background-color: $deep-financial-pink-cmyk;
+                background-color: var(--color-deep-financial-pink-cmyk);
             }
         }
     }
