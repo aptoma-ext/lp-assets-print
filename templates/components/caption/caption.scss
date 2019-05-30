@@ -12,6 +12,14 @@
 		padding: 0;
 		transform: translateY(2.7pt);
 
+		.figcaption-inner::before {
+			content: '↑';
+			display: inline-block;
+			font-size: 7.9pt;
+			font-family: SharpGroteskBook17;
+			margin-right: 2pt;
+		}
+
 		* {
 			-ro-pdf-overprint: mode1;
 		}
@@ -19,14 +27,6 @@
 		.description {
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
-
-			&::before {
-				content: '↑';
-				display: inline-block;
-				font-size: 7.9pt;
-				font-family: SharpGroteskBook17;
-				margin-right: 2pt;
-			}
 
 			p {
 				display: inline;
@@ -44,19 +44,19 @@
 	}
 
 	&.caption--arrow-right {
-		.description::before {
+		.figcaption-inner::before {
 			content: '→';
 		}
 	}
 
 	&.caption--arrow-left {
-		.description::before {
+		.figcaption-inner::before {
 			content: '←';
 		}
 	}
 
 	&.caption--arrow-up {
-		.description::before {
+		.figcaption-inner::before {
 			content: '↑';
 		}
 	}
@@ -71,7 +71,7 @@
 			transform: translateY(0);
 			padding: 4mm;
 
-			.description::before {
+			.figcaption-inner::before {
 				content: '';
 				display: none;
 			}
