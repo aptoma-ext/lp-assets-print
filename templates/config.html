@@ -180,6 +180,34 @@
 				}
 			}
 		},
+		"padding": {
+			"title": "Padding",
+			"type": "object",
+			"properties": {
+				".u-padding-{padding}": {
+					"title": "Above",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "4mm left & right",
+							"enum": ["sides-4mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm right",
+							"enum": ["right-4mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm left",
+							"enum": ["left-4mm"]
+						}
+					]
+				}
+			}
+		},
 		"margins": {
 			"title": "Margins",
 			"type": "object",
