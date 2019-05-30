@@ -12,12 +12,18 @@
 		padding: 0;
 		transform: translateY(2.7pt);
 
-		.figcaption-inner::before {
-			content: '↑';
-			display: inline-block;
-			font-size: 7.9pt;
-			font-family: SharpGroteskBook17;
-			margin-right: 2pt;
+		.figcaption-inner {
+			> div {
+				display: inline;
+			}
+
+			&::before {
+				content: '↑';
+				display: inline-block;
+				font-size: 7.9pt;
+				font-family: SharpGroteskBook17;
+				margin-right: 2pt;
+			}
 		}
 
 		* {
