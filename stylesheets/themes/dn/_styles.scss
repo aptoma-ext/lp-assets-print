@@ -41,6 +41,7 @@ $pink-weekend-cmyk: CMYK(0%, 65%, 50%, 0%);
 $financial-pink: rgb(243, 229, 214);
 $financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
 $financial-pink-weekend-cmyk: CMYK(0%, 11%, 15%, 0%);
+$financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$financial-pink-weekend-cmyk});
 
 $deep-financial-pink: rgb(241, 202, 180);
 $deep-financial-pink-cmyk: CMYK(0%, 19%, 22%, 0%);
@@ -236,10 +237,10 @@ $medium-line-height: 13.6pt;
 &.print-day-saturday {
     .theme--kommentar {
         &::before {
-            background-color: var(--color-deep-financial-pink-tinted);
+            background-color: var(--color-financial-pink-tinted);
 
             @media print {
-                background-color: var(--color-deep-financial-pink-tinted-cmyk);
+                background-color: var(--color-financial-pink-tinted-cmyk);
             }
         }
 
