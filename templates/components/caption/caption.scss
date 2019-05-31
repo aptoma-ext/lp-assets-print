@@ -42,6 +42,10 @@
 		.credit {
 			display: inline;
 
+			p {
+				text-indent: 0;
+			}
+
 			div {
 				-ro-pdf-overprint: mode1;
 				-ro-pdf-overprint-content: mode1;
