@@ -583,6 +583,33 @@
 				".picture--fill": {
 					"title": "Expand/fill",
 					"type": "boolean"
+				},
+				".picture-crop-mode---{type}": {
+					"title": "Crop mode",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Safe",
+							"enum": ["safe"]
+						},
+						{
+							"type": "string",
+							"title": "Tight",
+							"enum": ["tight"]
+						},
+						{
+							"type": "string",
+							"title": "Focus point",
+							"enum": ["focus-point"]
+						},
+						{
+							"type": "string",
+							"title": "Tight focus point",
+							"enum": ["tight-focus-point"]
+						}
+					]
 				}
 			}
 		},
