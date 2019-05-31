@@ -101,18 +101,26 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 	}
 }
 
-.picture-crop-mode--safe img {
-	--alf-image-crop-mode: safe;
+.picture-crop-mode--safe {
+	img, .alf-image {
+		--alf-image-crop-mode: safe;
+	}
 }
 
-.picture-crop-mode--tight img {
-	--alf-image-crop-mode: tight;
+.picture-crop-mode--tight {
+	img, .alf-image {
+		--alf-image-crop-mode: tight;
+	}
 }
 
-.picture-crop-mode--focus-point img {
-	--alf-image-crop-mode: focus-point;
+.picture-crop-mode--focus-point {
+	img, .alf-image {
+		--alf-image-crop-mode: focus-point;
+	}
 }
 
-.picture-crop-mode--tight-focus-point img {
-	--alf-image-crop-mode: tight-focus-point;
+.picture-crop-mode--tight-focus-point {
+	img, .alf-image {
+		--alf-image-crop-mode: tight-focus-point;
+	}
 }
