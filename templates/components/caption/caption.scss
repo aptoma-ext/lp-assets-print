@@ -24,32 +24,14 @@
 
 		.figcaption-inner {
 			text-indent: 8.2pt;
-		}
-
-		* {
-			-ro-pdf-overprint: mode1;
-		}
-
-		.description {
-			-ro-pdf-overprint: mode1;
-			-ro-pdf-overprint-content: mode1;
 
 			p {
 				display: inline;
 			}
 		}
 
-		.credit {
-			display: inline;
-
-			p {
-				text-indent: 0;
-			}
-
-			div {
-				-ro-pdf-overprint: mode1;
-				-ro-pdf-overprint-content: mode1;
-			}
+		* {
+			-ro-pdf-overprint: mode1;
 		}
 	}
 
@@ -99,7 +81,7 @@
 			color: CMYK(0%, 0%, 0%, 0%);
 		}
 
-		p, .credit {
+		p {
 			color: #FFF;
 
 			@media print {
