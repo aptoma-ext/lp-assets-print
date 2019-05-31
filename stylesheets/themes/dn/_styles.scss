@@ -250,10 +250,10 @@ $medium-line-height: 13.6pt;
         }
 
         &::after {
-            background-color: var(--color-deep-financial-pink);
+            background-color: var(--color-financial-pink);
 
             @media print {
-                background-color: var(--color-deep-financial-pink-cmyk);
+                background-color: var(--color-financial-pink-cmyk);
             }
         }
     }
