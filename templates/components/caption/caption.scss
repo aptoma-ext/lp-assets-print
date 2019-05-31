@@ -12,18 +12,11 @@
 		padding: 0;
 		transform: translateY(2.7pt);
 
-		&::before {
+		.figcaption-inner:before {
 			content: '↑';
 			display: inline-block;
 			font-size: 7.9pt;
 			font-family: SharpGroteskBook17;
-			margin-right: 2pt;
-			position: absolute;
-			top: 0.4pt;
-		}
-
-		.figcaption-inner {
-			text-indent: 8.2pt;
 		}
 
 		* {
@@ -31,7 +24,6 @@
 		}
 
 		.description {
-			display: inline;
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
 
@@ -41,8 +33,6 @@
 		}
 
 		.credit {
-			display: inline;
-
 			div {
 				-ro-pdf-overprint: mode1;
 				-ro-pdf-overprint-content: mode1;
@@ -51,19 +41,19 @@
 	}
 
 	&.caption--arrow-right {
-		figcaption::before {
+		.figcaption-inner:before {
 			content: '→';
 		}
 	}
 
 	&.caption--arrow-left {
-		figcaption::before {
+		.figcaption-inner:before {
 			content: '←';
 		}
 	}
 
 	&.caption--arrow-up {
-		figcaption::before {
+		.figcaption-inner:before {
 			content: '↑';
 		}
 	}
@@ -78,13 +68,9 @@
 			transform: translateY(0);
 			padding: 4mm;
 
-			&::before {
+			.figcaption-inner:before {
 				content: '';
 				display: none;
-			}
-
-			.figcaption-inner {
-				text-indent: 0;
 			}
 		}
 	}
