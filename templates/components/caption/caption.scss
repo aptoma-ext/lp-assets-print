@@ -2,6 +2,16 @@
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
 
+	&::before {
+		content: '↑';
+		display: inline-block;
+		font-size: 7.9pt;
+		font-family: SharpGroteskBook17;
+		margin-right: 2pt;
+		position: absolute;
+		top: 1pt;
+	}
+
 	figcaption, .figcaption {
 		-ro-pdf-overprint: none;
 		background-color: transparent;
@@ -11,46 +21,20 @@
 		line-height: $base-line-height;
 		padding: 0;
 		transform: translateY(2.7pt);
-
-		&::before {
-			content: '↑';
-			display: inline-block;
-			font-size: 7.9pt;
-			font-family: SharpGroteskBook17;
-			margin-right: 2pt;
-			position: absolute;
-			top: 1pt;
-		}
-
-		.figcaption-inner {
-			text-indent: 8.2pt;
-
-			p {
-				display: inline;
-			}
-		}
-
-		* {
-			-ro-pdf-overprint: mode1;
-		}
+		text-indent: 8.2pt;
+		-ro-pdf-overprint: mode1;
 	}
 
-	&.caption--arrow-right {
-		figcaption::before {
-			content: '→';
-		}
+	&.caption--arrow-right::before {
+		content: '→';
 	}
 
-	&.caption--arrow-left {
-		figcaption::before {
-			content: '←';
-		}
+	&.caption--arrow-left::before {
+		content: '←';
 	}
 
-	&.caption--arrow-up {
-		figcaption::before {
-			content: '↑';
-		}
+	&.caption--arrow-up::before {
+		content: '↑';
 	}
 
 	&[grid-inside] {
@@ -58,19 +42,16 @@
 		--alf-grid-align-bottom: baseline;
 		margin: 0;
 
+		&::before {
+			content: '';
+			display: none;
+		}
+
 		figcaption, .figcaption {
 			box-sizing: border-box;
 			transform: translateY(0);
 			padding: 4mm;
-
-			&::before {
-				content: '';
-				display: none;
-			}
-
-			.figcaption-inner {
-				text-indent: 0pt;
-			}
+			text-indent: 0pt;
 		}
 	}
 
