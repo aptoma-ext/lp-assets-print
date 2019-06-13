@@ -25,16 +25,36 @@ div.caption {
 		-ro-pdf-overprint: mode1;
 	}
 
+	&.caption--arrow-up::before {
+		content: '↑';
+	}
+
+	&.caption--arrow-ne::before {
+		content: '↗';
+	}
+
 	&.caption--arrow-right::before {
 		content: '→';
+	}
+
+	&.caption--arrow-se::before {
+		content: '↘';
+	}
+
+	&.caption--arrow-down::before {
+		content: '↓';
+	}
+
+	&.caption--arrow-sw::before {
+		content: '↙';
 	}
 
 	&.caption--arrow-left::before {
 		content: '←';
 	}
 
-	&.caption--arrow-up::before {
-		content: '↑';
+	&.caption--arrow-nw::before {
+		content: '↖';
 	}
 
 	&[grid-inside] {
