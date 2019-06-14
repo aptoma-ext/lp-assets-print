@@ -199,35 +199,37 @@
 		}
 	}
 
-	.answer, .question {
-		.row-first {
-			text-indent: 0;
+	.alf-block:not(.alf-is-overflow) {
+		.answer, .question {
+			.row-first {
+				text-indent: 0;
 
-			&::before {
-				content: '→';
-				font-family: SharpGroteskSmBold20;
-				font-size: 10pt;
-				display: inline-block;
-				line-height: var(--line-height, $base-line-height);
-				position: relative;
-				top: 0.7pt;
-				margin-left: -1px;
-				margin-right: 5.7pt;
-				color: var(--color-black);
+				&::before {
+					content: '→';
+					font-family: SharpGroteskSmBold20;
+					font-size: 10pt;
+					display: inline-block;
+					line-height: var(--line-height, $base-line-height);
+					position: relative;
+					top: 0.7pt;
+					margin-left: -1px;
+					margin-right: 5.7pt;
+					color: var(--color-black);
 
-				@media print {
-					color: var(--color-black-cmyk);
+					@media print {
+						color: var(--color-black-cmyk);
+					}
 				}
 			}
 		}
-	}
 
-	.answer {
-		.row-first::before {
-			color: var(--color-deep-purple);
+		.answer {
+			.row-first::before {
+				color: var(--color-deep-purple);
 
-			@media print {
-				color: var(--color-deep-purple-cmyk);
+				@media print {
+					color: var(--color-deep-purple-cmyk);
+				}
 			}
 		}
 	}
