@@ -198,6 +198,37 @@
 			color: var(--color-black-cmyk);
 		}
 	}
+
+	.answer, .question {
+		.row-first {
+			text-indent: 0;
+
+			&::before {
+				content: '→';
+				font-family: SharpGroteskSmBold20;
+				font-size: 10pt;
+				display: inline-block;
+				line-height: var(--line-height, $base-line-height);
+				position: relative;
+				margin-left: -1px;
+				color: var(--color-black);
+
+				@media print {
+					color: var(--color-black-cmyk);
+				}
+			}
+		}
+	}
+
+	.answer {
+		.row-first::before {
+			color: var(--color-deep-purple);
+
+			@media print {
+				color: var(--color-deep-purple-cmyk);
+			}
+		}
+	}
 }
 
 .text-column--portrait {
