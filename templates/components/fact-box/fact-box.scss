@@ -23,9 +23,15 @@
 	}
 }
 
-.fact-box--no-border {
+.fact-box--nattbordet {
 	&::before {
 		display: none;
+	}
+
+	margin-left: -12pt;
+
+	.fact-box-body-container {
+		width: calc(100% + 12pt);
 	}
 }
 
