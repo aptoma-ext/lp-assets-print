@@ -23,6 +23,12 @@
 	}
 }
 
+.fact-box--no-border {
+	&::before {
+		display: none;
+	}
+}
+
 .fact-box-header {
 	font-family: SharpGroteskSmBold20;
 	font-weight: normal;
