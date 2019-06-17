@@ -235,6 +235,11 @@
 			letter-spacing: 0;
 			margin: 0 0 $base-line-height 0;
 			transform: translateY(0);
+
+			span {
+				display: block;
+				transform: translateY(-1.8pt);
+			}
 		}
 
 		.alf-block + h3 {
