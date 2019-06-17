@@ -236,12 +236,23 @@
 			margin: 0;
 			height: auto;
 			transform: translateY(0);
-			display: inline-block;
 
 			span {
 				display: block;
 				transform: translateY(-1.8pt);
 				margin-bottom: -5pt;
+			}
+
+			&.alf-lines-2 {
+				height: $base-line-height * 1;
+			}
+
+			&.alf-lines-4 {
+				height: $base-line-height * 3;
+			}
+
+			&.alf-lines-6 {
+				height: $base-line-height * 5;
 			}
 		}
 
