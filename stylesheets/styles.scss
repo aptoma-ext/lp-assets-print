@@ -14,6 +14,9 @@
 	orphans: 1;
 	--alf-image-ppi: 240;
 	-ro-image-resampling: 240;
+	--alf-hyphens-language: nb-no;
+	--alf-hyphens-after-first: 3;
+	--alf-hyphens-before-last: 3;
 
 	@media print {
 		color: var(--color-black-cmyk);

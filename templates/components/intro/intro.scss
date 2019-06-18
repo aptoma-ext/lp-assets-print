@@ -7,9 +7,11 @@
 	letter-spacing: 0.003em;
 	-ro-pdf-overprint: mode1;
 	-ro-pdf-overprint-content: mode1;
+	margin-bottom: $grid-line-offset;
 	--alf-grid-align-top: top;
 	--alf-grid-align-bottom: baseline;
-	margin-bottom: $grid-line-offset;
+	--alf-hyphens-after-first: 5;
+	--alf-hyphens-before-last: 5;
 
 	* {
 		-ro-pdf-overprint: mode1;
