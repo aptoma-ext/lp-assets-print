@@ -4,4 +4,12 @@
     @media print {
         background: transparent;
     }
+
+    &.box--white {
+        background: #FFFFFF;
+
+        @media print {
+            background: CMYK(0%, 0%, 0%, 0%);
+        }
+    }
 }

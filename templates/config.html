@@ -208,6 +208,24 @@
 				}
 			}
 		},
+		"box": {
+			"title": "Box",
+			"type": "object",
+			"properties": {
+				".box-{color}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						}
+					]
+				}
+			}
+		},
 		"margins": {
 			"title": "Margins",
 			"type": "object",
