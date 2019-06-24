@@ -90,12 +90,6 @@
 		}
 	}
 
-	.alf-is-overflow {
-		p {
-			margin-bottom: 0 !important;
-		}
-	}
-
 	.alf-block, p, ul, ol, li {
 		font-family: IvarText-Regular;
 		font-weight: normal;
@@ -215,6 +209,16 @@
 				@media print {
 					color: var(--color-deep-purple-cmyk);
 				}
+			}
+		}
+	}
+
+	.alf-is-overflow {
+		p {
+			margin-bottom: 0 !important;
+
+			.row-first {
+				text-indent: 0;
 			}
 		}
 	}
