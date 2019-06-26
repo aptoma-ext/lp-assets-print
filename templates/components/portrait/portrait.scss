@@ -37,6 +37,8 @@
 		.description {
 			-ro-pdf-overprint: mode1;
 			-ro-pdf-overprint-content: mode1;
+			--alf-hyphens-after-first: 6;
+			--alf-hyphens-before-last: 6;
 
 			p {
 				display: inline;
