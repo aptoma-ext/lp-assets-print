@@ -126,6 +126,8 @@
 			position: relative;
 
 			.body-text .row-first {
+				text-indent: $text-indent;
+
 				&:before {
 					content: '→';
 					font-family: SharpGroteskMedium20;
@@ -214,7 +216,7 @@
 	}
 
 	.alf-is-overflow {
-		.body-text > p {
+		p {
 			margin-bottom: 0 !important;
 
 			.row-first {
