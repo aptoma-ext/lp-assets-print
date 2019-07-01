@@ -5,3 +5,27 @@
         background-color: var(--color-base-bright-tinted-cmyk);
     }
 }
+
+.bgcolor--base {
+    background-color: var(--color-base);
+
+    @media print {
+        background-color: var(--color-base-cmyk);
+    }
+}
+
+.bgcolor--base-bright {
+    background-color: var(--color-base-bright);
+
+    @media print {
+        background-color: var(--color-base-bright-cmyk);
+    }
+}
+
+.bgcolor--base-bright-tinted {
+    background-color: var(--color-base-bright-tinted);
+
+    @media print {
+        background-color: var(--color-base-bright-tinted-cmyk);
+    }
+}

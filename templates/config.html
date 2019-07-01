@@ -208,6 +208,29 @@
 				}
 			}
 		},
+		"colors": {
+			"title": "Colors",
+			"type": "object",
+			"properties": {
+				".bgcolor--{color}": {
+					"title": "Background color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Base",
+							"enum": ["base"]
+						},
+						{
+							"type": "string",
+							"title": "Base bright",
+							"enum": ["base-bright"]
+						}
+					]
+				}
+			}
+		},
 		"box": {
 			"title": "Box",
 			"type": "object",

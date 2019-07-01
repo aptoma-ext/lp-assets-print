@@ -1,4 +1,6 @@
 .infographic {
+    display: flex;
+    justify-content: center;
     --alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
 }
