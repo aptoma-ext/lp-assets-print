@@ -15,5 +15,6 @@
         -ro-replacedelement: image;
         -ro-source: -ro-attr(data-file-url);
         display: block;
+        mix-blend-mode: multiply;
     }
 }
