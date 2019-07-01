@@ -22,11 +22,12 @@
 
 .byline-author {
 	margin-top: 0.44px;
-	font-family: DNSharpGroteskBook-18;
+	font-family: DNSharpGroteskMedium-18;
 	font-weight: normal;
 	font-size: 7.9pt;
 	line-height: 9.7pt;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.005em;
+	text-transform: uppercase;
 	display: inline-block;
 
 	div {
@@ -36,12 +37,12 @@
 }
 
 .byline-location {
-	font-family: SharpGroteskBookItalic16;
+	font-family: DNSharpGroteskBook-16;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 7.9pt;
 	line-height: 9.7pt;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.005em;
 	display: inline-block;
 
 	div {
