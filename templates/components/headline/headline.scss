@@ -146,7 +146,7 @@
 .headline--comment {
 	--alf-grid-align-bottom: baseline;
 
-	h1, .contributor {
+	h1, .contributor, .topic {
 		font-family: IvarNostalgiDN-Medium;
 		font-size: 35.6pt;
 		line-height: 0.8975em;
@@ -158,7 +158,7 @@
 		}
 	}
 
-	.contributor {
+	.contributor, .topic {
 		color: var(--color-base-dark);
 		line-height: 0.85em;
 
@@ -178,7 +178,7 @@
 .headline--topic,
 .headline--comment {
 	&.headline--head-kommentar-a {
-		h1, .contributor {
+		h1, .contributor, .topic {
 			font-family: IvarNostalgiDN-Medium;
 			font-size: 44pt;
 			line-height: 0.9682em;
@@ -190,7 +190,7 @@
 			transform: translateY(3.2pt);
 		}
 
-		h1, .contributor {
+		h1, .contributor, .topic {
 			font-family: IvarNostalgiDN-Medium;
 			font-size: 35.6pt;
 			line-height: 0.8975em;
@@ -198,7 +198,7 @@
 	}
 
 	&.headline--head-kommentar-c {
-		h1, .contributor {
+		h1, .contributor, .topic {
 			font-family: IvarNostalgiDN-Small;
 			font-size: 26.7pt;
 			line-height: 0.9972em;
