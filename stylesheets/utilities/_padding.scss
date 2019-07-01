@@ -10,3 +10,15 @@
 .u-padding-left-4mm {
     padding-left: 4mm;
 }
+
+@for $i from 0 through 5 {
+    $plural: if($i == 1, '', 's');
+
+    .u-padding-top--#{$i}-line#{$plural} {
+        padding-top: ($base-line-height * $i) !important;
+    }
+
+    .u-padding-bottom--#{$i}-line#{$plural} {
+        padding-bottom: ($base-line-height * $i) !important;
+    }
+}

@@ -185,7 +185,7 @@
 			"type": "object",
 			"properties": {
 				".u-padding-{padding}": {
-					"title": "Style",
+					"title": "Left/right",
 					"type": "string",
 					"uniqueItems": true,
 					"anyOf": [
@@ -203,6 +203,70 @@
 							"type": "string",
 							"title": "4mm left",
 							"enum": ["left-4mm"]
+						}
+					]
+				},
+				".u-padding-top--{padding}": {
+					"title": "Above",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
+						}
+					]
+				},
+				".u-padding-bottom--{padding}": {
+					"title": "Below",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
 						}
 					]
 				}
