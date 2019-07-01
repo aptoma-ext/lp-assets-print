@@ -141,7 +141,9 @@
 	}
 }
 
-.headline--author {
+.headline--author,
+.headline--topic,
+.headline--comment {
 	--alf-grid-align-bottom: baseline;
 
 	h1, .contributor {
@@ -165,38 +167,42 @@
 		}
 	}
 
-	.headline--author-wrapper {
+	.headline--comment-wrapper {
 		transform: translateY(3.2pt);
 	}
 }
 
 // Headlines defined by DN below
 
-.headline--author.headline--head-kommentar-a {
-	h1, .contributor {
-		font-family: IvarNostalgiDN-Medium;
-		font-size: 44pt;
-		line-height: 0.9682em;
-	}
-}
-
-.headline--author.headline--head-kommentar-b {
-	.headline--author-wrapper {
-		transform: translateY(3.2pt);
+.headline--author,
+.headline--topic,
+.headline--comment {
+	&.headline--head-kommentar-a {
+		h1, .contributor {
+			font-family: IvarNostalgiDN-Medium;
+			font-size: 44pt;
+			line-height: 0.9682em;
+		}
 	}
 
-	h1, .contributor {
-		font-family: IvarNostalgiDN-Medium;
-		font-size: 35.6pt;
-		line-height: 0.8975em;
-	}
-}
+	&.headline--head-kommentar-b {
+		.headline--comment-wrapper {
+			transform: translateY(3.2pt);
+		}
 
-.headline--author.headline--head-kommentar-c {
-	h1, .contributor {
-		font-family: IvarNostalgiDN-Small;
-		font-size: 26.7pt;
-		line-height: 0.9972em;
+		h1, .contributor {
+			font-family: IvarNostalgiDN-Medium;
+			font-size: 35.6pt;
+			line-height: 0.8975em;
+		}
+	}
+
+	&.headline--head-kommentar-c {
+		h1, .contributor {
+			font-family: IvarNostalgiDN-Small;
+			font-size: 26.7pt;
+			line-height: 0.9972em;
+		}
 	}
 }
 
