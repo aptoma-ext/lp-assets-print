@@ -13,4 +13,20 @@
             background: CMYK(0%, 0%, 0%, 0%);
         }
     }
+
+    &.box--base {
+        background: var(--color-base);
+
+        @media print {
+            background: var(--color-base-cmyk);
+        }
+    }
+
+    &.box--base-bright {
+        background: var(--color-base-bright);
+
+        @media print {
+            background: var(--color-base-bright-cmyk);
+        }
+    }
 }
