@@ -95,6 +95,10 @@
 			--alf-grid-columns: 20;
 			--alf-grid-column-width: 8.5mm;
 		}
+
+		[grid-inside] {
+			z-index: 10001;
+		}
 	}
 
 	@import "_utils";
