@@ -92,7 +92,7 @@
 		padding-left: 0;
 
 		li {
-			text-indent: 9.5pt;
+			text-indent: 10pt;
 			position: relative;
 
 			&:before {
@@ -102,7 +102,7 @@
 				display: inline-block;
 				font-size: 7.9pt;
 				position: absolute;
-				left: -9.5pt;
+				left: -10pt;
 				top: 0.55pt;
 				color: var(--color-base);
 
