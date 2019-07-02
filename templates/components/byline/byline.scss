@@ -135,6 +135,7 @@
 		line-height: 16pt;
 		letter-spacing: 0.025em;
 		color: var(--color-black);
+		text-transform: none;
 
 		@media print {
 			color: var(--color-black-cmyk);
