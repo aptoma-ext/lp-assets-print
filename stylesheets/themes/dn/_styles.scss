@@ -41,7 +41,7 @@ $pink-weekend-cmyk: CMYK(0%, 65%, 50%, 0%);
 $financial-pink: rgb(243, 229, 214);
 $financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
 $financial-pink-tinted: mix($financial-pink, white, 70%);
-$financial-pink-weekend-cmyk: CMYK(0%, 11%, 15%, 0%);
+$financial-pink-weekend-cmyk: CMYK(0%, 18%, 26%, 0%);
 $financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$financial-pink-cmyk});
 $financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$financial-pink-weekend-cmyk});
 
@@ -132,8 +132,7 @@ $medium-line-height: 13.6pt;
     --color-deep-purple-cmyk: var(--color-deep-purple-weekend-cmyk);
     --color-pink-cmyk: var(--color-pink-weekend-cmyk);
     --color-financial-pink-cmyk: var(--color-financial-pink-weekend-cmyk);
-    --color-deep-financial-pink-cmyk: var(--color-deep-financial-pink-weekend-cmyk);
-    --color-deep-financial-pink-tinted-cmyk: var(--color-deep-financial-pink-tinted-weekend-cmyk);
+    --color-financial-pink-tinted-cmyk: var(--color-financial-pink-tinted-weekend-cmyk);
 }
 
 .theme--dn {
