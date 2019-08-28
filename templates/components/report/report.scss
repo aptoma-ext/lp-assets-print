@@ -51,6 +51,19 @@
 		width: 100%;
 		border-collapse: collapse;
 
+		tr {
+			td {
+				text-align: right;
+				margin: 0;
+				padding: 0;
+				line-height: 1.37em;
+			}
+
+			td:first-child {
+				text-align: left;
+			}
+		}
+
 		tbody {
 			td {
 				border-top: 0.25pt solid var(--color-black);
@@ -62,6 +75,7 @@
 
 			.cell-2 {
 				width: 15pt;
+				padding-right: 4px;
 			}
 
 			.cell-3 {
@@ -70,19 +84,6 @@
 
 			.cell-4 {
 				width: 28pt;
-			}
-		}
-
-		tr {
-			td {
-				text-align: right;
-				margin: 0;
-				padding: 0;
-				line-height: 1.37em;
-			}
-
-			td:first-child {
-				text-align: left;
 			}
 		}
 	}
