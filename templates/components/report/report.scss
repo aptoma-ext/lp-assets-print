@@ -75,7 +75,6 @@
 
 			.cell-2 {
 				width: 15pt;
-				padding-right: 4px;
 			}
 
 			.cell-3 {
@@ -85,6 +84,10 @@
 			.cell-4 {
 				width: 28pt;
 			}
+		}
+
+		.cell-2 {
+			padding-right: 4px;
 		}
 	}
 }
