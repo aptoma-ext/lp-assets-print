@@ -18,6 +18,10 @@
 	--alf-hyphens-after-first: 3;
 	--alf-hyphens-before-last: 3;
 
+	&.alf-context-print-preview-plugin {
+		--alf-image-ppi: 80;
+	}
+
 	@media print {
 		color: var(--color-black-cmyk);
 	}
