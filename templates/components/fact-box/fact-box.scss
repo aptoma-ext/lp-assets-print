@@ -109,6 +109,7 @@
 
 	.fact-box-body-container {
 		width: calc(100% + 12pt);
+		display: flex;;
 	}
 
 	.fact-box-header {
@@ -127,7 +128,6 @@
 	}
 
 	.fact-box--nattbordet-picture {
-		float: left;
 		margin-right: 4.6mm;
 	}
 
