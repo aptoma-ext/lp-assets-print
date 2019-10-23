@@ -310,6 +310,20 @@
 	word-spacing: -20%;
 }
 
+.headline--compact-156 h1 {
+	font-family: SharpGroteskSmBold10;
+	font-size: 156pt;
+	line-height: 0.84523;
+	letter-spacing: -0.005em;
+	word-spacing: -20%;
+
+	strong, b {
+		font-family: SharpGroteskBold10;
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
 .headline--condensed-92_4 h1 {
 	font-family: SharpGroteskSmBold14;
 	font-size: 92.4pt;
