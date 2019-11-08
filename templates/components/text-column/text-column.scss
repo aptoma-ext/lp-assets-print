@@ -156,7 +156,8 @@
 
 	// Only works for single-line titles
 	// How to handle multi-line titles in a good way?
-	h2, h3 {
+	h2, h3,
+	h2.alf-block, h3.alf-block {
 		font-family: IvarText-Bold;
 		font-style: normal;
 		font-weight: normal;
