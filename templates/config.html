@@ -42,7 +42,28 @@
 			}
 		}
 	},
-
+	"templateOptions": {
+		".theme--{theme}": {
+			"title": "Theme",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "string",
+				"enum": ["dn", "kommentar", "leder"],
+				"enumNames": ["DN", "Kommentar", "Leder"]
+			}
+		},
+		"[data-map]": {
+			"title": "Article types",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "string",
+				"enum": ["article--DN_Nyhet_1500", "article--DN_Nyhet_2500", "article--DN_Nyhet_3500", "article--DN_Nyhet_5000", "article--DN_Kommentar", "article--DN_Borskommentar"],
+				"enumNames": ["Nyhet 1500", "Nyhet 2500", "Nyhet 3500", "Nyhet 5000", "Kommentar", "Børskommentar"]
+			}
+		}
+	},
 	"componentOptions": {
 		"heights": {
 			"title": "Height",
