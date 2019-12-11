@@ -23,13 +23,6 @@
 		padding-right: 10pt;
 		transform: translateY(2.3pt);
 
-		.figcaption-inner:before {
-			content: '↑';
-			display: inline-block;
-			font-size: 7.9pt;
-			font-family: SharpGroteskBook17;
-		}
-
 		* {
 			-ro-pdf-overprint: mode1;
 		}
