@@ -106,41 +106,6 @@
 	&::before {
 		display: none;
 	}
-
-	.fact-box-body-container {
-		width: calc(100% + 12pt);
-		display: flex;
-	}
-
-	.fact-box-header {
-		font-family: SharpGroteskSmBold20;
-		font-weight: normal;
-		font-size: 11.5pt;
-		line-height: 14pt;
-		letter-spacing: 0.025em;
-		word-spacing: 0;
-		color: var(--color-base);
-		margin-bottom: 4.5pt;
-
-		@media print {
-			color: var(--color-base-cmyk);
-		}
-	}
-
-	.fact-box--nattbordet-picture {
-		margin-right: 4.6mm;
-	}
-
-	.image-wrapper {
-		width: 16.5mm;
-		height: 15.528mm;
-
-		img, canvas {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
 }
 
 .alf-colspan-1,
