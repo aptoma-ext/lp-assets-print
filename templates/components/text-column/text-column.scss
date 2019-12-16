@@ -288,6 +288,19 @@
 			height: 12.75pt;
 		}
 	}
+
+	&.text-column--sistesiden {
+		.alf-block, p, ul, li {
+			font-family: DNSharpGroteskMedium-18;
+			font-size: 7.9pt;
+			font-weight: normal;
+			line-height: 9.7pt;
+		}
+
+		.body-text span.row {
+			height: 9.7pt;
+		}
+	}
 }
 
 .text-column--portrait {
