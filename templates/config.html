@@ -434,6 +434,24 @@
 				}
 			}
 		},
+		"fact-box": {
+			"title": "Fact box",
+			"type": "object",
+			"properties": {
+				".fact-box--{style}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Nattbordet",
+							"enum": ["nattbordet"]
+						}
+					]
+				}
+			}
+		},
 		"intro": {
 			"title": "Intro",
 			"type": "object",
