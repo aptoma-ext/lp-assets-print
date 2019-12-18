@@ -80,6 +80,10 @@
 			text-align: right;
 		}
 
+		[itemprop="description"] {
+			display: none;
+		}
+
 		&::before {
 			display: none;
 			content: '';
