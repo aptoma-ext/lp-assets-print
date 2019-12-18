@@ -54,6 +54,10 @@
 		--alf-grid-align-bottom: baseline;
 		color: #48bb43;
 	}
+
+	.caption {
+		display: none;
+	}
 }
 
 $image-bottom-padding: $base-line-height - 0.25pt;
