@@ -314,6 +314,12 @@
 		.body-text span.row {
 			height: 9.7pt;
 		}
+
+		.alf-block-is-first::before {
+			content: var(--topic, '');
+			text-transform: uppercase;
+			padding-right: 3pt;
+		}
 	}
 }
 
