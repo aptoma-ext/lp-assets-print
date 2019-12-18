@@ -73,6 +73,16 @@
 		right: 0;
 		transform-origin: 100% 100%;
 		transform: translateX(-100%) translateY(-100%) rotate(-90deg);
+		padding-bottom: 1.2pt;
+
+		.figcaption {
+			text-indent: 0;
+		}
+
+		&::before {
+			display: none;
+			content: '';
+		}
 	}
 }
 
