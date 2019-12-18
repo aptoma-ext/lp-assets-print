@@ -60,6 +60,12 @@
 	}
 }
 
+.picture--show-caption {
+	.caption {
+		display: block;
+	}
+}
+
 $image-bottom-padding: $base-line-height - 0.25pt;
 
 .picture--border {
