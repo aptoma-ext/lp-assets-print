@@ -60,9 +60,18 @@
 	}
 }
 
-.picture--show-caption {
+.picture--caption-vert-left {
+	figure {
+		position: relative;
+	}
+
 	.caption {
 		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform-origin: 100% 100%;
+		transform: translateX(-100%) translateY(-100%) rotate(-90deg);
 	}
 }
 
