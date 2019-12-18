@@ -65,6 +65,7 @@ $medium-font-size: 13.6pt;
 $medium-line-height: 13.6pt;
 
 @import "_fontface";
+@import "_topics";
 
 & {
     --font-size-body: 8.4pt;
