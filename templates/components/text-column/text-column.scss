@@ -289,6 +289,16 @@
 		}
 	}
 
+	&.text-column--lg-headers {
+		h3 {
+			font-family: SharpGroteskSmBold20;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 13.5pt;
+			line-height: 16pt;
+		}
+	}
+
 	&.text-column--sistesiden {
 		.alf-block, p, ul, li {
 			font-family: DNSharpGroteskMedium-18;
