@@ -29,4 +29,12 @@
             background: var(--color-base-bright-cmyk);
         }
     }
+
+    &.box--light-grey {
+        background: var(--color-light-grey);
+
+        @media print {
+            background: var(--color-light-grey-cmyk);
+        }
+    }
 }

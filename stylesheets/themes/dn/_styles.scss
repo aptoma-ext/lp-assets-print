@@ -1,6 +1,9 @@
 $black: #000;
 $black-cmyk: CMYK(0%, 0%, 0%, 100%);
 
+$light-grey: rgb(203, 214, 214);
+$light-grey-cmyk: CMYK(5%, 0%, 0%, 16%);
+
 $dark-grey: rgb(63, 62, 62);
 $dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
 
@@ -121,6 +124,8 @@ $medium-line-height: 13.6pt;
     --background-color-cmyk: transparent;
     --color-warm-grey: #{$warm-grey};
     --color-warm-grey-cmyk: #{$warm-grey-cmyk};
+    --color-light-grey: #{$light-grey};
+    --color-light-grey-cmyk: #{$light-grey-cmyk};
 }
 
 &.print-day-saturday {
