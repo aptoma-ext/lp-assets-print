@@ -353,19 +353,32 @@
 	}
 }
 
-.headline--sistesiden h1 {
-	font-family: SharpGroteskSmBold20;
-	font-weight: normal;
-	font-size: 15pt;
-	line-height: 16pt;
-	letter-spacing: 0.025em;
-	word-spacing: 0;
-	margin-bottom: 0;
+.headline--sistesiden, // 2020-01-10 - only here for backwards compatibility. Remove in a months time
+.headline--bildetittel,
+.headline--bildetittel-left,
+.headline--bildetittel-right {
+	h1 {
+		font-family: SharpGroteskSmBold20;
+		font-weight: normal;
+		font-size: 15pt;
+		line-height: 16pt;
+		letter-spacing: 0.025em;
+		word-spacing: 0;
+		margin-bottom: 0;
 
-	&::before {
-		content: '↑';
-		display: block;
+		&::before {
+			content: '↑';
+			display: block;
+		}
 	}
+}
+
+.headline--bildetittel-left h1::before {
+	content: '←';
+}
+
+.headline--bildetittel-right h1::before {
+	content: '→';
 }
 
 .headline-shadow--dark-weak {
