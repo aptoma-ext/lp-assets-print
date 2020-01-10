@@ -107,10 +107,12 @@ $image-bottom-padding: $base-line-height - 0.25pt;
 }
 
 .picture--frame {
-	border: 4mm solid var(--color-white);
+	.image {
+		border: 4mm solid var(--color-white);
 
-	@media print {
-		border-color: var(--color-white-cmyk);
+		@media print {
+			border-color: var(--color-white-cmyk);
+		}
 	}
 }
 
