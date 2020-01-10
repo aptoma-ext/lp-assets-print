@@ -1,3 +1,3 @@
 .u-transform--enable > * {
-    transform: rotate(calc(1deg * var(--transform-rotate, 0))) scale(calc(1 + (var(--transform-scale, 0) / 50)));
+    transform: scale(calc(1 + (var(--transform-scale, 0) / 50))) rotate(calc(1deg * var(--transform-rotate, 0)));
 }
