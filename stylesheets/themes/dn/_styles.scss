@@ -1,6 +1,9 @@
 $black: #000;
 $black-cmyk: CMYK(0%, 0%, 0%, 100%);
 
+$white: #FFF;
+$white-cmyk: CMYK(0%, 0%, 0%, 0%);
+
 $light-grey: rgb(203, 214, 214);
 $light-grey-cmyk: CMYK(5%, 0%, 0%, 16%);
 
@@ -75,6 +78,8 @@ $medium-line-height: 13.6pt;
 
     --color-black: #{$black};
     --color-black-cmyk: #{$black-cmyk};
+    --color-white: #{$white};
+    --color-white-cmyk: #{$white-cmyk};
     --color-blue: #{$blue};
     --color-blue-cmyk: #{$blue-cmyk};
     --color-blue-weekend-cmyk: #{$blue-weekend-cmyk};

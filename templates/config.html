@@ -65,6 +65,24 @@
 		}
 	},
 	"componentOptions": {
+		"transform": {
+			"title": "Transform",
+			"type": "object",
+			"properties": {
+				".u-transform--enable": {
+					"title": "Enable",
+					"type": "boolean"
+				},
+				"--transform-rotate": {
+					"title": "Rotate",
+					"type": "number"
+				},
+				"--transform-scale": {
+					"title": "Scale",
+					"type": "number"
+				}
+			}
+		},
 		"heights": {
 			"title": "Height",
 			"type": "object",
@@ -772,8 +790,16 @@
 					"title": "Border below",
 					"type": "boolean"
 				},
+				".picture--frame": {
+					"title": "White frame",
+					"type": "boolean"
+				},
 				".picture--fill": {
 					"title": "Expand/fill",
+					"type": "boolean"
+				},
+				".alf-is-draggable": {
+					"title": "Draggable",
 					"type": "boolean"
 				}
 			}
