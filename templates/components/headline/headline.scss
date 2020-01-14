@@ -121,24 +121,24 @@
 	}
 }
 
+.headline--black-on-white,
 .headline--black {
 	color: var(--color-black);
+}
 
-	@media print {
-		color: var(--color-black-cmyk);
+.headline--black-on-white {
+	background: var(--color-white);
+}
+
+.headline--white,
+.headline--white-on-black {
+	h1 {
+		color: var(--color-white);
 	}
 }
 
-.headline--white {
-	h1 {
-		color: #FFF;
-	}
-
-	@media print {
-		h1 {
-			color: CMYK(0%, 0%, 0%, 0%);
-		}
-	}
+.headline--white-on-black {
+	background: var(--color-black);
 }
 
 .headline--author,
@@ -364,7 +364,7 @@
 		line-height: 16pt;
 		letter-spacing: 0.025em;
 		word-spacing: 0;
-		margin-bottom: 0;
+		margin: 0 !important;
 
 		&::before {
 			content: '↑';
