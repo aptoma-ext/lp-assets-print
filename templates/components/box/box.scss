@@ -1,5 +1,6 @@
 .box {
     background: #FFFFB9;
+    opacity: 0.5;
     z-index: 10000;
 
     @media print {
@@ -7,34 +8,27 @@
     }
 
     &.box--white {
-        background: #FFFFFF;
+        background: var(--color-white);
+        opacity: 1;
+    }
 
-        @media print {
-            background: CMYK(0%, 0%, 0%, 0%);
-        }
+    &.box--white-transparent {
+        background: var(--color-white);
+        opacity: 0.7;
     }
 
     &.box--base {
         background: var(--color-base);
-
-        @media print {
-            background: var(--color-base-cmyk);
-        }
+        opacity: 1;
     }
 
     &.box--base-bright {
         background: var(--color-base-bright);
-
-        @media print {
-            background: var(--color-base-bright-cmyk);
-        }
+        opacity: 1;
     }
 
     &.box--light-grey {
         background: var(--color-light-grey);
-
-        @media print {
-            background: var(--color-light-grey-cmyk);
-        }
+        opacity: 1;
     }
 }

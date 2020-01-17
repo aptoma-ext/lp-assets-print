@@ -135,6 +135,9 @@ $medium-line-height: 13.6pt;
     @media print {
         --color-black: #{$black-cmyk};
         --color-white: #{$white-cmyk};
+        --color-base: #{$blue-cmyk};
+        --color-base-bright: #{$bright-blue-cmyk};
+        --color-light-grey: #{$light-grey-cmyk};
     }
 }
 
