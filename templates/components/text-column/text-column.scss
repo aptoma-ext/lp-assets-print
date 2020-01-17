@@ -349,3 +349,25 @@
 	position: absolute;
 	bottom: 0;
 }
+
+.text-column--black-on-white,
+.text-column--black {
+	color: var(--color-black);
+}
+
+.text-column--black-on-white {
+	background: var(--color-white);
+	outline: 4mm solid var(--color-white);
+}
+
+.text-column--white,
+.text-column--white-on-black {
+	h1 {
+		color: var(--color-white);
+	}
+}
+
+.text-column--white-on-black {
+	background: var(--color-black);
+	outline: 4mm solid var(--color-black);
+}
