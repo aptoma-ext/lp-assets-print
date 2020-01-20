@@ -36,6 +36,19 @@
 	.image {
 		margin-top: $base-line-height * -1;
 	}
+
+	&.alf-flex figure {
+		position: absolute;
+		top: -10.65pt;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		.image, .image-wrapper {
+			margin-top: 0;
+			height: 100%;
+		}
+	}
 }
 
 .picture--main {
