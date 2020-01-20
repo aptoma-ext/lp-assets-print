@@ -14,7 +14,7 @@
     margin-top: $grid-line-offset !important;
 }
 
-@for $i from 0 through 5 {
+@for $i from -10 through 10 {
     $plural: if($i == 1, '', 's');
 
     .u-margin-top--#{$i}-line#{$plural} {
