@@ -340,31 +340,25 @@
 			"title": "Colors",
 			"type": "object",
 			"properties": {
-				".bgcolor--{color}": {
-					"title": "Background color",
+				".color--{color}": {
+					"title": "Text color",
 					"type": "string",
 					"uniqueItems": true,
 					"anyOf": [
 						{
 							"type": "string",
-							"title": "Base",
-							"enum": ["base"]
+							"title": "White",
+							"enum": ["white"]
 						},
 						{
 							"type": "string",
-							"title": "Base bright",
-							"enum": ["base-bright"]
+							"title": "Black",
+							"enum": ["black"]
 						}
 					]
-				}
-			}
-		},
-		"box": {
-			"title": "Box",
-			"type": "object",
-			"properties": {
-				".box--{color}": {
-					"title": "Color",
+				},
+				".bgcolor--{color}": {
+					"title": "Background color",
 					"type": "string",
 					"uniqueItems": true,
 					"anyOf": [
@@ -390,7 +384,7 @@
 						}
 					]
 				},
-				".box-opacity--{opacity}": {
+				".opacity--{opacity}": {
 					"title": "Opacity",
 					"type": "string",
 					"uniqueItems": true,
@@ -702,33 +696,6 @@
 				".alf-text-auto-size": {
 					"title": "Auto size",
 					"type": "boolean"
-				},
-				".headline--{style}": {
-					"title": "Color",
-					"type": "string",
-					"uniqueItems": true,
-					"anyOf": [
-						{
-							"type": "string",
-							"title": "White",
-							"enum": ["white"]
-						},
-						{
-							"type": "string",
-							"title": "White on black",
-							"enum": ["white-on-black"]
-						},
-						{
-							"type": "string",
-							"title": "Black",
-							"enum": ["black"]
-						},
-						{
-							"type": "string",
-							"title": "Black on white",
-							"enum": ["black-on-white"]
-						}
-					]
 				},
 				".headline--{type}": {
 					"title": "Style",

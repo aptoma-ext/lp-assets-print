@@ -1,31 +1,52 @@
-.color--bg-base-bright-tinted {
-    background-color: var(--color-base-bright-tinted);
-
-    @media print {
-        background-color: var(--color-base-bright-tinted-cmyk);
-    }
+.bgcolor--white {
+    background: var(--color-white);
+    opacity: 1;
 }
 
 .bgcolor--base {
     background-color: var(--color-base);
-
-    @media print {
-        background-color: var(--color-base-cmyk);
-    }
+    opacity: 1;
 }
 
 .bgcolor--base-bright {
     background-color: var(--color-base-bright);
-
-    @media print {
-        background-color: var(--color-base-bright-cmyk);
-    }
+    opacity: 1;
 }
 
 .bgcolor--base-bright-tinted {
     background-color: var(--color-base-bright-tinted);
+    opacity: 1;
+}
 
-    @media print {
-        background-color: var(--color-base-bright-tinted-cmyk);
-    }
+.bgcolor--light-grey {
+    background: var(--color-light-grey);
+    opacity: 1;
+}
+
+.color--white {
+    color: var(--color-white);
+}
+
+.color--black {
+    color: var(--color-black);
+}
+
+.opacity--90 {
+    opacity: 0.9;
+}
+
+.opacity--80 {
+    opacity: 0.8;
+}
+
+.opacity--70 {
+    opacity: 0.7;
+}
+
+.opacity--60 {
+    opacity: 0.6;
+}
+
+.opacity--50 {
+    opacity: 0.5;
 }
