@@ -15,7 +15,7 @@
 }
 
 @for $i from -10 through 10 {
-    $plural: if($i == 1, '', 's');
+    $plural: if($i == 1 or $i == -1, '', 's');
 
     .u-margin-top--#{$i}-line#{$plural} {
         margin-top: ($base-line-height * $i) !important;
