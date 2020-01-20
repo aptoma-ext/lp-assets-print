@@ -1,31 +1,31 @@
 .bgcolor--white {
-    background: var(--color-white);
-    opacity: 1;
+    background: var(--color-white) !important;
+    opacity: 1 !important;
 }
 
 .bgcolor--black {
-    background: var(--color-black);
-    opacity: 1;
+    background: var(--color-black) !important;
+    opacity: 1 !important;
 }
 
 .bgcolor--base {
-    background-color: var(--color-base);
-    opacity: 1;
+    background-color: var(--color-base) !important;
+    opacity: 1 !important;
 }
 
 .bgcolor--base-bright {
-    background-color: var(--color-base-bright);
-    opacity: 1;
+    background-color: var(--color-base-bright) !important;
+    opacity: 1 !important;
 }
 
 .bgcolor--base-bright-tinted {
-    background-color: var(--color-base-bright-tinted);
-    opacity: 1;
+    background-color: var(--color-base-bright-tinted) !important;
+    opacity: 1 !important;
 }
 
 .bgcolor--light-grey {
-    background: var(--color-light-grey);
-    opacity: 1;
+    background: var(--color-light-grey) !important;
+    opacity: 1 !important;
 }
 
 .color--white {
@@ -45,21 +45,21 @@
 }
 
 .opacity--90 {
-    opacity: 0.9;
+    opacity: 0.9 !important;
 }
 
 .opacity--80 {
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 .opacity--70 {
-    opacity: 0.7;
+    opacity: 0.7 !important;
 }
 
 .opacity--60 {
-    opacity: 0.6;
+    opacity: 0.6 !important;
 }
 
 .opacity--50 {
-    opacity: 0.5;
+    opacity: 0.5 !important;
 }
