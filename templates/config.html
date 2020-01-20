@@ -375,11 +375,6 @@
 						},
 						{
 							"type": "string",
-							"title": "White transparent",
-							"enum": ["white-transparent"]
-						},
-						{
-							"type": "string",
 							"title": "Light grey",
 							"enum": ["light-grey"]
 						},
@@ -392,6 +387,38 @@
 							"type": "string",
 							"title": "Base bright",
 							"enum": ["base-bright"]
+						}
+					]
+				},
+				".box-opacity--{opacity}": {
+					"title": "Opacity",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "90%",
+							"enum": ["90"]
+						},
+						{
+							"type": "string",
+							"title": "80%",
+							"enum": ["80"]
+						},
+						{
+							"type": "string",
+							"title": "70%",
+							"enum": ["70"]
+						},
+						{
+							"type": "string",
+							"title": "60%",
+							"enum": ["60"]
+						},
+						{
+							"type": "string",
+							"title": "50%",
+							"enum": ["50"]
 						}
 					]
 				}
