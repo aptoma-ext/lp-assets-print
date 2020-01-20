@@ -64,12 +64,17 @@
 			margin-top: 0;
 		}
 
-		img, canvas, .alf-image {
+		.image-wrapper {
 			position: absolute;
 			top: -10.65pt;
 			bottom: 0;
 			left: 0;
 			right: 0;
+
+			> * {
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }
