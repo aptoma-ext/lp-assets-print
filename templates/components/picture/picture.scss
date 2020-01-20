@@ -48,6 +48,12 @@
 			margin-top: 0;
 			height: 100%;
 		}
+
+		img, canvas {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
 	}
 }
 
