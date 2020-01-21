@@ -1,7 +1,15 @@
 .arrow {
+	display: flex;
+	align-items: end;
+
 	&::before {
 		content: '→';
+		width: 100%;
+		display: block;
+		line-height: 28pt;
+		height: 21pt;
 		font-family: SharpGroteskBook05;
 		font-size: 68pt;
+		text-align: right;
 	}
 }
