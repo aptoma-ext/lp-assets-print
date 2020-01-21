@@ -1,0 +1,7 @@
+.arrow {
+	&::before {
+		content: '→';
+		font-family: SharpGroteskBook05;
+		font-size: 68pt;
+	}
+}
