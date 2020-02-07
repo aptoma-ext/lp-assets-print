@@ -34,7 +34,7 @@
 		color: var(--headline-color, #000);
 		font-size: var(--headline-font-size, 94.2pt);
 		line-height: var(--headline-line-height, 0.93em);
-		letter-spacing: var(--headline-letter-spacing, -1.9pt);
+		letter-spacing: -1.9pt;
 		background-color: var(--headline-background-color, transparent);
 		font-family: var(--headline-font-family, sans-serif);
 		font-weight: normal;
@@ -211,7 +211,7 @@
 	font-size: 89pt;
 	line-height: 0.9573em;
 	letter-spacing: -0.01em;
-	word-spacing: -20%;
+	word-spacing: -10%;
 }
 
 .headline--a-grotesk-85 h1 {
@@ -228,7 +228,7 @@
 	font-size: 80pt;
 	line-height: 0.932em;
 	letter-spacing: -0.01em;
-	word-spacing: -20%;
+	word-spacing: -10%;
 }
 
 .headline--a-grotesk-77 h1 {
@@ -247,7 +247,7 @@
 	font-size: 72pt;
 	line-height: 0.8875em;
 	letter-spacing: -0.010em;
-	word-spacing: -20%;
+	word-spacing: 0%;
 }
 
 .headline--b-55 h1 {
@@ -255,7 +255,7 @@
 	font-size: 55pt;
 	line-height: 0.97em;
 	letter-spacing: -0.005em;
-	word-spacing: -20%;
+	word-spacing: 0;
 }
 
 .headline--c-3col-45 h1 {
