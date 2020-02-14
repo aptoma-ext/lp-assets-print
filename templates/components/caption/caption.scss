@@ -57,7 +57,7 @@ div.caption {
 		content: '↖';
 	}
 
-	&[grid-inside] {
+	&[grid-inside]:not(.caption--non-overlay) {
 		--alf-grid-align-top: baseline;
 		--alf-grid-align-bottom: baseline;
 		margin: 0;
