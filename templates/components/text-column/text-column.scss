@@ -335,6 +335,23 @@
 	}
 }
 
+.text-column--signature {
+	h3 {
+		font-family: SharpGroteskMedium20;
+		font-size: 13.5pt;
+		line-height: 15.975pt;
+		letter-spacing: 0em;
+		word-spacing: -20%;
+		margin: -1.1pt 0 0 0;
+	}
+
+	p {
+		font-family: DNSharpGroteskBook-18;
+		font-size: 7.9pt;
+		margin-bottom: $base-line-height;
+	}
+}
+
 .text-column-inline-container {
 	margin-top: $base-line-height;
 	margin-bottom: 0;
