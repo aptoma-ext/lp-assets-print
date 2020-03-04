@@ -7,6 +7,9 @@ $white-cmyk: CMYK(0%, 0%, 0%, 0%);
 $light-grey: rgb(203, 214, 214);
 $light-grey-cmyk: CMYK(5%, 0%, 0%, 16%);
 
+$replikk-grey: rgb(233, 231, 233);
+$replikk-grey-cmyk: CMYK(2%, 3%, 1%, 5%);
+
 $dark-grey: rgb(63, 62, 62);
 $dark-grey-cmyk: CMYK(0%, 0%, 0%, 90%);
 
@@ -131,6 +134,8 @@ $medium-line-height: 13.6pt;
     --color-warm-grey-cmyk: #{$warm-grey-cmyk};
     --color-light-grey: #{$light-grey};
     --color-light-grey-cmyk: #{$light-grey-cmyk};
+    --color-replikk-grey: #{$replikk-grey};
+    --color-replikk-grey-cmyk: #{$replikk-grey-cmyk};
 
     @media print {
         --color-black: #{$black-cmyk};
@@ -139,6 +144,7 @@ $medium-line-height: 13.6pt;
         --color-base-bright: #{$bright-blue-cmyk};
         --color-base-bright-tinted: #{$bright-blue-tinted-cmyk};
         --color-light-grey: #{$light-grey-cmyk};
+        --color-replikk-grey: #{$replikk-grey-cmyk};
     }
 }
 
