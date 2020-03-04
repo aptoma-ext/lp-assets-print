@@ -346,15 +346,19 @@
 		&::before {
 			content: '';
 			display: block;
-			height: 0.25pt;
+			height: var(--unit-thin);
 			background-color: var(--color-black);
 			margin-bottom: $base-line-height;
 			margin-top: $base-line-height;
 		}
 	}
 
-	h3.alf-block-is-first::before {
-		display: none;
+	h3.alf-block-is-first {
+		margin-top: 0;
+
+		&::before {
+			display: none;
+		}
 	}
 
 	.signoff {

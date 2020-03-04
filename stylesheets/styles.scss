@@ -17,13 +17,14 @@
 	--alf-hyphens-language: nb-no;
 	--alf-hyphens-after-first: 3;
 	--alf-hyphens-before-last: 3;
+	--unit-thin: 1px;
+
+	@media print {
+		--unit-thin: 0.25pt;
+	}
 
 	&.alf-context-print-preview-plugin {
 		--alf-image-ppi: 79;
-	}
-
-	@media print {
-		color: var(--color-black-cmyk);
 	}
 
 	* {
