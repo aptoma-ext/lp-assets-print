@@ -336,19 +336,34 @@
 }
 
 .text-column--signature {
-	h3 {
+	h3.alf-block {
 		font-family: SharpGroteskMedium20;
 		font-size: 13.5pt;
 		line-height: 15.975pt;
 		letter-spacing: 0em;
 		word-spacing: -20%;
-		margin: -1.1pt 0 0 0;
+
+		&::before {
+			content: '';
+			display: block;
+			height: var(--unit-thin);
+			background-color: var(--color-black);
+			margin-bottom: $base-line-height;
+			margin-top: $base-line-height;
+		}
 	}
 
-	.signoff p {
-		font-family: DNSharpGroteskBook-18;
-		font-size: 7.9pt;
+	h3.alf-block-is-first::before {
+		display: none;
+	}
+
+	.signoff {
 		margin-bottom: $base-line-height;
+
+		p {
+			font-family: DNSharpGroteskBook-18;
+			font-size: 7.9pt;
+		}
 	}
 }
 
