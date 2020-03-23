@@ -10,10 +10,6 @@
             width: 8.5mm;
             height: 2.505mm;
             background-color: var(--color-base);
-
-            @media print {
-                background-color: var(--color-base-cmyk);
-            }
         }
 
         .quote-text {
@@ -22,10 +18,6 @@
             font-size: 11.5pt;
             line-height: 15.5pt;
             color: var(--color-black);
-
-            @media print {
-                color: var(--color-black-cmyk);
-            }
         }
 
         .quote-creator {
@@ -33,12 +25,8 @@
             font-weight: normal;
             font-size: 7.9pt;
             line-height: 9.7pt;
-            color: #000;
+            color: var(--color-black);
             transform: translateY(-1.8px);
-
-            @media print {
-                color: var(--color-black-cmyk);
-            }
         }
     }
 }

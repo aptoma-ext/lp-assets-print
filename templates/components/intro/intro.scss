@@ -34,30 +34,18 @@
 
 	border-width: 0 0 0.25pt 0;
 	border-style: solid;
-	border-color: #000;
-
-	@media print {
-		border-color: var(--color-black-cmyk);
-	}
+	border-color: var(--color-black);
 }
 
 .intro--white {
 	p {
-		color: #FFF;
-
-		@media print {
-			color: CMYK(0%, 0%, 0%, 0%);
-		}
+		color: var(--color-white);
 	}
 }
 
 .intro--black {
 	p {
-		color: #000;
-
-		@media print {
-			color: var(--color-black-cmyk);
-		}
+		color: var(--color-black);
 	}
 }
 

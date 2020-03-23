@@ -76,18 +76,10 @@ div.caption {
 	}
 
 	&.caption--color-white {
-		color: #FFF;
-
-		@media print {
-			color: CMYK(0%, 0%, 0%, 0%);
-		}
+		color: var(--color-white);
 
 		p {
-			color: #FFF;
-
-			@media print {
-				color: CMYK(0%, 0%, 0%, 0%);
-			}
+			color: var(--color-white);
 		}
 	}
 

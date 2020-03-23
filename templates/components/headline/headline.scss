@@ -22,16 +22,12 @@
 	&.headline--border {
 		border-width: 0 0 0.25pt 0;
 		border-style: solid;
-		border-color: #000;
-
-		@media print {
-			border-color: var(--color-black-cmyk);
-		}
+		border-color: var(--color-black);
 	}
 
 	h1 {
 		margin: 0 0 ($base-line-height * 2) 0;
-		color: var(--headline-color, #000);
+		color: var(--headline-color, var(--color-black));
 		font-size: var(--headline-font-size, 94.2pt);
 		line-height: var(--headline-line-height, 0.93em);
 		letter-spacing: -1.9pt;
@@ -79,12 +75,8 @@
 	}
 
 	.alf-header-line-inner {
-		background-color: #FFF;
+		background-color: var(--color-white);
 		padding: 0 10px 0 0;
-
-		@media print {
-			background-color: CMYK(0%, 0%, 0%, 0%);
-		}
 	}
 }
 
@@ -94,14 +86,9 @@
 	}
 
 	.alf-header-line-inner {
-		background-color: #FFF;
-		box-shadow: 0 0 30px #000;
+		background-color: var(--color-white);
+		box-shadow: 0 0 30px var(--color-black);
 		padding: 0 10px;
-
-		@media print {
-			background-color: CMYK(0%, 0%, 0%, 0%);
-			box-shadow: 0 0 30px var(--color-black-cmyk);
-		}
 	}
 
 	.alf-header-lines-2 {

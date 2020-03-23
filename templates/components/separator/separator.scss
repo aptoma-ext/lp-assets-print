@@ -5,11 +5,7 @@
 	box-sizing: border-box;
 	border-width: 0 0 0.25pt 0;
 	border-style: solid;
-	border-color: #000;
-
-	@media print {
-		border-color: var(--color-black-cmyk);
-	}
+	border-color: var(--color-black);
 
 	&.separator--border-top {
 		border-width: 0.25pt 0 0 0;
