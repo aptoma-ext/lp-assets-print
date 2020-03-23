@@ -28,22 +28,15 @@
 		}
 
 		span {
-			text-align: justify;
+			text-align: left;
 
 			&.row {
 				-ro-transform-origin: 0 0;
 				transform-origin: 0 0;
 				display: block;
-				text-align: justify;
-				text-align-last: justify;
-				-webkit-text-align-last: justify;
+				text-align: left;
 				width: 100%;
 				height: $base-line-height;
-			}
-
-			&.row:last-of-type {
-				text-align-last: auto;
-				-webkit-text-align-last: auto;
 			}
 		}
 
@@ -318,6 +311,25 @@
 			content: var(--topic, '');
 			text-transform: uppercase;
 			padding-right: 3pt;
+		}
+	}
+}
+
+.alf-justify-text {
+	.text-column {
+		.body-text {
+			span {
+				text-align: justify;
+
+				&.row {
+					text-align: justify;
+					text-align-last: justify;
+				}
+
+				&.row:last-of-type {
+					text-align-last: auto;
+				}
+			}
 		}
 	}
 }
