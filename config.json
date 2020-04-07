@@ -1,0 +1,1110 @@
+{
+	"alf": {
+		"pxPrecision": 0.01,
+		"grid": {
+			"units": "pt",
+			"lineHeight": 10.65,
+			"gridLineOffset": 7.1,
+			"anchor": "bottom"
+		},
+		"fonts": [],
+		"hyphenation": {
+			"nb-no": {
+				"afterFirst": 3,
+				"beforeLast": 3,
+				"exceptions": [
+					"kvalifi-sering",
+					"Sol-berg",
+					"hjem-me",
+					"eta-ble-rte",
+					"Guillaume",
+					"dia-mant-rekke"
+				]
+			}
+		}
+	},
+	"grids": {
+		"alf-grid--5": {
+			"title": "5 column grid"
+		},
+		"alf-grid--18": {
+			"title": "18 column grid"
+		},
+		"alf-grid--20": {
+			"title": "20 column grid",
+			"components": {
+				"text-column": {
+					"colspanMin": 4,
+					"colspanMax": 5,
+					"colspanInitial": 4
+				}
+			}
+		}
+	},
+	"templateOptions": {
+		".theme--{theme}": {
+			"title": "Theme",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "string",
+				"enum": ["dn", "kommentar", "leder"],
+				"enumNames": ["DN", "Kommentar", "Leder"]
+			}
+		},
+		"[data-map]": {
+			"title": "Article mapping",
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "string",
+				"enum": ["article--DN_Nyhet_Pluss", "article--DN_Nyhet_Gratis", "article--DN_Kommentar", "article--DN_Borskommentar", "topic--innlegg"],
+				"enumNames": ["Nyhet Pluss", "Nyhet Gratis", "Kommentar", "Børskommentar", "Innlegg (topic)"]
+			}
+		}
+	},
+	"componentOptions": {
+		"transform": {
+			"title": "Transform",
+			"type": "object",
+			"properties": {
+				".u-transform--enable": {
+					"title": "Enable",
+					"type": "boolean"
+				},
+				"--transform-rotate": {
+					"title": "Rotate",
+					"type": "number"
+				},
+				"--transform-scale": {
+					"title": "Scale",
+					"type": "number"
+				}
+			}
+		},
+		"heights": {
+			"title": "Height",
+			"type": "object",
+			"properties": {
+				".u-height--{type}": {
+					"title": "Preset height",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "63mm",
+							"enum": ["63mm"]
+						}
+					]
+				},
+				".u-height--custom-mm": {
+					"title": "Custom height enabled",
+					"type": "boolean"
+				},
+				"--height": {
+					"title": "Custom height value (mm)",
+					"type": "number"
+				}
+			}
+		},
+		"text-column": {
+			"title": "Text column",
+			"type": "object",
+			"properties": {
+				".text-column--lg": {
+					"title": "Larger text",
+					"type": "boolean"
+				},
+				".text-column--lg-subheaders": {
+					"title": "Large subheaders",
+					"type": "boolean"
+				}
+			}
+		},
+		".u-no-margin": {
+			"title": "No space/margin",
+			"type": "boolean"
+		},
+		"grid-align": {
+			"title": "Grid alignment",
+			"type": "object",
+			"properties": {
+				"--alf-grid-align-top": {
+					"title": "Top alignment",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Ascender/top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Baseline",
+							"enum": ["baseline"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				},
+				"--alf-grid-align-bottom": {
+					"title": "Bottom alignment",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Ascender/top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Baseline",
+							"enum": ["baseline"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				}
+			}
+		},
+		"grid-gap": {
+			"title": "Grid gaps",
+			"type": "object",
+			"properties": {
+				"--alf-grid-cell-gap-left": {
+					"title": "Left gap",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Normal",
+							"enum": ["normal"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				},
+				"--alf-grid-cell-gap-right": {
+					"title": "Right gap",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Normal",
+							"enum": ["normal"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				}
+			}
+		},
+		"padding": {
+			"title": "Padding",
+			"type": "object",
+			"properties": {
+				".u-padding-{padding}": {
+					"title": "Left/right",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "4mm left & right",
+							"enum": ["sides-4mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm right",
+							"enum": ["right-4mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm left",
+							"enum": ["left-4mm"]
+						}
+					]
+				},
+				".u-padding-top--{padding}": {
+					"title": "Above",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
+						},
+						{
+							"type": "string",
+							"title": "2mm",
+							"enum": ["2mm"]
+						},
+						{
+							"type": "string",
+							"title": "3mm",
+							"enum": ["3mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm",
+							"enum": ["4mm"]
+						}
+					]
+				},
+				".u-padding-bottom--{padding}": {
+					"title": "Below",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
+						},
+						{
+							"type": "string",
+							"title": "2mm",
+							"enum": ["2mm"]
+						},
+						{
+							"type": "string",
+							"title": "3mm",
+							"enum": ["3mm"]
+						},
+						{
+							"type": "string",
+							"title": "4mm",
+							"enum": ["4mm"]
+						}
+					]
+				}
+			}
+		},
+		"colors": {
+			"title": "Colors",
+			"type": "object",
+			"properties": {
+				".color--{color}": {
+					"title": "Text color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						}
+					]
+				},
+				".bgcolor--{color}": {
+					"title": "Background color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						},
+						{
+							"type": "string",
+							"title": "Light grey",
+							"enum": ["light-grey"]
+						},
+						{
+							"type": "string",
+							"title": "Replikk grey",
+							"enum": ["replikk-grey"]
+						},
+						{
+							"type": "string",
+							"title": "Base",
+							"enum": ["base"]
+						},
+						{
+							"type": "string",
+							"title": "Base bright",
+							"enum": ["base-bright"]
+						}
+					]
+				},
+				".opacity--{opacity}": {
+					"title": "Opacity",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "90%",
+							"enum": ["90"]
+						},
+						{
+							"type": "string",
+							"title": "80%",
+							"enum": ["80"]
+						},
+						{
+							"type": "string",
+							"title": "70%",
+							"enum": ["70"]
+						},
+						{
+							"type": "string",
+							"title": "60%",
+							"enum": ["60"]
+						},
+						{
+							"type": "string",
+							"title": "50%",
+							"enum": ["50"]
+						}
+					]
+				}
+			}
+		},
+		"margins": {
+			"title": "Margins",
+			"type": "object",
+			"properties": {
+				".u-margin-top--{margin}": {
+					"title": "Above",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
+						},
+						{
+							"type": "string",
+							"title": "5 lines",
+							"enum": ["5-lines"]
+						},
+						{
+							"type": "string",
+							"title": "-1 line",
+							"enum": ["-1-line"]
+						},
+						{
+							"type": "string",
+							"title": "-2 lines",
+							"enum": ["-2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "-3 lines",
+							"enum": ["-3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "-4 lines",
+							"enum": ["-4-lines"]
+						},
+						{
+							"type": "string",
+							"title": "-5 lines",
+							"enum": ["-5-lines"]
+						}
+					]
+				},
+				".u-margin-bottom--{margin}": {
+					"title": "Below",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["0-lines"]
+						},
+						{
+							"type": "string",
+							"title": "1 line",
+							"enum": ["1-line"]
+						},
+						{
+							"type": "string",
+							"title": "2 lines",
+							"enum": ["2-lines"]
+						},
+						{
+							"type": "string",
+							"title": "3 lines",
+							"enum": ["3-lines"]
+						},
+						{
+							"type": "string",
+							"title": "4 lines",
+							"enum": ["4-lines"]
+						}
+					]
+				}
+			}
+		},
+		".alf-is-auto-adjustable": {
+			"title": "Auto size to fit body text",
+			"type": "boolean"
+		},
+		"separator": {
+			"title": "Line/border",
+			"type": "object",
+			"properties": {
+				".separator--border-{location}": {
+					"title": "Border location",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Top",
+							"enum": ["top"]
+						},
+						{
+							"type": "string",
+							"title": "Bottom",
+							"enum": ["bottom"]
+						},
+						{
+							"type": "string",
+							"title": "None",
+							"enum": ["none"]
+						}
+					]
+				}
+			}
+		},
+		"fact-box": {
+			"title": "Fact box",
+			"type": "object",
+			"properties": {
+				".fact-box--{style}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Nattbordet",
+							"enum": ["nattbordet"]
+						}
+					]
+				}
+			}
+		},
+		"intro": {
+			"title": "Intro",
+			"type": "object",
+			"properties": {
+				".intro--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".intro--{style}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						}
+					]
+				},
+				".intro--{type}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Intro A",
+							"enum": ["a"]
+						},
+						{
+							"type": "string",
+							"title": "Intro A - 22,3",
+							"enum": ["a-22_3"]
+						},
+						{
+							"type": "string",
+							"title": "Intro - Meninger",
+							"enum": ["meninger"]
+						},
+						{
+							"type": "string",
+							"title": "Intro - På nattbordet",
+							"enum": ["pa-nattbordet"]
+						}
+					]
+				},
+				".intro-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
+				}
+			}
+		},
+		"headline--comment": {
+			"title": "Comment headline",
+			"type": "object",
+			"properties": {
+				".headline--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".headline--{type}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Head - Kommentar A",
+							"enum": ["head-kommentar-a"]
+						},
+						{
+							"type": "string",
+							"title": "Head - Kommentar B",
+							"enum": ["head-kommentar-b"]
+						},
+						{
+							"type": "string",
+							"title": "Head - Kommentar C",
+							"enum": ["head-kommentar-c"]
+						}
+					]
+				}
+			}
+		},
+		"headline": {
+			"title": "Headline",
+			"type": "object",
+			"properties": {
+				".headline--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".alf-nl2br": {
+					"title": "Respect line breaks",
+					"type": "boolean"
+				},
+				".alf-text-auto-size": {
+					"title": "Auto size",
+					"type": "boolean"
+				},
+				".headline--{type}": {
+					"title": "Style",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Head A - 89",
+							"enum": ["a-89"]
+						},
+						{
+							"type": "string",
+							"title": "Head A - Grotesk 85",
+							"enum": ["a-grotesk-85"]
+						},
+						{
+							"type": "string",
+							"title": "Head A - 80",
+							"enum": ["a-80"]
+						},
+						{
+							"type": "string",
+							"title": "Head A - Grotesk 77",
+							"enum": ["a-grotesk-77"]
+						},
+						{
+							"type": "string",
+							"title": "Head B - 72",
+							"enum": ["b-72"]
+						},
+						{
+							"type": "string",
+							"title": "Head B - 55",
+							"enum": ["b-55"]
+						},
+						{
+							"type": "string",
+							"title": "Head C - 3col 45",
+							"enum": ["c-3col-45"]
+						},
+						{
+							"type": "string",
+							"title": "Head C - 2col 36",
+							"enum": ["c-2col-36"]
+						},
+						{
+							"type": "string",
+							"title": "Head C - 1col 23",
+							"enum": ["c-1col-23"]
+						},
+						{
+							"type": "string",
+							"title": "Head Innlegg A",
+							"enum": ["innlegg-a"]
+						},
+						{
+							"type": "string",
+							"title": "Head Innlegg B",
+							"enum": ["innlegg-b"]
+						},
+						{
+							"type": "string",
+							"title": "Head Innlegg C",
+							"enum": ["innlegg-c"]
+						},
+						{
+							"type": "string",
+							"title": "Head Leder (hverdag)",
+							"enum": ["leder-hverdag"]
+						},
+						{
+							"type": "string",
+							"title": "Head Compact 138,6",
+							"enum": ["compact-138_6"]
+						},
+						{
+							"type": "string",
+							"title": "Head Compact 156",
+							"enum": ["compact-156"]
+						},
+						{
+							"type": "string",
+							"title": "Head Condensed 92,4",
+							"enum": ["condensed-92_4"]
+						},
+						{
+							"type": "string",
+							"title": "Head XXL Kicker 77+",
+							"enum": ["xxl-kicker-77"]
+						},
+						{
+							"type": "string",
+							"title": "Nattbordet",
+							"enum": ["nattbordet"]
+						},
+						{
+							"type": "string",
+							"title": "Bildetittel",
+							"enum": ["bildetittel"]
+						},
+						{
+							"type": "string",
+							"title": "Bildetittel venstre",
+							"enum": ["bildetittel-left"]
+						},
+						{
+							"type": "string",
+							"title": "Bildetittel høyre",
+							"enum": ["bildetittel-right"]
+						}
+					]
+				},
+				".headline-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
+				}
+			}
+		},
+		"auto-size-text": {
+			"title": "Auto size text",
+			"type": "object",
+			"properties": {
+				".alf-text-auto-size": {
+					"title": "Enabled",
+					"type": "boolean"
+				},
+				".headline--respect-line-breaks": {
+					"title": "Respect line breaks",
+					"type": "boolean"
+				},
+				"--alf-text-size-min": {
+					"title": "Min text size",
+					"type": "integer",
+					"minimum": 12,
+					"maximum": 400
+				},
+				"--alf-text-size-max": {
+					"title": "Max text size",
+					"type": "integer",
+					"minimum": 12,
+					"maximum": 400
+				},
+				"--alf-text-lines": {
+					"title": "Number of lines",
+					"type": "integer"
+				}
+			}
+		},
+		"picture": {
+			"title": "Picture",
+			"type": "object",
+			"properties": {
+				".picture--border": {
+					"title": "Border below",
+					"type": "boolean"
+				},
+				".picture--frame": {
+					"title": "White frame",
+					"type": "boolean"
+				},
+				".picture--fill": {
+					"title": "Expand/fill",
+					"type": "boolean"
+				},
+				".alf-is-draggable": {
+					"title": "Draggable",
+					"type": "boolean"
+				}
+			}
+		},
+		"caption": {
+			"title": "Caption",
+			"type": "object",
+			"properties": {
+				".caption--arrow-{direction}": {
+					"title": "Arrow direction",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "↑ Up",
+							"enum": ["up"]
+						},
+						{
+							"type": "string",
+							"title": "← Left",
+							"enum": ["left"]
+						},
+						{
+							"type": "string",
+							"title": "→ Right",
+							"enum": ["right"]
+						},
+						{
+							"type": "string",
+							"title": "↓ Down",
+							"enum": ["down"]
+						},
+						{
+							"type": "string",
+							"title": "↗ NE",
+							"enum": ["ne"]
+						},
+						{
+							"type": "string",
+							"title": "↘ SE",
+							"enum": ["se"]
+						},
+						{
+							"type": "string",
+							"title": "↙ SW",
+							"enum": ["sw"]
+						},
+						{
+							"type": "string",
+							"title": "↖ NW",
+							"enum": ["nw"]
+						}
+					]
+				},
+				".caption--align-{alignment}": {
+					"title": "Align",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Left",
+							"enum": ["left"]
+						},
+						{
+							"type": "string",
+							"title": "Right",
+							"enum": ["right"]
+						}
+					]
+				},
+				".caption--color-{color}": {
+					"title": "Color",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "White",
+							"enum": ["white"]
+						},
+						{
+							"type": "string",
+							"title": "Black",
+							"enum": ["black"]
+						}
+					]
+				},
+				".caption-shadow--{type}": {
+					"title": "Text shadow",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
+				},
+				".caption--non-overlay": {
+					"type": "boolean",
+					"title": "Disable overlay styles"
+				}
+			}
+		},
+		"ad": {
+			"title": "Ad",
+			"type": "object",
+			"properties": {
+				".ad--{type}": {
+					"title": "Type",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "034mm (1B)",
+							"enum": ["1b"]
+						},
+						{
+							"type": "string",
+							"title": "071mm (1)",
+							"enum": ["1"]
+						},
+						{
+							"type": "string",
+							"title": "107mm (2B)",
+							"enum": ["2b"]
+						},
+						{
+							"type": "string",
+							"title": "144mm (2)",
+							"enum": ["2"]
+						},
+						{
+							"type": "string",
+							"title": "181mm (3B)",
+							"enum": ["3b"]
+						},
+						{
+							"type": "string",
+							"title": "218mm (3)",
+							"enum": ["3"]
+						},
+						{
+							"type": "string",
+							"title": "291mm (4)",
+							"enum": ["4"]
+						},
+						{
+							"type": "string",
+							"title": "365mm (5)",
+							"enum": ["5"]
+						}
+					]
+				}
+			}
+		},
+		"text-shadow": {
+			"title": "Text shadow",
+			"type": "object",
+			"properties": {
+				".shadow--{type}": {
+					"title": "Color/strength",
+					"type": "string",
+					"uniqueItems": true,
+					"anyOf": [
+						{
+							"type": "string",
+							"title": "Dark/weak",
+							"enum": ["dark-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Dark/strong",
+							"enum": ["dark-strong"]
+						},
+						{
+							"type": "string",
+							"title": "Light/weak",
+							"enum": ["light-weak"]
+						},
+						{
+							"type": "string",
+							"title": "Light/strong",
+							"enum": ["light-strong"]
+						}
+					]
+				}
+			}
+		}
+	}
+}
