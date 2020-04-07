@@ -23,6 +23,104 @@
 			}
 		}
 	},
+	"formats": {
+		"fullpage": {
+			"title": "Helside",
+			"height": 330.62298583984375,
+			"width": 0,
+			"units": "mm"
+		},
+		"fullpage-ad-1": {
+			"title": "Annonse 071mm",
+			"height": 251.72500610351562,
+			"width": 0,
+			"units": "mm"
+		},
+		"fullpage-ad-2b": {
+			"title": "Annonse 107mm",
+			"height": 217.91099548339844,
+			"width": 0,
+			"units": "mm"
+		},
+		"fullpage-ad-3b": {
+			"title": "Annonse 181mm",
+			"height": 142.7689971923828,
+			"width": 0,
+			"units": "mm"
+		},
+		"fullpage-ad-2": {
+			"title": "Annonse 144mm",
+			"height": 180.33999633789062,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-leder": {
+			"title": "SP Leder",
+			"height": 195.36900329589844,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-underleder": {
+			"title": "SP Underleder",
+			"height": 34.858001708984375,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-rentekommentar": {
+			"title": "SP Rentekommentar",
+			"height": 152.78799438476562,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-nattbordet": {
+			"title": "SP Nattbordet",
+			"height": 262.4079895019531,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-nattbordet-ad-2b": {
+			"title": "SP Nattbordet 107mm",
+			"height": 147.25,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-100-years": {
+			"title": "SP 100 år siden",
+			"height": 93.927001953125,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-100-years-ad-2b": {
+			"title": "SP 100 år siden 107mm",
+			"height": 125.86199951171875,
+			"width": 0,
+			"units": "mm"
+		},
+		"sp-photo-plug": {
+			"title": "SP Bildeplugg",
+			"height": 134.66700744628906,
+			"width": 0,
+			"units": "mm"
+		},
+		"short-story": {
+			"title": "Lav sak",
+			"height": 142.77000427246094,
+			"width": 0,
+			"units": "mm"
+		},
+		"short-story-071": {
+			"title": "Lav sak (071mm)",
+			"height": 71,
+			"width": 0,
+			"units": "mm"
+		},
+		"short-story-107": {
+			"title": "Lav sak (107mm)",
+			"height": 107,
+			"width": 0,
+			"units": "mm"
+		}
+	},
 	"grids": {
 		"alf-grid--5": {
 			"title": "5 column grid"
