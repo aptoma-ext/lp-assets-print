@@ -364,7 +364,8 @@
 		}
 	}
 
-	h3.alf-block-is-first {
+	h3.alf-block-is-first,
+	h3:first-child {
 		margin-top: 0;
 
 		&::before {
