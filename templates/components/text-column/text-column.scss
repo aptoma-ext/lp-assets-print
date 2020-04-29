@@ -422,7 +422,8 @@
 
 .theme--lest-siden-sist {
   .text-column {
-    padding-left: 10pt;
+    padding-left: 15pt;
+    padding-right: 20pt;
   }
 
 	.alf-block, p, ul, ol, li {
@@ -446,7 +447,11 @@
     content: '▶';
     display: block;
     position: absolute;
-    left: -10pt;
+    left: -15pt;
+    color: var(--color-base-dark);
+    @media print {
+      color: var(--color-base-dark-cmyk);
+    }
   }
 
   .alf-ending-block::before {
