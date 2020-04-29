@@ -315,18 +315,24 @@ $medium-line-height: 13.6pt;
 }
 
 .theme--lest-siden-sist {
-    &::before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        top: ($base-line-height - 0.3pt) * -1;
-        bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: var(--color-financial-pink-tinted);
+  --color-base: #{$purple};
+  --color-base-cmyk: #{$purple-cmyk};
+  --color-base-dark: #{$deep-purple};
+  --color-base-dark-cmyk: #{$deep-purple-cmyk};
+  --headline-color: #{$deep-purple};
 
-        @media print {
-            background-color: var(--color-financial-pink-tinted-cmyk);
-        }
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: ($base-line-height - 0.3pt) * -1;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-financial-pink-tinted);
+
+    @media print {
+      background-color: var(--color-financial-pink-tinted-cmyk);
     }
+  }
 }
