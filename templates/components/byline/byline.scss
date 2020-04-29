@@ -106,6 +106,10 @@
 		align-self: flex-end;
 	}
 
+	.byline--profile-wrapper {
+    margin-top: 0;
+  }
+
 	figcaption {
     position: relative;
     left: 0;
@@ -115,13 +119,14 @@
 	}
 
 	.byline--profile-photo {
+    margin-top: -15pt;
     > div {
       display: block;
     }
 	}
 
 	.byline--profile-topic {
-		top: 121pt;
+		top: 136pt;
     left: 0;
 	}
 }
