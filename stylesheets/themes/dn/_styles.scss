@@ -329,10 +329,10 @@ $medium-line-height: 13.6pt;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--color-financial-pink-tinted);
+    background-color: var(--color-deep-financial-pink);
 
     @media print {
-      background-color: var(--color-financial-pink-tinted-cmyk);
+      background-color: var(--color-deep-financial-pink-cmyk);
     }
   }
 

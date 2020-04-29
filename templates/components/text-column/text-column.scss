@@ -422,6 +422,7 @@
 
 .theme--lest-siden-sist {
 	.alf-block, p, ul, ol, li {
+		margin-top: $base-line-height;
 		font-family: DNSharpGroteskBook-18;
 
     b {
@@ -434,7 +435,7 @@
   }
 
   .alf-block:nth-child(odd) {
-		margin-top: $base-line-height;
+		margin-top: $base-line-height * 2;
   }
 
   .alf-block:nth-child(odd)::before {
