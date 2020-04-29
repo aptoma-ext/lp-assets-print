@@ -419,3 +419,42 @@
 	background: var(--color-black);
 	outline: 4mm solid var(--color-black);
 }
+
+.theme--lest-siden-sist {
+  .text-column {
+    padding-left: 10pt;
+  }
+
+	.alf-block, p, ul, ol, li {
+		font-family: DNSharpGroteskBook-18;
+
+    b {
+		  font-family: SharpGroteskMedium20;
+    }
+
+    .row {
+      text-indent: 0;
+    }
+  }
+
+  .alf-block:nth-child(odd) {
+		margin-top: $base-line-height;
+  }
+
+  .alf-block:nth-child(odd)::before {
+    font-family: SharpGroteskMedium20;
+    content: '▶';
+    display: block;
+    position: absolute;
+    left: -10pt;
+  }
+
+  .alf-ending-block::before {
+    content: '' !important;
+    display: none !important;
+  }
+
+  .alf-block:first-child {
+    margin-top: 0;
+  }
+}

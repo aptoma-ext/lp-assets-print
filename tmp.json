@@ -1,0 +1,11 @@
+
+"byline": {
+  "title": "Byline",
+  "type": "object",
+  "properties": {
+    ".byline--vertical": {
+      "title": "Vertical design",
+      "type": "string"
+    }
+  }
+}

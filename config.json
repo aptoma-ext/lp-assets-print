@@ -131,8 +131,8 @@
 			"uniqueItems": true,
 			"items": {
 				"type": "string",
-				"enum": ["dn", "kommentar", "leder"],
-				"enumNames": ["DN", "Kommentar", "Leder"]
+				"enum": ["dn", "kommentar", "leder", "lest-siden-sist"],
+				"enumNames": ["DN", "Kommentar", "Leder", "Lest siden sist"]
 			}
 		},
 		"[data-map]": {

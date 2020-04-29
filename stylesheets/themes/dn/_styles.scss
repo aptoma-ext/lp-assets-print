@@ -313,3 +313,20 @@ $medium-line-height: 13.6pt;
 .theme--leder {
     line-height: 12.75pt;
 }
+
+.theme--lest-siden-sist {
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: ($base-line-height - 0.3pt) * -1;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--color-financial-pink-tinted);
+
+        @media print {
+            background-color: var(--color-financial-pink-tinted-cmyk);
+        }
+    }
+}
