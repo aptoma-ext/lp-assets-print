@@ -99,6 +99,33 @@
 	}
 }
 
+.byline--profile.byline--vertical {
+	img, canvas {
+		height: 127.8pt;
+		width: auto;
+		align-self: flex-end;
+	}
+
+	figcaption {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 20.3pt;
+		width: auto;
+	}
+
+	.byline--profile-photo {
+    > div {
+      display: block;
+    }
+	}
+
+	.byline--profile-topic {
+		top: 106pt;
+    left: 0;
+	}
+}
+
 .alf-colspan-1, .alf-colspan-2 {
 	.byline-author, .byline-location {
 		display: block;
