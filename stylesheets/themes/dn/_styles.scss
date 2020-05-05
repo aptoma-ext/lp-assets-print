@@ -327,7 +327,8 @@ $medium-line-height: 13.6pt;
     position: absolute;
     top: ($base-line-height - 0.3pt) * -1;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 8.5mm;
     box-sizing: border-box;
     background-color: var(--color-deep-financial-pink);
 
