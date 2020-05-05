@@ -901,6 +901,11 @@
 							"type": "string",
 							"title": "Bildetittel høyre",
 							"enum": ["bildetittel-right"]
+						},
+						{
+							"type": "string",
+							"title": "Lest siden sist",
+							"enum": ["lest-siden-sist"]
 						}
 					]
 				},

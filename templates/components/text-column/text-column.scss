@@ -422,10 +422,13 @@
 
 .theme--lest-siden-sist {
 	.alf-block, p, ul, ol, li {
+		line-height: $base-line-height;
+    font-size: 7.9pt;
 		margin-top: $base-line-height;
-		font-family: DNSharpGroteskBook-18;
+    font-family: SharpGroteskMedium20;
 
     b {
+      font-size: 8.9pt;
 		  font-family: SharpGroteskMedium20;
     }
 
@@ -435,15 +438,16 @@
   }
 
   .alf-block:nth-child(odd) {
-		margin-top: $base-line-height * 2;
+		margin-top: $base-line-height;
   }
 
   .alf-block:nth-child(odd)::before {
     font-family: SharpGroteskMedium20;
-    content: '▶';
+    /* content: '▶'; */
+    content: '\25ba';
     display: block;
     position: absolute;
-    left: -15pt;
+    left: -4.65mm;
     color: var(--color-base-dark);
     @media print {
       color: var(--color-base-dark-cmyk);
