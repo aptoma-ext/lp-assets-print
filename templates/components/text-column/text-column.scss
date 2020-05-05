@@ -447,11 +447,10 @@
 
   .alf-block:nth-child(odd)::before {
     font-family: SharpGroteskMedium20;
-    /* content: '▶'; */
     content: '\25ba';
     display: block;
     position: absolute;
-    left: -4.65mm;
+    left: -4.85mm;
     color: var(--color-base-dark);
     @media print {
       color: var(--color-base-dark-cmyk);
