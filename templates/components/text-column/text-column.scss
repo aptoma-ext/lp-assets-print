@@ -452,9 +452,6 @@
 		position: absolute;
 		left: -4.85mm;
 		color: var(--color-base-dark);
-		@media print {
-			color: var(--color-base-dark-cmyk);
-		}
 	}
 
 	.alf-ending-block::before {
