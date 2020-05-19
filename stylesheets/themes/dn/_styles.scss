@@ -320,6 +320,7 @@ $medium-line-height: 13.6pt;
 	--color-base-dark: #{$deep-purple};
 	--color-base-dark-cmyk: #{$deep-purple-cmyk};
 	--headline-color: #{$deep-purple};
+	--headline-color-cmyk: #{$deep-purple-cmyk};
 
 	&::before {
 		content: ' ';
@@ -339,7 +340,7 @@ $medium-line-height: 13.6pt;
 
 	.alf-component {
 		padding-left: 4.65mm;
-		padding-right: 12.5mm;
+		padding-right: 8mm;
 	}
 
 }

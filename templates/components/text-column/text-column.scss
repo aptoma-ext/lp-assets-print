@@ -423,8 +423,8 @@
 .theme--lest-siden-sist {
 	.alf-block, p, ul, ol, li {
 		line-height: $base-line-height;
-		font-size: 7.9pt;
 		margin-top: $base-line-height;
+		font-size: 8.9pt;
 		font-family: SharpGroteskMedium20;
 
 		b {
@@ -443,11 +443,16 @@
 
 	.alf-block:nth-child(even) {
 		margin-left: 0.9mm;
+		p, ul, ol, li {
+			font-family: DNSharpGroteskMedium-18;
+			font-size: 7.9pt;
+		}
 	}
 
 	.alf-block:nth-child(odd)::before {
 		font-family: SharpGroteskMedium20;
 		content: '\25ba';
+		font-size: 8.9pt;
 		display: block;
 		position: absolute;
 		left: -4.85mm;
