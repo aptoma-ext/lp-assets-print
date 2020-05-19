@@ -1,0 +1,12 @@
+[*]
+end_of_line = lf
+
+[*.scss]
+indent_style = tab
+
+[*.json]
+indent_style = tab
+
+[*.html]
+indent_style = spaces
+indent_size = 2

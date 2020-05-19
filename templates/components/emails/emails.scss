@@ -1,26 +1,32 @@
 .emails {
-    position: relative;
-    font-family: IvarText-Italic !important;
-    font-weight: normal;
-    font-size: 8.9pt;
-    line-height: 10.65pt;
-    padding-top: 4.2pt;
-    -ro-pdf-overprint: mode1;
+	position: relative;
+	font-family: IvarText-Italic !important;
+	font-weight: normal;
+	font-size: 8.9pt;
+	line-height: 10.65pt;
+	padding-top: 4.2pt;
+	-ro-pdf-overprint: mode1;
 
-    .emails-border {
-        height: 0;
-        width: 100%;
-        border-width: 0.25pt 0 0 0;
-        border-color: var(--color-black);
-        border-style: solid;
-    }
+	.emails-border {
+		height: 0;
+		width: 100%;
+		border-width: 0.25pt 0 0 0;
+		border-color: var(--color-black);
+		border-style: solid;
+	}
 
 	.emails-wrapper {
 		transform: translateY(3.55pt);
 	}
 
-    p {
-        font-family: IvarText-Italic !important;
+	p {
+		font-family: IvarText-Italic !important;
 		-ro-pdf-overprint-content: mode1;
-    }
+	}
+}
+
+.theme--lest-siden-sist {
+	.emails-border {
+		width: 36mm;
+	}
 }

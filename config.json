@@ -131,8 +131,8 @@
 			"uniqueItems": true,
 			"items": {
 				"type": "string",
-				"enum": ["dn", "kommentar", "leder"],
-				"enumNames": ["DN", "Kommentar", "Leder"]
+				"enum": ["dn", "kommentar", "leder", "lest-siden-sist"],
+				"enumNames": ["DN", "Kommentar", "Leder", "Lest siden sist"]
 			}
 		},
 		"[data-map]": {
@@ -901,6 +901,11 @@
 							"type": "string",
 							"title": "Bildetittel høyre",
 							"enum": ["bildetittel-right"]
+						},
+						{
+							"type": "string",
+							"title": "Lest siden sist",
+							"enum": ["lest-siden-sist"]
 						}
 					]
 				},
@@ -1186,6 +1191,16 @@
 							"enum": ["light-strong"]
 						}
 					]
+				}
+			}
+		},
+		"byline": {
+			"title": "Byline",
+			"type": "object",
+			"properties": {
+				".byline--vertical": {
+					"title": "Vertical design",
+					"type": "boolean"
 				}
 			}
 		}

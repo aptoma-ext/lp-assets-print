@@ -358,6 +358,15 @@
 	}
 }
 
+.headline--lest-siden-sist h1 {
+	font-family: SharpGroteskMedium20;
+	font-size: 11.5pt;
+	line-height: 11.5pt;
+	letter-spacing: 0em;
+	word-spacing: -20%;
+	margin: -1.1pt 0 0 0;
+}
+
 .headline--sistesiden, // 2020-01-10 - only here for backwards compatibility. Remove in a months time
 .headline--bildetittel,
 .headline--bildetittel-left,
@@ -387,17 +396,17 @@
 }
 
 .headline-shadow--dark-weak {
-    text-shadow: 0px 0px 15px #000;
+	text-shadow: 0px 0px 15px #000;
 }
 
 .headline-shadow--dark-strong {
-    text-shadow: 0px 0px 35px #000;
+	text-shadow: 0px 0px 35px #000;
 }
 
 .headline-shadow--light-weak {
-    text-shadow: 0px 0px 15px #FFF;
+	text-shadow: 0px 0px 15px #FFF;
 }
 
 .headline-shadow--light-strong {
-    text-shadow: 0px 0px 35px #FFF;
+	text-shadow: 0px 0px 35px #FFF;
 }

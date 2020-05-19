@@ -419,3 +419,50 @@
 	background: var(--color-black);
 	outline: 4mm solid var(--color-black);
 }
+
+.theme--lest-siden-sist {
+	.alf-block, p, ul, ol, li {
+		line-height: $base-line-height;
+		font-size: 7.9pt;
+		margin-top: $base-line-height;
+		font-family: SharpGroteskMedium20;
+
+		b {
+			font-size: 8.9pt;
+			font-family: SharpGroteskMedium20;
+		}
+
+		.row {
+			text-indent: 0;
+		}
+	}
+
+	.alf-block:first-child p {
+		margin-top: 0;
+	}
+
+	.alf-block:nth-child(even) {
+		margin-left: 0.9mm;
+	}
+
+	.alf-block:nth-child(odd)::before {
+		font-family: SharpGroteskMedium20;
+		content: '\25ba';
+		display: block;
+		position: absolute;
+		left: -4.85mm;
+		color: var(--color-base-dark);
+		@media print {
+			color: var(--color-base-dark-cmyk);
+		}
+	}
+
+	.alf-ending-block::before {
+		content: '' !important;
+		display: none !important;
+	}
+
+	.alf-block:first-child {
+		margin-top: 0;
+	}
+}
