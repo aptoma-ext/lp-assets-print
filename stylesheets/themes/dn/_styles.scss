@@ -50,9 +50,9 @@ $pink-weekend-cmyk: CMYK(0%, 65%, 50%, 0%);
 $financial-pink: rgb(243, 229, 214);
 $financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
 $financial-pink-tinted: mix($financial-pink, white, 70%);
-$financial-pink-weekend-cmyk: CMYK(0%, 11%, 15%, 0%);
-$financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$financial-pink-cmyk});
-$financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$financial-pink-weekend-cmyk});
+$financial-pink-weekend-cmyk: CMYK(0%, 17%, 26%, 0%);
+$financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-cmyk});
+$financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-weekend-cmyk});
 
 $deep-financial-pink: rgb(241, 202, 180);
 $deep-financial-pink-cmyk: CMYK(0%, 19%, 22%, 0%);
