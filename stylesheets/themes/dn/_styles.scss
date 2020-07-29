@@ -55,7 +55,7 @@ $financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-cmyk
 $financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-weekend-cmyk});
 
 $deep-financial-pink: rgb(241, 202, 180);
-$deep-financial-pink-cmyk: CMYK(0%, 19%, 22%, 0%);
+$deep-financial-pink-cmyk: CMYK(0%, 17%, 26%, 0%);
 $deep-financial-pink-weekend-cmyk: CMYK(0%, 29%, 32%, 0%);
 $deep-financial-pink-tinted: mix($deep-financial-pink, white, 70%);
 $deep-financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-pink-cmyk});
