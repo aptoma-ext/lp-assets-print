@@ -147,50 +147,6 @@
 		}
 	},
 	"dividerOptions": {
-		".divider--color-{color}": {
-			"title": "Color",
-			"type": "string",
-			"uniqueItems": true,
-			"anyOf": [
-				{
-					"type": "string",
-					"title": "Black",
-					"enum": ["black"]
-				},
-				{
-					"type": "string",
-					"title": "Black tinted",
-					"enum": ["black-tinted-55"]
-				}
-			]
-		},
-		".divider-thickness--{thickness}": {
-			"title": "Thickness",
-			"type": "string",
-			"uniqueItems": true,
-			"anyOf": [
-				{
-					"type": "string",
-					"title": "0.25pt",
-					"enum": ["0_25pt"]
-				},
-				{
-					"type": "string",
-					"title": "0.5pt",
-					"enum": ["0_5pt"]
-				},
-				{
-					"type": "string",
-					"title": "1pt",
-					"enum": ["1pt"]
-				},
-				{
-					"type": "string",
-					"title": "4pt",
-					"enum": ["4pt"]
-				}
-			]
-		},
 		".divider--border-{alignment}": {
 			"title": "Alignment",
 			"type": "string",
