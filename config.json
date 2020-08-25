@@ -146,6 +146,94 @@
 			}
 		}
 	},
+	"dividerOptions": {
+		".divider--color-{color}": {
+			"title": "Color",
+			"type": "string",
+			"uniqueItems": true,
+			"anyOf": [
+				{
+					"type": "string",
+					"title": "Black",
+					"enum": ["black"]
+				},
+				{
+					"type": "string",
+					"title": "Black tinted",
+					"enum": ["black-tinted-55"]
+				}
+			]
+		},
+		".divider-thickness--{thickness}": {
+			"title": "Thickness",
+			"type": "string",
+			"uniqueItems": true,
+			"anyOf": [
+				{
+					"type": "string",
+					"title": "0.25pt",
+					"enum": ["0_25pt"]
+				},
+				{
+					"type": "string",
+					"title": "0.5pt",
+					"enum": ["0_5pt"]
+				},
+				{
+					"type": "string",
+					"title": "1pt",
+					"enum": ["1pt"]
+				},
+				{
+					"type": "string",
+					"title": "4pt",
+					"enum": ["4pt"]
+				}
+			]
+		},
+		".divider--border-{alignment}": {
+			"title": "Alignment",
+			"type": "string",
+			"uniqueItems": true,
+			"anyOf": [
+				{
+					"type": "string",
+					"title": "Middle",
+					"enum": ["middle"]
+				},
+				{
+					"type": "string",
+					"title": "Top",
+					"enum": ["top"]
+				},
+				{
+					"type": "string",
+					"title": "Bottom",
+					"enum": ["bottom"]
+				},
+				{
+					"type": "string",
+					"title": "Left",
+					"enum": ["left"]
+				},
+				{
+					"type": "string",
+					"title": "Right",
+					"enum": ["right"]
+				},
+				{
+					"type": "string",
+					"title": "Left/right",
+					"enum": ["left-right"]
+				},
+				{
+					"type": "string",
+					"title": "None",
+					"enum": ["none"]
+				}
+			]
+		}
+	},
 	"componentOptions": {
 		"transform": {
 			"title": "Transform",
