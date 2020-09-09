@@ -34,7 +34,11 @@
 }
 
 .color--white {
-    color: var(--color-white) !important;
+	color: var(--color-white) !important;
+
+	&::before {
+		color: var(--color-white) !important;
+	}
 
     h1, h2, h3, h4, h5, p, li, ul {
         color: var(--color-white) !important;
@@ -42,7 +46,11 @@
 }
 
 .color--black {
-    color: var(--color-black) !important;
+	color: var(--color-black) !important;
+
+	&::before {
+		color: var(--color-black) !important;
+	}
 
     h1, h2, h3, h4, h5, p, li, ul, span {
         color: var(--color-black) !important;
