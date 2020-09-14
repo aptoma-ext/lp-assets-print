@@ -4,7 +4,7 @@
     -ro-pdf-overprint-content: mode1;
     padding: 0;
 
-	&::before {
+	&.alf-component::before {
 		content: '';
 		display: block;
 		width: 8.5mm;
