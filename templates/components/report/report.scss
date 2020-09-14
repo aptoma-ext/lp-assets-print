@@ -30,18 +30,20 @@
 		margin-top: 2.725pt;
 		letter-spacing: 0.01em;
 		-ro-pdf-overprint-content: mode1;
-	}
 
-	h4 {
-		font-family: DNSharpGroteskBook-18;
-		font-kerning: normal;
-		font-weight: normal;
-		font-style: normal;
-		font-size: 7.9pt;
-		line-height: $base-line-height;
-		margin-top: $base-line-height - $grid-line-offset;
-		margin-bottom: 1px;
-		border-bottom: 0.25pt solid var(--color-black);
+		&::before,
+		&::after {
+			display: block;
+			font-family: DNSharpGroteskBook-18;
+			font-kerning: normal;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 7.9pt;
+			line-height: $base-line-height;
+			margin-top: $base-line-height - $grid-line-offset;
+			margin-bottom: 1px;
+			border-bottom: 0.25pt solid var(--color-black);
+		}
 	}
 
 	table {
@@ -92,3 +94,24 @@
 	}
 }
 
+.report-quarter--1 h3::before {
+	content: 'Resultat 1. kvartal';
+}
+
+.report-quarter--2 h3::before {
+	content: 'Resultat 2. kvartal';
+}
+
+.report-quarter--3 h3::before {
+	content: 'Resultat 3. kvartal';
+}
+
+.report-quarter--4 {
+	h3::before {
+		content: 'Årsresultat';
+	}
+
+	h3::after {
+		content: var(--report-year, 2020);
+	}
+}
