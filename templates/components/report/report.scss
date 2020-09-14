@@ -84,12 +84,12 @@
 			}
 
 			.cell-4 {
-				width: 28pt;
+				width: 27.2pt;
 			}
 		}
 
 		.cell-2 {
-			padding-right: 4px;
+			padding-right: 2px;
 		}
 	}
 }
@@ -106,98 +106,6 @@
 	content: 'Resultat 3. kvartal';
 }
 
-.report-quarter--4 {
-	&.report-year--2000 h3::after {
-		content: 'Årsresultat 2000';
-	}
-	&.report-year--2001 h3::after {
-		content: 'Årsresultat 2001';
-	}
-	&.report-year--2002 h3::after {
-		content: 'Årsresultat 2002';
-	}
-	&.report-year--2003 h3::after {
-		content: 'Årsresultat 2003';
-	}
-	&.report-year--2004 h3::after {
-		content: 'Årsresultat 2004';
-	}
-	&.report-year--2005 h3::after {
-		content: 'Årsresultat 2005';
-	}
-	&.report-year--2006 h3::after {
-		content: 'Årsresultat 2006';
-	}
-	&.report-year--2007 h3::after {
-		content: 'Årsresultat 2007';
-	}
-	&.report-year--2008 h3::after {
-		content: 'Årsresultat 2008';
-	}
-	&.report-year--2009 h3::after {
-		content: 'Årsresultat 2009';
-	}
-	&.report-year--2010 h3::after {
-		content: 'Årsresultat 2010';
-	}
-	&.report-year--2011 h3::after {
-		content: 'Årsresultat 2011';
-	}
-	&.report-year--2012 h3::after {
-		content: 'Årsresultat 2012';
-	}
-	&.report-year--2013 h3::after {
-		content: 'Årsresultat 2013';
-	}
-	&.report-year--2014 h3::after {
-		content: 'Årsresultat 2014';
-	}
-	&.report-year--2015 h3::after {
-		content: 'Årsresultat 2015';
-	}
-	&.report-year--2016 h3::after {
-		content: 'Årsresultat 2016';
-	}
-	&.report-year--2017 h3::after {
-		content: 'Årsresultat 2017';
-	}
-	&.report-year--2018 h3::after {
-		content: 'Årsresultat 2018';
-	}
-	&.report-year--2019 h3::after {
-		content: 'Årsresultat 2019';
-	}
-	&.report-year--2020 h3::after {
-		content: 'Årsresultat 2020';
-	}
-	&.report-year--2021 h3::after {
-		content: 'Årsresultat 2021';
-	}
-	&.report-year--2022 h3::after {
-		content: 'Årsresultat 2022';
-	}
-	&.report-year--2023 h3::after {
-		content: 'Årsresultat 2023';
-	}
-	&.report-year--2024 h3::after {
-		content: 'Årsresultat 2024';
-	}
-	&.report-year--2025 h3::after {
-		content: 'Årsresultat 2025';
-	}
-	&.report-year--2026 h3::after {
-		content: 'Årsresultat 2026';
-	}
-	&.report-year--2027 h3::after {
-		content: 'Årsresultat 2027';
-	}
-	&.report-year--2028 h3::after {
-		content: 'Årsresultat 2028';
-	}
-	&.report-year--2029 h3::after {
-		content: 'Årsresultat 2029';
-	}
-	&.report-year--2030 h3::after {
-		content: 'Årsresultat 2030';
-	}
+.report-quarter--4 h3::after {
+	content: 'Årsresultat';
 }
