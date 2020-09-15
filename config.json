@@ -141,8 +141,22 @@
 			"uniqueItems": true,
 			"items": {
 				"type": "string",
-				"enum": ["article--DN_Nyhet_Pluss", "article--DN_Nyhet_Gratis", "article--DN_Kommentar", "article--DN_Borskommentar", "topic--innlegg"],
-				"enumNames": ["Nyhet Pluss", "Nyhet Gratis", "Kommentar", "Børskommentar", "Innlegg (topic)"]
+				"enum": [
+					"article--DN_Nyhet_Pluss",
+					"article--DN_Nyhet_Gratis",
+					"article--DN_Kommentar",
+					"article--DN_Borskommentar",
+					"article--Lang",
+					"topic--innlegg"
+				],
+				"enumNames": [
+					"Nyhet Pluss",
+					"Nyhet Gratis",
+					"Kommentar",
+					"Børskommentar",
+					"Lang (Magasinet)",
+					"Innlegg (topic)"
+				]
 			}
 		}
 	},
