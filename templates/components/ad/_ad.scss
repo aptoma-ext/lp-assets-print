@@ -29,11 +29,7 @@
 	.ad-top-line,
 	.ad-left-line {
 		position: absolute;
-		background-color: #000;
-
-		// @media print {
-		//     background-color: var(--color-black-cmyk);
-		// }
+		background-color: var(--color-black);
 	}
 
 	.ad-top-line {

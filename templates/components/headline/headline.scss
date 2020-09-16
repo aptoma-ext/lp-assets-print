@@ -37,11 +37,6 @@
 		font-feature-settings: “ss02”;
 		-moz-font-feature-settings: “ss02”;
 		--alf-header-align: 1;
-
-		@media print {
-			color: var(--headline-color-cmyk);
-			background-color: var(--headline-background-color-cmyk, transparent);
-		}
 	}
 
 	.alf-header-line {
@@ -139,19 +134,11 @@
 		line-height: 0.8975em;
 		letter-spacing: 0;
 		color: var(--color-warm-grey);
-
-		@media print {
-			color: var(--color-warm-grey-cmyk);
-		}
 	}
 
 	.contributor, .topic {
 		color: var(--color-base-dark);
 		line-height: 0.85em;
-
-		@media print {
-			color: var(--color-base-dark-cmyk);
-		}
 	}
 
 	.headline--comment-wrapper {
@@ -352,10 +339,6 @@
 	word-spacing: 0;
 	color: var(--color-base);
 	margin-bottom: 4.5pt;
-
-	@media print {
-		color: var(--color-base-cmyk);
-	}
 }
 
 .headline--lest-siden-sist h1 {
