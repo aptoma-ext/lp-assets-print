@@ -277,8 +277,12 @@ $medium-line-height: 13.6pt;
 &.publication--magasinet,
 .theme--magasinet {
 	--color-base: var(--color-pink-weekend);
-	--color-base-dark: var(--color-deep-purple);
 	--color-base-bright: var(--color-financial-pink-weekend);
+	--color-base-dark: #{$deep-purple}; // Not using var(--color-deep-purple) since it changes to the weekend version on weekends
+
+	@media print {
+		--color-base-dark: #{$deep-purple-cmyk};
+	}
 }
 
 &.print-day-saturday {
