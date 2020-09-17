@@ -92,10 +92,6 @@
 		position: absolute;
 		top: 8.85pt;
 		left: 106.3pt;
-
-		@media print {
-			color: var(--color-base-dark-cmyk);
-		}
 	}
 }
 
@@ -152,10 +148,6 @@
 		letter-spacing: 0.025em;
 		margin-right: 3.4pt;
 		color: var(--color-base-dark);
-
-		@media print {
-			color: var(--color-base-dark-cmyk);
-		}
 	}
 
 	.byline-author {
@@ -168,9 +160,5 @@
 		letter-spacing: 0.025em;
 		color: var(--color-black);
 		text-transform: none;
-
-		@media print {
-			color: var(--color-black-cmyk);
-		}
 	}
 }

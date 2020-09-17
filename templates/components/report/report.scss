@@ -10,10 +10,6 @@
 		width: 8.5mm;
 		height: 2.505mm;
 		background-color: var(--fact-box-border-color);
-
-		@media print {
-			background-color: var(--fact-box-border-color-cmyk);
-		}
 	}
 
     .alf-align {
@@ -69,10 +65,6 @@
 		tbody {
 			td {
 				border-top: 0.25pt solid var(--color-black);
-
-				@media print {
-					border-color: var(--color-black-cmyk);
-				}
 			}
 
 			.cell-1 {

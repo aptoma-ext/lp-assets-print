@@ -18,54 +18,61 @@ $warm-grey-cmyk: CMYK(21%, 16%, 20%, 65%);
 
 $blue: rgb(57, 149, 210);
 $blue-cmyk: CMYK(97%, 18%, 0%, 0%);
+$blue-weekend: rgb(18, 204, 255);
 $blue-weekend-cmyk: CMYK(93%, 20%, 0%, 0%);
 
 $bright-blue: rgb(213, 230, 246);
 $bright-blue-cmyk: CMYK(16%, 3%, 0%, 0%);
+$bright-blue-weekend: rgb(217, 245, 255);
 $bright-blue-weekend-cmyk: CMYK(15%,4%, 0%, 0%);
 $bright-blue-tinted: mix($bright-blue, white, 70%);
 $bright-blue-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$bright-blue-cmyk});
+$bright-blue-tinted-weekend: mix($bright-blue-weekend, white, 70%);
 $bright-blue-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$bright-blue-weekend-cmyk});
 
 $deep-blue: rgb(59, 105, 166);
 $deep-blue-cmyk: CMYK(95%, 45%, 0%, 10%);
+$deep-blue-weekend: rgb(0, 79, 196);
 $deep-blue-weekend-cmyk: CMYK(100%, 60%, 0%, 23%);
 
 $purple: rgb(188, 97, 147);
 $purple-cmyk: CMYK(0, 68%, 0%, 13%);
+$purple-weekend: rgb(217, 43, 217);
 $purple-weekend-cmyk: CMYK(0, 80%, 0%, 15%);
 
 $bright-purple: rgb(246, 224, 231);
 $bright-purple-cmyk: CMYK(0, 12%, 3%, 0%);
+$bright-purple-weekend: rgb(250, 215, 250);
 $bright-purple-weekend-cmyk: CMYK(0, 14%, 0%, 2%);
 
 $deep-purple: rgb(130, 27, 86);
 $deep-purple-cmyk: CMYK(0%, 100%, 0%, 40%);
+$deep-purple-weekend: rgb(128, 0, 128);
 $deep-purple-weekend-cmyk: CMYK(0%, 100%, 0%, 50%);
 
 $pink: rgb(222, 133, 128);
 $pink-cmyk: CMYK(0%, 52%, 37%, 0%);
+$pink-weekend: rgb(255, 89, 128);
 $pink-weekend-cmyk: CMYK(0%, 65%, 50%, 0%);
 
 $financial-pink: rgb(243, 229, 214);
 $financial-pink-cmyk: CMYK(0.784%, 7.059%, 11.373%, 1.961%);
 $financial-pink-tinted: mix($financial-pink, white, 70%);
+$financial-pink-weekend: rgb(255, 212, 189);
 $financial-pink-weekend-cmyk: CMYK(0%, 17%, 26%, 0%);
+$financial-pink-tinted: mix($financial-pink, white, 60%);
 $financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-cmyk});
+$financial-pink-tinted-weekend: mix($financial-pink-weekend, white, 60%);
 $financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.6, #{$financial-pink-weekend-cmyk});
 
 $deep-financial-pink: rgb(241, 202, 180);
 $deep-financial-pink-cmyk: CMYK(0%, 17%, 26%, 0%);
+$deep-financial-pink-weekend: rgb(255, 181, 173);
 $deep-financial-pink-weekend-cmyk: CMYK(0%, 29%, 32%, 0%);
 $deep-financial-pink-tinted: mix($deep-financial-pink, white, 70%);
 $deep-financial-pink-tinted-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-pink-cmyk});
+$deep-financial-pink-tinted-weekend: mix($deep-financial-pink-weekend, white, 70%);
 $deep-financial-pink-tinted-weekend-cmyk: -ro-spot('Base Bright', 0.7, #{$deep-financial-pink-weekend-cmyk});
-
-$yellow: rgb(255, 204, 0);
-$yellow-cmyk: CMYK(0%, 20%, 100%, 0%);
-
-$orange: rgb(255, 64, 0);
-$orange-cmyk: CMYK(0%, 75%, 100%, 0%);
 
 $neutral-tint: rgb(236, 232, 225);
 $neutral-tint-cmyk: CMYK(8%, 8%, 12%, 0%);
@@ -78,71 +85,98 @@ $medium-line-height: 13.6pt;
 
 & {
 	--font-size-body: 8.4pt;
+	--background-color: #FFF;
 
 	--color-black: #{$black};
-	--color-black-cmyk: #{$black-cmyk};
 	--color-white: #{$white};
-	--color-white-cmyk: #{$white-cmyk};
-	--color-blue: #{$blue};
-	--color-blue-cmyk: #{$blue-cmyk};
-	--color-blue-weekend-cmyk: #{$blue-weekend-cmyk};
-	--color-bright-blue: #{$bright-blue};
-	--color-bright-blue-cmyk: #{$bright-blue-cmyk};
-	--color-bright-blue-weekend-cmyk: #{$bright-blue-weekend-cmyk};
-	--color-bright-blue-tinted: #{$bright-blue-tinted};
-	--color-bright-blue-tinted-cmyk: #{$bright-blue-tinted-cmyk};
-	--color-bright-blue-tinted-weekend-cmyk: #{$bright-blue-tinted-weekend-cmyk};
-	--color-deep-blue: #{$deep-blue};
-	--color-deep-blue-cmyk: #{$deep-blue-cmyk};
-	--color-deep-blue-weekend-cmyk: #{$deep-blue-weekend-cmyk};
-	--color-purple: #{$purple};
-	--color-purple-cmyk: #{$purple-cmyk};
-	--color-purple-weekend-cmyk: #{$purple-weekend-cmyk};
-	--color-bright-purple: #{$bright-purple};
-	--color-bright-purple-cmyk: #{$bright-purple-cmyk};
-	--color-bright-purple-weekend-cmyk: #{$bright-purple-weekend-cmyk};
-	--color-deep-purple: #{$deep-purple};
-	--color-deep-purple-cmyk: #{$deep-purple-cmyk};
-	--color-deep-purple-weekend-cmyk: #{$deep-purple-weekend-cmyk};
-	--color-pink: #{$pink};
-	--color-pink-cmyk: #{$pink-cmyk};
-	--color-pink-weekend-cmyk: #{$pink-weekend-cmyk};
-	--color-financial-pink: #{$financial-pink};
-	--color-financial-pink-cmyk: #{$financial-pink-cmyk};
-	--color-financial-pink-weekend-cmyk: #{$financial-pink-weekend-cmyk};
-	--color-financial-pink-tinted: #{$financial-pink-tinted};
-	--color-financial-pink-tinted-cmyk: #{$financial-pink-tinted-cmyk};
-	--color-financial-pink-tinted-weekend-cmyk: #{$financial-pink-tinted-weekend-cmyk};
-	--color-deep-financial-pink: #{$deep-financial-pink};
-	--color-deep-financial-pink-cmyk: #{$deep-financial-pink-cmyk};
-	--color-deep-financial-pink-weekend-cmyk: #{$deep-financial-pink-weekend-cmyk};
-	--color-deep-financial-pink-tinted: #{$deep-financial-pink-tinted};
-	--color-deep-financial-pink-tinted-cmyk: #{$deep-financial-pink-tinted-cmyk};
-	--color-deep-financial-pink-tinted-weekend-cmyk: #{$deep-financial-pink-tinted-weekend-cmyk};
 
 	--color-base: var(--color-blue);
-	--color-base-cmyk: #{$blue-cmyk};
 	--color-base-bright: #{$bright-blue};
-	--color-base-bright-cmyk: #{$bright-blue-cmyk};
 	--color-base-bright-tinted: #{$bright-blue-tinted};
-	--color-base-bright-tinted-cmyk: #{$bright-blue-tinted-cmyk};
 	--color-base-dark: #{$deep-blue};
-	--color-base-dark-cmyk: #{$deep-blue-cmyk};
-	--background-color: #FFF;
-	--background-color-cmyk: transparent;
+
+	--color-blue: #{$blue};
+	--color-blue-weekend: #{$blue-weekend};
+
+	--color-bright-blue: #{$bright-blue};
+	--color-bright-blue-tinted: #{$bright-blue-tinted};
+	--color-bright-blue-tinted-weekend: #{$bright-blue-tinted-weekend};
+	--color-bright-blue-weekend: #{$bright-blue-weekend};
+
+	--color-deep-blue: #{$deep-blue};
+	--color-deep-blue-weekend: #{$deep-blue-weekend};
+
+	--color-purple: #{$purple};
+	--color-purple-weekend: #{$purple-weekend};
+
+	--color-bright-purple: #{$bright-purple};
+	--color-bright-purple-weekend: #{$bright-purple-weekend};
+
+	--color-deep-purple: #{$deep-purple};
+	--color-deep-purple-weekend: #{$deep-purple-weekend};
+
+	--color-pink: #{$pink};
+	--color-pink-weekend: #{$pink-weekend};
+
+	--color-financial-pink: #{$financial-pink};
+	--color-financial-pink-weekend: #{$financial-pink-weekend};
+	--color-financial-pink-tinted: #{$financial-pink-tinted};
+	--color-financial-pink-tinted-weekend: #{$financial-pink-tinted-weekend};
+
+	--color-deep-financial-pink: #{$deep-financial-pink};
+	--color-deep-financial-pink-weekend: #{$deep-financial-pink-weekend};
+	--color-deep-financial-pink-tinted: #{$deep-financial-pink-tinted};
+	--color-deep-financial-pink-tinted-weekend: #{$deep-financial-pink-tinted-weekend};
+
 	--color-warm-grey: #{$warm-grey};
-	--color-warm-grey-cmyk: #{$warm-grey-cmyk};
 	--color-light-grey: #{$light-grey};
-	--color-light-grey-cmyk: #{$light-grey-cmyk};
 	--color-replikk-grey: #{$replikk-grey};
-	--color-replikk-grey-cmyk: #{$replikk-grey-cmyk};
 
 	@media print {
+		--background-color: transparent;
+
 		--color-black: #{$black-cmyk};
 		--color-white: #{$white-cmyk};
+
 		--color-base: #{$blue-cmyk};
 		--color-base-bright: #{$bright-blue-cmyk};
 		--color-base-bright-tinted: #{$bright-blue-tinted-cmyk};
+		--color-base-dark: #{$deep-blue-cmyk};
+
+		--color-blue: #{$blue-cmyk};
+		--color-blue-weekend: #{$blue-weekend-cmyk};
+
+		--color-bright-blue: #{$bright-blue-cmyk};
+		--color-bright-blue-tinted: #{$bright-blue-tinted-cmyk};
+		--color-bright-blue-tinted-weekend: #{$bright-blue-tinted-weekend-cmyk};
+		--color-bright-blue-weekend: #{$bright-blue-weekend-cmyk};
+
+		--color-deep-blue: #{$deep-blue-cmyk};
+		--color-deep-blue-weekend: #{$deep-blue-weekend-cmyk};
+
+		--color-purple: #{$purple-cmyk};
+		--color-purple-weekend: #{$purple-weekend-cmyk};
+
+		--color-bright-purple: #{$bright-purple-cmyk};
+		--color-bright-purple-weekend: #{$bright-purple-weekend-cmyk};
+
+		--color-deep-purple: #{$deep-purple-cmyk};
+		--color-deep-purple-weekend: #{$deep-purple-weekend-cmyk};
+
+		--color-pink: #{$pink-cmyk};
+		--color-pink-weekend: #{$pink-weekend-cmyk};
+
+		--color-financial-pink: #{$financial-pink-cmyk};
+		--color-financial-pink-weekend: #{$financial-pink-weekend-cmyk};
+		--color-financial-pink-tinted: #{$financial-pink-tinted-cmyk};
+		--color-financial-pink-tinted-weekend: #{$financial-pink-tinted-weekend-cmyk};
+
+		--color-deep-financial-pink: #{$deep-financial-pink-cmyk};
+		--color-deep-financial-pink-weekend: #{$deep-financial-pink-weekend-cmyk};
+		--color-deep-financial-pink-tinted: #{$deep-financial-pink-tinted-cmyk};
+		--color-deep-financial-pink-tinted-weekend: #{$deep-financial-pink-tinted-weekend-cmyk};
+
+		--color-warm-grey: #{$warm-grey-cmyk};
 		--color-light-grey: #{$light-grey-cmyk};
 		--color-replikk-grey: #{$replikk-grey-cmyk};
 	}
@@ -150,16 +184,16 @@ $medium-line-height: 13.6pt;
 
 
 &.print-day-saturday {
-	--color-blue-cmyk: var(--color-blue-weekend-cmyk);
-	--color-bright-blue-cmyk: var(--color-bright-blue-weekend-cmyk);
-	--color-bright-blue-tinted-cmyk: var(--color-bright-blue-tinted-weekend-cmyk);
-	--color-deep-blue-cmyk: var(--color-deep-blue-weekend-cmyk);
-	--color-purple-cmyk: var(--color-purple-weekend-cmyk);
-	--color-bright-purple-cmyk: var(--color-bright-purple-weekend-cmyk);
-	--color-deep-purple-cmyk: var(--color-deep-purple-weekend-cmyk);
-	--color-pink-cmyk: var(--color-pink-weekend-cmyk);
-	--color-financial-pink-cmyk: var(--color-financial-pink-weekend-cmyk);
-	--color-financial-pink-tinted-cmyk: var(--color-financial-pink-tinted-weekend-cmyk);
+	--color-blue: var(--color-blue-weekend);
+
+	--color-bright-blue: var(--color-bright-blue-weekend);
+	--color-bright-blue-tinted: var(--color-bright-blue-tinted-weekend);
+	--color-deep-blue: var(--color-deep-blue-weekend);
+	--color-bright-purple: var(--color-bright-purple-weekend);
+	--color-deep-purple: var(--color-deep-purple-weekend);
+	--color-pink: var(--color-pink-weekend);
+	--color-financial-pink: var(--color-financial-pink-weekend);
+	--color-financial-pink-tinted: var(--color-financial-pink-tinted-weekend);
 }
 
 .theme--dn {
@@ -168,44 +202,25 @@ $medium-line-height: 13.6pt;
 
 	// Headlines
 	--headline-color: var(--color-black);
-	--headline-color-cmyk: var(--color-black-cmyk);
 	--headline-font-family: IvarNostalgiDN-Large;
 	--headline-font-size-sm: 60pt;
 	--headline-font-size-md: 66pt;
 	--headline-font-size-lg: 72pt;
 	--headline-font-size-xl: 90pt;
-	--headline-dash-color: var(--color-base);
-	--headline-dash-color-cmyk: var(--color-base-cmyk);
 
 	// Fact boxes
 	--fact-box-border-color: var(--color-base);
-	--fact-box-border-color-cmyk: var(--color-base-cmyk);
-	--fact-box-background-color: #{$neutral-tint};
-	--fact-box-background-color-cmyk: #{$neutral-tint-cmyk};
-
-	--quote-background-color: var(--color-base);
-	--quote-background-color-cmyk: var(--color-base-cmyk);
 }
 
-.theme--purple {
-	--color-base: #{$purple};
-	--color-base-cmyk: #{$purple-cmyk};
-	--color-base-dark: #{$deep-purple};
-	--color-base-dark-cmyk: #{$deep-purple-cmyk};
-}
-
+.theme--purple,
 .theme--deep-purple {
-	--color-base: #{$purple};
-	--color-base-cmyk: #{$purple-cmyk};
-	--color-base-dark: #{$deep-purple};
-	--color-base-dark-cmyk: #{$deep-purple-cmyk};
+	--color-base: var(--color-purple);
+	--color-base-dark: var(--color-deep-purple);
 }
 
 .theme--kommentar {
-	--color-base: #{$deep-purple};
-	--color-base-cmyk: #{$deep-purple-cmyk};
-	--color-base-dark: #{$deep-purple};
-	--color-base-dark-cmyk: #{$deep-purple-cmyk};
+	--color-base: var(--color-deep-purple);
+	--color-base-dark: var(--color-deep-purple);
 
 	&::before, &::after {
 		content: ' ';
@@ -220,10 +235,6 @@ $medium-line-height: 13.6pt;
 		right: 0;
 		left: 21mm;
 		background-color: var(--color-bright-blue-tinted);
-
-		@media print {
-			background-color: var(--color-bright-blue-tinted-cmyk);
-		}
 	}
 
 	&::after {
@@ -233,11 +244,6 @@ $medium-line-height: 13.6pt;
 		border-color: var(--color-black);
 		border-style: solid;
 		background-color: var(--color-bright-blue);
-
-		@media print {
-			background-color: var(--color-bright-blue-cmyk);
-			border-color: var(--color-black-cmyk)
-		}
 	}
 
 	&[data-side="right"] {
@@ -256,42 +262,35 @@ $medium-line-height: 13.6pt;
 
 .theme--kommentar-blue {
 	--color-base: var(--color-blue);
-	--color-base-cmyk: #{$blue-cmyk};
-	--color-base-bright: #{$bright-blue};
-	--color-base-bright-cmyk: #{$bright-blue-cmyk};
-	--color-base-bright-tinted: #{$bright-blue-tinted};
-	--color-base-bright-tinted-cmyk: #{$bright-blue-tinted-cmyk};
-	--color-base-dark: #{$deep-blue};
-	--color-base-dark-cmyk: #{$deep-blue-cmyk};
+	--color-base-bright: var(--color-bright-blue);
+	--color-base-bright-tinted: var(--color-bright-blue-tinted);
+	--color-base-dark: var(--color-deep-blue);
 }
 
 .theme--leder {
-	--color-base: #{$deep-purple};
-	--color-base-cmyk: #{$deep-purple-cmyk};
-	--color-base-dark: #{$deep-purple};
-	--color-base-dark-cmyk: #{$deep-purple-cmyk};
+	--color-base: var(--color-deep-purple);
+	--color-base-dark: var(--color-deep-purple);
 
 	--text-column-circle-font-family: SharpGroteskBook19;
 	--text-column-circle-font-size: 11.3pt;
 	--text-column-circle-top: 0.2pt;
 }
 
+.publication--magasinet,
+.theme--magasinet {
+	--color-base: var(--color-pink-weekend);
+	--color-base-dark: var(--color-deep-purple);
+	--color-base-bright: var(--color-financial-pink-weekend);
+}
+
 &.print-day-saturday {
 	.theme--kommentar {
 		&::before {
 			background-color: var(--color-financial-pink-tinted);
-
-			@media print {
-				background-color: var(--color-financial-pink-tinted-cmyk);
-			}
 		}
 
 		&::after {
 			background-color: var(--color-financial-pink);
-
-			@media print {
-				background-color: var(--color-financial-pink-cmyk);
-			}
 		}
 	}
 }
@@ -315,12 +314,9 @@ $medium-line-height: 13.6pt;
 }
 
 .theme--lest-siden-sist {
-	--color-base: #{$purple};
-	--color-base-cmyk: #{$purple-cmyk};
-	--color-base-dark: #{$deep-purple};
-	--color-base-dark-cmyk: #{$deep-purple-cmyk};
-	--headline-color: #{$deep-purple};
-	--headline-color-cmyk: #{$deep-purple-cmyk};
+	--color-base: var(--color-purple);
+	--color-base-dark: var(--color-deep-purple);
+	--headline-color: var(--color-deep-purple);
 
 	&::before {
 		content: ' ';
@@ -332,10 +328,6 @@ $medium-line-height: 13.6pt;
 		right: 8.5mm;
 		box-sizing: border-box;
 		background-color: var(--color-deep-financial-pink);
-
-		@media print {
-			background-color: var(--color-deep-financial-pink-cmyk);
-		}
 	}
 
 	.alf-component {
