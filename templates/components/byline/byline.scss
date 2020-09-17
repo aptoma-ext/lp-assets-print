@@ -162,3 +162,19 @@
 		text-transform: none;
 	}
 }
+
+&.publication--magasinet {
+	.byline--topic {
+		.byline-topic {
+			color: var(--color-base);
+			line-height: 14pt;
+		}
+
+		.byline-author {
+			color: var(--color-black);
+			font-family: IvarText-SemiBold;
+			font-size: 8.9pt;
+			line-height: 10.65pt;
+		}
+	}
+}
