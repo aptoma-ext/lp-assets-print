@@ -276,6 +276,13 @@ $medium-line-height: 13.6pt;
 	--text-column-circle-top: 0.2pt;
 }
 
+.publication--magasinet,
+.theme--magasinet {
+	--color-base: var(--color-pink-weekend);
+	--color-base-dark: var(--color-deep-purple);
+	--color-base-bright: var(--color-financial-pink-weekend);
+}
+
 &.print-day-saturday {
 	.theme--kommentar {
 		&::before {
