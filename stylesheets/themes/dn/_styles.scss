@@ -182,10 +182,8 @@ $medium-line-height: 13.6pt;
 	}
 }
 
-
 &.print-day-saturday {
 	--color-blue: var(--color-blue-weekend);
-
 	--color-bright-blue: var(--color-bright-blue-weekend);
 	--color-bright-blue-tinted: var(--color-bright-blue-tinted-weekend);
 	--color-deep-blue: var(--color-deep-blue-weekend);
@@ -276,7 +274,7 @@ $medium-line-height: 13.6pt;
 	--text-column-circle-top: 0.2pt;
 }
 
-.publication--magasinet,
+&.publication--magasinet,
 .theme--magasinet {
 	--color-base: var(--color-pink-weekend);
 	--color-base-dark: var(--color-deep-purple);
