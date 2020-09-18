@@ -163,7 +163,8 @@
 	}
 }
 
-&.publication--magasinet {
+&.publication--magasinet,
+.theme--magasinet {
 	.byline--topic {
 		.byline-topic {
 			color: var(--color-base);

@@ -97,7 +97,8 @@
     text-shadow: 0px 0px 25px #FFF;
 }
 
-&.publication--magasinet {
+&.publication--magasinet,
+.theme--magasinet {
 	&.topic--film,
 	&.topic--bøker {
 		.intro {

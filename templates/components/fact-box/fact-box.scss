@@ -94,7 +94,8 @@
 	}
 }
 
-&.publication--magasinet {
+&.publication--magasinet,
+.theme--magasinet {
 	.fact-box-header {
 		font-family: SharpGroteskBook22;
 		font-size: 8.9pt;

@@ -113,7 +113,8 @@ div.caption {
     text-shadow: 0px 0px 15px #FFF;
 }
 
-&.publication--magasinet {
+&.publication--magasinet,
+.theme--magasinet {
 	.caption {
 		figcaption, .figcaption {
 			font-family: DNSharpGroteskBook-18;
