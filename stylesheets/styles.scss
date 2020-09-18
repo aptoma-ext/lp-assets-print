@@ -82,14 +82,14 @@
 			--alf-grid-column-width: 38mm;
 		}
 
-		&.alf-grid--18 {
-			--alf-grid-columns: 18;
-			--alf-grid-column-width: 8.5mm;
-		}
-
 		&.alf-grid--20 {
 			--alf-grid-columns: 20;
 			--alf-grid-column-width: 8.5mm;
+		}
+
+		&.alf-grid--40 {
+			--alf-grid-columns: 40;
+			--alf-grid-column-width: 2.25mm;
 		}
 
 		[grid-inside] {

@@ -108,20 +108,16 @@
 	},
 	"grids": {
 		"alf-grid--5": {
-			"title": "5 column grid"
+			"title": "5 columns"
 		},
 		"alf-grid--18": {
-			"title": "18 column grid"
+			"title": "18 columns"
 		},
 		"alf-grid--20": {
-			"title": "20 column grid",
-			"components": {
-				"text-column": {
-					"colspanMin": 4,
-					"colspanMax": 5,
-					"colspanInitial": 4
-				}
-			}
+			"title": "20 columns"
+		},
+		"alf-grid--40": {
+			"title": "40 columns"
 		}
 	},
 	"templateOptions": {
