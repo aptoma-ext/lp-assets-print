@@ -274,17 +274,6 @@ $medium-line-height: 13.6pt;
 	--text-column-circle-top: 0.2pt;
 }
 
-&.publication--magasinet,
-.theme--magasinet {
-	--color-base: var(--color-pink-weekend);
-	--color-base-bright: var(--color-financial-pink-weekend);
-	--color-base-dark: #{$deep-purple}; // Not using var(--color-deep-purple) since it changes to the weekend version on weekends
-
-	@media print {
-		--color-base-dark: #{$deep-purple-cmyk};
-	}
-}
-
 &.print-day-saturday {
 	.theme--kommentar {
 		&::before {
@@ -335,5 +324,18 @@ $medium-line-height: 13.6pt;
 	.alf-component {
 		padding-left: 4.65mm;
 		padding-right: 8mm;
+	}
+}
+
+&.publication--magasinet .alf-template,
+.theme--magasinet {
+	--color-base: var(--color-pink-weekend);
+	--color-base-bright: var(--color-financial-pink-weekend);
+	--color-base-dark: #{$deep-purple}; // Not using var(--color-deep-purple) since it changes to the weekend version on weekends
+
+	--byline-topic-color: var(--color-base);
+
+	@media print {
+		--color-base-dark: #{$deep-purple-cmyk};
 	}
 }
