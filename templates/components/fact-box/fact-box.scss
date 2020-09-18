@@ -94,6 +94,27 @@
 	}
 }
 
+&.publication--magasinet {
+	.fact-box-header {
+		font-family: SharpGroteskBook22;
+		font-size: 8.9pt;
+		line-height: 10.5pt;
+	}
+
+	.fact-box-body {
+		font-family: DNSharpGroteskBook-16;
+		font-size: 7.9pt;
+		line-height: 10.65pt;
+
+		b {
+			font-family: DNSharpGroteskMedium-18;
+			font-weight: normal;
+			font-size: 7.9pt;
+			line-height: 10.65pt;
+		}
+	}
+}
+
 .fact-box--nattbordet {
 	padding-left: 3.757mm;
 
