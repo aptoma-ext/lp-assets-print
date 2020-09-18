@@ -164,24 +164,18 @@
 }
 
 &.publication--magasinet {
-	&.topic--film,
-	&.topic--bøker {
-		.byline--topic {
-			.byline-topic {
-				color: var(--color-base);
-				line-height: 14pt;
-			}
-
-			.byline-author {
-				color: var(--color-black);
-				font-family: IvarText-SemiBold;
-				font-size: 8.9pt;
-				line-height: 10.65pt;
-				text-transform: uppercase;
-			}
+	.byline--topic {
+		.byline-topic {
+			color: var(--color-base);
+			line-height: 14pt;
 		}
-	}
 
-	&.topic--musikk {
+		.byline-author {
+			color: var(--color-black);
+			font-family: IvarText-SemiBold;
+			font-size: 8.9pt;
+			line-height: 10.65pt;
+			text-transform: uppercase;
+		}
 	}
 }

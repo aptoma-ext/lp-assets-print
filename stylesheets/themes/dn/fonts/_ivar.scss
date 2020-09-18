@@ -69,6 +69,14 @@
         font-weight: normal;
         src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarText-Italic.otf);
         -ro-font-embedding-type: all;
+	}
+
+    @font-face {
+        font-family: IvarDisplay-Italic;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://smooth-storage.aptoma.no/users/drf-dn/files/print/fonts/Ivar/IvarDisplay-Italic.otf);
+        -ro-font-embedding-type: all;
     }
 
 }
