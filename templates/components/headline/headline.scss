@@ -394,11 +394,13 @@
 	text-shadow: 0px 0px 35px #FFF;
 }
 
-&.publication--magasinet,
-.theme--magasinet {
-	.headline h1 {
-		font-family: SharpGroteskMedium22;
-		font-size: 38.5pt;
-		line-height: 42.6pt;
+&.publication--magasinet {
+	&.topic--film,
+	&.topic--bøker {
+		.headline h1 {
+			font-family: SharpGroteskMedium22;
+			font-size: 38.5pt;
+			line-height: 42.6pt;
+		}
 	}
 }
