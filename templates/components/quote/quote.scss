@@ -1,32 +1,49 @@
 .quote {
-    background-color: transparent;
+	background-color: transparent;
 
-    blockquote {
-        padding: 0;
+	blockquote {
+		padding: 0;
 
-        &::before {
-            content: '';
-            display: block;
-            width: 8.5mm;
-            height: 2.505mm;
-            background-color: var(--color-base);
-        }
+		&::before {
+			content: '';
+			display: block;
+			width: 8.5mm;
+			height: 2.505mm;
+			background-color: var(--color-base);
+		}
 
-        .quote-text {
-            font-family: SharpGroteskLight20;
-            font-weight: normal;
-            font-size: 11.5pt;
-            line-height: 15.5pt;
-            color: var(--color-black);
-        }
+		.quote-text {
+			font-family: SharpGroteskLight20;
+			font-weight: normal;
+			font-size: 11.5pt;
+			line-height: 15.5pt;
+			color: var(--color-black);
+		}
 
-        .quote-creator {
-            font-family: DNSharpGroteskBook-18;
-            font-weight: normal;
-            font-size: 7.9pt;
-            line-height: 9.7pt;
-            color: var(--color-black);
-            transform: translateY(-1.8px);
-        }
-    }
+		.quote-creator {
+			font-family: DNSharpGroteskBook-18;
+			font-weight: normal;
+			font-size: 7.9pt;
+			line-height: 9.7pt;
+			color: var(--color-black);
+			transform: translateY(-1.8px);
+		}
+	}
+}
+
+&.publication--magasinet,
+.theme--magasinet {
+	blockquote {
+		&::before {
+			display: none;
+		}
+
+		.quote-text {
+			font-family: IvarNostalgi-Small;
+			font-weight: normal;
+			font-size: 19.25pt;
+			line-height: 22pt;
+			color: var(--color-black);
+		}
+	}
 }
