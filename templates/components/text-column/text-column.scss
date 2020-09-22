@@ -459,3 +459,19 @@
 		margin-top: 0;
 	}
 }
+
+&.publication--magasinet {
+	.alf-block-is-last {
+		&::after {
+			content: '\25a0';
+			display: inline-block;
+			font-size: 16pt;
+			line-height: 0;
+			position: relative;
+			top: 1.4pt;
+			margin-left: -1px;
+			margin-right: 2pt;
+			color: var(--color-base);
+		}
+	}
+}
