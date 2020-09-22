@@ -54,6 +54,11 @@
 			width: 0.25pt;
 		}
 	}
+
+	&.alf-is-dynamic {
+		--alf-grid-align-top: none;
+		--alf-grid-align-bottom: none;
+	}
 }
 
 .ad--1b {
