@@ -295,6 +295,10 @@
 
 	.alf-block.subhead {
 		padding-top: $base-line-height;
+
+		.body-text .row-first {
+			text-indent: 0;
+		}
 	}
 }
 
