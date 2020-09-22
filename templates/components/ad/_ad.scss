@@ -18,7 +18,7 @@
 		flex-direction: column;
 		justify-content: center;
 
-		&:before {
+		&::before {
 			font-family: SharpGroteskMedium20;
 			font-size: 20pt;
 			content: 'Annonse';
@@ -58,6 +58,10 @@
 	&.alf-is-dynamic {
 		--alf-grid-align-top: none;
 		--alf-grid-align-bottom: none;
+
+		.ad-placeholder-content {
+			display: none;
+		}
 	}
 }
 
