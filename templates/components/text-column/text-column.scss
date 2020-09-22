@@ -465,9 +465,10 @@
 		.row:last-child .word:last-child::after {
 			content: '\25a0';
 			display: inline-block;
+			position: relative;
 			font-size: 16pt;
 			line-height: 0;
-			margin-top: 3.5pt;
+			top: 1pt;
 			margin-left: 2pt;
 			margin-right: 0;
 			color: var(--color-base);
