@@ -464,13 +464,13 @@
 	.alf-block-is-last {
 		.row:last-child::after {
 			content: '\25a0';
-			display: inline-block;
+			display: block;
 			font-size: 16pt;
 			line-height: 0;
-			position: relative;
-			top: 1.4pt;
-			margin-left: -1px;
-			margin-right: 2pt;
+			margin-top: 3.5pt;
+			margin-left: 2pt;
+			margin-right: 0;
+			float: right;
 			color: var(--color-base);
 		}
 	}
