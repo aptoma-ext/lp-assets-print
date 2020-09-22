@@ -462,7 +462,7 @@
 
 &.publication--magasinet {
 	.alf-block-is-last {
-		&::after {
+		.row:last-child::after {
 			content: '\25a0';
 			display: inline-block;
 			font-size: 16pt;
