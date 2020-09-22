@@ -160,43 +160,45 @@
 		".divider--border-{alignment}": {
 			"title": "Alignment",
 			"type": "string",
-			"uniqueItems": true,
-			"anyOf": [
-				{
-					"type": "string",
-					"title": "Middle",
-					"enum": ["middle"]
-				},
-				{
-					"type": "string",
-					"title": "Top",
-					"enum": ["top"]
-				},
-				{
-					"type": "string",
-					"title": "Bottom",
-					"enum": ["bottom"]
-				},
-				{
-					"type": "string",
-					"title": "Left",
-					"enum": ["left"]
-				},
-				{
-					"type": "string",
-					"title": "Right",
-					"enum": ["right"]
-				},
-				{
-					"type": "string",
-					"title": "Left/right",
-					"enum": ["left-right"]
-				},
-				{
-					"type": "string",
-					"title": "None",
-					"enum": ["none"]
-				}
+			"enum": [
+				"middle",
+				"top",
+				"bottom",
+				"left",
+				"right",
+				"left-right",
+				"none"
+			],
+			"enumNames": [
+				"Middle",
+				"Top",
+				"Bottom",
+				"Left",
+				"Right",
+				"Left/right",
+				"None"
+			]
+		},
+		".u-margin-top--{margin}": {
+			"title": "Margin above",
+			"type": "string",
+			"enum": [
+				"-2-lines",
+				"-1-line",
+				"0-lines",
+				"1-line",
+				"2-lines",
+				"3-lines",
+				"4-lines"
+			],
+			"enumNames": [
+				"-2 lines",
+				"-1 line",
+				"None",
+				"1 line",
+				"2 lines",
+				"3 lines",
+				"4 lines"
 			]
 		}
 	},
