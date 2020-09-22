@@ -43,11 +43,11 @@
 	}
 
 	&.divider--border-right {
-		justify-content: right;
+		justify-content: flex-end;
 	}
 
 	&.divider--border-left {
-		justify-content: left;
+		justify-content: flex-start;
 	}
 
 	&.divider--border-left-right {
