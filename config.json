@@ -261,6 +261,16 @@
 				}
 			}
 		},
+		"emails": {
+			"title": "E-mails",
+			"type": "object",
+			"properties": {
+				".emails--no-border": {
+					"title": "Remove border",
+					"type": "boolean"
+				}
+			}
+		},
 		".u-no-margin": {
 			"title": "No space/margin",
 			"type": "boolean"
