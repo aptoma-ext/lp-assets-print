@@ -464,9 +464,11 @@
 	.alf-block-is-last {
 		.row:last-child .word:last-child::after {
 			content: '\25a0';
+			font-family: SharpGroteskMedium20;
+			font-size: 9.4pt;
+			line-height: 10.65pt;
 			display: inline-block;
 			position: relative;
-			font-size: 13pt;
 			line-height: 0;
 			top: 0;
 			margin-left: 2pt;
