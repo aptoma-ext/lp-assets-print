@@ -171,11 +171,13 @@
 
 	.byline--topic {
 		.byline-topic {
+			display: block;
 			color: var(--color-base);
 			line-height: 14pt;
 		}
 
 		.byline-author {
+			display: block;
 			color: var(--color-black);
 			font-family: IvarText-SemiBold;
 			font-size: 8.9pt;
@@ -183,10 +185,6 @@
 			text-transform: uppercase;
 			letter-spacing: 0;
 			font-kerning: normal;
-
-			@media print {
-				letter-spacing: -0.015em;
-			}
 		}
 	}
 }
