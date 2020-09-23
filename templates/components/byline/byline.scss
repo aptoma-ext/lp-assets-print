@@ -183,6 +183,10 @@
 			text-transform: uppercase;
 			letter-spacing: 0;
 			font-kerning: normal;
+
+			@media print {
+				letter-spacing: -0.005em;
+			}
 		}
 	}
 }
