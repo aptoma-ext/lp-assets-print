@@ -3,6 +3,8 @@
 	margin-bottom: $base-line-height;
 
 	&.alf-is-dynamic:not(.alf-component) {
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: baseline;
 		margin-bottom: 0;
 	}
 }
