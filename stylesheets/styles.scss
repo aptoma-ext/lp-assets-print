@@ -2,6 +2,10 @@
 @import "_variables";
 @import "mixins/_grid";
 
+.alf-mode-preview {
+	@import "_preview";
+}
+
 .alf-rev-#{$revision} {
 	-ro-author: 'LayoutPreview by Aptoma AS';
 	background: transparent;

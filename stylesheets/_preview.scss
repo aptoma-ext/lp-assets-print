@@ -1,0 +1,9 @@
+.alf-is-dynamic {
+	&[data-component="ad"] {
+		background-color: rgb(216, 238, 255);
+	}
+
+	&[data-component="pdf"] {
+		background-color: rgb(255, 223, 227);
+	}
+}
